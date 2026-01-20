@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+
+/* -------- BASE -------- */
+body {
+  margin: 20px auto;
+  max-width: 50%;
+  background: #000;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+}
+
+@media (max-width: 768px) {
+  body {
+    max-width: 100%;
+    margin: 20px;
+  }
+}
+
+header {
+  margin-bottom: 20px;
+}
+
+/* -------- TYPOGRAPHY -------- */
+a {
+  text-decoration: underline;
+}
+
+p {
+  margin-bottom: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+/* -------- LAYOUT -------- */
+section {
+  margin: 20px 0;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid currentColor;
+  margin: 20px 0;
+}
+
+/* -------- MEDIA -------- */
+img {
+  width: 100%;
+}
+
+figure {
+  margin: 24px 0;
+  text-align: center;
+}
+
+figcaption {
+  opacity: 0.75;
+  text-align: center;
+}
+
+/* -------- POST LIST -------- */
+.post-list article {
+  margin-bottom: 80px;
+}
+
+/* -------- COLLECTION GRID -------- */
+.collection-grid {
+  column-count: 10;
+  column-gap: 16px;
+  font-size: 10px;
+}
+
+.collection-item {
+  break-inside: avoid;
+  display: inline-block;
+  margin-bottom: 16px;
+  width: 100%;
+}
+
+.collection-item img {
+  width: 100%;
+}
+
+.collection-item h2 {
+  font-size: 10px;
+  margin-bottom: 4px;
+}
+
+.collection-item p {
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .collection-grid {
+    column-count: 2;
+  }
+}
+
+/* -------- POST NAV -------- */
+article nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 32px;
+}
+
+/* -------- PROJECT NAV -------- */
+.project-nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.project-nav-item {
+  flex: 1;
+}
+
+/* -------- CAROUSEL -------- */
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  aspect-ratio: 2 / 3;
+  overflow: hidden;
+}
+
+.carousel img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.carousel img.active {
+  opacity: 1;
+}

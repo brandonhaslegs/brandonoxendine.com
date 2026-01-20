@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Work in Progress by Brandon Oxendine</title>
+    <meta name="description" content="">
+    <link rel="canonical" href="https://www.brandonoxendine.com/work-in-progress">
+    <script src="/assets/js/include-head.js"></script>
+</head>
+  <body>
+<header id="site-header"></header>
+
+    
+    <main>
+&nbsp;
+
+  <h1>Work in Progress</h1>
+
+  
+    <script>
+var accessToken = '9b1295efe217a778406c74b5aadae7b890ec15f9184899b7df3a31acf5571dde';
+
+$.ajax({
+    url: 'https://api.dribbble.com/v2/user/shots?per_page=100&access_token='+accessToken,
+    dataType: 'json',
+    type: 'GET',
+    success: function(data) {  
+      if (data.length> 0) { 
+        $.each(data.reverse(), function(i, val) {                
+          $('#work-in-progress').prepend(
+            '<img src="'+ val.images.hidpi +'" alt="">'
+            )
+        })
+      }
+      else {
+        $('#work-in-progress').append('<p>Nohing here yet</p>');
+      }
+    }
+});
+  
+</script>
+
+  
+
+&nbsp;
+</main>
+    
+      
+      <img src="" alt="">
+    
+    <script src="/assets/js/site.js"></script>
+  <footer id="site-footer"></footer>
+<script src="/assets/js/include-header.js"></script>
+<script src="/assets/js/include-footer.js"></script>
+</body>
+</html>
