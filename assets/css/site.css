@@ -41,6 +41,7 @@ header nav {
 header nav a[aria-current="page"] {
   color: hotpink;
   text-decoration-thickness: 2px;
+  border-bottom: none;
 }
 
 /* -------- WORK PAGE THEMES -------- */
@@ -91,6 +92,10 @@ a:has(> img) {
 
 a:has(> img):hover {
   border-bottom-color: transparent;
+}
+
+body.home header > a {
+  border-bottom: none;
 }
 
 p {
