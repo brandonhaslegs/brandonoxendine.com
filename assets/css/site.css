@@ -80,6 +80,14 @@ a:hover {
   border-bottom-color: hotpink;
 }
 
+a:has(> img) {
+  border-bottom: none;
+}
+
+a:has(> img):hover {
+  border-bottom-color: transparent;
+}
+
 p {
   margin-bottom: 16px;
 }
@@ -97,6 +105,159 @@ h6 {
 /* -------- LAYOUT -------- */
 section {
   margin: 20px 0;
+}
+
+.logo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  align-items: center;
+}
+
+.logo-grid a {
+  display: block;
+  border-bottom: none;
+}
+
+.logo-grid img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.two-col-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.two-col-grid figure {
+  margin: 0;
+}
+
+.two-col-grid img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 900px) {
+  .two-col-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .two-col-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.big-cartel-three-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.big-cartel-three-grid figure {
+  margin: 0;
+}
+
+.big-cartel-three-grid img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 900px) {
+  .big-cartel-three-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .big-cartel-three-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.big-cartel-two-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.big-cartel-two-grid figure {
+  margin: 0;
+}
+
+.big-cartel-two-grid img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 600px) {
+  .big-cartel-two-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.grover-benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.grover-benefits-grid figure {
+  margin: 0;
+}
+
+.grover-benefits-grid img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.grover-signup-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  align-items: start;
+}
+
+.grover-signup-grid figure {
+  margin: 0;
+}
+
+.grover-signup-grid img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 700px) {
+  .grover-signup-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .grover-benefits-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 900px) {
+  .logo-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .logo-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 hr {
