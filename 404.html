@@ -3,7 +3,16 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Redirecting…</title>
+    <title>404 - That page ain’t there.</title>
+    <link rel="stylesheet" href="/assets/css/reset.css">
+    <link rel="stylesheet" href="/assets/css/site.css">
+  </head>
+  <body>
+    <header id="site-header"></header>
+    <h1>Oops… that page ain’t there.</h1>
+    <p>The link you clicked is old or I messed something up when I migrated to a pure HTML and CSS website.</p>
+	<p>Can you <a href="mailto:brandon.oxendine@gmail.com">email me</a> about the link you clicked so I can fix it?</p>
+    <script src="/assets/js/include-header.js"></script>
     <script>
       (function () {
         var path = window.location.pathname.replace(/\/+$/, '') || '/';
@@ -44,7 +53,6 @@
           '/product-design/',
           '/experimentingwithhomelessness/'
         ];
-
         var target = mapping[path];
         if (!target) {
           for (var i = 0; i < prefixes.length; i += 1) {
@@ -55,17 +63,10 @@
             }
           }
         }
-
         if (target && target !== path) {
           window.location.replace(target + window.location.search + window.location.hash);
-          return;
         }
-
-        window.location.replace('/' + window.location.search + window.location.hash);
       })();
     </script>
-  </head>
-  <body>
-    <p>Redirecting…</p>
   </body>
 </html>
