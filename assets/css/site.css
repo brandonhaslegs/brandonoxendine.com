@@ -2,16 +2,24 @@
 
 /* -------- BASE -------- */
 body {
-  margin: 20px auto;
+  margin: 0 auto 20px;
   max-width: 50%;
   background: #000;
   color: #fff;
   font-family: "Inter", sans-serif;
 }
 
+html {
+  scrollbar-gutter: stable;
+}
+
 body.collection-page {
   max-width: none;
-  margin: 20px;
+  margin: 0 20px 20px;
+}
+
+body.collection-page header {
+  position: static;
 }
 
 @media (max-width: 768px) {
@@ -30,7 +38,17 @@ header {
   top: 0;
   z-index: 10;
   background: inherit;
-  padding: 12px 0;
+  padding: 12px 20px;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  box-sizing: border-box;
+}
+
+@media (min-width: 769px) {
+  header {
+    background: transparent;
+  }
 }
 
 header nav {
