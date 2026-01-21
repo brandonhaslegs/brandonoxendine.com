@@ -160,6 +160,16 @@ figcaption {
   margin: 0;
 }
 
+.masonry {
+  column-count: 3;
+  column-gap: 16px;
+}
+
+.masonry figure {
+  break-inside: avoid;
+  margin: 0 0 16px;
+}
+
 /* -------- ICONS -------- */
 .icon-grid {
   display: grid;
