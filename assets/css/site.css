@@ -9,6 +9,11 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+body.collection-page {
+  max-width: none;
+  margin: 20px;
+}
+
 @media (max-width: 768px) {
   body {
     max-width: 100%;
