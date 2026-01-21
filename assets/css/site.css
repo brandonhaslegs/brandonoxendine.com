@@ -356,7 +356,7 @@ figcaption {
 
 /* -------- COLLECTION GRID -------- */
 .collection-grid {
-  column-count: 10;
+  column-count: 6;
   column-gap: 16px;
   font-size: 10px;
 }
