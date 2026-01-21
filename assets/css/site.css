@@ -367,6 +367,10 @@ figcaption {
   font-size: 14px;
 }
 
+.my-collection-hero {
+  font-size: 8.3vw;
+}
+
 .alcohol-collection .collection-hero {
   font-size: 8.88vw;
   letter-spacing: -0.4vw;
