@@ -98,6 +98,10 @@ body.home header > a {
   border-bottom: none;
 }
 
+.writing-index figure {
+  margin-bottom: 16px;
+}
+
 p {
   margin-bottom: 16px;
 }
