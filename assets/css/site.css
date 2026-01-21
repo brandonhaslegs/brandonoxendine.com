@@ -26,6 +26,11 @@ header {
   justify-content: space-between;
   align-items: flex-end;
   margin-bottom: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: inherit;
+  padding: 12px 0;
 }
 
 header nav {
@@ -361,6 +366,25 @@ figcaption {
   font-size: 14px;
 }
 
+.alcohol-collection .collection-hero {
+  font-size: 8.88vw;
+  letter-spacing: -0.4vw;
+  line-height: 0.9;
+  white-space: nowrap;
+}
+
+.alcohol-grid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 16px;
+  column-count: initial;
+}
+
+.alcohol-grid .collection-item {
+  display: block;
+  margin-bottom: 0;
+}
+
 .collection-item {
   break-inside: avoid;
   display: inline-block;
@@ -380,11 +404,17 @@ figcaption {
   .collection-grid {
     column-count: 10;
   }
+  .alcohol-grid {
+    grid-template-columns: repeat(10, minmax(0, 1fr));
+  }
 }
 
 @media (min-width: 1800px) {
   .collection-grid {
     column-count: 14;
+  }
+  .alcohol-grid {
+    grid-template-columns: repeat(14, minmax(0, 1fr));
   }
 }
 
@@ -392,11 +422,17 @@ figcaption {
   .collection-grid {
     column-count: 20;
   }
+  .alcohol-grid {
+    grid-template-columns: repeat(20, minmax(0, 1fr));
+  }
 }
 
 @media (max-width: 1024px) {
   .collection-grid {
     column-count: 4;
+  }
+  .alcohol-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }
 
@@ -404,11 +440,17 @@ figcaption {
   .collection-grid {
     column-count: 3;
   }
+  .alcohol-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
 }
 
 @media (max-width: 600px) {
   .collection-grid {
     column-count: 2;
+  }
+  .alcohol-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
