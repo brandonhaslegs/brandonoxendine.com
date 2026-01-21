@@ -17,7 +17,50 @@ body {
 }
 
 header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
   margin-bottom: 20px;
+}
+
+header nav {
+  display: flex;
+  gap: 16px;
+}
+
+header nav a[aria-current="page"] {
+  color: hotpink;
+  text-decoration-thickness: 2px;
+}
+
+/* -------- WORK PAGE THEMES -------- */
+body.word-bath {
+  background: #012fd7;
+}
+
+body.slack {
+  background: #dedede;
+  color: #000;
+}
+
+body.eight-bit-products {
+  background: #00b4e5;
+  color: #000;
+}
+
+body.grover {
+  background: #fff;
+  color: #333;
+}
+
+body.every-day-is-payday {
+  background: #27ae60;
+  color: #f2c94c;
+}
+
+body.fuzzco {
+  background: #ff0201;
+  color: #fff;
 }
 
 /* -------- TYPOGRAPHY -------- */
@@ -63,6 +106,64 @@ figure {
 figcaption {
   opacity: 0.75;
   text-align: center;
+}
+
+/* -------- POSTERS -------- */
+.poster-grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.poster-grid > * {
+  width: 100%;
+}
+
+.poster-grid figure {
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .poster-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* -------- COLUMNS -------- */
+.columns {
+  display: grid;
+  gap: 16px;
+}
+
+.columns-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.columns-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.columns-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.columns-6 {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+
+.columns figure {
+  margin: 0;
+}
+
+/* -------- ICONS -------- */
+.icon-grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.icon-grid img {
+  width: 100%;
 }
 
 /* -------- POST LIST -------- */
