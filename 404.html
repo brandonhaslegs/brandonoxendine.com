@@ -1,70 +1,79 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>404 - That page ain’t there.</title>
-    <link rel="stylesheet" href="/assets/css/reset.css">
-    <link rel="stylesheet" href="/assets/css/site.css">
+    <link rel="stylesheet" href="/assets/css/reset.css" />
+    <link rel="stylesheet" href="/assets/css/site.css" />
   </head>
   <body>
     <header id="site-header"></header>
     <h1>Oops… that page ain’t there.</h1>
-    <p>The link you clicked is old or I messed something up when I migrated to a pure HTML and CSS website.</p>
-	<p>Can you <a href="mailto:brandon.oxendine@gmail.com">email me</a> about the link you clicked so I can fix it?</p>
+    <p>
+      The link you clicked is old or I messed something up when I migrated to a
+      pure HTML and CSS website.
+    </p>
+    <p>
+      Can you <a href="mailto:brandon.oxendine@gmail.com">email me</a> about the
+      link you clicked so I can fix it?
+    </p>
     <script src="/assets/js/include-header.js"></script>
     <script>
       (function () {
-        var path = window.location.pathname.replace(/\/+$/, '') || '/';
+        var path = window.location.pathname.replace(/\/+$/, "") || "/";
         var mapping = {
-          '/8-bit-products': '/projects/8-bit-products',
-          '/a-word-a-day': '/projects/a-word-a-day',
-          '/big-cartel': '/projects/big-cartel',
-          '/bingo-bango': '/projects/bingo-bango',
-          '/bye-grover': '/projects/bye-grover',
-          '/dawn': '/projects/dawn',
-          '/dawn-logo-round-1': '/projects/dawn-logo-round-1',
-          '/dawn-logotype-sketches': '/projects/dawn-logotype-sketches',
-          '/drips': '/projects/drips',
-          '/every-day-is-payday': '/projects/every-day-is-payday',
-          '/experimentingwithhomelessness': '/projects/experimentingwithhomelessness',
-          '/fun-ding': '/projects/fun-ding',
-          '/fuzzco': '/projects/fuzzco',
-          '/german-is-funny': '/projects/german-is-funny',
-          '/grover': '/projects/grover',
-          '/grover-illustration': '/projects/grover-illustration',
-          '/grover-values-posters': '/projects/grover-values-posters',
-          '/half-circle-concept': '/projects/half-circle-concept',
-          '/mark-round-1': '/projects/mark-round-1',
-          '/migaku': '/projects/migaku',
-          '/new-pool-exploration': '/projects/new-pool-exploration',
-          '/pl-logo-round-1': '/projects/pl-logo-round-1',
-          '/pool-logo-sketches': '/projects/pool-logo-sketches',
-          '/product-design': '/projects/product-design',
-          '/rad-radio': '/projects/rad-radio',
-          '/radicle': '/projects/radicle',
-          '/radicle-brand': '/projects/radicle-brand',
-          '/slack': '/projects/slack',
-          '/startups-get-grover': '/projects/startups-get-grover',
-          '/word-bath': '/projects/word-bath'
+          "/8-bit-products": "/projects/8-bit-products",
+          "/a-word-a-day": "/projects/a-word-a-day",
+          "/big-cartel": "/projects/big-cartel",
+          "/bingo-bango": "/projects/bingo-bango",
+          "/bye-grover": "/projects/bye-grover",
+          "/dawn": "/projects/dawn",
+          "/dawn-logo-round-1": "/projects/dawn-logo-round-1",
+          "/dawn-logotype-sketches": "/projects/dawn-logotype-sketches",
+          "/drips": "/projects/drips",
+          "/every-day-is-payday": "/projects/every-day-is-payday",
+          "/experimentingwithhomelessness":
+            "/projects/experimentingwithhomelessness",
+          "/fun-ding": "/projects/fun-ding",
+          "/fuzzco": "/projects/fuzzco",
+          "/german-is-funny": "/projects/german-is-funny",
+          "/grover": "/projects/grover",
+          "/grover-illustration": "/projects/grover-illustration",
+          "/grover-values-posters": "/projects/grover-values-posters",
+          "/half-circle-concept": "/projects/half-circle-concept",
+          "/mark-round-1": "/projects/mark-round-1",
+          "/migaku": "/projects/migaku",
+          "/new-pool-exploration": "/projects/new-pool-exploration",
+          "/pl-logo-round-1": "/projects/pl-logo-round-1",
+          "/pool-logo-sketches": "/projects/pool-logo-sketches",
+          "/product-design": "/projects/product-design",
+          "/rad-radio": "/projects/rad-radio",
+          "/radicle": "/projects/radicle",
+          "/radicle-brand": "/projects/radicle-brand",
+          "/slack": "/projects/slack",
+          "/startups-get-grover": "/projects/startups-get-grover",
+          "/word-bath": "/projects/word-bath",
         };
         var prefixes = [
-          '/dawn/',
-          '/product-design/',
-          '/experimentingwithhomelessness/'
+          "/dawn/",
+          "/product-design/",
+          "/experimentingwithhomelessness/",
         ];
         var target = mapping[path];
         if (!target) {
           for (var i = 0; i < prefixes.length; i += 1) {
             var prefix = prefixes[i];
             if (path.indexOf(prefix) === 0) {
-              target = '/projects' + path;
+              target = "/projects" + path;
               break;
             }
           }
         }
         if (target && target !== path) {
-          window.location.replace(target + window.location.search + window.location.hash);
+          window.location.replace(
+            target + window.location.search + window.location.hash,
+          );
         }
       })();
     </script>
