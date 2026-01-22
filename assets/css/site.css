@@ -1,4 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+@font-face {
+  font-family: "ABC Maxi Round";
+  src:
+    url("/fonts/ABCMaxiRoundVariable.woff2") format("woff2"),
+    url("/fonts/ABCMaxiRoundVariable.woff") format("woff");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
 
 /* -------- BASE -------- */
 body {
@@ -7,7 +15,9 @@ body {
   max-width: 800px;
   background: #000;
   color: #fff;
-  font-family: "Inter", sans-serif;
+  font-family: "ABC Maxi Round", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
 }
 
 html {
@@ -15,8 +25,10 @@ html {
 }
 
 body.collection-page {
-  max-width: none;
-  margin: 0 20px 20px;
+  width: inherit;
+  max-width: 100%;
+  margin: 0;
+  padding: 0 20px 20px;
 }
 
 body.collection-page header {
@@ -396,11 +408,11 @@ figcaption {
 }
 
 .my-collection-hero {
-  font-size: 8.3vw;
+  font-size: 9vw;
 }
 
 .alcohol-collection .collection-hero {
-  font-size: 8.88vw;
+  font-size: 9.6vw;
   letter-spacing: -0.4vw;
   line-height: 0.9;
   white-space: nowrap;
