@@ -31,6 +31,17 @@ body.collection-page {
   padding: 0 20px 20px;
 }
 
+body.full-width {
+  width: inherit;
+  max-width: 100%;
+  margin: 0;
+  padding: 0 20px 20px;
+}
+
+body.home {
+  max-width: none;
+}
+
 body.collection-page header {
   position: static;
 }
@@ -62,6 +73,12 @@ header {
 @media (min-width: 769px) {
   header {
     background: transparent;
+  }
+}
+
+@media (max-width: 900px) {
+  header {
+    background: #000;
   }
 }
 
@@ -375,13 +392,107 @@ figcaption {
 }
 
 .masonry {
-  column-count: 3;
-  column-gap: 16px;
+  column-count: 2;
+  column-gap: 56px;
+  max-width: none;
+  width: 60%;
+  margin: 0 auto;
 }
 
 .masonry figure {
   break-inside: avoid;
-  margin: 0 0 16px;
+  margin: 0 0 56px;
+}
+
+.masonry figure.span-full {
+  column-span: all;
+  width: 100%;
+}
+
+.masonry figure.tile-small {
+  width: 70%;
+}
+
+.masonry figure:nth-child(4n + 1) {
+  margin-top: 12px;
+  transform: translateX(-6px);
+}
+
+.masonry figure:nth-child(4n + 2) {
+  margin-top: 36px;
+  transform: translateX(8px);
+}
+
+.masonry figure:nth-child(4n + 3) {
+  margin-top: 8px;
+  transform: translateX(2px);
+}
+
+.masonry figure:nth-child(4n) {
+  margin-top: 28px;
+  transform: translateX(-4px);
+}
+
+.masonry figure:nth-child(5n + 1) {
+  margin-top: 44px;
+  transform: translateX(12px);
+  width: 88%;
+}
+
+.masonry figure:nth-child(5n + 2) {
+  margin-top: 6px;
+  transform: translateX(-10px);
+  width: 94%;
+}
+
+.masonry figure:nth-child(5n + 4) {
+  margin-top: 22px;
+  transform: translateX(6px);
+  width: 82%;
+}
+
+.masonry figure:nth-child(6n + 2) {
+  width: 78%;
+}
+
+.masonry figure:nth-child(6n + 5) {
+  width: 90%;
+}
+
+.masonry figure:nth-child(6n + 1) {
+  width: 92%;
+}
+
+.masonry figure:nth-child(6n + 4) {
+  width: 96%;
+}
+
+.masonry h1,
+.masonry h3,
+.masonry > p {
+  column-span: all;
+  width: 100%;
+}
+
+@media (max-width: 900px) {
+  .masonry {
+    column-count: 1;
+    column-gap: 0;
+    width: 100%;
+  }
+
+  .masonry figure {
+    width: 100%;
+    transform: none;
+    margin: 0 0 32px;
+  }
+
+  .masonry figure:nth-child(4n + 1),
+  .masonry figure:nth-child(4n + 2),
+  .masonry figure:nth-child(4n + 3),
+  .masonry figure:nth-child(4n) {
+    margin-top: 0;
+  }
 }
 
 /* -------- ICONS -------- */
