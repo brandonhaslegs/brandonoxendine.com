@@ -167,6 +167,24 @@ h6 {
   font-weight: 700;
 }
 
+body.categories h1 {
+  font-size: clamp(48px, 10vw, 120px);
+  line-height: 0.95;
+  letter-spacing: -0.02em;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+body.categories .back-link {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+body.categories .back-link span {
+  margin-right: 8px;
+  opacity: 0.6;
+}
+
 /* -------- LAYOUT -------- */
 section {
   margin: 20px 0;
@@ -397,6 +415,21 @@ figure {
 figcaption {
   opacity: 0.75;
   text-align: center;
+}
+
+body.home .masonry figcaption,
+body.categories figcaption {
+  padding-top: 12px;
+}
+
+body.home .masonry figcaption p,
+body.categories figcaption p {
+  margin: 0;
+}
+
+body.home .masonry figcaption p + p,
+body.categories figcaption p + p {
+  margin-top: 0;
 }
 
 /* -------- POSTERS -------- */
