@@ -135,11 +135,13 @@ a:hover {
   border-bottom-color: hotpink;
 }
 
-a:has(> img) {
+a:has(> img),
+a:has(> .image-frame) {
   border-bottom: none;
 }
 
-a:has(> img):hover {
+a:has(> img):hover,
+a:has(> .image-frame):hover {
   border-bottom-color: transparent;
 }
 
@@ -332,6 +334,59 @@ hr {
 /* -------- MEDIA -------- */
 img {
   width: 100%;
+  height: auto;
+  border-radius: 0.5vw;
+}
+
+.image-frame {
+  position: relative;
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 0.5vw;
+}
+
+.image-frame.is-loaded {
+  background: transparent;
+}
+
+.image-frame::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.1);
+  opacity: 0.02;
+  animation: image-skeleton-pulse 1.6s ease-in-out infinite;
+  pointer-events: none;
+  border-radius: inherit;
+}
+
+.image-frame.is-loaded::before {
+  opacity: 0;
+  animation: none;
+}
+
+.image-frame img {
+  display: block;
+  width: 100%;
+  height: auto;
+  opacity: 0;
+  transition: opacity 400ms ease;
+}
+
+.image-frame.is-loaded img {
+  opacity: 1;
+}
+
+@keyframes image-skeleton-pulse {
+  0%,
+  100% {
+    opacity: 0.22;
+  }
+  50% {
+    opacity: 0.55;
+  }
 }
 
 figure {
@@ -637,6 +692,13 @@ article nav {
   margin: 0 auto;
   aspect-ratio: 2 / 3;
   overflow: hidden;
+}
+
+.carousel .image-frame {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
 }
 
 .carousel img {
