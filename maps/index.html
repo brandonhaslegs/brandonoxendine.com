@@ -19,7 +19,7 @@ h3{margin-top:18px} h4{margin:0 0 10px;font-size:2.2rem;line-height:1.1;font-wei
 .city-filter-btn{display:inline-block;padding:0;border:0;background:transparent;color:#fff;font-size:.95rem;line-height:1.2;cursor:pointer;text-decoration:none}
 .city-filter-btn:hover{text-decoration:underline}
 .city-filter-btn.active{font-weight:600;text-decoration:underline}
-.city-filter-btn[data-list-filter="favorite"]{color:#ff2d2d;opacity:1}
+.city-filter-btn[data-list-filter="favorite"]{color:#ff472a;opacity:1}
 .city-filter-btn[data-list-filter="want to go"]{color:#00ff6a;opacity:1}
 .city-filter-btn[data-list-filter="closed"]{color:#fff;opacity:.5;text-decoration:line-through}
 .place-sep{opacity:.8;color:inherit}
@@ -30,13 +30,13 @@ li.closed .place-note{text-decoration:line-through;color:inherit}
 .leaflet-container{outline:none}
 .leaflet-container:focus{outline:none}
 .dot-pin{width:4px;height:4px;border-radius:999px;background:#fff}
-.dot-pin.dot-favorite{background:#ff2d2d;opacity:1}
+.dot-pin.dot-favorite{background:#ff472a;opacity:1}
 .dot-pin.dot-want{background:#00ff6a;opacity:1}
 .dot-pin.dot-closed{background:#fff;opacity:.5}
 ul{margin-top:6px;list-style:none;padding-left:0;margin-left:0;padding-inline-start:0} li{list-style:none;margin-left:0;padding-left:0;padding-inline-start:0;text-indent:0} a{text-decoration:none;color:#fff} a:hover{text-decoration:underline}
 li[data-list]{position:relative}
 li[data-list]::before{content:"";position:absolute;left:2px;top:.72em;transform:translateY(-50%);width:4px;height:4px;border-radius:999px;background:#fff;opacity:.5}
-li[data-list="favorite"]::before{background:#ff2d2d;opacity:1}
+li[data-list="favorite"]::before{background:#ff472a;opacity:1}
 li[data-list="want to go"]::before{background:#00ff6a;opacity:1}
 li.closed[data-list]::before{background:#fff;opacity:.5}
 li.closed{text-decoration:line-through !important;text-decoration-color:currentColor;color:#fff}
@@ -5217,7 +5217,7 @@ let citySelectorEl=null;
 let cityMapObserver=null;
 let userLocation=null;
 let userLocationRequested=false;
-function setupMasonry(){[...document.querySelectorAll("section.city")].forEach(city=>{const cats=[...city.children].filter(el=>el.tagName==="SECTION"&&el.classList.contains("category"));if(!cats.length)return;const wrap=document.createElement("div");wrap.className="category-masonry";cats.forEach(c=>wrap.appendChild(c));city.appendChild(wrap);});}
+function setupMasonry(){[...document.querySelectorAll("section.city")].forEach(city=>{const cats=[...city.children].filter(el=>el.tagName==="SECTION"&&el.classList.contains("category"));if(!cats.length)return;const artIdx=cats.findIndex(el=>(el.getAttribute("data-category")||"").toLowerCase()==="art");const barIdx=cats.findIndex(el=>(el.getAttribute("data-category")||"").toLowerCase()==="bar");if(artIdx!==-1&&barIdx!==-1){const tmp=cats[artIdx];cats[artIdx]=cats[barIdx];cats[barIdx]=tmp;}const wrap=document.createElement("div");wrap.className="category-masonry";cats.forEach(c=>wrap.appendChild(c));city.appendChild(wrap);});}
 function applyCityListFilter(city,listType){const key=(listType||"all").toLowerCase();city.setAttribute("data-list-filter",key);const items=[...city.querySelectorAll(":scope > .category-masonry section.category li[data-list]")];items.forEach(li=>{const v=(li.getAttribute("data-list")||"").toLowerCase();const isClosed=li.classList.contains("closed");if(key==="all"){li.style.display="list-item";return;}if(key==="closed"){li.style.display=isClosed?"list-item":"none";return;}li.style.display=(v===key&&!isClosed)?"list-item":"none";});const cards=[...city.querySelectorAll(":scope > .category-masonry > section.category")];cards.forEach(card=>{const any=[...card.querySelectorAll("li[data-list]")].some(li=>li.style.display!=="none");card.style.display=any?"block":"none";});[...city.querySelectorAll(":scope > h4 .city-filter-btn")].forEach(btn=>btn.classList.toggle("active",(btn.getAttribute("data-list-filter")||"")===key));layoutMasonryForCity(city);if(cityMapState.has(city))refreshCityMap(city,{fitBounds:false});}
 function setupCityListFilters(){[...document.querySelectorAll("section.city")].forEach(city=>{const h4=city.querySelector(":scope > h4");if(!h4)return;let host=h4.querySelector(":scope > .city-filters");if(!host){host=document.createElement("span");host.className="city-filters";h4.appendChild(host);}host.innerHTML="";const mk=(key,label)=>{const btn=document.createElement("button");btn.className="city-filter-btn";btn.type="button";btn.setAttribute("data-list-filter",key);btn.textContent=label;btn.addEventListener("click",()=>{const current=(city.getAttribute("data-list-filter")||"all").toLowerCase();applyCityListFilter(city,current===key?"all":key);});return btn;};host.appendChild(mk("favorite","Favorites"));host.appendChild(mk("want to go","Want to Go"));host.appendChild(mk("closed","Closed"));applyCityListFilter(city,city.getAttribute("data-list-filter")||"all");});}
 function layoutMasonryForCity(city){const wrap=[...city.children].find(el=>el.classList&&el.classList.contains("category-masonry"));if(!wrap)return;const cards=[...wrap.children].filter(el=>el.tagName==="SECTION"&&el.classList.contains("category")&&el.style.display!=="none");const gap=12;const minColWidth=320;const wrapWidth=Math.max(0,wrap.clientWidth||city.clientWidth||800);const cols=Math.max(1,Math.floor((wrapWidth+gap)/(minColWidth+gap)));const colWidth=Math.floor((wrapWidth-gap*(cols-1))/cols);const heights=Array(cols).fill(0);cards.forEach(card=>{card.style.display="block";card.style.width=`${colWidth}px`;card.style.left="0px";card.style.top="0px";});cards.forEach(card=>{let idx=0;for(let i=1;i<heights.length;i++){if(heights[i]<heights[idx])idx=i;}const x=idx*(colWidth+gap);const y=heights[idx];card.style.left=`${x}px`;card.style.top=`${y}px`;const h=card.offsetHeight||card.getBoundingClientRect().height||0;heights[idx]=y+h+gap;});const maxH=heights.length?Math.max(...heights):0;wrap.style.height=(maxH>0?maxH-gap:0)+"px";}
