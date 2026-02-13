@@ -60,6 +60,10 @@ li.closed .place-note{text-decoration:line-through;color:inherit}
 .dot-hit.dot-favorite .dot-core{background:#ff472a;opacity:1}
 .dot-hit.dot-want .dot-core{background:#00ff6a;opacity:1}
 .dot-hit.dot-closed .dot-core{background:#fff;opacity:.5}
+.user-location-hit{display:flex;align-items:center;justify-content:center;border-radius:999px;background:transparent}
+.user-location-core{position:relative;width:4px;height:4px;border-radius:999px;background:#00b7ff}
+.user-location-core::after{content:"";position:absolute;inset:0;border-radius:999px;border:1px solid #00b7ff;opacity:.75;transform:scale(1);animation:user-location-pulse 1.8s ease-out infinite}
+@keyframes user-location-pulse{0%{transform:scale(1);opacity:.75}70%{transform:scale(3);opacity:0}100%{transform:scale(3);opacity:0}}
 ul{margin-top:6px;list-style:none;padding-left:0;margin-left:0;padding-inline-start:0} li{list-style:none;margin-left:0;padding-left:0;padding-inline-start:0;text-indent:0} a{text-decoration:none;color:#fff} a:hover{text-decoration:underline}
 li[data-list]{position:relative}
 li[data-list]::before{content:"";position:absolute;left:2px;top:.72em;transform:translateY(-50%);width:4px;height:4px;border-radius:999px;background:#fff;opacity:.5}
@@ -5331,7 +5335,8 @@ if(userLocation){
 let minDist=Infinity;
 points.forEach(p=>{const d=haversineKm(userLocation.lat,userLocation.lng,p.lat,p.lng);if(d<minDist)minDist=d;});
 if(minDist<=80){
-const you=L.circleMarker([userLocation.lat,userLocation.lng],{radius:4,color:"#00b7ff",weight:2,fillColor:"#00b7ff",fillOpacity:.9});
+const youIcon=L.divIcon({className:"user-location-hit",html:'<span class="user-location-core"></span>',iconSize:[14,14],iconAnchor:[7,7],popupAnchor:[0,-6]});
+const you=L.marker([userLocation.lat,userLocation.lng],{icon:youIcon,zIndexOffset:10000});
 you.bindPopup("<strong>Your location</strong>");
 you.addTo(state.layer);
 }
