@@ -10,8 +10,8 @@ let activeCategoryFilter="all";
 let cityMapObserver=null;
 let userLocation=null;
 let userLocationRequested=false;
-const combinedCafeBakeryKey="cafes & bakeries";
-function normalizeCategoryKey(key){const k=(key||"").toLowerCase().trim();if(k==="cafe"||k==="bakery")return combinedCafeBakeryKey;return k;}
+const combinedCafeBakeryKey="cafes and bakeries";
+function normalizeCategoryKey(key){const k=(key||"").toLowerCase().trim();if(k==="cafe"||k==="bakery"||k==="cafes & bakeries"||k==="cafes and bakeries")return combinedCafeBakeryKey;return k;}
 function cityTitleFor(cityKey){const key=(cityKey||"").trim();const meta=(window.CITY_META&&window.CITY_META[key])||null;const emoji=(meta&&typeof meta.emoji==="string"&&meta.emoji.trim())?meta.emoji.trim():"📍";return `${emoji} ${key}`;}
 function categoryLabelFor(categoryKey){const key=normalizeCategoryKey(categoryKey);const meta=(window.CATEGORY_META&&window.CATEGORY_META[key])||null;if(meta){const label=(typeof meta.label==="string"?meta.label.trim():"");const emoji=(typeof meta.emoji==="string"?meta.emoji.trim():"");if(emoji&&label)return `${emoji} ${label}`;if(label)return label;if(emoji)return emoji;}if(key===combinedCafeBakeryKey)return "☕🥐 Cafes & Bakeries";return `📍 ${key.replace(/\\b\\w/g,c=>c.toUpperCase())}`;}
 function normalizeListValue(list){const v=(list||"").toLowerCase().trim();if(v==="favorite"||v==="want to go"||v==="closed")return v;return "want to go";}

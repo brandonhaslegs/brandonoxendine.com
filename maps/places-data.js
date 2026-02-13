@@ -5592,7 +5592,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "19grams Chaussee",
       "url": "https://www.google.com/maps/place/19grams+Chaussee/data=!4m2!3m1!1s0x47a85192c3224f01:0x8fb42c453bc2ab2",
@@ -5602,7 +5602,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "ACID Mitte",
       "url": "https://www.google.com/maps/place/ACID+Mitte/data=!4m2!3m1!1s0x47a851fc5b928ccd:0x8101a6eb5de8361",
@@ -5612,7 +5612,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "AERA",
       "url": "https://www.google.com/maps/place/AERA/data=!4m2!3m1!1s0x47a851128503704d:0x724eccb969883c5e",
@@ -5622,7 +5622,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "AERA",
       "url": "https://www.google.com/maps/place/AERA/data=!4m2!3m1!1s0x47a8514661cf95c3:0xe48132d88d2f8f70",
@@ -5632,7 +5632,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "Albatross Bakery",
       "url": "https://www.google.com/maps/place/Albatross+Bakery/data=!4m2!3m1!1s0x47a84e4c816d6283:0x225c34223f4f5177",
@@ -5642,7 +5642,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "amatō",
       "url": "https://www.google.com/maps/place/amat%C5%8D/data=!4m2!3m1!1s0x47a84de93f6bb90f:0x35ad5c4eba15bc98",
@@ -5652,7 +5652,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "AO Cafe",
       "url": "https://www.google.com/maps/place/AO+Cafe/data=!4m2!3m1!1s0x47a84f97f68654e3:0x528f679fc3070a8f",
@@ -5662,7 +5662,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "August Lebensmittel",
       "url": "https://www.google.com/maps/place/August+Lebensmittel/data=!4m2!3m1!1s0x47a84fe4c2346ab9:0x81275e25a94412a4",
@@ -5672,7 +5672,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Babka & Krantz Meisterkonditorei",
       "url": "https://www.google.com/maps/place/Babka+%26+Krantz+Meisterkonditorei/data=!4m2!3m1!1s0x47a851ed9f1e1e43:0x50d2f71ef095b6ce",
@@ -5682,7 +5682,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Backaro",
       "url": "https://www.google.com/maps/place/Backaro/data=!4m2!3m1!1s0x47a84f7a486011b7:0x7bd8530af8573e37",
@@ -5692,7 +5692,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Bake and Take",
       "url": "https://www.google.com/maps/place/Bake+and+Take/data=!4m2!3m1!1s0x47a84f10a85d6659:0x2a2f1fb76e8d6b81",
@@ -5702,7 +5702,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Barakat Tandur Brot",
       "url": "https://www.google.com/maps/place/Barakat+Tandur+Brot/data=!4m2!3m1!1s0x47a84fd3c5e7de0b:0xae17c6c9e8d72805",
@@ -5712,7 +5712,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "Bekarei",
       "url": "https://www.google.com/maps/place/Bekarei/data=!4m2!3m1!1s0x47a84dfefa46f7cf:0x1ae469e706803bd8",
@@ -5722,7 +5722,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "BEN RAHIM",
       "url": "https://www.google.com/maps/place/BEN+RAHIM/data=!4m2!3m1!1s0x47a851e1305f00f7:0x13c8bf3bf182e42e",
@@ -5732,7 +5732,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "Bergmann Coffee Roastery",
       "url": "https://www.google.com/maps/place/Bergmann+Coffee+Roastery/data=!4m2!3m1!1s0x47a84f004917f23f:0x32f2e6f4225584e",
@@ -5742,7 +5742,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Berlin Homemade Icecream",
       "url": "https://www.google.com/maps/place/Berlin+Homemade+Icecream/data=!4m2!3m1!1s0x47a85046417d68e9:0x91be19090906075",
@@ -5752,7 +5752,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Blumental",
       "url": "https://www.google.com/maps/place/Blumental/data=!4m2!3m1!1s0x47a84f6e9e10cd21:0x27231e1f65656bad",
@@ -5762,7 +5762,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "Bonanza Coffee Heroes",
       "url": "https://www.google.com/maps/place/Bonanza+Coffee+Heroes/data=!4m2!3m1!1s0x47a851f9034567c9:0x693e223689da353c",
@@ -5772,7 +5772,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "Bonanza Coffee Roasters",
       "url": "https://www.google.com/maps/place/Bonanza+Coffee+Roasters/data=!4m2!3m1!1s0x47a84e31446cec7b:0x2ac07dc4e40383f6",
@@ -5782,7 +5782,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Bonbonmacherei",
       "url": "https://www.google.com/maps/place/Bonbonmacherei/data=!4m2!3m1!1s0x47a851e62b20fddb:0x296f826896f8893e",
@@ -5792,7 +5792,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "Boutique de LA MAISON",
       "url": "https://www.google.com/maps/place/Boutique+de+LA+MAISON/data=!4m2!3m1!1s0x47a84f91533b4fe5:0xac0d0684f156d2f5",
@@ -5802,7 +5802,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "Brammibal's Donuts (Friedrichshain)",
       "url": "https://www.google.com/maps/place/Brammibal's+Donuts+(Friedrichshain)/data=!4m2!3m1!1s0x47a84fe64bc6d94d:0x209f8ab8da47375d",
@@ -5812,7 +5812,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "Brammibal's Donuts (Maybachufer)",
       "url": "https://www.google.com/maps/place/Brammibal's+Donuts+(Maybachufer)/data=!4m2!3m1!1s0x47a84e00b7dada65:0x7f3acf5143e8e24d",
@@ -5822,7 +5822,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "Bully’s Bakery",
       "url": "https://www.google.com/maps/place/Bully%E2%80%99s+Bakery/data=!4m2!3m1!1s0x47a84fb724e5dfe1:0xe3bf2f54cac7fd99",
@@ -5832,7 +5832,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Café Engels",
       "url": "https://www.google.com/maps/place/Caf%C3%A9+Engels/data=!4m2!3m1!1s0x41652367a4962315:0xe1939a932786a0fb",
@@ -5842,7 +5842,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Café Komine",
       "url": "https://www.google.com/maps/place/Caf%C3%A9+Komine/data=!4m2!3m1!1s0x47a85050cdb3d3bd:0x2294735d072be04d",
@@ -5852,7 +5852,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Calli. the coffee club",
       "url": "https://www.google.com/maps/place/Calli.+the+coffee+club/data=!4m2!3m1!1s0x47a84f1c5ec56b05:0x1d3093c571ddbcfb",
@@ -5862,7 +5862,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "CANAL - Linienstraße",
       "url": "https://www.google.com/maps/place/CANAL+-+Linienstra%C3%9Fe/data=!4m2!3m1!1s0x47a851c3eac84397:0x5c14498678da37ff",
@@ -5872,7 +5872,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "CANAL Artisanal Ice cream & pastry",
       "url": "https://www.google.com/maps/place/CANAL+Artisanal+Ice+cream+%26+pastry/data=!4m2!3m1!1s0x47a851e0df217e89:0x1a25ba715085487b",
@@ -5882,7 +5882,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Chapter One Coffee",
       "url": "https://www.google.com/maps/place/Chapter+One+Coffee/data=!4m2!3m1!1s0x47a84fd9d5f5ab65:0xff2f9adcd3c28c",
@@ -5892,7 +5892,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Cheeky",
       "url": "https://www.google.com/maps/place/Cheeky/data=!4m2!3m1!1s0x47a84f2741b69407:0xd981691742b02fa3",
@@ -5902,7 +5902,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "CODOS Berlin",
       "url": "https://www.google.com/maps/place/CODOS+Berlin/data=!4m2!3m1!1s0x47a851e54c6561e1:0x46345338ef101ebd",
@@ -5912,7 +5912,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "Coffee Circle Bergmann",
       "url": "https://www.google.com/maps/place/Coffee+Circle+Bergmann/data=!4m2!3m1!1s0x47a851f6310a8673:0xa23c3c12c6b49b93",
@@ -5922,7 +5922,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "Coffee Circle Maybachufer",
       "url": "https://www.google.com/maps/place/Coffee+Circle+Maybachufer/data=!4m2!3m1!1s0x47a84f0074952e25:0xdb80da7e0ee6c85c",
@@ -5932,7 +5932,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "Coffee Circle Rosa-Luxemburg",
       "url": "https://www.google.com/maps/place/Coffee+Circle+Rosa-Luxemburg/data=!4m2!3m1!1s0x47a84f363a99dc1d:0x4463b451a7f861d5",
@@ -5942,7 +5942,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "Coffee Circle Wedding",
       "url": "https://www.google.com/maps/place/Coffee+Circle+Wedding/data=!4m2!3m1!1s0x47a8517c75ce676d:0xfd62c45ebfcd2228",
@@ -5952,7 +5952,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "COMEBUY Berlin Mitte Flagshipstore",
       "url": "https://www.google.com/maps/place/COMEBUY+Berlin+Mitte+Flagshipstore/data=!4m2!3m1!1s0x47a851e115cef7d3:0x424430a94879ff3f",
@@ -5962,7 +5962,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Common",
       "url": "https://www.google.com/maps/place/Common/data=!4m2!3m1!1s0x47a84f005e25854d:0x3993e7971645533f",
@@ -5972,7 +5972,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Companion Tea & Coffee",
       "url": "https://www.google.com/maps/place/Companion+Tea+%26+Coffee/data=!4m2!3m1!1s0x47a84f73b2ce9561:0xa1c47d7a7b85e1d3",
@@ -5982,7 +5982,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "closed",
       "name": "Concierge Coffee",
       "url": "https://www.google.com/maps/place/Concierge+Coffee/data=!4m2!3m1!1s0x47a84fcae6d27343:0xe888b9ec17a6847d",
@@ -5992,7 +5992,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "closed",
       "name": "Cookies & Co",
       "url": "https://www.google.com/maps/place/Cookies+%26+Co/data=!4m2!3m1!1s0x47a84e00a2e76081:0xc6c37d97768375ea",
@@ -6002,7 +6002,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Crapulix",
       "url": "https://www.google.com/maps/place/Crapulix/data=!4m2!3m1!1s0x47a85b4920d84429:0x50762fc7e9fe62b1",
@@ -6012,7 +6012,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Das Brot der frühen Jahre",
       "url": "https://www.google.com/maps/place/Das+Brot+der+fr%C3%BChen+Jahre/data=!4m2!3m1!1s0x47a84f00680654a7:0xbbfa25163b45c6f5",
@@ -6022,7 +6022,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "closed",
       "name": "DIE BRODSTÄTTE (aka THE BREAD STATION)",
       "url": "https://www.google.com/maps/place/DIE+BRODST%C3%84TTE+(aka+THE+BREAD+STATION)/data=!4m2!3m1!1s0x47a84fb59bd123d3:0x4c831c944a9fd99b",
@@ -6032,7 +6032,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "dilekerei",
       "url": "https://www.google.com/maps/place/dilekerei/data=!4m2!3m1!1s0x47a85222a29b1781:0x35f6afa640ce4d25",
@@ -6042,7 +6042,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "Dosha",
       "url": "https://www.google.com/maps/place/Dosha/data=!4m2!3m1!1s0x47a84f02a8c71f03:0xbb69e2ee1c1dbc04",
@@ -6052,7 +6052,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "EISDERIX",
       "url": "https://www.google.com/maps/place/EISDERIX/data=!4m2!3m1!1s0x47a84f0ad0c821d5:0x6b5999f779fc85fa",
@@ -6062,7 +6062,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Eiskult",
       "url": "https://www.google.com/maps/place/Eiskult/data=!4m2!3m1!1s0x47a85179a53922c7:0x361c9a127cd5fb1f",
@@ -6072,7 +6072,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "Father Carpenter - Coffee & Kitchen",
       "url": "https://www.google.com/maps/place/Father+Carpenter+-+Coffee+%26+Kitchen/data=!4m2!3m1!1s0x47a851e1ca221bb5:0x9cf0cb1ba6660eb3",
@@ -6082,7 +6082,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Fit Cake",
       "url": "https://www.google.com/maps/place/Fit+Cake/data=!4m2!3m1!1s0x47a85100033a98f3:0x1256c9e36e78bd29",
@@ -6092,7 +6092,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "Five Elephant Kreuzberg",
       "url": "https://www.google.com/maps/place/Five+Elephant+Kreuzberg/data=!4m2!3m1!1s0x47a84fb28ee81eab:0xf1e52a867a82e15d",
@@ -6102,7 +6102,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "FREA Bakery & Cafe",
       "url": "https://www.google.com/maps/place/FREA+Bakery+%26+Cafe/data=!4m2!3m1!1s0x47a8519d38279af3:0xed6b8ef1dde78ba8",
@@ -6112,7 +6112,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Giro Coffee Bar",
       "url": "https://www.google.com/maps/place/Giro+Coffee+Bar/data=!4m2!3m1!1s0x47a8511d439385bb:0x448ad75daa878f5",
@@ -6122,7 +6122,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "GOODLYFE",
       "url": "https://www.google.com/maps/place/GOODLYFE/data=!4m2!3m1!1s0x47a8539c0ff50b99:0xe01e6a94079a546e",
@@ -6132,7 +6132,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "Gorilla Bäckerei",
       "url": "https://www.google.com/maps/place/Gorilla+B%C3%A4ckerei/data=!4m2!3m1!1s0x47a84fd03a7bc5d7:0x8631d881597562a2",
@@ -6142,7 +6142,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "GÖTTLICH essen & trinken",
       "url": "https://www.google.com/maps/place/G%C3%96TTLICH+essen+%26+trinken/data=!4m2!3m1!1s0x47a851823e62f719:0x43cfcf5d39a2055a",
@@ -6152,7 +6152,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Hacker Bäckerei & Konditorei",
       "url": "https://www.google.com/maps/place/Hacker+B%C3%A4ckerei+%26+Konditorei/data=!4m2!3m1!1s0x47a85200ae9b944b:0x92b237872d7f64c4",
@@ -6162,7 +6162,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "Hokey Pokey Boutique",
       "url": "https://www.google.com/maps/place/Hokey+Pokey+Boutique/data=!4m2!3m1!1s0x47a853cab8921405:0xe9711fdc67a1b27b",
@@ -6172,7 +6172,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "honiggelb berlin",
       "url": "https://www.google.com/maps/place/honiggelb+berlin/data=!4m2!3m1!1s0x47a8513dcec23a91:0x1418bbab7ec1221f",
@@ -6182,7 +6182,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "häppies",
       "url": "https://www.google.com/maps/place/h%C3%A4ppies/data=!4m2!3m1!1s0x47a84dffd85e1a97:0x6b47e7524e715fe",
@@ -6192,7 +6192,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "Ilse Eins",
       "url": "https://www.google.com/maps/place/Ilse+Eins/data=!4m2!3m1!1s0x47a84f9c02f9d36d:0x8840ce9e63a98eee",
@@ -6202,7 +6202,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Ingwer",
       "url": "https://www.google.com/maps/place/Ingwer/data=!4m2!3m1!1s0x47a84f4117925dc9:0xa75d65cae56088da",
@@ -6212,7 +6212,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "Isla",
       "url": "https://www.google.com/maps/place/Isla/data=!4m2!3m1!1s0x47a84fbea58d70fd:0x70b459ee2b0af061",
@@ -6222,7 +6222,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "JOHO Eisparadies",
       "url": "https://www.google.com/maps/place/JOHO+Eisparadies/data=!4m2!3m1!1s0x47a85bc059cea9e5:0xea895904fb95b6fa",
@@ -6232,7 +6232,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Jules Geisberg",
       "url": "https://www.google.com/maps/place/Jules+Geisberg/data=!4m2!3m1!1s0x47a851955b265f9d:0x7628741579163ff5",
@@ -6242,7 +6242,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Jute Bäckerei",
       "url": "https://www.google.com/maps/place/Jute+B%C3%A4ckerei/data=!4m2!3m1!1s0x47a85201ce31b38b:0xcff75bd651ac0003",
@@ -6252,7 +6252,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "KAFFEEMITTE",
       "url": "https://www.google.com/maps/place/KAFFEEMITTE/data=!4m2!3m1!1s0x47a851e1bd421bc9:0x2c0a9527ac84611f",
@@ -6262,7 +6262,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Kajumi",
       "url": "https://www.google.com/maps/place/Kajumi/data=!4m2!3m1!1s0x47a84ded6a41058d:0x3eafafd997580b8a",
@@ -6272,7 +6272,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "Kame Japanese Bites",
       "url": "https://www.google.com/maps/place/Kame+Japanese+Bites/data=!4m2!3m1!1s0x47a850e41c842949:0xf1dc3e5a7aae13c7",
@@ -6282,7 +6282,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "Konditorei Damaskus",
       "url": "https://www.google.com/maps/place/Konditorei+Damaskus/data=!4m2!3m1!1s0x47a84fa5ae562099:0x42d4888f77ae3967",
@@ -6292,7 +6292,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "La Maison Berlin",
       "url": "https://www.google.com/maps/place/La+Maison+Berlin/data=!4m2!3m1!1s0x47a84f83a8f63ec3:0x8536a74dcee19291",
@@ -6302,7 +6302,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "LA MAISON Helmholtzplatz",
       "url": "https://www.google.com/maps/place/LA+MAISON+Helmholtzplatz/data=!4m2!3m1!1s0x47a84d0051f8a383:0x24984649fda964b7",
@@ -6312,7 +6312,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "LA MAISON Neukölln",
       "url": "https://www.google.com/maps/place/LA+MAISON+Neuk%C3%B6lln/data=!4m2!3m1!1s0x47a84f00744fd651:0x59fa80112cc9f0f5",
@@ -6322,7 +6322,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Le Brot",
       "url": "https://www.google.com/maps/place/Le+Brot/data=!4m2!3m1!1s0x47a84fa4fcd640bb:0x7f4dc8fb90363244",
@@ -6332,7 +6332,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "leuchtstoff - Kaffeebar und Bakery",
       "url": "https://www.google.com/maps/place/leuchtstoff+-+Kaffeebar+und+Bakery/data=!4m2!3m1!1s0x47a84f9bc727a35d:0xd49a28d4a6be518",
@@ -6342,7 +6342,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "LOTI PANTÓN Macarons",
       "url": "https://www.google.com/maps/place/LOTI+PANT%C3%93N+Macarons/data=!4m2!3m1!1s0x47a85b8049ae2281:0xa050b5b075d96cf7",
@@ -6352,7 +6352,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "luuv café",
       "url": "https://www.google.com/maps/place/luuv+caf%C3%A9/data=!4m2!3m1!1s0x47a84d00017c097f:0xaee1fbf4fcc03628",
@@ -6362,7 +6362,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Madame Paloma Bakehouse",
       "url": "https://www.google.com/maps/place/Madame+Paloma+Bakehouse/data=!4m2!3m1!1s0x47a84f15bb67b66d:0x9b2188c528f163cf",
@@ -6372,7 +6372,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Malek Al Konafeh ملك الكنافة",
       "url": "https://www.google.com/maps/place/Malek+Al+Konafeh+%D9%85%D9%84%D9%83+%D8%A7%D9%84%D9%83%D9%86%D8%A7%D9%81%D8%A9%E2%80%AD/data=!4m2!3m1!1s0x47a84f1b46a094ed:0x218d075442ca4687",
@@ -6382,7 +6382,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Marc. Patisserie",
       "url": "https://www.google.com/maps/place/Marc.+Patisserie/data=!4m2!3m1!1s0x47a84f70f9b8f0b1:0x644a1262201be629",
@@ -6392,7 +6392,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "Masha's Bagels & Delicatessen",
       "url": "https://www.google.com/maps/place/Masha's+Bagels+%26+Delicatessen/data=!4m2!3m1!1s0x47a84f60d4148a93:0x8346973139bb7011",
@@ -6402,7 +6402,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "Matchasome",
       "url": "https://www.google.com/maps/place/Matchasome/data=!4m2!3m1!1s0x47a84feaa4c9ae67:0x1078edd631547abd",
@@ -6412,7 +6412,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "Matchasome",
       "url": "https://www.google.com/maps/place/Matchasome/data=!4m2!3m1!1s0x47a8516dbe64127b:0xc3da2e2235f1644f",
@@ -6422,7 +6422,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Material",
       "url": "https://www.google.com/maps/place/Material/data=!4m2!3m1!1s0x47a85142a64da85d:0x7a8747071e18f09d",
@@ -6432,7 +6432,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Mignon Sicilian Bakery",
       "url": "https://www.google.com/maps/place/Mignon+Sicilian+Bakery/data=!4m2!3m1!1s0x47a84f0507239ac7:0xb72cfe5f69725f1d",
@@ -6442,7 +6442,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "Milch Halle Berlin Coffee",
       "url": "https://www.google.com/maps/place/Milch+Halle+Berlin+Coffee/data=!4m2!3m1!1s0x47a851e4224b9f5d:0x53760329f39bc1e0",
@@ -6452,7 +6452,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Momo Mochi Donut",
       "url": "https://www.google.com/maps/place/Momo+Mochi+Donut/data=!4m2!3m1!1s0x47a84f860c63e98d:0x1808391805f01cb2",
@@ -6462,7 +6462,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Natas Berlin Portugiesische Konditorei",
       "url": "https://www.google.com/maps/place/Natas+Berlin+Portugiesische+Konditorei/data=!4m2!3m1!1s0x47a84dd9bb788781:0x54a8bbf843c77044",
@@ -6472,7 +6472,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "No Fire No Glory",
       "url": "https://www.google.com/maps/place/No+Fire+No+Glory/data=!4m2!3m1!1s0x47a84e0169285e6d:0x29eb73f02a43d1e6",
@@ -6482,7 +6482,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "Pastiche",
       "url": "https://www.google.com/maps/place/Pastiche/data=!4m2!3m1!1s0x47a84f006840b3f7:0x928e3b4e1b1f5e27",
@@ -6492,7 +6492,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Portuguese Bakery Café Alice",
       "url": "https://www.google.com/maps/place/Portuguese+Bakery+Caf%C3%A9+Alice/data=!4m2!3m1!1s0x47a84f003c20c48d:0x2d5bf032ba4b4dd4",
@@ -6502,7 +6502,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "Prachtwerk",
       "url": "https://www.google.com/maps/place/Prachtwerk/data=!4m2!3m1!1s0x47a84fa3f3f064ff:0x97a0f11a28a8cef1",
@@ -6512,7 +6512,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "Princess Cheesecake",
       "url": "https://www.google.com/maps/place/Princess+Cheesecake/data=!4m2!3m1!1s0x47a851e896199931:0x12b8c091597dc140",
@@ -6522,7 +6522,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Pâtisserie Sarina (preorder online only)",
       "url": "https://www.google.com/maps/place/P%C3%A2tisserie+Sarina+(preorder+online+only)/data=!4m2!3m1!1s0x47a84fd549355af9:0x42b33f57e6f4327d",
@@ -6532,7 +6532,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "Round & Edgy",
       "url": "https://www.google.com/maps/place/Round+%26+Edgy/data=!4m2!3m1!1s0x47a85167a85b1755:0xf49b816ca1da73de",
@@ -6542,7 +6542,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "Round & Edgy",
       "url": "https://www.google.com/maps/place/Round+%26+Edgy/data=!4m2!3m1!1s0x47a84f641ac7ec55:0xb04755169a84d131",
@@ -6552,7 +6552,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "SammyS Berliner Donuts",
       "url": "https://www.google.com/maps/place/SammyS+Berliner+Donuts/data=!4m2!3m1!1s0x47a851e6975db67d:0x51365b4cc5fcfa22",
@@ -6562,7 +6562,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Schim:Pause",
       "url": "https://www.google.com/maps/place/Schim:Pause/data=!4m2!3m1!1s0x47a84d0044ecb9bb:0x7e8963065e0ed76a",
@@ -6572,7 +6572,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Scratch",
       "url": "https://www.google.com/maps/place/Scratch/data=!4m2!3m1!1s0x47a84f4ff06b9f31:0xe6f4aca41f1754c0",
@@ -6582,7 +6582,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "Shakespeare & Sons - Fine Bagels",
       "url": "https://www.google.com/maps/place/Shakespeare+%26+Sons+-+Fine+Bagels/data=!4m2!3m1!1s0x47a84e5c558f01fb:0xb0f3695f3dbd1f79",
@@ -6592,7 +6592,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "Silo Coffee",
       "url": "https://www.google.com/maps/place/Silo+Coffee/data=!4m2!3m1!1s0x47a84e5ece6468b1:0x8521a86c0e08ad1b",
@@ -6602,7 +6602,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Sinless Cakes Cafe",
       "url": "https://www.google.com/maps/place/Sinless+Cakes+Cafe/data=!4m2!3m1!1s0x47a851aea374a58d:0x5f2d5292c534d996",
@@ -6612,7 +6612,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "SOFI",
       "url": "https://www.google.com/maps/place/SOFI/data=!4m2!3m1!1s0x47a8514532b4d059:0x9ac8602e76a01b3c",
@@ -6622,7 +6622,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Sofis Ice Cream - ORGANIC",
       "url": "https://www.google.com/maps/place/Sofis+Ice+Cream+-+ORGANIC/data=!4m2!3m1!1s0x47a84fcead0303f9:0x5512dc78027e15d6",
@@ -6632,7 +6632,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "St. Oberholz",
       "url": "https://www.google.com/maps/place/St.+Oberholz/data=!4m2!3m1!1s0x47a852000a45e5b3:0xe46ef30163297321",
@@ -6642,7 +6642,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Süßfein Rykestraße",
       "url": "https://www.google.com/maps/place/S%C3%BC%C3%9Ffein+Rykestra%C3%9Fe/data=!4m2!3m1!1s0x47a84fef33e9fdbd:0x524d229313fee3ee",
@@ -6652,7 +6652,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "Taktil",
       "url": "https://www.google.com/maps/place/Taktil/data=!4m2!3m1!1s0x47a84f9114a2cc99:0x295069acdc6d18e3",
@@ -6662,7 +6662,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "tenzan lab.",
       "url": "https://www.google.com/maps/place/tenzan+lab./data=!4m2!3m1!1s0x47a84fe0d5549fb5:0x30d324d8afea114b",
@@ -6672,7 +6672,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "That Pink Café (ehemals Geschwister Nothaft)",
       "url": "https://www.google.com/maps/place/That+Pink+Caf%C3%A9+(ehemals+Geschwister+Nothaft)/data=!4m2!3m1!1s0x47a84f0cb62e635f:0x31a234241ee07bda",
@@ -6682,7 +6682,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "THE BARN Café Mitte",
       "url": "https://www.google.com/maps/place/THE+BARN+Caf%C3%A9+Mitte/data=!4m2!3m1!1s0x47a851e67f03e10b:0x8af56d34e75a89",
@@ -6692,7 +6692,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "THE BARN Café Nordbahnhof",
       "url": "https://www.google.com/maps/place/THE+BARN+Caf%C3%A9+Nordbahnhof/data=!4m2!3m1!1s0x47a851a8f42ac8cf:0x14be20b26208bf99",
@@ -6702,7 +6702,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "THE BARN Schönhauser Allee Café",
       "url": "https://www.google.com/maps/place/THE+BARN+Sch%C3%B6nhauser+Allee+Caf%C3%A9/data=!4m2!3m1!1s0x47a84e1d6200a795:0x6e773300e3c805c2",
@@ -6712,7 +6712,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "The Boat Kaffee",
       "url": "https://www.google.com/maps/place/The+Boat+Kaffee/data=!4m2!3m1!1s0x47a84e5cc249baa5:0x9386b51e5a5953b8",
@@ -6722,7 +6722,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "The Greens - Coffee & Plants",
       "url": "https://www.google.com/maps/place/The+Greens+-+Coffee+%26+Plants/data=!4m2!3m1!1s0x47a84e26ccf76421:0xafd5c05a47c00c5b",
@@ -6732,7 +6732,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "The Ice-maker - Berlin",
       "url": "https://www.google.com/maps/place/The+Ice-maker+-+Berlin/data=!4m2!3m1!1s0x47a84fd0506694f3:0x2eb2e7b6b520d7eb",
@@ -6742,7 +6742,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "The Sanctuary - Mitte",
       "url": "https://www.google.com/maps/place/The+Sanctuary+-+Mitte/data=!4m2!3m1!1s0x47a8515e2e7ac859:0x728fcdbb02f4b4df",
@@ -6752,7 +6752,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "The Visit Coffee Roastery",
       "url": "https://www.google.com/maps/place/The+Visit+Coffee+Roastery/data=!4m2!3m1!1s0x47a84e3382088525:0x969a470f18ea5561",
@@ -6762,7 +6762,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Tribeca Ice Cream Prenzlauer Berg",
       "url": "https://www.google.com/maps/place/Tribeca+Ice+Cream+Prenzlauer+Berg/data=!4m2!3m1!1s0x47a8505998be3289:0xb20cb7db2ccfa08d",
@@ -6772,7 +6772,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "Ulteamate Berlin",
       "url": "https://www.google.com/maps/place/Ulteamate+Berlin/data=!4m2!3m1!1s0x47a8516d2497d749:0x5f11b0db0599f99c",
@@ -6782,7 +6782,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "vej coffee",
       "url": "https://www.google.com/maps/place/vej+coffee/data=!4m2!3m1!1s0x47a851a68e469bdb:0xbcb8eec850443d34",
@@ -6792,7 +6792,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "Wiener Conditorei Caffeehaus",
       "url": "https://www.google.com/maps/place/Wiener+Conditorei+Caffeehaus/data=!4m2!3m1!1s0x47a850a451cc4705:0x6c75dfdc71eb7b0c",
@@ -6802,7 +6802,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "Wilke",
       "url": "https://www.google.com/maps/place/Wilke/data=!4m2!3m1!1s0x47a84fbb5d8f4083:0x86bd30af1250e0df",
@@ -6812,7 +6812,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Zacharias.Kaffeebar",
       "url": "https://www.google.com/maps/place/Zacharias.Kaffeebar/data=!4m2!3m1!1s0x47a84f7c797ee40d:0x777f72f034e1602a",
@@ -6822,7 +6822,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "ZEIT Café",
       "url": "https://www.google.com/maps/place/ZEIT+Caf%C3%A9/data=!4m2!3m1!1s0x47a85117549cb735:0x8e1a8cc9448aafde",
@@ -6832,7 +6832,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Zuckerberg - Traditional Candy Shop",
       "url": "https://www.google.com/maps/place/Zuckerberg+-+Traditional+Candy+Shop/data=!4m2!3m1!1s0x47a852019d52ccef:0x63ea569966900694",
@@ -6842,7 +6842,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "zàgara - gelato e caffè",
       "url": "https://www.google.com/maps/place/z%C3%A0gara+-+gelato+e+caff%C3%A8/data=!4m2!3m1!1s0x47a84fca16277c3b:0x157f1b6084213812",
@@ -9612,7 +9612,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "Billard Cafe Leipziger",
       "url": "https://www.google.com/maps/place/Billard+Cafe+Leipziger/data=!4m2!3m1!1s0x47a851d77d56b025:0x1e1e41e91f777a27",
@@ -9622,7 +9622,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Cafe Kreuzberg",
       "url": "https://www.google.com/maps/place/Cafe+Kreuzberg/data=!4m2!3m1!1s0x47a84fb4fac7e969:0xcc2997e6a4f8ccad",
@@ -9632,7 +9632,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "closed",
       "name": "Cafe Rosa",
       "url": "https://www.google.com/maps/place/Cafe+Rosa/data=!4m2!3m1!1s0x47a85179acb3aa2d:0xd3c15196371eae1b",
@@ -9642,7 +9642,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "closed",
       "name": "Cafeteria TU \"Skyline\"",
       "url": "https://www.google.com/maps/place/Cafeteria+TU+%22Skyline%22/data=!4m2!3m1!1s0x47a8511c4684efe9:0x739b01dda326364e",
@@ -9652,7 +9652,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "closed",
       "name": "Café Mugrabi",
       "url": "https://www.google.com/maps/place/Caf%C3%A9+Mugrabi/data=!4m2!3m1!1s0x47a84e4ce2e17d2b:0x8b30ed997de94c9e",
@@ -9662,7 +9662,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "closed",
       "name": "Café Suicide Sue",
       "url": "https://www.google.com/maps/place/Caf%C3%A9+Suicide+Sue/data=!4m2!3m1!1s0x47a84e0065275423:0x76472b9c0e1b62e1",
@@ -9672,7 +9672,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "closed",
       "name": "Cee Cee Cafe",
       "url": "https://www.google.com/maps/place/Cee+Cee+Cafe/data=!4m2!3m1!1s0x47a8516ebd0ead6f:0xea7e36c041d2bfd5",
@@ -9682,7 +9682,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "closed",
       "name": "CK Café",
       "url": "https://www.google.com/maps/place/CK+Caf%C3%A9/data=!4m2!3m1!1s0x47a84e041cdf1005:0x46e79b9f07907f36",
@@ -9692,7 +9692,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "closed",
       "name": "Concierge Coffee",
       "url": "https://www.google.com/maps/place/Concierge+Coffee/data=!4m2!3m1!1s0x47a84f2a6c00d5cd:0x13adc9640c72fa70",
@@ -9702,7 +9702,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Distrikt coffee",
       "url": "https://www.google.com/maps/place/Distrikt+coffee/data=!4m2!3m1!1s0x47a851efbc1de6fb:0xeca1daa589fab359",
@@ -9712,7 +9712,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "closed",
       "name": "East & Eden",
       "url": "https://www.google.com/maps/place/East+%26+Eden/data=!4m2!3m1!1s0x47a851e5ae016147:0xd953cda3fc5480b6",
@@ -9722,7 +9722,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Hamy Cafe",
       "url": "https://www.google.com/maps/place/Hamy+Cafe/data=!4m2!3m1!1s0x47a84fb7faf6b0b9:0xc924588f4cba622b",
@@ -9732,7 +9732,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "closed",
       "name": "HEIDE's",
       "url": "https://www.google.com/maps/place/HEIDE's/data=!4m2!3m1!1s0x47a84e03c4e1756b:0x5bab2516b56735eb",
@@ -9742,7 +9742,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Kin Za & Georgian Restaurant Bistro Cafe Georgian Food & Chocolate Georgische Küche",
       "url": "https://www.google.com/maps/place/Kin+Za+%26+Georgian+Restaurant+Bistro+Cafe+Georgian+Food+%26+Chocolate+%0AGeorgische+K%C3%BCche/data=!4m2!3m1!1s0x47a8519bba986d27:0x2a634de75601bf5",
@@ -9752,7 +9752,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "closed",
       "name": "Lonely Hearts Cafe",
       "url": "https://www.google.com/maps/place/Lonely+Hearts+Cafe/data=!4m2!3m1!1s0x47a84fdb522b5007:0x3589bf33b39d7b14",
@@ -9762,7 +9762,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "Mano Cafe",
       "url": "https://www.google.com/maps/place/Mano+Cafe/data=!4m2!3m1!1s0x47a84e4afa3b0943:0xad5aa7042b240767",
@@ -9772,7 +9772,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "monu - coffee, wine & snacks",
       "url": "https://www.google.com/maps/place/monu+-+coffee,+wine+%26+snacks/data=!4m2!3m1!1s0x47a8510aac10823f:0xd5dd5a7cb295a36c",
@@ -9782,7 +9782,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "closed",
       "name": "Okay Café",
       "url": "https://www.google.com/maps/place/Okay+Caf%C3%A9/data=!4m2!3m1!1s0x47a84fb4212fefb9:0x8b12543c5392571b",
@@ -9792,7 +9792,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "closed",
       "name": "POLA Café",
       "url": "https://www.google.com/maps/place/POLA+Caf%C3%A9/data=!4m2!3m1!1s0x47a84e4ec4b746dd:0x9a719b72e5d234e6",
@@ -9802,7 +9802,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Prinz Cafe Shisha Bar Berlin Schöneberg",
       "url": "https://www.google.com/maps/place/Prinz+Cafe+Shisha+Bar+Berlin+Sch%C3%B6neberg/data=!4m2!3m1!1s0x47a850409b062649:0x918a467018c8d099",
@@ -9812,7 +9812,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "closed",
       "name": "Refinery Specialty Coffee Store",
       "url": "https://www.google.com/maps/place/Refinery+Specialty+Coffee+Store/data=!4m2!3m1!1s0x47a84e4a81358321:0xb9299a25d4c593a",
@@ -9822,7 +9822,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "Schwarzes Cafe",
       "url": "https://www.google.com/maps/place/Schwarzes+Cafe/data=!4m2!3m1!1s0x47a850fce5ce5bab:0xa8a4d9f2686b6fab",
@@ -9832,7 +9832,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "The Rad - Natural Wine Bar & Cafe",
       "url": "https://www.google.com/maps/place/The+Rad+-+Natural+Wine+Bar+%26+Cafe/data=!4m2!3m1!1s0x47a84fb8d99d957b:0xd0af236b6028ce84",
@@ -9842,7 +9842,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "closed",
       "name": "The Visit Coffee",
       "url": "https://www.google.com/maps/place/The+Visit+Coffee/data=!4m2!3m1!1s0x47a851801f2f905b:0xe2c756aa8d4c1ac4",
@@ -9852,7 +9852,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "closed",
       "name": "Two and Two",
       "url": "https://www.google.com/maps/place/Two+and+Two/data=!4m2!3m1!1s0x47a84fb0914f84d5:0x9c688ae40b670137",
@@ -9862,7 +9862,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "closed",
       "name": "Vögelchen Cafe Bar",
       "url": "https://www.google.com/maps/place/V%C3%B6gelchen+Cafe+Bar/data=!4m2!3m1!1s0x47a84e497e659a97:0x4c2465cb42a82568",
@@ -9872,7 +9872,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "Yume- Japanese Cafe & Diner",
       "url": "https://www.google.com/maps/place/Yume-+Japanese+Cafe+%26+Diner/data=!4m2!3m1!1s0x47a84f00649bc819:0xeb587e9b752f0c38",
@@ -9882,7 +9882,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "closed",
       "name": "Zuckerfee Café und Confiserie‎",
       "url": "https://www.google.com/maps/place/Zuckerfee+Caf%C3%A9+und+Confiserie%E2%80%8E/data=!4m2!3m1!1s0x47a85201294213d9:0x44b2aca50bc2a2dd",
@@ -14742,7 +14742,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "NYC",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "Bakeri",
       "url": "https://www.google.com/maps/place/Bakeri/data=!4m2!3m1!1s0x89c25967849c1961:0x939b32bbc2eb3149",
@@ -14752,7 +14752,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "NYC",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "Court Street Bagels",
       "url": "https://www.google.com/maps/place/Court+Street+Bagels/data=!4m2!3m1!1s0x89c25a4fc36c8dbd:0x68af5dd319514c97",
@@ -14762,7 +14762,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "NYC",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "Dynaco",
       "url": "https://www.google.com/maps/place/Dynaco/data=!4m2!3m1!1s0x89c25b96a11581d7:0x33ff4cdb1a2c1b4a",
@@ -14772,7 +14772,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "NYC",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "One Girl Cookies",
       "url": "https://www.google.com/maps/place/One+Girl+Cookies/data=!4m2!3m1!1s0x89c25a4e1871e773:0xf69d8679081ff009",
@@ -14782,7 +14782,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "NYC",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "PLG Coffee House and Tavern",
       "url": "https://www.google.com/maps/place/PLG+Coffee+House+and+Tavern/data=!4m2!3m1!1s0x89c25b6e70a4c14f:0x17977c4460172d6f",
@@ -14792,7 +14792,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "NYC",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "SEY Coffee",
       "url": "https://www.google.com/maps/place/SEY+Coffee/data=!4m2!3m1!1s0x89c25c0105373fb7:0x783a86971e7d46ad",
@@ -14802,7 +14802,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "NYC",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Thea",
       "url": "https://www.google.com/maps/place/Thea/data=!4m2!3m1!1s0x89c25b8313f0a60f:0x286417257db73663",
@@ -14812,7 +14812,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "NYC",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "ViVi Bubble Tea",
       "url": "https://www.google.com/maps/place/ViVi+Bubble+Tea/data=!4m2!3m1!1s0x89c25a4f1e0edb4d:0x3341a06bf0a83ffd",
@@ -14822,7 +14822,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "NYC",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Win Son Bakery",
       "url": "https://www.google.com/maps/place/Win+Son+Bakery/data=!4m2!3m1!1s0x89c25b9f9a844559:0x874264acd136a40f",
@@ -14832,7 +14832,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "NYC",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Billy's Bakery",
       "url": "https://www.google.com/maps/place/Billy's+Bakery/data=!4m2!3m1!1s0x89c25a2068d37b29:0xa3762b778335afa8",
@@ -14842,7 +14842,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "NYC",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Levain Bakery - Upper East Side",
       "url": "https://www.google.com/maps/place/Levain+Bakery+-+Upper+East+Side/data=!4m2!3m1!1s0x89c259ff4563b743:0xf3755323f76bb77a",
@@ -14852,7 +14852,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "NYC",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Lysée",
       "url": "https://www.google.com/maps/place/Lys%C3%A9e/data=!4m2!3m1!1s0x89c2596ac07cd8c3:0xb8aa92d60c6bd28a",
@@ -14862,7 +14862,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "NYC",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Sullivan Street Bakery",
       "url": "https://www.google.com/maps/place/Sullivan+Street+Bakery/data=!4m2!3m1!1s0x89c25851d7f66eed:0x5c54863a6515f55b",
@@ -14872,7 +14872,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "NYC",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Unregular Bakery",
       "url": "https://www.google.com/maps/place/Unregular+Bakery/data=!4m2!3m1!1s0x89c2594b2d0c64e7:0x63a354b147b80567",
@@ -15692,7 +15692,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "NYC",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "closed",
       "name": "Blue Bottle Coffee",
       "url": "https://www.google.com/maps/place/Blue+Bottle+Coffee/data=!4m2!3m1!1s0x89c25960cd99f0ef:0xd588485c73adbeed",
@@ -15702,7 +15702,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "NYC",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Botani Cafe",
       "url": "https://www.google.com/maps/place/Botani+Cafe/data=!4m2!3m1!1s0x89c25bf9a3dd30b9:0xc05347b5f1c551fe",
@@ -15712,7 +15712,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "NYC",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "Cafe Colette",
       "url": "https://www.google.com/maps/place/Cafe+Colette/data=!4m2!3m1!1s0x89c2595d0ed5a905:0xbf674a5af4c2cd39",
@@ -15722,7 +15722,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "NYC",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Cafe Mogador Williamsburg",
       "url": "https://www.google.com/maps/place/Cafe+Mogador+Williamsburg/data=!4m2!3m1!1s0x89c2596781ff9537:0x53272e68936b4f72",
@@ -15732,7 +15732,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "NYC",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "closed",
       "name": "Cafe Steinhof",
       "url": "https://www.google.com/maps/place/Cafe+Steinhof/data=!4m2!3m1!1s0x89c25ae28b84a0e1:0x5f4c372efac6a790",
@@ -15742,7 +15742,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "NYC",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "closed",
       "name": "Ella Cafe",
       "url": "https://www.google.com/maps/place/Ella+Cafe/data=!4m2!3m1!1s0x89c2595dc7b027df:0x186b007a8e903eec",
@@ -15752,7 +15752,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "NYC",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Getaway",
       "url": "https://www.google.com/maps/place/Getaway/data=!4m2!3m1!1s0x89c2596b73cd0c1d:0x88f8012d8ba0f8fa",
@@ -15762,7 +15762,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "NYC",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "closed",
       "name": "House of Small Wonder",
       "url": "https://www.google.com/maps/place/House+of+Small+Wonder/data=!4m2!3m1!1s0x89c2595977326913:0xc6fb56e099850512",
@@ -15772,7 +15772,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "NYC",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "closed",
       "name": "Mountain Province",
       "url": "https://www.google.com/maps/place/Mountain+Province/data=!4m2!3m1!1s0x89c25be30e9be8ab:0x325c8f1f7585c4fe",
@@ -15782,7 +15782,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "NYC",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "Partners Coffee",
       "url": "https://www.google.com/maps/place/Partners+Coffee/data=!4m2!3m1!1s0x89c2595df71a30d3:0x3b2bf8cb53885942",
@@ -15792,7 +15792,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "NYC",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "closed",
       "name": "Roebling Tea Room",
       "url": "https://www.google.com/maps/place/Roebling+Tea+Room/data=!4m2!3m1!1s0x89c2595fb1fd7c67:0xb2f839b09a1536bd",
@@ -15802,7 +15802,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "NYC",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Dimes",
       "url": "https://www.google.com/maps/place/Dimes/data=!4m2!3m1!1s0x89c25a29a6e65c83:0x2f598f5e48e9dbd6",
@@ -15812,7 +15812,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "NYC",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Gasoline Alley Coffee",
       "url": "https://www.google.com/maps/place/Gasoline+Alley+Coffee/data=!4m2!3m1!1s0x89c2598f884b4abb:0x2fabb152e5edbf1d",
@@ -15822,7 +15822,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "NYC",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Good Thanks Cafe",
       "url": "https://www.google.com/maps/place/Good+Thanks+Cafe/data=!4m2!3m1!1s0x89c259a31b639d95:0x90a673b3e3ed8540",
@@ -15832,7 +15832,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "NYC",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Ground Support Cafe",
       "url": "https://www.google.com/maps/place/Ground+Support+Cafe/data=!4m2!3m1!1s0x89c2598c15907921:0x194df40b518f1187",
@@ -15842,7 +15842,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "NYC",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "Happy Bones",
       "url": "https://www.google.com/maps/place/Happy+Bones/data=!4m2!3m1!1s0x89c259855420a911:0x7ca10593ce39c5",
@@ -15852,7 +15852,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "NYC",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "La Cabra",
       "url": "https://www.google.com/maps/place/La+Cabra/data=!4m2!3m1!1s0x89c259e94678df4f:0x6dddc4c5f900a76",
@@ -15862,7 +15862,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "NYC",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Prince Tea House",
       "url": "https://www.google.com/maps/place/Prince+Tea+House/data=!4m2!3m1!1s0x89c259ec9415e72d:0x6217554308abbde9",
@@ -15872,7 +15872,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "NYC",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "Ruby's Cafe",
       "url": "https://www.google.com/maps/place/Ruby's+Cafe/data=!4m2!3m1!1s0x89c259cc2ccd5ef9:0xd4f24bdc53986ac1",
@@ -15882,7 +15882,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "NYC",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "Spreadhouse Cafe",
       "url": "https://www.google.com/maps/place/Spreadhouse+Cafe/data=!4m2!3m1!1s0x89c2598e91e40fad:0x22d1d83a69468b66",
@@ -18072,7 +18072,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Bay Area",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "Arizmendi Bakery",
       "url": "https://www.google.com/maps/place/Arizmendi+Bakery/data=!4m2!3m1!1s0x808f7e4081fd74db:0xa387dff5515cf0af",
@@ -18082,7 +18082,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Bay Area",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "Arizmendi Bakery",
       "url": "https://www.google.com/maps/place/Arizmendi+Bakery/data=!4m2!3m1!1s0x8085875c351fd531:0xbd0bd910a2c29bee",
@@ -18092,7 +18092,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Bay Area",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Arsicault Bakery",
       "url": "https://www.google.com/maps/place/Arsicault+Bakery/data=!4m2!3m1!1s0x80858739f45d4f27:0x2f0b49df0ee8b492",
@@ -18102,7 +18102,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Bay Area",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Devil's Teeth Baking Company",
       "url": "https://www.google.com/maps/place/Devil's+Teeth+Baking+Company/data=!4m2!3m1!1s0x8085878fa1412f4b:0xf7e59451c6c631fa",
@@ -18112,7 +18112,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Bay Area",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "Miette",
       "url": "https://www.google.com/maps/place/Miette/data=!4m2!3m1!1s0x808580a20d002a6d:0x2f5c88450d7f2580",
@@ -18122,7 +18122,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Bay Area",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "Tartine Bakery",
       "url": "https://www.google.com/maps/place/Tartine+Bakery/data=!4m2!3m1!1s0x808f7e1807365605:0x601f7a97f0ce6c6b",
@@ -18632,7 +18632,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Bay Area",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Andytown Coffee Roasters",
       "url": "https://www.google.com/maps/place/Andytown+Coffee+Roasters/data=!4m2!3m1!1s0x808f7d636f7d07c9:0x9c828cfd8df4653",
@@ -18642,7 +18642,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Bay Area",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Andytown Coffee Roasters",
       "url": "https://www.google.com/maps/place/Andytown+Coffee+Roasters/data=!4m2!3m1!1s0x8085879aba03ee79:0xbfb64139d85ba75d",
@@ -18652,7 +18652,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Bay Area",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "closed",
       "name": "Arlequin Cafe & Food To Go",
       "url": "https://www.google.com/maps/place/Arlequin+Cafe+%26+Food+To+Go/data=!4m2!3m1!1s0x80858098bfb0bbaf:0xc1082d6fa35fe6e0",
@@ -18662,7 +18662,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Bay Area",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "closed",
       "name": "Blue Bottle Coffee",
       "url": "https://www.google.com/maps/place/Blue+Bottle+Coffee/data=!4m2!3m1!1s0x80858098babc2d4b:0xbeedd659cc698c92",
@@ -18672,7 +18672,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Bay Area",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "closed",
       "name": "Blue Bottle Coffee",
       "url": "https://www.google.com/maps/place/Blue+Bottle+Coffee/data=!4m2!3m1!1s0x808580842e3505e1:0x919a0502d0d2eee6",
@@ -18682,7 +18682,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Bay Area",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "Dynamo Donut & Coffee",
       "url": "https://www.google.com/maps/place/Dynamo+Donut+%26+Coffee/data=!4m2!3m1!1s0x808f7e495d04f423:0xe1a1be29e9a2ff2d",
@@ -18692,7 +18692,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Bay Area",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "fifty/fifty",
       "url": "https://www.google.com/maps/place/fifty%2Ffifty/data=!4m2!3m1!1s0x808587360e17ab2f:0x2931bbbe92902a78",
@@ -18702,7 +18702,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Bay Area",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "Four Barrel Coffee",
       "url": "https://www.google.com/maps/place/Four+Barrel+Coffee/data=!4m2!3m1!1s0x808f7e218f9bf6ff:0xd739722d19b32b9b",
@@ -18712,7 +18712,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Bay Area",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "Haus Coffee",
       "url": "https://www.google.com/maps/place/Haus+Coffee/data=!4m2!3m1!1s0x808f7e47cc899225:0x43b7c8b8b865719e",
@@ -18722,7 +18722,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Bay Area",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Pork Store Cafe",
       "url": "https://www.google.com/maps/place/Pork+Store+Cafe/data=!4m2!3m1!1s0x808580acc910b809:0x9387ec1e9c3c598d",
@@ -18732,7 +18732,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Bay Area",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "Ritual Coffee Roasters",
       "url": "https://www.google.com/maps/place/Ritual+Coffee+Roasters/data=!4m2!3m1!1s0x808580a2085a4bef:0x97508fc44679a00e",
@@ -18742,7 +18742,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Bay Area",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "Ritual Coffee Roasters",
       "url": "https://www.google.com/maps/place/Ritual+Coffee+Roasters/data=!4m2!3m1!1s0x808f7e3e89dacb9b:0x6b734213bb326353",
@@ -18752,7 +18752,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Bay Area",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "Saint Frank Coffee",
       "url": "https://www.google.com/maps/place/Saint+Frank+Coffee/data=!4m2!3m1!1s0x808580e84308f899:0x1a6c72e2732c9aab",
@@ -18762,7 +18762,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Bay Area",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "Sightglass Coffee",
       "url": "https://www.google.com/maps/place/Sightglass+Coffee/data=!4m2!3m1!1s0x80858082387de57f:0xc144ba641bc1c6bb",
@@ -18772,7 +18772,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Bay Area",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "The Mill",
       "url": "https://www.google.com/maps/place/The+Mill/data=!4m2!3m1!1s0x808580b02db73457:0x185a61a92a363ce8",
@@ -19992,7 +19992,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Chicago",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "Chiu Quon Bakery",
       "url": "https://www.google.com/maps/place/Chiu+Quon+Bakery/data=!4m2!3m1!1s0x880fd22ada5674d3:0xbc99c8f0eed77c42",
@@ -20002,7 +20002,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Chicago",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Chiu Quon Bakery & Dim Sum",
       "url": "https://www.google.com/maps/place/Chiu+Quon+Bakery+%26+Dim+Sum/data=!4m2!3m1!1s0x880e2c63eb4d0e4d:0x14507aeaaed593c9",
@@ -20012,7 +20012,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Chicago",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Le Petit Sucre Ltd",
       "url": "https://www.google.com/maps/place/Le+Petit+Sucre+Ltd/data=!4m2!3m1!1s0x880fd3a6d9ec628b:0x1504cf5ef5f11cfa",
@@ -20022,7 +20022,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Chicago",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Mindy’s Bakery",
       "url": "https://www.google.com/maps/place/Mindy%E2%80%99s+Bakery/data=!4m2!3m1!1s0x880fd2c07db953b7:0xd5c218147b8b77cc",
@@ -20032,7 +20032,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Chicago",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "The Bakery at Fat Rice",
       "url": "https://www.google.com/maps/place/The+Bakery+at+Fat+Rice/data=!4m2!3m1!1s0x880fcd7eae60cedd:0xe2ae44779c1bf325",
@@ -20442,7 +20442,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Chicago",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "Atomix Cafe",
       "url": "https://www.google.com/maps/place/Atomix+Cafe/data=!4m2!3m1!1s0x880e2d3549a969cf:0x4d3537f0ae8fa001",
@@ -20452,7 +20452,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Chicago",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Bow Truss Coffee Roasters",
       "url": "https://www.google.com/maps/place/Bow+Truss+Coffee+Roasters/data=!4m2!3m1!1s0x880e2cb6b98754f3:0x8bcd91c41a9bc776",
@@ -20462,7 +20462,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Chicago",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Four Letter Word Coffee",
       "url": "https://www.google.com/maps/place/Four+Letter+Word+Coffee/data=!4m2!3m1!1s0x880fcd72160f9f83:0x2aab093da61c3b42",
@@ -20472,7 +20472,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Chicago",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "Gaslight Coffee Roasters",
       "url": "https://www.google.com/maps/place/Gaslight+Coffee+Roasters/data=!4m2!3m1!1s0x880fcd62fcc09c0b:0x4b446755eaaec633",
@@ -20482,7 +20482,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Chicago",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "closed",
       "name": "Gaudi Cafe",
       "url": "https://www.google.com/maps/place/Gaudi+Cafe/data=!4m2!3m1!1s0x880fd2db47ad6e85:0xce4860364e894416",
@@ -20492,7 +20492,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Chicago",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Good Ambler",
       "url": "https://www.google.com/maps/place/Good+Ambler/data=!4m2!3m1!1s0x880e2dd2d043f10d:0x3fd0f4cf91a8895a",
@@ -20502,7 +20502,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Chicago",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "closed",
       "name": "Jupiter Outpost",
       "url": "https://www.google.com/maps/place/Jupiter+Outpost/data=!4m2!3m1!1s0x880e2cd79add5147:0xfb6518bef2e2b780",
@@ -20512,7 +20512,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Chicago",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Lula Cafe",
       "url": "https://www.google.com/maps/place/Lula+Cafe/data=!4m2!3m1!1s0x880fcd7aa8f9bafb:0xd9e40b3189296282",
@@ -20522,7 +20522,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Chicago",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Manny's Cafeteria & Delicatessen",
       "url": "https://www.google.com/maps/place/Manny's+Cafeteria+%26+Delicatessen/data=!4m2!3m1!1s0x880e2cedb630481d:0x2dd3bc65b46edd5",
@@ -20532,7 +20532,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Chicago",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Milk & Honey",
       "url": "https://www.google.com/maps/place/Milk+%26+Honey/data=!4m2!3m1!1s0x880fd2c9ac1793ef:0x8dcec203809e75d0",
@@ -20542,7 +20542,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Chicago",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "New Wave Coffee",
       "url": "https://www.google.com/maps/place/New+Wave+Coffee/data=!4m2!3m1!1s0x880fcd7ae0dfde29:0x16086033ccd96c68",
@@ -20552,7 +20552,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Chicago",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Northdown Cafe and Taproom",
       "url": "https://www.google.com/maps/place/Northdown+Cafe+and+Taproom/data=!4m2!3m1!1s0x880fd25a2703bfc3:0x7a1d452f987cc2",
@@ -20562,7 +20562,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Chicago",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "Pick Me Up Cafe",
       "url": "https://www.google.com/maps/place/Pick+Me+Up+Cafe/data=!4m2!3m1!1s0x880fd3adc484630b:0x842667843867fd16",
@@ -20572,7 +20572,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Chicago",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "Starbucks Reserve Roastery",
       "url": "https://www.google.com/maps/place/Starbucks+Reserve+Roastery/data=!4m2!3m1!1s0x880e2d35347bc2d7:0xc65e03cf5d97331e",
@@ -20582,7 +20582,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Chicago",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Sweet Maple Cafe",
       "url": "https://www.google.com/maps/place/Sweet+Maple+Cafe/data=!4m2!3m1!1s0x880e2d1c4d9cb853:0x674851c712db59cb",
@@ -20592,7 +20592,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Chicago",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "The Brewed",
       "url": "https://www.google.com/maps/place/The+Brewed/data=!4m2!3m1!1s0x880fcd50545a699b:0x576c581191c23383",
@@ -20602,7 +20602,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Chicago",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "The Wormhole Coffee",
       "url": "https://www.google.com/maps/place/The+Wormhole+Coffee/data=!4m2!3m1!1s0x880fd2c659f78e63:0xdbccde2384438e52",
@@ -20612,7 +20612,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Chicago",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Wildberry Pancakes & Cafe",
       "url": "https://www.google.com/maps/place/Wildberry+Pancakes+%26+Cafe/data=!4m2!3m1!1s0x880e2ca61afe006f:0x952fc2ea4e453f15",
@@ -21742,7 +21742,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Charleston",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "Brown's Court Bakery",
       "url": "https://www.google.com/maps/place/Brown's+Court+Bakery/data=!4m2!3m1!1s0x88fe7a421db8e26b:0x3e0a2bef22fe18db",
@@ -21752,7 +21752,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Charleston",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Le Chambertin",
       "url": "https://www.google.com/maps/place/Le+Chambertin/data=!4m2!3m1!1s0x88fe7bb05c4b77f5:0x7f17511c7105ac5c",
@@ -21762,7 +21762,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Charleston",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "closed",
       "name": "WildFlour Pastry",
       "url": "https://www.google.com/maps/place/WildFlour+Pastry/data=!4m2!3m1!1s0x88fe7a41832997c5:0x92d613c053f2e28b",
@@ -22182,7 +22182,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Charleston",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "babas on cannon",
       "url": "https://www.google.com/maps/place/babas+on+cannon/data=!4m2!3m1!1s0x88fe7bae1f473a19:0x61384f54e5260f5d",
@@ -22192,7 +22192,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Charleston",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "Black Tap Coffee",
       "url": "https://www.google.com/maps/place/Black+Tap+Coffee/data=!4m2!3m1!1s0x88fe7a169ec52d29:0x450cae14bbf6cc01",
@@ -22202,7 +22202,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Charleston",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "Caviar & Bananas George Street, LLC",
       "url": "https://www.google.com/maps/place/Caviar+%26+Bananas+George+Street,+LLC/data=!4m2!3m1!1s0x88fe7a13622561dd:0x6cba78220b97d7e2",
@@ -22212,7 +22212,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Charleston",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "City Lights Coffee",
       "url": "https://www.google.com/maps/place/City+Lights+Coffee/data=!4m2!3m1!1s0x88fe7a1231bdea83:0xf6857ef77b6e0f87",
@@ -22222,7 +22222,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Charleston",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "Counter Culture Coffee Charleston, SC Training Center",
       "url": "https://www.google.com/maps/place/Counter+Culture+Coffee+Charleston,+SC+Training+Center/data=!4m2!3m1!1s0x88fe7a46e1cdd023:0xe7a30a407fefa0cd",
@@ -22232,7 +22232,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Charleston",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Highfalutin Coffee Roasters",
       "url": "https://www.google.com/maps/place/Highfalutin+Coffee+Roasters/data=!4m2!3m1!1s0x88fe7bc20ab07115:0xd658fb0b71a6fbff",
@@ -22242,7 +22242,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Charleston",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Island Provisions - Downtown Charleston",
       "url": "https://www.google.com/maps/place/Island+Provisions+-+Downtown+Charleston/data=!4m2!3m1!1s0x88fe7b71ac48894f:0x71ae3363212d433",
@@ -22252,7 +22252,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Charleston",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "closed",
       "name": "Jack's Cafe",
       "url": "https://www.google.com/maps/place/Jack's+Cafe/data=!4m2!3m1!1s0x88fe7a1367ea1c35:0xb6d7f57fcbd9a5c",
@@ -22262,7 +22262,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Charleston",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "Kudu",
       "url": "https://www.google.com/maps/place/Kudu/data=!4m2!3m1!1s0x88fe7a6b155bf445:0x2d03b2598c9dfe2",
@@ -22272,7 +22272,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Charleston",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "Mercantile and Mash",
       "url": "https://www.google.com/maps/place/Mercantile+and+Mash/data=!4m2!3m1!1s0x88fe7a65eb86d889:0xc7deff14dc109e9e",
@@ -22282,7 +22282,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Charleston",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "Queen Street Grocery",
       "url": "https://www.google.com/maps/place/Queen+Street+Grocery/data=!4m2!3m1!1s0x88fe7a16d522f763:0x6f1d319fe31fcb61",
@@ -22292,7 +22292,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Charleston",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "The Daily",
       "url": "https://www.google.com/maps/place/The+Daily/data=!4m2!3m1!1s0x88fe7a42c3b0d40d:0xb65174539bfcf8be",
@@ -22302,7 +22302,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Charleston",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "The Park Cafe",
       "url": "https://www.google.com/maps/place/The+Park+Cafe/data=!4m2!3m1!1s0x88fe7b3209c9af97:0xa211de61c91ab21",
@@ -22312,7 +22312,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Charleston",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "Ye Ole Fashioned Cafe & Ice Cream",
       "url": "https://www.google.com/maps/place/Ye+Ole+Fashioned+Cafe+%26+Ice+Cream/data=!4m2!3m1!1s0x88fe63975b8eb261:0x6c8e0a7fe5750b23",
@@ -23212,7 +23212,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "London",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Beigel Bake Brick Lane Bakery",
       "url": "https://www.google.com/maps/place/Beigel+Bake+Brick+Lane+Bakery/data=!4m2!3m1!1s0x48761dad861a488d:0xc9e1e09acd76b50c",
@@ -23222,7 +23222,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "London",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Bread Ahead Bakery Pavilion Road",
       "url": "https://www.google.com/maps/place/Bread+Ahead+Bakery+Pavilion+Road/data=!4m2!3m1!1s0x48760515fcfdfdd3:0x8777096c63ba750a",
@@ -23232,7 +23232,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "London",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Chai Guys Bakehouse",
       "url": "https://www.google.com/maps/place/Chai+Guys+Bakehouse/data=!4m2!3m1!1s0x4876114df9325fbb:0xaf42a418d44b5a82",
@@ -23242,7 +23242,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "London",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Fortitude Bakehouse",
       "url": "https://www.google.com/maps/place/Fortitude+Bakehouse/data=!4m2!3m1!1s0x48761b30d8071b57:0x40d437b0e50ed338",
@@ -23252,7 +23252,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "London",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "GAIL's Bakery Islington",
       "url": "https://www.google.com/maps/place/GAIL's+Bakery+Islington/data=!4m2!3m1!1s0x48761b2ab2849d41:0xfee2469460cbb427",
@@ -23262,7 +23262,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "London",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Jolene Redchurch Street",
       "url": "https://www.google.com/maps/place/Jolene+Redchurch+Street/data=!4m2!3m1!1s0x48761d5419f8081b:0x7fc417d07ef391c0",
@@ -23272,7 +23272,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "London",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Bread Ahead",
       "url": "https://www.google.com/maps/place/Bread+Ahead/data=!4m2!3m1!1s0x487603570f8d0007:0xf57270d04805e5d2",
@@ -23622,7 +23622,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "London",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Sizzling Sausage",
       "url": "https://www.google.com/maps/place/Sizzling+Sausage/data=!4m2!3m1!1s0x48761d88b5bd6ed7:0xeb856ce197f2c441",
@@ -23632,7 +23632,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "London",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Well Street Kitchen London",
       "url": "https://www.google.com/maps/place/Well+Street+Kitchen+London/data=!4m2!3m1!1s0x48761ce265a627c7:0x69d879fb79e52086",
@@ -23642,7 +23642,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "London",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Soho Grind",
       "url": "https://www.google.com/maps/place/Soho+Grind/data=!4m2!3m1!1s0x487604d5abea4b19:0x353bf76432e388a2",
@@ -24762,7 +24762,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Los Angeles",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "LAMILL COFFEE Boutique",
       "url": "https://www.google.com/maps/place/LAMILL+COFFEE+Boutique/data=!4m2!3m1!1s0x80c2c73bc7571135:0x4f635800aafb2b34",
@@ -24772,7 +24772,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Los Angeles",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Sapp Coffee Shop",
       "url": "https://www.google.com/maps/place/Sapp+Coffee+Shop/data=!4m2!3m1!1s0x80c2bf571d7a7c37:0x80a7256111ba6352",
@@ -24782,7 +24782,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Los Angeles",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "MillCross Coffee Bar & Kitchen",
       "url": "https://www.google.com/maps/place/MillCross+Coffee+Bar+%26+Kitchen/data=!4m2!3m1!1s0x80c2bb6762345aeb:0x1fdf64c7fd7312b7",
@@ -25182,7 +25182,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Los Angeles",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Gjusta",
       "url": "https://www.google.com/maps/place/Gjusta/data=!4m2!3m1!1s0x80c2bac5f945be21:0x98feb3acb7938077",
@@ -25762,7 +25762,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Amsterdam",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Wils Bakery Café",
       "url": "https://www.google.com/maps/place/Wils+Bakery+Caf%C3%A9/data=!4m2!3m1!1s0x47c5e10024f6a5df:0x5f01d9b1f6e193ae",
@@ -25942,7 +25942,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Amsterdam",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "Cafe Belgique",
       "url": "https://www.google.com/maps/place/Cafe+Belgique/data=!4m2!3m1!1s0x47c609c704433f5d:0xd0bd99f9655ad8da",
@@ -25952,7 +25952,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Amsterdam",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Cafe Tabac",
       "url": "https://www.google.com/maps/place/Cafe+Tabac/data=!4m2!3m1!1s0x47c609cf1e2ca3bb:0xfd6cadbb2235caff",
@@ -25962,7 +25962,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Amsterdam",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Coffee & Coconuts.",
       "url": "https://www.google.com/maps/place/Coffee+%26+Coconuts./data=!4m2!3m1!1s0x47c609f3304eb613:0x2b590d1b177aa4eb",
@@ -25972,7 +25972,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Amsterdam",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "de koffie salon centrum",
       "url": "https://www.google.com/maps/place/de+koffie+salon+centrum/data=!4m2!3m1!1s0x47c609940844b8e9:0x6bc6d0f299ec9044",
@@ -25982,7 +25982,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Amsterdam",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "De School",
       "url": "https://www.google.com/maps/place/De+School/data=!4m2!3m1!1s0x47c5e26a9269dcc7:0x7adfeb615afdf893",
@@ -25992,7 +25992,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Amsterdam",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Eetsalon Van Dobben",
       "url": "https://www.google.com/maps/place/Eetsalon+Van+Dobben/data=!4m2!3m1!1s0x47c609955aa4b797:0xf068778667caac7a",
@@ -26002,7 +26002,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Amsterdam",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "Scandinavian Embassy",
       "url": "https://www.google.com/maps/place/Scandinavian+Embassy/data=!4m2!3m1!1s0x47c6098ce2073365:0x75d2236bdea77179",
@@ -26012,7 +26012,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Amsterdam",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Skatecafe",
       "url": "https://www.google.com/maps/place/Skatecafe/data=!4m2!3m1!1s0x47c609001349b0d7:0x63c7b4dfed439c36",
@@ -26792,7 +26792,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Paris",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "BO&MIE",
       "url": "https://www.google.com/maps/place/BO%26MIE/data=!4m2!3m1!1s0x47e66e1a3cdaef13:0xdfec97758168b9c6",
@@ -26802,7 +26802,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Paris",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Bontemps La Pâtisserie",
       "url": "https://www.google.com/maps/place/Bontemps+La+P%C3%A2tisserie/data=!4m2!3m1!1s0x47e66e05c9ad7b27:0xf764e62300b267c9",
@@ -26812,7 +26812,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Paris",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "Du Pain et des Idées",
       "url": "https://www.google.com/maps/place/Du+Pain+et+des+Id%C3%A9es/data=!4m2!3m1!1s0x47e66e0bfc163805:0x3413388064195613",
@@ -26822,7 +26822,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Paris",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Le Jardin Sucré",
       "url": "https://www.google.com/maps/place/Le+Jardin+Sucr%C3%A9/data=!4m2!3m1!1s0x47e66f96700514fb:0x649305842672edb5",
@@ -26832,7 +26832,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Paris",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Maison Louvard",
       "url": "https://www.google.com/maps/place/Maison+Louvard/data=!4m2!3m1!1s0x47e66f8f1c63425d:0x77f2049d04265469",
@@ -26842,7 +26842,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Paris",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Mamiche",
       "url": "https://www.google.com/maps/place/Mamiche/data=!4m2!3m1!1s0x47e66e0e875fbefd:0x7c7fccc8262aa4bf",
@@ -26852,7 +26852,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Paris",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Sain Boulangerie",
       "url": "https://www.google.com/maps/place/Sain+Boulangerie/data=!4m2!3m1!1s0x47e66f91f93e051d:0x9abcca62b81c0273",
@@ -26862,7 +26862,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Paris",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Sain Boulangerie",
       "url": "https://www.google.com/maps/place/Sain+Boulangerie/data=!4m2!3m1!1s0x47e66fe2886e0f81:0x7d16075b363f8e02",
@@ -26872,7 +26872,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Paris",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Tapisserie - Charonne",
       "url": "https://www.google.com/maps/place/Tapisserie+-+Charonne/data=!4m2!3m1!1s0x47e6730fc631d013:0xf4a4859fbe23c2ce",
@@ -26882,7 +26882,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Paris",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "The French Bastards - Oberkampf",
       "url": "https://www.google.com/maps/place/The+French+Bastards+-+Oberkampf/data=!4m2!3m1!1s0x47e66dc17f9e295f:0x26e14ad9513452f",
@@ -27052,7 +27052,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Paris",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "fringe",
       "url": "https://www.google.com/maps/place/fringe/data=!4m2!3m1!1s0x47e66e071cd2b1e7:0xa3701807d8d89fe",
@@ -27062,7 +27062,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Paris",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "The Coffee",
       "url": "https://www.google.com/maps/place/The+Coffee/data=!4m2!3m1!1s0x47e66d984a319553:0x98cd8e75be1c9a24",
@@ -27872,7 +27872,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Bangkok",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "965bkk",
       "url": "https://www.google.com/maps/place/965bkk/data=!4m2!3m1!1s0x30e299cc7a7827cf:0xb29d61933a64398c",
@@ -27882,7 +27882,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Bangkok",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "A KEEN HOUSE",
       "url": "https://www.google.com/maps/place/A+KEEN+HOUSE/data=!4m2!3m1!1s0x30e29f2e9eb75f4b:0xb3b02968aa532f01",
@@ -27892,7 +27892,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Bangkok",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "Ayatana Charoen Krung",
       "url": "https://www.google.com/maps/place/Ayatana+Charoen+Krung/data=!4m2!3m1!1s0x30e2993cc75e2579:0x35e9c944a70f8cec",
@@ -27902,7 +27902,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Bangkok",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "DONUT DISTURB BANGKOK",
       "url": "https://www.google.com/maps/place/DONUT+DISTURB+BANGKOK/data=!4m2!3m1!1s0x30e29dc8288520f3:0x845a3b14e9c3d818",
@@ -27912,7 +27912,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Bangkok",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "KHIRI Thai Tea Flagship Store",
       "url": "https://www.google.com/maps/place/KHIRI+Thai+Tea+Flagship+Store/data=!4m2!3m1!1s0x30e2990386f743ff:0xa2a6d42e5fe8a6a",
@@ -27922,7 +27922,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Bangkok",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "La Cabra Bakery",
       "url": "https://www.google.com/maps/place/La+Cabra+Bakery/data=!4m2!3m1!1s0x30e29fa1ea5c4c37:0x63a9831fb0dc165a",
@@ -27932,7 +27932,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Bangkok",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "La Cabra Bangkok",
       "url": "https://www.google.com/maps/place/La+Cabra+Bangkok/data=!4m2!3m1!1s0x30e299d14610bc9d:0xfb373e24ccba3928",
@@ -27942,7 +27942,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Bangkok",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "RISE COFFEE - Thonglor",
       "url": "https://www.google.com/maps/place/RISE+COFFEE+-+Thonglor/data=!4m2!3m1!1s0x30e29f18851d83bf:0x33620015ca9be77e",
@@ -27952,7 +27952,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Bangkok",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "Wallflowers Cafe",
       "url": "https://www.google.com/maps/place/Wallflowers+Cafe/data=!4m2!3m1!1s0x30e2991753e9d7db:0x7f9efe6c46bf5bc0",
@@ -27962,7 +27962,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Bangkok",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "CUM Coffee - The Office Thonglor",
       "url": "https://www.google.com/maps/place/CUM+Coffee+-+The+Office+Thonglor/data=!4m2!3m1!1s0x30e29f96ed16208d:0x68abe775ec1fadf0",
@@ -27972,7 +27972,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Bangkok",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "Holey Artisan Bakery",
       "url": "https://www.google.com/maps/place/Holey+Artisan+Bakery/data=!4m2!3m1!1s0x30e29efc6388c04d:0xb82acfae8399e4f4",
@@ -28732,7 +28732,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Wien",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "PARÉMI Boulangerie – Pâtisserie",
       "url": "https://www.google.com/maps/place/PAR%C3%89MI+Boulangerie+%E2%80%93+P%C3%A2tisserie/data=!4m2!3m1!1s0x476d079f9ad5ecf9:0x58d539b00580611b",
@@ -28872,7 +28872,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Wien",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Art Cafe Hundertwasser House",
       "url": "https://www.google.com/maps/place/Art+Cafe+Hundertwasser+House/data=!4m2!3m1!1s0x476d0712b414b477:0x146119b85887078f",
@@ -28882,7 +28882,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Wien",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Caffè a Casa",
       "url": "https://www.google.com/maps/place/Caff%C3%A8+a+Casa/data=!4m2!3m1!1s0x476d07a21ed2afad:0x3ae614d551e22b8b",
@@ -28892,7 +28892,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Wien",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Café Engländer.",
       "url": "https://www.google.com/maps/place/Caf%C3%A9+Engl%C3%A4nder./data=!4m2!3m1!1s0x476d07755fa6dc8f:0xec9a2fafead3fe9c",
@@ -28902,7 +28902,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Wien",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Café Jelinek",
       "url": "https://www.google.com/maps/place/Caf%C3%A9+Jelinek/data=!4m2!3m1!1s0x476d078987b4cecf:0xf67c95abca1b9ebe",
@@ -28912,7 +28912,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Wien",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Café Korb",
       "url": "https://www.google.com/maps/place/Caf%C3%A9+Korb/data=!4m2!3m1!1s0x476d0798a53698af:0x457690f16fe385eb",
@@ -28922,7 +28922,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Wien",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Café Prückel",
       "url": "https://www.google.com/maps/place/Caf%C3%A9+Pr%C3%BCckel/data=!4m2!3m1!1s0x476d077516158fa1:0xde798876217c145a",
@@ -28932,7 +28932,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Wien",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Café Rüdigerhof",
       "url": "https://www.google.com/maps/place/Caf%C3%A9+R%C3%BCdigerhof/data=!4m2!3m1!1s0x476d07888c09826f:0x4d373af3ecf39c81",
@@ -28942,7 +28942,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Wien",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Café Sacher Wien",
       "url": "https://www.google.com/maps/place/Caf%C3%A9+Sacher+Wien/data=!4m2!3m1!1s0x476d079c6e70ce23:0xdb83f04c896f79da",
@@ -28952,7 +28952,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Wien",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Café Savoy",
       "url": "https://www.google.com/maps/place/Caf%C3%A9+Savoy/data=!4m2!3m1!1s0x476d0785c43e1a5f:0x79bb786dae7b9378",
@@ -28962,7 +28962,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Wien",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "Café Schwarzenberg",
       "url": "https://www.google.com/maps/place/Caf%C3%A9+Schwarzenberg/data=!4m2!3m1!1s0x476d079d700641d9:0xd68179f5c7581c65",
@@ -28972,7 +28972,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Wien",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Café Sperl",
       "url": "https://www.google.com/maps/place/Caf%C3%A9+Sperl/data=!4m2!3m1!1s0x476d0785133971d9:0x1f6a150bbbe7d59c",
@@ -28982,7 +28982,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Wien",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "CoffeePirates",
       "url": "https://www.google.com/maps/place/CoffeePirates/data=!4m2!3m1!1s0x476d07c12110afdd:0x7cd49b5c94bdccaf",
@@ -28992,7 +28992,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Wien",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "Die Cafetière",
       "url": "https://www.google.com/maps/place/Die+Cafeti%C3%A8re/data=!4m2!3m1!1s0x476d075588c15e3d:0xa54164639348c60",
@@ -29002,7 +29002,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Wien",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Kaffeefabrik",
       "url": "https://www.google.com/maps/place/Kaffeefabrik/data=!4m2!3m1!1s0x476d07822fb80bd1:0x744f430d56653a7c",
@@ -29732,7 +29732,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Rock Hill",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "Amélie's French Bakery & Café",
       "url": "https://www.google.com/maps/place/Am%C3%A9lie's+French+Bakery+%26+Caf%C3%A9/data=!4m2!3m1!1s0x88568855d9562321:0x6b7500c2294a43db",
@@ -29742,7 +29742,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Rock Hill",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "Mado Bakery and Cafe",
       "url": "https://www.google.com/maps/place/Mado+Bakery+and+Cafe/data=!4m2!3m1!1s0x8856894a01a3c98d:0x4ccb2a811e393280",
@@ -29752,7 +29752,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Rock Hill",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "MoMo Donuts",
       "url": "https://www.google.com/maps/place/MoMo+Donuts/data=!4m2!3m1!1s0x88568772dfa2b763:0x9e416323ab6b7ce2",
@@ -29842,7 +29842,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Rock Hill",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "closed",
       "name": "Cupps Cafe",
       "url": "https://www.google.com/maps/place/Cupps+Cafe/data=!4m2!3m1!1s0x8856891c4f8c63e9:0x5040936565452b94",
@@ -29852,7 +29852,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Rock Hill",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Flora Coffee",
       "url": "https://www.google.com/maps/place/Flora+Coffee/data=!4m2!3m1!1s0x885689aca4cc1d89:0xd210dc1218439c6",
@@ -29862,7 +29862,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Rock Hill",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "closed",
       "name": "Lell's Cafe",
       "url": "https://www.google.com/maps/place/Lell's+Cafe/data=!4m2!3m1!1s0x8856890bffb76147:0x2e0fb8d25f377fef",
@@ -29872,7 +29872,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Rock Hill",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "Mary's Cafe",
       "url": "https://www.google.com/maps/place/Mary's+Cafe/data=!4m2!3m1!1s0x885688656ad3bc27:0x99f91ca1db76585f",
@@ -29882,7 +29882,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Rock Hill",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "closed",
       "name": "Rise & Shine Doughnut Cafe",
       "url": "https://www.google.com/maps/place/Rise+%26+Shine+Doughnut+Cafe/data=!4m2!3m1!1s0x88568952968255f7:0xa7e339b922b0413a",
@@ -29892,7 +29892,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Rock Hill",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "Rock Hill Coffee",
       "url": "https://www.google.com/maps/place/Rock+Hill+Coffee/data=!4m2!3m1!1s0x885689a6e510c565:0x51f08bfea0bd661b",
@@ -30452,7 +30452,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Riga",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "Cadets de Gascogne",
       "url": "https://www.google.com/maps/place/Cadets+de+Gascogne/data=!4m2!3m1!1s0x46eecf5f7baa2f0b:0xc0d50d7e22772b50",
@@ -30462,7 +30462,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Riga",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "Cadets de Gascogne",
       "url": "https://www.google.com/maps/place/Cadets+de+Gascogne/data=!4m2!3m1!1s0x46eecfcce099d97d:0xc1fec4113a9c20a7",
@@ -30472,7 +30472,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Riga",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Hooligaan Bubble Tea & Coffee",
       "url": "https://www.google.com/maps/place/Hooligaan+Bubble+Tea+%26+Coffee/data=!4m2!3m1!1s0x46eecf76903d2127:0x122528c4d9929847",
@@ -30482,7 +30482,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Riga",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "Rocket Bean Roastery",
       "url": "https://www.google.com/maps/place/Rocket+Bean+Roastery/data=!4m2!3m1!1s0x46eecfb59a301d55:0xaa6874c5e157fe90",
@@ -30492,7 +30492,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Riga",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "Bulka",
       "url": "https://www.google.com/maps/place/Bulka/data=!4m2!3m1!1s0x46eed06a02983965:0xbb965d43d442756b",
@@ -30502,7 +30502,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Riga",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "FAB cafe Riga",
       "url": "https://www.google.com/maps/place/FAB+cafe+Riga/data=!4m2!3m1!1s0x46eed1794ac9ba0b:0x26cf073bf0d29554",
@@ -30922,7 +30922,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Las Palmas",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "BreadLocks Bakery",
       "url": "https://www.google.com/maps/place/BreadLocks+Bakery/data=!4m2!3m1!1s0xc464d4b303f426b:0xfa29b48412a39826",
@@ -31032,7 +31032,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Las Palmas",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "BAR - CAFETERIA LA EMINENCIA",
       "url": "https://www.google.com/maps/place/BAR+-+CAFETERIA+LA+EMINENCIA/data=!4m2!3m1!1s0xc409516776389bd:0x876fa7938e5933cb",
@@ -31042,7 +31042,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Las Palmas",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "La Churrería",
       "url": "https://www.google.com/maps/place/La+Churrer%C3%ADa/data=!4m2!3m1!1s0xc40951679f5aa71:0x39e126fa555017a",
@@ -31532,7 +31532,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Kyiv",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Octo Bakery",
       "url": "https://www.google.com/maps/place/Octo+Bakery/data=!4m2!3m1!1s0x40d4cd91913d6855:0xbd7994e49900cb6e",
@@ -31652,7 +31652,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Kyiv",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Blur Coffee",
       "url": "https://www.google.com/maps/place/Blur+Coffee/data=!4m2!3m1!1s0x40d4cf00dc6aaaab:0x97bf0ec91fd63c73",
@@ -31662,7 +31662,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Kyiv",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Feliz - Coffee and Food",
       "url": "https://www.google.com/maps/place/Feliz+-+Coffee+and+Food/data=!4m2!3m1!1s0x40d4cf3239e81149:0x21c263fe8ea8f38e",
@@ -31672,7 +31672,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Kyiv",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Feliz Coffee and Food",
       "url": "https://www.google.com/maps/place/Feliz+Coffee+and+Food/data=!4m2!3m1!1s0x40d4cf7e47c2ab59:0x4d5287fd13e7962d",
@@ -31682,7 +31682,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Kyiv",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "HANH cafe & market",
       "url": "https://www.google.com/maps/place/HANH+cafe+%26+market/data=!4m2!3m1!1s0x40d4cfeba5cf1f5b:0xd29026a07c82dcaa",
@@ -31692,7 +31692,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Kyiv",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Honey. Cafe-confectionary",
       "url": "https://www.google.com/maps/place/Honey.+Cafe-confectionary/data=!4m2!3m1!1s0x40d4ce5953c4b2b3:0xcea758cac1194a87",
@@ -31702,7 +31702,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Kyiv",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Idealist Coffee",
       "url": "https://www.google.com/maps/place/Idealist+Coffee/data=!4m2!3m1!1s0x40d4cfb30e34e0e1:0xb760a075ddd72e4c",
@@ -31712,7 +31712,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Kyiv",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "The Blue Cup Coffee Shop",
       "url": "https://www.google.com/maps/place/The+Blue+Cup+Coffee+Shop/data=!4m2!3m1!1s0x40d4ce57194d9561:0xa6cef1d2816e5184",
@@ -31722,7 +31722,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Kyiv",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Vagabond Cafe And Vintage Corner",
       "url": "https://www.google.com/maps/place/Vagabond+Cafe+And+Vintage+Corner/data=!4m2!3m1!1s0x40d4ce3f8d4a8aeb:0xc552e5fd2c8cb6d8",
@@ -31732,7 +31732,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Kyiv",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "WE:VINYL Cafe Bar & Music Store",
       "url": "https://www.google.com/maps/place/WE:VINYL+Cafe+Bar+%26+Music+Store/data=!4m2!3m1!1s0x40d4cf589670441b:0x185c6db0f48accac",
@@ -31742,7 +31742,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Kyiv",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Кав'ярня HUMANS: coffee in tech",
       "url": "https://www.google.com/maps/place/%D0%9A%D0%B0%D0%B2'%D1%8F%D1%80%D0%BD%D1%8F+HUMANS:+coffee+in+tech/data=!4m2!3m1!1s0x40d4cf512bc593a5:0x85d42c994b917198",
@@ -32092,7 +32092,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Lisbon",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "Manteigaria (Portuguese custard pies factory)",
       "url": "https://www.google.com/maps/place/Manteigaria+(Portuguese+custard+pies+factory)/data=!4m2!3m1!1s0xd19347fb4271673:0xe8af7b569be2615f",
@@ -32172,7 +32172,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Lisbon",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Amélia Lisboa",
       "url": "https://www.google.com/maps/place/Am%C3%A9lia+Lisboa/data=!4m2!3m1!1s0xd193366c31eb3cf:0x39121aafe3032fa8",
@@ -32182,7 +32182,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Lisbon",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "Neighbourhood Lisbon",
       "url": "https://www.google.com/maps/place/Neighbourhood+Lisbon/data=!4m2!3m1!1s0xd19355b1d862aaf:0x30298f261a8094a",
@@ -32192,7 +32192,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Lisbon",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Nicolau Lisboa",
       "url": "https://www.google.com/maps/place/Nicolau+Lisboa/data=!4m2!3m1!1s0xd193479b6c7b78f:0xf2c7acc5f824a399",
@@ -32202,7 +32202,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Lisbon",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Santos",
       "url": "https://www.google.com/maps/place/Santos/data=!4m2!3m1!1s0xd193484fbb50893:0xc4b829bb8f70e05",
@@ -32212,7 +32212,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Lisbon",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Tact",
       "url": "https://www.google.com/maps/place/Tact/data=!4m2!3m1!1s0xd193590695f0fe7:0x31743468599a10a",
@@ -32572,7 +32572,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Mexico City",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "ODETTE CONDESA",
       "url": "https://www.google.com/maps/place/ODETTE+CONDESA/data=!4m2!3m1!1s0x85d1ff05f3996019:0x4fbf318d62cb98d7",
@@ -32582,7 +32582,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Mexico City",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Panadería Rosetta Puebla",
       "url": "https://www.google.com/maps/place/Panader%C3%ADa+Rosetta+Puebla/data=!4m2!3m1!1s0x85d1ff37ddac5673:0x5cfd0ab06ce969b6",
@@ -32592,7 +32592,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Mexico City",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Saint",
       "url": "https://www.google.com/maps/place/Saint/data=!4m2!3m1!1s0x85d1ffcd3784285d:0xe7ab200d54e4fe35",
@@ -32732,7 +32732,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Mexico City",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "AMAMBA",
       "url": "https://www.google.com/maps/place/AMAMBA/data=!4m2!3m1!1s0x85d1ff13cc092135:0x32286a0e6fa1fcb",
@@ -32742,7 +32742,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Mexico City",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Cafe Milou",
       "url": "https://www.google.com/maps/place/Cafe+Milou/data=!4m2!3m1!1s0x85d1ff4591b6aaab:0x75a15484dd5fc449",
@@ -32752,7 +32752,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Mexico City",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Raku Café",
       "url": "https://www.google.com/maps/place/Raku+Caf%C3%A9/data=!4m2!3m1!1s0x85d1ff461e705985:0x42680ca337973ddb",
@@ -33062,7 +33062,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Warsaw",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "Kubuś Piekarenka",
       "url": "https://www.google.com/maps/place/Kubu%C5%9B+Piekarenka/data=!4m2!3m1!1s0x471ecd0afe7d34eb:0x43e127c6deedf155",
@@ -33072,7 +33072,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Warsaw",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Piekarnia DEJ",
       "url": "https://www.google.com/maps/place/Piekarnia+DEJ/data=!4m2!3m1!1s0x471ecb5ccee8edb3:0x4f8586cc0a0947b6",
@@ -33082,7 +33082,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Warsaw",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "QUASĄ",
       "url": "https://www.google.com/maps/place/QUAS%C4%84/data=!4m2!3m1!1s0x471ecd0055ee1713:0x3c19bcf54d776bdd",
@@ -33182,7 +33182,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Warsaw",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "MOYA MATCHA",
       "url": "https://www.google.com/maps/place/MOYA+MATCHA/data=!4m2!3m1!1s0x471ecd57dbd78be5:0x5b3bd74d3548439",
@@ -33192,7 +33192,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Warsaw",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Po Drodze",
       "url": "https://www.google.com/maps/place/Po+Drodze/data=!4m2!3m1!1s0x471ecd450306ce53:0x364f9e44a855e2d1",
@@ -33202,7 +33202,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Warsaw",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Przystań kawiarnia",
       "url": "https://www.google.com/maps/place/Przysta%C5%84+kawiarnia/data=!4m2!3m1!1s0x471ecd3535d78753:0x51edb3df46958c38",
@@ -33782,7 +33782,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Copenhagen",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Brødflov",
       "url": "https://www.google.com/maps/place/Br%C3%B8dflov/data=!4m2!3m1!1s0x465253bb0c39fbc9:0xd8893949ef4fd779",
@@ -33832,7 +33832,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Copenhagen",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "Coffee Collective Jægersborggade",
       "url": "https://www.google.com/maps/place/Coffee+Collective+J%C3%A6gersborggade/data=!4m2!3m1!1s0x465253ad94236fed:0xe91e884fccd65355",
@@ -33842,7 +33842,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Copenhagen",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Sokkelund Cafe & Brasserie",
       "url": "https://www.google.com/maps/place/Sokkelund+Cafe+%26+Brasserie/data=!4m2!3m1!1s0x465253bee971d7d1:0xdd247c896f531611",
@@ -34132,7 +34132,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Mainz",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "après coffee",
       "url": "https://www.google.com/maps/place/apr%C3%A8s+coffee/data=!4m2!3m1!1s0x47bd97c40d01f7d3:0xff01648505f753e4",
@@ -34142,7 +34142,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Mainz",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "La Mia Gelateria Mainz - Mach’s Dir selbst!“ - Original italienische Eiscreme - Die Eisdiele mit Selbstbedienung",
       "url": "https://www.google.com/maps/place/La+Mia+Gelateria+Mainz+-+Mach%E2%80%99s+Dir+selbst!%E2%80%9C+-+Original+italienische+%0AEiscreme+-+Die+Eisdiele+mit+Selbstbedienung/data=!4m2!3m1!1s0x47bd971a8d6da0cb:0x18d698a94e159923",
@@ -34152,7 +34152,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Mainz",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "Müller Kaffeerösterei – Kaffeeladen am Fischtor",
       "url": "https://www.google.com/maps/place/M%C3%BCller+Kaffeer%C3%B6sterei+%E2%80%93+Kaffeeladen+am+Fischtor/data=!4m2!3m1!1s0x47bd971a8d6da0cb:0x70600f46be6aca55",
@@ -34222,7 +34222,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Mainz",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "AMORI Coffee Kaffeerösterei",
       "url": "https://www.google.com/maps/place/AMORI+Coffee+Kaffeer%C3%B6sterei/data=!4m2!3m1!1s0x47bd9754deb84705:0x89c5d1bc2f38c1ae",
@@ -34232,7 +34232,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Mainz",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Fette Henne",
       "url": "https://www.google.com/maps/place/Fette+Henne/data=!4m2!3m1!1s0x47bd9749cffb2977:0xd8c61ebd937b7534",
@@ -34242,7 +34242,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Mainz",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Kelly‘s Fresh Coffee - Speciality Coffee & gesunder Lunch",
       "url": "https://www.google.com/maps/place/Kelly%E2%80%98s+Fresh+Coffee+-+Speciality+Coffee+%26+gesunder+Lunch/data=!4m2!3m1!1s0x47bd9714f50cd79d:0xe341d29732349387",
@@ -34442,7 +34442,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Athens",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "KORA",
       "url": "https://www.google.com/maps/place/KORA/data=!4m2!3m1!1s0x14a1bda0327d5bd1:0x49470109e86c69fb",
@@ -34552,7 +34552,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Athens",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Thirdplace.Athens",
       "url": "https://www.google.com/maps/place/Thirdplace.Athens/data=!4m2!3m1!1s0x14a1bd0e0bcf8cff:0xf304cb7c2ef84ede",
@@ -34862,7 +34862,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Austin",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Wright Bros. Brew and Brew",
       "url": "https://www.google.com/maps/place/Wright+Bros.+Brew+and+Brew/data=!4m2!3m1!1s0x8644b5af858cb3fd:0x1aca02d5fc79c6c9",
@@ -35122,7 +35122,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Prishtina",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "Marcus Coffee Shop",
       "url": "https://www.google.com/maps/place/Marcus+Coffee+Shop/data=!4m2!3m1!1s0x13549edfef1ea2df:0x85c72a24614a7f35",
@@ -35132,7 +35132,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Prishtina",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "Tingell Tangell",
       "url": "https://www.google.com/maps/place/Tingell+Tangell/data=!4m2!3m1!1s0x13549ee14ee6e8a5:0xb177900ee19b4d84",
@@ -35402,7 +35402,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Kraków",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Żarówka Cafe",
       "url": "https://www.google.com/maps/place/%C5%BBar%C3%B3wka+Cafe/data=!4m2!3m1!1s0x47165b11d0ffe00d:0xa1274f8617d1ce5f",
@@ -35682,7 +35682,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Charlotte",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Not Just Coffee",
       "url": "https://www.google.com/maps/place/Not+Just+Coffee/data=!4m2!3m1!1s0x88569f7099b49cd5:0x50a69c6409e3223f",
@@ -35692,7 +35692,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Charlotte",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "The Hobbyist",
       "url": "https://www.google.com/maps/place/The+Hobbyist/data=!4m2!3m1!1s0x8856a1f06b1f9883:0xe7f16500fa094235",
@@ -35872,7 +35872,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Marseille",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "La Mascotte",
       "url": "https://www.google.com/maps/place/La+Mascotte/data=!4m2!3m1!1s0x12c9c0d3bc36a401:0xb2ded42b54ef738a",
@@ -35882,7 +35882,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Marseille",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "The Bread of the Opera",
       "url": "https://www.google.com/maps/place/The+Bread+of+the+Opera/data=!4m2!3m1!1s0x12c9c0b902488701:0xe82fd4e71131659",
@@ -35912,7 +35912,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Marseille",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "closed",
       "name": "Oogie",
       "url": "https://www.google.com/maps/place/Oogie/data=!4m2!3m1!1s0x12c9c0a4b494a111:0x304eb5abafeb0f39",
@@ -36402,7 +36402,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Hamburg",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Blackline",
       "url": "https://www.google.com/maps/place/Blackline/data=!4m2!3m1!1s0x47b18f92f7b79be3:0x1c3b6829a1059b05",
@@ -36612,7 +36612,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Toronto",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Almond Butterfly Bakeshop & Cafe",
       "url": "https://www.google.com/maps/place/Almond+Butterfly+Bakeshop+%26+Cafe/data=!4m2!3m1!1s0x4cc9175f71d85973:0x873731e3af7f7304",
@@ -36732,7 +36732,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Portland OR",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Crema Bakery & Cafe",
       "url": "https://www.google.com/maps/place/Crema+Bakery+%26+Cafe/data=!4m2!3m1!1s0x5495a0bef903ee7b:0x857b8582ddbde3a",
@@ -36802,7 +36802,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Portland OR",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Coava Coffee Roasters",
       "url": "https://www.google.com/maps/place/Coava+Coffee+Roasters/data=!4m2!3m1!1s0x54950a0ae93e6b79:0xc63aec4f3d1b3aad",
@@ -36812,7 +36812,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Portland OR",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Junior's Cafe",
       "url": "https://www.google.com/maps/place/Junior's+Cafe/data=!4m2!3m1!1s0x54950a758b301a97:0xb8f565bd973285ba",
@@ -36822,7 +36822,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Portland OR",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Water Avenue Coffee",
       "url": "https://www.google.com/maps/place/Water+Avenue+Coffee/data=!4m2!3m1!1s0x54950a0bd81972f1:0xb4b60b05e0453488",
@@ -37392,7 +37392,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Montreal",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Café Olimpico - Mile End",
       "url": "https://www.google.com/maps/place/Caf%C3%A9+Olimpico+-+Mile+End/data=!4m2!3m1!1s0x4cc9197949885067:0xbaf85bce3cee2770",
@@ -37552,7 +37552,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Malta",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Lot 61 Coffee Roasters",
       "url": "https://www.google.com/maps/place/Lot+61+Coffee+Roasters/data=!4m2!3m1!1s0x130e452b9e9e6ec3:0x7c7f127eb83fc9b7",
@@ -37792,7 +37792,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Tokyo",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Fuglen Tokyo",
       "url": "https://www.google.com/maps/place/Fuglen+Tokyo/data=!4m2!3m1!1s0x60188cb2957a60ad:0xee351263d20144a7",
@@ -37802,7 +37802,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Tokyo",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Little Nap Coffee Stand",
       "url": "https://www.google.com/maps/place/Little+Nap+Coffee+Stand/data=!4m2!3m1!1s0x6018f34ad0922653:0xda43dda9ba85f9eb",
@@ -37952,7 +37952,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Seattle",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Nuflours Bakery",
       "url": "https://www.google.com/maps/place/Nuflours+Bakery/data=!4m2!3m1!1s0x5490152bbbdd1767:0xc267df665af792e8",
@@ -38002,7 +38002,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Seattle",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Analog Coffee",
       "url": "https://www.google.com/maps/place/Analog+Coffee/data=!4m2!3m1!1s0x54901532347e3bc7:0x9d0ae45cc1e8af37",
@@ -38082,7 +38082,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Seoul",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Jayeondo Sogeumppang (Salt Bread) & Jayeondoga",
       "url": "https://www.google.com/maps/place/Jayeondo+Sogeumppang+(Salt+Bread)+%26+Jayeondoga/data=!4m2!3m1!1s0x357ca32599590883:0xd848f1a621f99acc",
@@ -38092,7 +38092,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Seoul",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Jayeondo Sogeumppang (Salt Bread) in Seongsu",
       "url": "https://www.google.com/maps/place/Jayeondo+Sogeumppang+(Salt+Bread)+in+Seongsu/data=!4m2!3m1!1s0x357ca58daad46ea9:0x4922f006043fcb1e",
@@ -38102,7 +38102,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Seoul",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Soha Salt Pond",
       "url": "https://www.google.com/maps/place/Soha+Salt+Pond/data=!4m2!3m1!1s0x357c995b89c693e9:0x155159730794ee9",
@@ -38112,7 +38112,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Seoul",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Soha Salt Pond Ikseon-dong",
       "url": "https://www.google.com/maps/place/Soha+Salt+Pond+Ikseon-dong/data=!4m2!3m1!1s0x357ca3712e2eac75:0xd2b02e0880078416",
@@ -38232,7 +38232,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Detroit",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "Astro Coffee",
       "url": "https://www.google.com/maps/place/Astro+Coffee/data=!4m2!3m1!1s0x883b2d59c5939441:0xe96a58a390c3a8fe",
@@ -38482,7 +38482,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Corfu",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Bristol Cafe",
       "url": "https://www.google.com/maps/place/Bristol+Cafe/data=!4m2!3m1!1s0x14a1a4abcc9c7789:0x7042345316087bd2",
@@ -38492,7 +38492,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Corfu",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Cafetierra",
       "url": "https://www.google.com/maps/place/Cafetierra/data=!4m2!3m1!1s0x135b5dddb9c6eac7:0x7aedab3013fbc236",
@@ -38502,7 +38502,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Corfu",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "The Funk",
       "url": "https://www.google.com/maps/place/The+Funk/data=!4m2!3m1!1s0x135b5ddc92800a0d:0xa571823b71205d14",
@@ -38512,7 +38512,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Corfu",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Στάζει Μέλι, Λουκουμάδες",
       "url": "https://www.google.com/maps/place/%CE%A3%CF%84%CE%AC%CE%B6%CE%B5%CE%B9+%CE%9C%CE%AD%CE%BB%CE%B9,+%CE%9B%CE%BF%CF%85%CE%BA%CE%BF%CF%85%CE%BC%CE%AC%CE%B4%CE%B5%CF%82/data=!4m2!3m1!1s0x135b5ddcfdb2cacf:0x7ea191de24877f8b",
@@ -38582,7 +38582,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Balearic Islands",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Barbaflorida cafè",
       "url": "https://www.google.com/maps/place/Barbaflorida+caf%C3%A8/data=!4m2!3m1!1s0x1297efea18f4a947:0xb2d63acc5436e10e",
@@ -38922,7 +38922,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Munich",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "Café Kosmos",
       "url": "https://www.google.com/maps/place/Caf%C3%A9+Kosmos/data=!4m2!3m1!1s0x479e75fbc9b08a7d:0x70ef9fb83ad539ad",
@@ -39142,7 +39142,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Sofia",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "closed",
       "name": "Братя Хлебари / Baker Brothers",
       "url": "https://www.google.com/maps/place/%D0%91%D1%80%D0%B0%D1%82%D1%8F+%D0%A5%D0%BB%D0%B5%D0%B1%D0%B0%D1%80%D0%B8+%2F+Baker+Brothers/data=!4m2!3m1!1s0x40aa8564f464d4e1:0x1ff6568078b41648",
@@ -39172,7 +39172,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Sofia",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Cafe 1920",
       "url": "https://www.google.com/maps/place/Cafe+1920/data=!4m2!3m1!1s0x40aa856168410179:0x6133f40ec4696e3e",
@@ -39182,7 +39182,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Sofia",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Social Cafe Bar & Kitchen restaurant",
       "url": "https://www.google.com/maps/place/Social+Cafe+Bar+%26+Kitchen+restaurant/data=!4m2!3m1!1s0x40aa856ce4ecaf7f:0xf77ccd52ca94e7c5",
@@ -39252,7 +39252,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Cheyenne",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Shari's Cafe & Pies",
       "url": "https://www.google.com/maps/place/Shari's+Cafe+%26+Pies/data=!4m2!3m1!1s0x876f3b43174be2bd:0x75ac5bd0615cb01c",
@@ -39352,7 +39352,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Budapest",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "New York Palace Café",
       "url": "https://www.google.com/maps/place/New+York+Palace+Caf%C3%A9/data=!4m2!3m1!1s0x4741dc66e2a0e799:0x3b24d300deeee120",
@@ -39432,7 +39432,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Tiranë",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Tony’s American Restaurant & Coffee Shop (Pyramid)",
       "url": "https://www.google.com/maps/place/Tony%E2%80%99s+American+Restaurant+%26+Coffee+Shop+(Pyramid)/data=!4m2!3m1!1s0x1350310046dbce3d:0x6cfe4f747b9aea58",
@@ -39552,7 +39552,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Vancouver",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Sophie's Cosmic Cafe",
       "url": "https://www.google.com/maps/place/Sophie's+Cosmic+Cafe/data=!4m2!3m1!1s0x548673b4309483bb:0x698f2d7ae147515d",
@@ -39642,7 +39642,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Nashville",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "closed",
       "name": "Bolton's Spicy Cafe",
       "url": "https://www.google.com/maps/place/Bolton's+Spicy+Cafe/data=!4m2!3m1!1s0x886465d3f4169485:0x47d60acb7c455048",
@@ -40362,7 +40362,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Tbilisi",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Tamtaki",
       "url": "https://www.google.com/maps/place/Tamtaki/data=!4m2!3m1!1s0x40440dbc57d892c1:0x5f546fb919096779",
@@ -40492,7 +40492,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Denver",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Invisible City",
       "url": "https://www.google.com/maps/place/Invisible+City/data=!4m2!3m1!1s0x876c78a8190be643:0x34f8d94a8d29920c",
@@ -40732,7 +40732,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Lingen (Ems)",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Cafe Extrablatt Lingen am Markt",
       "url": "https://www.google.com/maps/place/Cafe+Extrablatt+Lingen+am+Markt/data=!4m2!3m1!1s0x47b78633754f5bb1:0x98b06325756de999",
@@ -40792,7 +40792,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Bordeaux",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Le Boulanger de l'Hôtel de Ville",
       "url": "https://www.google.com/maps/place/Le+Boulanger+de+l'H%C3%B4tel+de+Ville/data=!4m2!3m1!1s0xd5527c369b0cc69:0xb99918a5c06daed1",
@@ -41032,7 +41032,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Savannah",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "The Coffee Fox - Broughton St.",
       "url": "https://www.google.com/maps/place/The+Coffee+Fox+-+Broughton+St./data=!4m2!3m1!1s0x88fb9e666750132b:0x29339110b38da7a0",
@@ -41042,7 +41042,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Savannah",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "The Sentient Bean",
       "url": "https://www.google.com/maps/place/The+Sentient+Bean/data=!4m2!3m1!1s0x88fb9e154778f4b1:0xb776cc620d99c424",
@@ -41102,7 +41102,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Washington",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "YELLOW Georgetown",
       "url": "https://www.google.com/maps/place/YELLOW+Georgetown/data=!4m2!3m1!1s0x89b7b7ec99e12f01:0x730b21e3c31ac4d2",
@@ -41152,7 +41152,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Palma Mallorca",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Fornet de la Soca",
       "url": "https://www.google.com/maps/place/Fornet+de+la+Soca/data=!4m2!3m1!1s0x1297925a6e6a4d4d:0xce16afd0ce81ac82",
@@ -41182,7 +41182,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Den Haag",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Starbucks",
       "url": "https://www.google.com/maps/place/Starbucks/data=!4m2!3m1!1s0x47c5b7246c687b45:0xd037e07fdde5f018",
@@ -41262,7 +41262,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Montréal",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Café Odessa",
       "url": "https://www.google.com/maps/place/Caf%C3%A9+Odessa/data=!4m2!3m1!1s0x4cc9196e1e6cb55b:0x9a78a9a30475518e",
@@ -41272,7 +41272,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Montréal",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Olive et Gourmando",
       "url": "https://www.google.com/maps/place/Olive+et+Gourmando/data=!4m2!3m1!1s0x4cc91a5902615863:0x8bd5e7b9b0be142a",
@@ -41292,7 +41292,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Neubrandenburg",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "Turmcafé-nb",
       "url": "https://www.google.com/maps/place/Turmcaf%C3%A9-nb/data=!4m2!3m1!1s0x47abc372e19a53ff:0xd2e63c865a9989",
@@ -41382,7 +41382,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Wrocław",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Helen Cafe",
       "url": "https://www.google.com/maps/place/Helen+Cafe/data=!4m2!3m1!1s0x470fc32d262d6fe9:0xeb64428611e81ea7",
@@ -41392,7 +41392,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Wrocław",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "WW Café",
       "url": "https://www.google.com/maps/place/WW+Caf%C3%A9/data=!4m2!3m1!1s0x470fe9be6befd9ef:0xe722750aabfafedc",
@@ -41672,7 +41672,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Fort Mill",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Lee Cafe",
       "url": "https://www.google.com/maps/place/Lee+Cafe/data=!4m2!3m1!1s0x88569b184e79e6d9:0x2024d06873d3781d",
@@ -41732,7 +41732,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Las Vegas",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Gritz Cafe",
       "url": "https://www.google.com/maps/place/Gritz+Cafe/data=!4m2!3m1!1s0x80c8c2482d65ca79:0x3c9243f3ebf6602c",
@@ -41742,7 +41742,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Las Vegas",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Truffles N Bacon Cafe ®",
       "url": "https://www.google.com/maps/place/Truffles+N+Bacon+Cafe+%C2%AE/data=!4m2!3m1!1s0x80c8cf8c84240225:0x1dcff3a27771056b",
@@ -41752,7 +41752,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Madrid",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "ACID Café",
       "url": "https://www.google.com/maps/place/ACID+Caf%C3%A9/data=!4m2!3m1!1s0xd422628361b5e69:0x3ad71c37b049371e",
@@ -41902,7 +41902,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "South Africa",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Honest Chocolate Cafe",
       "url": "https://www.google.com/maps/place/Honest+Chocolate+Cafe/data=!4m2!3m1!1s0x1dcc6765c2964f6f:0xd3650664260d0e9b",
@@ -41912,7 +41912,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "South Africa",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Truth Coffee Roasting",
       "url": "https://www.google.com/maps/place/Truth+Coffee+Roasting/data=!4m2!3m1!1s0x1dcc677c90fa4f93:0xfb23b9d5b59813f6",
@@ -42522,7 +42522,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Nürnberg",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Orko",
       "url": "https://www.google.com/maps/place/Orko/data=!4m2!3m1!1s0x479f57546008d947:0x8eec689c574ad102",
@@ -42852,7 +42852,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Portland ME",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Tandem Coffee and Bakery",
       "url": "https://www.google.com/maps/place/Tandem+Coffee+and+Bakery/data=!4m2!3m1!1s0x4cb29c1028758f2f:0x2febf551bacaa051",
@@ -44132,7 +44132,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Other",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "Roy's Motel & Cafe",
       "url": "https://www.google.com/maps/place/Roy's+Motel+%26+Cafe/data=!4m2!3m1!1s0x80c55662518af0f5:0x22fa905c2af7ab95",
@@ -44142,7 +44142,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Other",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "favorite",
       "name": "Bite Cafe",
       "url": "https://www.google.com/maps/place/Bite+Cafe/data=!4m2!3m1!1s0x880fd2b211757021:0xd48968cd97590f21",
@@ -44152,7 +44152,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Other",
-      "category": "cafe",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Bunkier Cafe",
       "url": "https://www.google.com/maps/place/Bunkier+Cafe/data=!4m2!3m1!1s0x47165b0eeda0da1b:0x3158c70bf835e2d1",
@@ -44212,7 +44212,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Other",
-      "category": "bakery",
+      "category": "cafes and bakeries",
       "list": "want to go",
       "name": "Ashby Pies",
       "url": "https://www.google.com/maps/place/Ashby+Pies/data=!4m2!3m1!1s0x6d0d4b752e509c85:0x44af7632260a54ed",

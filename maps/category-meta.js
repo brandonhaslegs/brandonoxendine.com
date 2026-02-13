@@ -3,19 +3,11 @@ window.CATEGORY_META = {
     "label": "Arts",
     "emoji": "🖼️"
   },
-  "bakery": {
-    "label": "Bakeries",
-    "emoji": "🥐"
-  },
   "bar": {
     "label": "Bars",
     "emoji": "🍺"
   },
-  "cafe": {
-    "label": "Cafes",
-    "emoji": "☕"
-  },
-  "cafes & bakeries": {
+  "cafes and bakeries": {
     "label": "Cafes & Bakeries",
     "emoji": "🥐"
   },
