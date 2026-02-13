@@ -32,6 +32,7 @@ li.closed .place-note{text-decoration:line-through;color:inherit}
 .leaflet-container{outline:none}
 .leaflet-container:focus{outline:none}
 .leaflet-container,.leaflet-container *{font-family:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
+.leaflet-control-attribution{display:none !important}
 .leaflet-popup-content-wrapper{background:#0f0f0f;color:#fff;border:1px solid rgba(255,255,255,.18);border-radius:14px;box-shadow:0 10px 30px rgba(0,0,0,.45)}
 .leaflet-popup-content{margin:8px 14px 12px;line-height:1.25;text-align:center}
 .leaflet-popup-tip{background:#0f0f0f;border:1px solid rgba(255,255,255,.18)}
@@ -5280,7 +5281,7 @@ return;
 mapDiv.style.display="block";
 let state=cityMapState.get(city);
 if(!state){
-const map=L.map(mapDiv,{scrollWheelZoom:false,zoomControl:true,attributionControl:true});
+const map=L.map(mapDiv,{scrollWheelZoom:false,zoomControl:true,attributionControl:false});
 L.tileLayer("https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png",{maxZoom:20,subdomains:"abcd",attribution:"&copy; OpenStreetMap contributors &copy; CARTO"}).addTo(map);
 const layer=L.layerGroup().addTo(map);
 state={map,layer};
