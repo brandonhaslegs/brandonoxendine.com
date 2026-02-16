@@ -4,6 +4,19 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>404 - That page ain’t there.</title>
+    <script>
+      (function () {
+        var path = window.location.pathname.replace(/\/+$/, "") || "/";
+        if (path.indexOf("/maps/") !== 0) return;
+        var segments = path.slice("/maps/".length).split("/").filter(Boolean);
+        if (!segments.length) return;
+        var params = new URLSearchParams();
+        params.set("city", segments[0]);
+        if (segments.length > 1) params.set("category", segments[1]);
+        if (segments.length > 2) params.set("list", segments[2]);
+        window.location.replace("/maps/?" + params.toString());
+      })();
+    </script>
     <link rel="stylesheet" href="/assets/css/reset.css" />
     <link rel="stylesheet" href="/assets/css/site.css" />
   </head>
@@ -60,21 +73,6 @@
           "/product-design/",
           "/experimentingwithhomelessness/",
         ];
-        if (path.indexOf("/maps/") === 0) {
-          var segments = path
-            .slice("/maps/".length)
-            .split("/")
-            .filter(Boolean);
-          if (segments.length) {
-            var params = new URLSearchParams();
-            params.set("city", segments[0]);
-            if (segments.length > 1) params.set("category", segments[1]);
-            if (segments.length > 2) params.set("list", segments[2]);
-            window.location.replace("/maps/?" + params.toString());
-            return;
-          }
-        }
-
         var target = mapping[path];
         if (!target) {
           for (var i = 0; i < prefixes.length; i += 1) {
