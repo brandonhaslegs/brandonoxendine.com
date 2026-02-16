@@ -42821,7 +42821,7 @@ window.PLACES_DATA = {
       "lng": 7.7418774500000005
     },
     {
-      "city": "Δήμος Μήλου",
+      "city": "Milos",
       "category": "bar",
       "list": "want to go",
       "name": "Sarakiniko Beach",
@@ -42831,7 +42831,7 @@ window.PLACES_DATA = {
       "lng": 24.458423
     },
     {
-      "city": "Δήμος Μήλου",
+      "city": "Milos",
       "category": "experience",
       "list": "want to go",
       "name": "Sikia Cave",

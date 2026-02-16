@@ -579,7 +579,7 @@ window.CITY_META = {
     "emoji": "📍",
     "country": "Switzerland"
   },
-  "Δήμος Μήλου": {
+  "Milos": {
     "emoji": "📍",
     "country": "Greece"
   }

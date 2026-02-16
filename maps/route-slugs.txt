@@ -1,0 +1,175 @@
+# Valid URL Slugs
+
+Base patterns:
+- /maps/{city}
+- /maps/{city}/{category}
+- /maps/{city}/{category}/{list}
+- /maps/{city}/all/{list}
+
+List segments: favorites, want-to-go, closed
+
+Global category segments:
+- art -> arts
+- bar -> bars
+- cafes and bakeries -> cafes-and-bakeries
+- club -> clubs
+- experience -> experiences
+- flea market -> flea-markets
+- hotel -> hotels
+- music venue -> music-venues
+- nail salon -> nail-salons
+- nature -> nature
+- other -> other-places
+- park -> parks
+- restaurant -> restaurants
+- shop -> shops
+- tattoo -> tattoo
+- vintage -> vintage-shops
+
+City + available category segments:
+- Adelaide -> adelaide : flea-markets, restaurants
+- Amsterdam -> amsterdam : arts, bars, cafes-and-bakeries, clubs, experiences, hotels, other-places, parks, restaurants, shops
+- Antwerpen -> antwerpen : restaurants
+- Argentina -> argentina : bars, other-places, restaurants
+- Athens -> athens : bars, cafes-and-bakeries, other-places, parks, restaurants, shops, vintage-shops
+- Austin -> austin : bars, cafes-and-bakeries, experiences, other-places, restaurants, shops
+- Av. Brasília -> av-bras-lia : arts, other-places
+- Balearic Islands -> balearic-islands : bars, cafes-and-bakeries, hotels, other-places, parks, restaurants
+- Bangkok -> bangkok : bars, cafes-and-bakeries, clubs, experiences, hotels, other-places, restaurants, shops, tattoo
+- Barcelona -> barcelona : arts, bars, experiences, flea-markets, hotels, other-places, restaurants
+- Basel -> basel : clubs, other-places, restaurants
+- Bay Area -> bay-area : arts, bars, cafes-and-bakeries, clubs, experiences, hotels, other-places, parks, restaurants, shops, vintage-shops
+- Berlin -> berlin : arts, bars, cafes-and-bakeries, clubs, experiences, flea-markets, hotels, music-venues, nail-salons, other-places, parks, restaurants, shops, vintage-shops
+- Bordeaux -> bordeaux : cafes-and-bakeries, flea-markets, restaurants
+- Brazil -> brazil : restaurants
+- Brussels -> brussels : arts, bars, experiences, other-places, parks, restaurants
+- Budapest -> budapest : bars, cafes-and-bakeries, hotels, other-places, restaurants
+- Calvi -> calvi : restaurants
+- Charleston -> charleston : arts, bars, cafes-and-bakeries, clubs, experiences, hotels, other-places, parks, restaurants, shops, tattoo
+- Charlotte -> charlotte : bars, cafes-and-bakeries, other-places, parks, restaurants, shops
+- Cheyenne -> cheyenne : bars, cafes-and-bakeries, other-places, restaurants
+- Chicago -> chicago : arts, bars, cafes-and-bakeries, clubs, experiences, hotels, nail-salons, other-places, parks, restaurants, shops, vintage-shops
+- Cleebronn -> cleebronn : other-places, parks
+- Cologne -> cologne : bars, experiences, music-venues, other-places, restaurants
+- Columbia -> columbia : bars, music-venues
+- Copenhagen -> copenhagen : arts, bars, cafes-and-bakeries, experiences, hotels, other-places, restaurants, shops
+- Corfu -> corfu : bars, cafes-and-bakeries, experiences, other-places, restaurants, shops
+- Den Haag -> den-haag : arts, cafes-and-bakeries, restaurants, shops
+- Denver -> denver : bars, cafes-and-bakeries, clubs, restaurants, shops
+- Des Moines -> des-moines : bars
+- Detroit -> detroit : bars, cafes-and-bakeries, hotels, other-places, restaurants, shops
+- Dhërmi -> dh-rmi : hotels, other-places
+- Dresden -> dresden : bars, clubs, other-places, restaurants, shops
+- Duisburg -> duisburg : experiences, parks
+- Durrës -> durr-s : bars, flea-markets, hotels, other-places, restaurants
+- Düsseldorf -> d-sseldorf : other-places, restaurants
+- Edinburgh -> edinburgh : bars, restaurants
+- Edisto Island -> edisto-island : bars, restaurants, shops
+- Elsdorf -> elsdorf : experiences, other-places
+- Essen -> essen : arts, experiences, other-places
+- Fehmarn -> fehmarn : bars, experiences, restaurants
+- Finland -> finland : clubs, parks
+- Florence -> florence : hotels, shops
+- Fort Mill -> fort-mill : bars, cafes-and-bakeries, shops
+- Framersheim -> framersheim : restaurants
+- Frankfurt -> frankfurt : arts, bars, restaurants
+- Gipuzkoa -> gipuzkoa : bars, other-places, restaurants, shops
+- Girona -> girona : arts, other-places
+- Gjirokastër -> gjirokast-r : experiences, other-places
+- Glasgow -> glasgow : restaurants, shops
+- Grad Dubrovnik -> grad-dubrovnik : bars, restaurants
+- Greenville -> greenville : bars, restaurants
+- Grindelwald -> grindelwald : arts, experiences
+- Guatemala -> guatemala : bars, hotels, restaurants
+- Hamburg -> hamburg : arts, bars, cafes-and-bakeries, hotels, other-places, restaurants, shops
+- Ho Chi Minh City -> ho-chi-minh-city : restaurants, shops
+- Illes Balears -> illes-balears : bars, experiences, flea-markets, hotels, restaurants
+- India -> india : clubs, hotels, other-places
+- Istanbul -> istanbul : bars, clubs, nail-salons, other-places, parks, restaurants, shops
+- Iwakuni -> iwakuni : other-places, restaurants
+- Kraków -> krak-w : arts, bars, cafes-and-bakeries, clubs, music-venues, other-places, parks, restaurants
+- Krujë -> kruj : experiences, other-places
+- Kyiv -> kyiv : bars, cafes-and-bakeries, clubs, experiences, hotels, other-places, restaurants
+- Laramie -> laramie : bars, restaurants
+- Las Palmas -> las-palmas : bars, cafes-and-bakeries, clubs, experiences, hotels, other-places, parks, restaurants, shops
+- Las Vegas -> las-vegas : arts, cafes-and-bakeries
+- Leipzig -> leipzig : arts, bars, clubs, experiences, other-places, parks, restaurants
+- Lingen (Ems) -> lingen-ems : bars, cafes-and-bakeries, other-places, restaurants
+- Lisbon -> lisbon : arts, bars, cafes-and-bakeries, experiences, other-places, parks, restaurants, shops
+- London -> london : arts, bars, cafes-and-bakeries, clubs, experiences, flea-markets, nature, other-places, parks, restaurants, shops, vintage-shops
+- Los Angeles -> los-angeles : arts, bars, cafes-and-bakeries, clubs, flea-markets, hotels, other-places, parks, restaurants, shops, tattoo, vintage-shops
+- Madison -> madison : bars, other-places, restaurants, shops
+- Madrid -> madrid : cafes-and-bakeries, other-places, shops
+- Mainz -> mainz : arts, bars, cafes-and-bakeries, flea-markets, other-places, restaurants, shops
+- Malta -> malta : bars, cafes-and-bakeries, experiences, restaurants, shops
+- Manchester -> manchester : restaurants, shops
+- Manila -> manila : parks, restaurants
+- Marrakesh -> marrakesh : bars, clubs, hotels, other-places, restaurants
+- Marseille -> marseille : arts, bars, cafes-and-bakeries, other-places, restaurants, shops
+- Metzingen -> metzingen : other-places, shops
+- Mexico City -> mexico-city : bars, cafes-and-bakeries, clubs, other-places, parks, restaurants, shops
+- Miami -> miami : restaurants
+- Milano MI -> milano-mi : bars, restaurants, shops
+- Milos -> milos : bars, experiences
+- Minneapolis -> minneapolis : bars, restaurants
+- Montreal -> montreal : bars, cafes-and-bakeries, hotels, restaurants, shops
+- Montréal -> montr-al : cafes-and-bakeries, restaurants
+- Munich -> munich : bars, cafes-and-bakeries, clubs, other-places, restaurants, tattoo
+- Nakagyo Ward -> nakagyo-ward : flea-markets, restaurants
+- Nashville -> nashville : bars, cafes-and-bakeries, restaurants
+- Neubrandenburg -> neubrandenburg : bars, cafes-and-bakeries, experiences, hotels
+- New Orleans -> new-orleans : bars, hotels, restaurants, shops
+- Nice -> nice : bars, restaurants
+- Nienhagen -> nienhagen : bars, other-places
+- Noordwijk -> noordwijk : clubs, restaurants
+- Norway -> norway : experiences, other-places
+- Nürnberg -> n-rnberg : cafes-and-bakeries, other-places
+- NYC -> nyc : arts, bars, cafes-and-bakeries, clubs, experiences, flea-markets, hotels, music-venues, other-places, parks, restaurants, shops, tattoo, vintage-shops
+- Orlando -> orlando : shops
+- Other -> other : arts, bars, cafes-and-bakeries, clubs, experiences, hotels, music-venues, nature, other-places, parks, restaurants, shops, tattoo, vintage-shops
+- Palm Springs -> palm-springs : clubs, parks
+- Palma Mallorca -> palma-mallorca : cafes-and-bakeries, restaurants
+- Paris -> paris : arts, bars, cafes-and-bakeries, clubs, hotels, other-places, parks, restaurants, shops, vintage-shops
+- Peru -> peru : arts, other-places, restaurants, shops
+- Philadelphia -> philadelphia : restaurants, tattoo
+- Phoenix -> phoenix : arts, restaurants
+- Pocahontas -> pocahontas : other-places, restaurants
+- Portland ME -> portland-me : cafes-and-bakeries, restaurants
+- Portland OR -> portland-or : bars, cafes-and-bakeries, other-places, restaurants, shops
+- Porto -> porto : other-places, shops
+- Prague -> prague : bars, clubs, restaurants
+- Prishtina -> prishtina : arts, bars, cafes-and-bakeries, clubs, experiences, hotels, other-places, restaurants
+- Reinhardtsdorf-Schöna -> reinhardtsdorf-sch-na : other-places
+- Riga -> riga : arts, bars, cafes-and-bakeries, clubs, experiences, flea-markets, other-places, restaurants, shops
+- Rock Hill -> rock-hill : arts, bars, cafes-and-bakeries, other-places, parks, restaurants, shops, tattoo
+- Rosenthal-Bielatal -> rosenthal-bielatal : other-places
+- Rust -> rust : parks, restaurants
+- San Antonio -> san-antonio : bars, shops
+- San Diego -> san-diego : bars, other-places, parks, shops
+- Sassnitz -> sassnitz : other-places
+- Savannah -> savannah : bars, cafes-and-bakeries, parks, restaurants
+- Seattle -> seattle : bars, cafes-and-bakeries, restaurants, tattoo
+- Seoul -> seoul : cafes-and-bakeries, clubs, flea-markets, other-places, restaurants
+- Singapore -> singapore : bars, clubs, other-places, parks, restaurants
+- Sofia -> sofia : bars, cafes-and-bakeries, flea-markets, restaurants
+- South Africa -> south-africa : cafes-and-bakeries, shops
+- St. Louis -> st-louis : arts, restaurants
+- Stockholm -> stockholm : bars, shops
+- Sydney -> sydney : restaurants
+- Tbilisi -> tbilisi : cafes-and-bakeries, clubs, restaurants
+- Tiranë -> tiran : bars, cafes-and-bakeries, experiences, hotels, other-places, restaurants
+- Tokyo -> tokyo : arts, bars, cafes-and-bakeries, other-places, restaurants, shops
+- Toronto -> toronto : arts, bars, cafes-and-bakeries, hotels, restaurants, shops
+- Uccle -> uccle : bars, other-places
+- United Arab Emirates -> united-arab-emirates : other-places, restaurants, shops
+- Vancouver -> vancouver : bars, cafes-and-bakeries, restaurants
+- Vilnius -> vilnius : arts, bars, restaurants
+- Vlorë -> vlor : experiences
+- Warsaw -> warsaw : arts, bars, cafes-and-bakeries, hotels, other-places, restaurants, shops
+- Washington -> washington : cafes-and-bakeries, restaurants
+- Wien -> wien : arts, bars, cafes-and-bakeries, experiences, flea-markets, hotels, other-places, parks, restaurants, shops, vintage-shops
+- Wiesbaden -> wiesbaden : restaurants
+- Wrocław -> wroc-aw : cafes-and-bakeries, restaurants
+- Wustermark -> wustermark : parks, shops
+- Zermatt -> zermatt : other-places
+- Zürich -> z-rich : arts, restaurants
