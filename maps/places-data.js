@@ -10142,6 +10142,16 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
+      "category": "club",
+      "list": "closed",
+      "name": "Griessmuehle",
+      "url": "https://app.foursquare.com/v/griessmuehle/4ee24702f9f47646d7b2785f",
+      "note": "",
+      "lat": 52.47633300494164,
+      "lng": 13.457803678806297
+    },
+    {
+      "city": "Berlin",
       "category": "other",
       "list": "want to go",
       "name": "Golf Club Tattoo Studio",

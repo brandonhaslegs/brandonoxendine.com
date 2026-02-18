@@ -270,11 +270,14 @@ function chooseBestVenue(place, venues, byNormName) {
   );
   let chosen = toAggregate.length ? toAggregate : accepted.filter((x) => x.venue.id === best.id);
   if (chosen.length > 1) {
-    const sortedByCount = [...chosen].sort((a, b) => b.venue.count - a.venue.count);
-    const top = sortedByCount[0];
-    const second = sortedByCount[1];
-    if (top && second && top.venue.count >= second.venue.count * 3) {
-      chosen = [top];
+    const allExactCompact = chosen.every((x) => x.exactCompact);
+    if (!allExactCompact) {
+      const sortedByCount = [...chosen].sort((a, b) => b.venue.count - a.venue.count);
+      const top = sortedByCount[0];
+      const second = sortedByCount[1];
+      if (top && second && top.venue.count >= second.venue.count * 3) {
+        chosen = [top];
+      }
     }
   }
   let count = 0;

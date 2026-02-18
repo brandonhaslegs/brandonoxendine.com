@@ -600,9 +600,9 @@ window.SWARM_PLACE_STATS = {
     "lastVisit": "2015-12-06"
   },
   "berlin|jones ice cream|52.49048,13.35345": {
-    "count": 5,
+    "count": 6,
     "firstVisit": "2018-04-29",
-    "lastVisit": "2022-07-03"
+    "lastVisit": "2025-04-20"
   },
   "berlin|jules b part|52.49907,13.37335": {
     "count": 1,
@@ -945,8 +945,8 @@ window.SWARM_PLACE_STATS = {
     "lastVisit": "2022-11-21"
   },
   "berlin|piri s|52.48070,13.43327": {
-    "count": 23,
-    "firstVisit": "2022-10-30",
+    "count": 27,
+    "firstVisit": "2015-05-30",
     "lastVisit": "2025-10-19"
   },
   "berlin|prince|52.50890,13.40222": {
@@ -1195,9 +1195,9 @@ window.SWARM_PLACE_STATS = {
     "lastVisit": "2019-10-15"
   },
   "berlin|umami|52.53444,13.41945": {
-    "count": 4,
+    "count": 5,
     "firstVisit": "2016-09-08",
-    "lastVisit": "2017-06-23"
+    "lastVisit": "2017-09-29"
   },
   "berlin|ushido|52.54223,13.41626": {
     "count": 1,
@@ -2659,6 +2659,11 @@ window.SWARM_PLACE_STATS = {
     "firstVisit": "2016-04-10",
     "lastVisit": "2018-12-01"
   },
+  "berlin|griessmuehle|52.47633,13.45780": {
+    "count": 20,
+    "firstVisit": "2015-07-10",
+    "lastVisit": "2020-09-21"
+  },
   "berlin|golf club tattoo studio|52.48496,13.35827": {
     "count": 1,
     "firstVisit": "2025-10-26",
@@ -2670,9 +2675,9 @@ window.SWARM_PLACE_STATS = {
     "lastVisit": "2016-10-22"
   },
   "berlin|heidegluhen|52.53810,13.32755": {
-    "count": 9,
+    "count": 10,
     "firstVisit": "2016-07-30",
-    "lastVisit": "2019-06-02"
+    "lastVisit": "2019-08-24"
   },
   "berlin|humboldthain club|52.54439,13.37854": {
     "count": 2,
@@ -4280,7 +4285,7 @@ window.SWARM_PLACE_STATS = {
     "lastVisit": "2021-11-28"
   },
   "charleston|earth fare|32.77654,-79.97494": {
-    "count": 5,
+    "count": 6,
     "firstVisit": "2016-08-21",
     "lastVisit": "2025-11-27"
   },
@@ -4635,8 +4640,8 @@ window.SWARM_PLACE_STATS = {
     "lastVisit": "2022-10-02"
   },
   "los angeles|taco bell|33.88144,-118.32615": {
-    "count": 4,
-    "firstVisit": "2016-08-16",
+    "count": 6,
+    "firstVisit": "2016-03-10",
     "lastVisit": "2025-12-03"
   },
   "los angeles|l e oyster bar|34.08901,-118.26898": {
@@ -4660,12 +4665,12 @@ window.SWARM_PLACE_STATS = {
     "lastVisit": "2022-09-29"
   },
   "los angeles|target|33.86890,-118.35770": {
-    "count": 13,
+    "count": 19,
     "firstVisit": "2016-08-16",
     "lastVisit": "2025-11-29"
   },
   "los angeles|ulta beauty|33.86835,-118.35401": {
-    "count": 3,
+    "count": 4,
     "firstVisit": "2017-12-26",
     "lastVisit": "2025-08-07"
   },
@@ -5120,9 +5125,9 @@ window.SWARM_PLACE_STATS = {
     "lastVisit": "2025-07-18"
   },
   "rock hill|five guys|34.94256,-80.95976": {
-    "count": 6,
-    "firstVisit": "2018-11-09",
-    "lastVisit": "2024-02-22"
+    "count": 11,
+    "firstVisit": "2015-09-30",
+    "lastVisit": "2025-11-28"
   },
   "rock hill|ginza buffet of rock hill|34.94089,-80.96600": {
     "count": 2,
@@ -5755,7 +5760,7 @@ window.SWARM_PLACE_STATS = {
     "lastVisit": "2019-10-11"
   },
   "krakow|bar|50.05061,19.94077": {
-    "count": 4,
+    "count": 6,
     "firstVisit": "2016-04-09",
     "lastVisit": "2025-03-15"
   },
