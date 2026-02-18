@@ -2609,7 +2609,7 @@ window.SWARM_PLACE_STATS = {
     "firstVisit": "2015-06-20",
     "lastVisit": "2021-08-07"
   },
-  "berlin|acud theater|52.53352,13.40090": {
+  "berlin|acud|52.53352,13.40090": {
     "count": 6,
     "firstVisit": "2016-04-24",
     "lastVisit": "2019-03-02"
@@ -2699,7 +2699,7 @@ window.SWARM_PLACE_STATS = {
     "firstVisit": "2015-10-10",
     "lastVisit": "2026-02-08"
   },
-  "berlin|oxi oxi garten|52.50776,13.47475": {
+  "berlin|oxi|52.50776,13.47475": {
     "count": 8,
     "firstVisit": "2020-05-31",
     "lastVisit": "2025-09-28"
