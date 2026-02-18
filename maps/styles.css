@@ -146,6 +146,16 @@ h5 {
   opacity: 0.5;
   color: inherit;
 }
+.place-swarm-sep {
+  opacity: 0.45;
+}
+.place-swarm {
+  opacity: 0.78;
+  color: #ffd84d;
+}
+.place-swarm-last {
+  opacity: 0.5;
+}
 li.closed .place-sep {
   color: transparent;
   text-decoration-color: currentColor;

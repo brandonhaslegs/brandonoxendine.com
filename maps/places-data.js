@@ -9892,7 +9892,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "club",
+      "category": "restaurant",
       "list": "favorite",
       "name": "://about blank",
       "url": "https://www.google.com/maps/place/:%2F%2Fabout+blank/data=!4m2!3m1!1s0x47a84ef9ee28277f:0x9ba3bce436e2b6ae",
@@ -9902,9 +9902,9 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "club",
+      "category": "other",
       "list": "favorite",
-      "name": "ACUD Theater",
+      "name": "ACUD",
       "url": "https://www.google.com/maps/place/ACUD+Theater/data=!4m2!3m1!1s0x47a8517189244c4d:0x4cb10e780e0cd5d3",
       "note": "",
       "lat": 52.533521199999996,
@@ -9912,7 +9912,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "club",
+      "category": "restaurant",
       "list": "want to go",
       "name": "Aleppo Supper Club",
       "url": "https://www.google.com/maps/place/Aleppo+Supper+Club/data=!4m2!3m1!1s0x47a8573045bb60a9:0xe410ec8782d13cc2",
@@ -9932,7 +9932,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "club",
+      "category": "hotel",
       "list": "want to go",
       "name": "Bar Casa Camper Berlin",
       "url": "https://www.google.com/maps/place/Bar+Casa+Camper+Berlin/data=!4m2!3m1!1s0x47a851e16eac9945:0xc69cf58985425d78",
@@ -9942,7 +9942,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "club",
+      "category": "restaurant",
       "list": "want to go",
       "name": "Baraka - Moroccan Restaurant",
       "url": "https://www.google.com/maps/place/Baraka+-+Moroccan+Restaurant/data=!4m2!3m1!1s0x47a84e4a599a72c7:0x1331badec4256a53",
@@ -9972,7 +9972,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "club",
+      "category": "restaurant",
       "list": "want to go",
       "name": "Beyond Ramen - Vegan",
       "url": "https://www.google.com/maps/place/Beyond+Ramen+-+Vegan/data=!4m2!3m1!1s0x47a84fc394811cf7:0x2e127a1706d54242",
@@ -10022,7 +10022,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "club",
+      "category": "experience",
       "list": "favorite",
       "name": "Club Mud Berlin",
       "url": "https://www.google.com/maps/place/Club+Mud+Berlin/data=!4m2!3m1!1s0x47a84f9be4a40001:0x960db813b70e5790",
@@ -10062,7 +10062,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "club",
+      "category": "experience",
       "list": "favorite",
       "name": "Cowboy Club Old Texas Berlin 1950 e.V.",
       "url": "https://www.google.com/maps/place/Cowboy+Club+Old+Texas+Berlin+1950+e.V./data=!4m2!3m1!1s0x47a85693264af3c7:0xd00fd1b1db372bac",
@@ -10112,7 +10112,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "club",
+      "category": "cafes and bakeries",
       "list": "closed",
       "name": "Frank Café",
       "url": "https://www.google.com/maps/place/Frank+Caf%C3%A9/data=!4m2!3m1!1s0x47a851afccbb6b91:0x4cf6598425cabe94",
@@ -10142,7 +10142,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "club",
+      "category": "other",
       "list": "want to go",
       "name": "Golf Club Tattoo Studio",
       "url": "https://www.google.com/maps/place/Golf+Club+Tattoo+Studio/data=!4m2!3m1!1s0x47a851003d29c125:0x11b0e991145c03e2",
@@ -10152,7 +10152,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "club",
+      "category": "restaurant",
       "list": "favorite",
       "name": "Gorgonzola Club",
       "url": "https://www.google.com/maps/place/Gorgonzola+Club/data=!4m2!3m1!1s0x47a84e33ab7da2e3:0x7d4d5200e037e1f2",
@@ -10254,7 +10254,7 @@ window.PLACES_DATA = {
       "city": "Berlin",
       "category": "club",
       "list": "favorite",
-      "name": "OXI & OXI Garten",
+      "name": "OXI",
       "url": "https://www.google.com/maps/place/OXI+%26+OXI+Garten/data=!4m2!3m1!1s0x47a84f3716885785:0xf4f42513df6ca548",
       "note": "",
       "lat": 52.5077644,
@@ -10272,7 +10272,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "club",
+      "category": "restaurant",
       "list": "want to go",
       "name": "Pasta Factory",
       "url": "https://www.google.com/maps/place/Pasta+Factory/data=!4m2!3m1!1s0x47a84f1c0b8f78d1:0xa5cd4d8b619d3e97",
@@ -10312,7 +10312,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "club",
+      "category": "restaurant",
       "list": "want to go",
       "name": "Salami Social Club",
       "url": "https://www.google.com/maps/place/Salami+Social+Club/data=!4m2!3m1!1s0x47a84e6071bc3709:0xe79dcace089c1f87",
@@ -10362,7 +10362,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "club",
+      "category": "other",
       "list": "favorite",
       "name": "Tennis club SCC Berlin e.V.",
       "url": "https://www.google.com/maps/place/Tennis+club+SCC+Berlin+e.V./data=!4m2!3m1!1s0x47a8573144167d99:0x71e9b91a8a817cee",
@@ -10372,7 +10372,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "club",
+      "category": "restaurant",
       "list": "want to go",
       "name": "The Vegan Monkey",
       "url": "https://www.google.com/maps/place/The+Vegan+Monkey/data=!4m2!3m1!1s0x47a8517a3c2876ed:0xa2abfcd57d9166ca",
@@ -10442,7 +10442,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "club",
+      "category": "restaurant",
       "list": "want to go",
       "name": "Panda Meister Berlin Ostbahnhof",
       "url": "https://www.google.com/maps/place/Panda+Meister+Berlin+Ostbahnhof/data=!4m2!3m1!1s0x47a84f172aae6fb5:0x16d5b4c0760ae2fa",
