@@ -650,9 +650,9 @@ window.SWARM_PLACE_STATS = {
     "lastVisit": "2015-05-05"
   },
   "berlin|kuchi mitte|52.52719,13.39924": {
-    "count": 7,
+    "count": 2,
     "firstVisit": "2015-12-19",
-    "lastVisit": "2026-02-14"
+    "lastVisit": "2018-02-22"
   },
   "berlin|kulturlabor trial error e v|52.47063,13.44253": {
     "count": 1,
@@ -1024,11 +1024,6 @@ window.SWARM_PLACE_STATS = {
     "firstVisit": "2024-09-12",
     "lastVisit": "2025-01-16"
   },
-  "berlin|sanku maots ai mitte|52.52645,13.38699": {
-    "count": 2,
-    "firstVisit": "2025-02-16",
-    "lastVisit": "2026-01-17"
-  },
   "berlin|santa cantina|52.50849,13.45526": {
     "count": 1,
     "firstVisit": "2020-01-23",
@@ -1165,9 +1160,9 @@ window.SWARM_PLACE_STATS = {
     "lastVisit": "2022-11-05"
   },
   "berlin|tommis burger joint mitte|52.53239,13.39755": {
-    "count": 3,
+    "count": 1,
     "firstVisit": "2017-03-23",
-    "lastVisit": "2024-10-26"
+    "lastVisit": "2017-03-23"
   },
   "berlin|tossakan berlin|52.54373,13.42000": {
     "count": 1,
@@ -1380,9 +1375,9 @@ window.SWARM_PLACE_STATS = {
     "lastVisit": "2022-02-01"
   },
   "berlin|acid mitte|52.52791,13.40246": {
-    "count": 7,
-    "firstVisit": "2015-12-19",
-    "lastVisit": "2026-02-14"
+    "count": 1,
+    "firstVisit": "2024-07-07",
+    "lastVisit": "2024-07-07"
   },
   "berlin|aera|52.52942,13.40193": {
     "count": 6,
@@ -1480,9 +1475,9 @@ window.SWARM_PLACE_STATS = {
     "lastVisit": "2022-06-21"
   },
   "berlin|comebuy berlin mitte flagshipstore|52.52360,13.39926": {
-    "count": 10,
-    "firstVisit": "2015-12-19",
-    "lastVisit": "2026-02-14"
+    "count": 3,
+    "firstVisit": "2017-06-02",
+    "lastVisit": "2019-06-29"
   },
   "berlin|common|52.47452,13.43996": {
     "count": 2,
@@ -1690,9 +1685,9 @@ window.SWARM_PLACE_STATS = {
     "lastVisit": "2025-03-02"
   },
   "berlin|the barn cafe mitte|52.52744,13.39818": {
-    "count": 7,
+    "count": 2,
     "firstVisit": "2015-06-19",
-    "lastVisit": "2024-10-26"
+    "lastVisit": "2015-12-24"
   },
   "berlin|the barn cafe nordbahnhof|52.53058,13.38367": {
     "count": 2,
@@ -1718,11 +1713,6 @@ window.SWARM_PLACE_STATS = {
     "count": 2,
     "firstVisit": "2025-05-03",
     "lastVisit": "2025-06-26"
-  },
-  "berlin|the sanctuary mitte|52.52895,13.39457": {
-    "count": 5,
-    "firstVisit": "2017-03-23",
-    "lastVisit": "2026-01-17"
   },
   "berlin|the visit coffee roastery|52.50074,13.41921": {
     "count": 2,
@@ -2390,9 +2380,9 @@ window.SWARM_PLACE_STATS = {
     "lastVisit": "2025-01-22"
   },
   "berlin|the castle berlin mitte|52.53150,13.38850": {
-    "count": 3,
+    "count": 1,
     "firstVisit": "2017-10-07",
-    "lastVisit": "2026-01-17"
+    "lastVisit": "2017-10-07"
   },
   "berlin|tier|52.48493,13.43757": {
     "count": 11,
@@ -2873,6 +2863,11 @@ window.SWARM_PLACE_STATS = {
     "count": 2,
     "firstVisit": "2016-02-21",
     "lastVisit": "2016-05-14"
+  },
+  "berlin|hundesalon paws and tails mitte|52.53357,13.37101": {
+    "count": 2,
+    "firstVisit": "2015-12-24",
+    "lastVisit": "2019-05-27"
   },
   "berlin|komponentenkontor berlin gmbh|52.46247,13.45982": {
     "count": 2,
