@@ -150,12 +150,82 @@ h5 {
   opacity: 0.45;
 }
 .place-swarm {
-  font-size: 0.5em;
+  font-size: 10px;
   opacity: 0.78;
   color: #ffd84d;
 }
-.place-swarm-last {
+.place-swarm-wrap {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+.place-swarm-trigger {
+  appearance: none;
+  background: rgba(255, 216, 77, 0.14);
+  border: 1px solid rgba(255, 216, 77, 0.45);
+  border-radius: 999px;
+  padding: 1px 7px;
+  margin: 0;
+  color: inherit;
+  font: inherit;
+  line-height: 1.25;
+  cursor: pointer;
+  vertical-align: middle;
+}
+.place-swarm-trigger:hover,
+.place-swarm-wrap.open .place-swarm-trigger,
+.place-swarm-trigger:focus-visible {
+  background: rgba(255, 216, 77, 0.24);
+  border-color: rgba(255, 216, 77, 0.72);
+  outline: none;
+}
+.place-swarm-tooltip {
+  position: absolute;
+  left: 50%;
+  bottom: calc(100% + 8px);
+  transform: translateX(-50%) translateY(4px);
+  min-width: 160px;
+  white-space: nowrap;
+  background: #0f0f0f;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+  padding: 8px 12px 10px;
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  z-index: 30;
+  transition: opacity 0.14s ease, transform 0.14s ease, visibility 0.14s ease;
+}
+.place-swarm-tooltip::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -7px;
+  width: 12px;
+  height: 12px;
+  transform: translateX(-50%) rotate(45deg);
+  background: #0f0f0f;
+  border-right: 1px solid rgba(255, 255, 255, 0.18);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+}
+.place-swarm-tooltip-first {
+  display: block;
+  margin-bottom: 2px;
+}
+.place-swarm-tooltip-last {
+  display: block;
+  margin-top: 2px;
   opacity: 0.5;
+}
+.place-swarm-wrap:hover .place-swarm-tooltip,
+.place-swarm-wrap:focus-within .place-swarm-tooltip,
+.place-swarm-wrap.open .place-swarm-tooltip {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
 }
 li.closed .place-sep {
   color: transparent;

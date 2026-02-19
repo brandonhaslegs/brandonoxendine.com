@@ -44,11 +44,6 @@ window.SWARM_PLACE_STATS = {
     "firstVisit": "2017-06-17",
     "lastVisit": "2024-09-20"
   },
-  "berlin|anh ba restaurant neukolln|52.48818,13.42753": {
-    "count": 1,
-    "firstVisit": "2022-02-11",
-    "lastVisit": "2022-02-11"
-  },
   "berlin|annelies|52.49855,13.43493": {
     "count": 2,
     "firstVisit": "2022-02-12",
@@ -293,11 +288,6 @@ window.SWARM_PLACE_STATS = {
     "count": 1,
     "firstVisit": "2022-12-17",
     "lastVisit": "2022-12-17"
-  },
-  "berlin|damn dog neukolln|52.47902,13.42503": {
-    "count": 4,
-    "firstVisit": "2024-08-28",
-    "lastVisit": "2025-09-30"
   },
   "berlin|dan thai food|52.54755,13.36896": {
     "count": 3,
@@ -1000,9 +990,9 @@ window.SWARM_PLACE_STATS = {
     "lastVisit": "2015-06-11"
   },
   "berlin|restaurant ungeheuer neukolln|52.46909,13.43489": {
-    "count": 21,
-    "firstVisit": "2016-04-09",
-    "lastVisit": "2025-12-10"
+    "count": 2,
+    "firstVisit": "2016-05-21",
+    "lastVisit": "2016-11-05"
   },
   "berlin|rogacki|52.51293,13.30534": {
     "count": 1,
@@ -1221,8 +1211,8 @@ window.SWARM_PLACE_STATS = {
   },
   "berlin|w pizza neukolln|52.48693,13.43983": {
     "count": 1,
-    "firstVisit": "2022-02-11",
-    "lastVisit": "2022-02-11"
+    "firstVisit": "2020-06-06",
+    "lastVisit": "2020-06-06"
   },
   "berlin|waroeng mie cs|52.44965,13.34845": {
     "count": 1,
@@ -1949,11 +1939,6 @@ window.SWARM_PLACE_STATS = {
     "firstVisit": "2016-02-17",
     "lastVisit": "2019-05-01"
   },
-  "berlin|cafe neukolln|52.47392,13.44275": {
-    "count": 21,
-    "firstVisit": "2016-04-09",
-    "lastVisit": "2025-12-10"
-  },
   "berlin|coba bar|52.50031,13.43984": {
     "count": 4,
     "firstVisit": "2021-11-12",
@@ -2270,8 +2255,8 @@ window.SWARM_PLACE_STATS = {
     "lastVisit": "2017-08-17"
   },
   "berlin|orangerie neukolln|52.47082,13.43678": {
-    "count": 36,
-    "firstVisit": "2016-04-09",
+    "count": 14,
+    "firstVisit": "2022-08-10",
     "lastVisit": "2026-02-07"
   },
   "berlin|pool und cigars|52.53970,13.41432": {
@@ -2854,11 +2839,6 @@ window.SWARM_PLACE_STATS = {
     "firstVisit": "2017-04-29",
     "lastVisit": "2025-11-06"
   },
-  "berlin|agora mittelweg coworking space cafe berlin neukolln|52.47561,13.43028": {
-    "count": 2,
-    "firstVisit": "2025-05-31",
-    "lastVisit": "2025-09-30"
-  },
   "berlin|bourbon dogs|52.53223,13.39308": {
     "count": 2,
     "firstVisit": "2016-02-21",
@@ -3124,11 +3104,6 @@ window.SWARM_PLACE_STATS = {
     "firstVisit": "2016-08-04",
     "lastVisit": "2019-12-18"
   },
-  "berlin|herbie unverpackt neukolln|52.48544,13.44209": {
-    "count": 1,
-    "firstVisit": "2022-02-11",
-    "lastVisit": "2022-02-11"
-  },
   "berlin|kadewe kaufhaus des westens|52.50160,13.34099": {
     "count": 12,
     "firstVisit": "2015-05-08",
@@ -3248,11 +3223,6 @@ window.SWARM_PLACE_STATS = {
     "count": 7,
     "firstVisit": "2023-12-06",
     "lastVisit": "2025-12-11"
-  },
-  "berlin|treat neukolln natural wines|52.47379,13.42351": {
-    "count": 2,
-    "firstVisit": "2025-05-31",
-    "lastVisit": "2025-09-30"
   },
   "berlin|trippen factory outlet|52.50248,13.43875": {
     "count": 2,

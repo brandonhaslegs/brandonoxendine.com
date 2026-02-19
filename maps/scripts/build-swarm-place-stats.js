@@ -46,6 +46,7 @@ const GENERIC_TOKENS = new Set([
   "venue",
   "house",
   "mitte",
+  "neukolln",
   "the",
 ]);
 
