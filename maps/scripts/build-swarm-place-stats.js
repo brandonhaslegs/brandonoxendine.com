@@ -38,6 +38,7 @@ const GENERIC_TOKENS = new Set([
   "bar",
   "cafe",
   "club",
+  "art",
   "hotel",
   "restaurant",
   "shop",

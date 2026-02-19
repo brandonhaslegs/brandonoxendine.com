@@ -1629,11 +1629,6 @@ window.SWARM_PLACE_STATS = {
     "firstVisit": "2025-06-26",
     "lastVisit": "2025-11-02"
   },
-  "berlin|round edgy|52.49365,13.42721": {
-    "count": 3,
-    "firstVisit": "2025-06-26",
-    "lastVisit": "2025-11-02"
-  },
   "berlin|sammys berliner donuts|52.52633,13.39926": {
     "count": 1,
     "firstVisit": "2024-07-18",
@@ -2833,11 +2828,6 @@ window.SWARM_PLACE_STATS = {
     "count": 1,
     "firstVisit": "2025-01-28",
     "lastVisit": "2025-01-28"
-  },
-  "berlin|thams does claws queer private beauty nails art studio|52.52621,13.41606": {
-    "count": 2,
-    "firstVisit": "2017-04-29",
-    "lastVisit": "2025-11-06"
   },
   "berlin|bourbon dogs|52.53223,13.39308": {
     "count": 2,
