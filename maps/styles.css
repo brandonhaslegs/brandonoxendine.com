@@ -162,11 +162,11 @@ h5 {
 .place-swarm-trigger {
   appearance: none;
   background: transparent;
-  border: 1px solid rgba(255, 216, 77, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.25);
   border-radius: 999px;
   padding: 2px 6px;
   margin: 0;
-  color: #ffd84d;
+  color: rgba(255, 255, 255, 0.5);
   font-family: inherit;
   font-size: 10px;
   font-weight: inherit;
@@ -178,7 +178,7 @@ h5 {
 .place-swarm-wrap.open .place-swarm-trigger,
 .place-swarm-trigger:focus-visible {
   background: transparent;
-  border-color: rgba(255, 216, 77, 0.72);
+  border-color: rgba(255, 255, 255, 0.25);
   outline: none;
 }
 .place-swarm-tooltip {
@@ -225,6 +225,7 @@ h5 {
   margin: 0;
   font-size: 12px;
   line-height: 1.2;
+  font-weight: 600;
   opacity: 0.5;
 }
 .place-swarm-wrap.open .place-swarm-tooltip {
@@ -597,9 +598,13 @@ section.category li[data-list] {
 }
 .category-masonry section.category {
   position: absolute;
+  z-index: 1;
   margin: 0;
   width: 320px;
   box-sizing: border-box;
+}
+.category-masonry section.category.tooltip-active {
+  z-index: 20;
 }
 .city[data-category-filter]:not([data-category-filter="all"])
   .category-masonry
