@@ -161,13 +161,15 @@ h5 {
 }
 .place-swarm-trigger {
   appearance: none;
-  background: rgba(255, 216, 77, 0.14);
+  background: transparent;
   border: 1px solid rgba(255, 216, 77, 0.45);
   border-radius: 999px;
-  padding: 1px 7px;
+  padding: 2px 6px;
   margin: 0;
-  color: inherit;
-  font: inherit;
+  color: #ffd84d;
+  font-family: inherit;
+  font-size: 10px;
+  font-weight: inherit;
   line-height: 1.25;
   cursor: pointer;
   vertical-align: middle;
@@ -175,7 +177,7 @@ h5 {
 .place-swarm-trigger:hover,
 .place-swarm-wrap.open .place-swarm-trigger,
 .place-swarm-trigger:focus-visible {
-  background: rgba(255, 216, 77, 0.24);
+  background: transparent;
   border-color: rgba(255, 216, 77, 0.72);
   outline: none;
 }
@@ -196,7 +198,7 @@ h5 {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  z-index: 30;
+  z-index: 1200;
   transition: opacity 0.14s ease, transform 0.14s ease, visibility 0.14s ease;
 }
 .place-swarm-tooltip::after {
@@ -213,19 +215,47 @@ h5 {
 }
 .place-swarm-tooltip-first {
   display: block;
-  margin-bottom: 2px;
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.2;
+  font-weight: 600;
 }
 .place-swarm-tooltip-last {
   display: block;
-  margin-top: 2px;
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.2;
   opacity: 0.5;
 }
-.place-swarm-wrap:hover .place-swarm-tooltip,
-.place-swarm-wrap:focus-within .place-swarm-tooltip,
 .place-swarm-wrap.open .place-swarm-tooltip {
   opacity: 1;
   visibility: visible;
   transform: translateX(-50%) translateY(0);
+}
+.place-swarm-wrap.align-left .place-swarm-tooltip {
+  left: 0;
+  right: auto;
+  transform: translateX(0) translateY(4px);
+}
+.place-swarm-wrap.align-left .place-swarm-tooltip::after {
+  left: 18px;
+  transform: rotate(45deg);
+}
+.place-swarm-wrap.align-left.open .place-swarm-tooltip {
+  transform: translateX(0) translateY(0);
+}
+.place-swarm-wrap.align-right .place-swarm-tooltip {
+  left: auto;
+  right: 0;
+  transform: translateX(0) translateY(4px);
+}
+.place-swarm-wrap.align-right .place-swarm-tooltip::after {
+  left: auto;
+  right: 18px;
+  transform: rotate(45deg);
+}
+.place-swarm-wrap.align-right.open .place-swarm-tooltip {
+  transform: translateX(0) translateY(0);
 }
 li.closed .place-sep {
   color: transparent;
@@ -236,11 +266,18 @@ li.closed .place-note {
   color: inherit;
 }
 .city-map {
+  position: relative;
+  z-index: 1;
   height: 600px;
   margin: 8px 0 12px;
   border: none;
   border-radius: 8px;
   overflow: hidden;
+}
+.category-masonry,
+.category {
+  position: relative;
+  z-index: 5;
 }
 .leaflet-container {
   outline: none;

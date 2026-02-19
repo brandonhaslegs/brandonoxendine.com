@@ -9892,7 +9892,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "restaurant",
+      "category": "club",
       "list": "favorite",
       "name": "://about blank",
       "url": "https://www.google.com/maps/place/:%2F%2Fabout+blank/data=!4m2!3m1!1s0x47a84ef9ee28277f:0x9ba3bce436e2b6ae",
