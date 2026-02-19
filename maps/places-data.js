@@ -5322,7 +5322,7 @@ window.PLACES_DATA = {
     },
     {
       "city": "Berlin",
-      "category": "art",
+      "category": "other",
       "list": "favorite",
       "name": "ANTI",
       "url": "https://www.google.com/maps/place/ANTI/data=!4m2!3m1!1s0x47a851ccdf0fccb9:0x294dd6cb7b04e15b",
@@ -6536,19 +6536,9 @@ window.PLACES_DATA = {
       "list": "favorite",
       "name": "Round & Edgy",
       "url": "https://www.google.com/maps/place/Round+%26+Edgy/data=!4m2!3m1!1s0x47a85167a85b1755:0xf49b816ca1da73de",
-      "note": "saw this place on a YouTube short",
+      "note": "saw this place on a YouTube short • RBB",
       "lat": 52.524076699999995,
       "lng": 13.407300099999999
-    },
-    {
-      "city": "Berlin",
-      "category": "cafes and bakeries",
-      "list": "favorite",
-      "name": "Round & Edgy",
-      "url": "https://www.google.com/maps/place/Round+%26+Edgy/data=!4m2!3m1!1s0x47a84f641ac7ec55:0xb04755169a84d131",
-      "note": "RBB",
-      "lat": 52.493652100000006,
-      "lng": 13.427213499999999
     },
     {
       "city": "Berlin",

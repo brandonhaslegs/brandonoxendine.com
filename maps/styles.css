@@ -142,9 +142,10 @@ h5 {
   display: none;
 }
 .place-note {
-  font-style: italic;
+  font-style: normal;
   opacity: 0.5;
   color: inherit;
+  padding: 0 4px;
 }
 .place-swarm-sep {
   opacity: 0.45;
