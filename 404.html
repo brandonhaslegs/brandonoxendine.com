@@ -7,9 +7,16 @@
     <script>
       (function () {
         var path = window.location.pathname.replace(/\/+$/, "") || "/";
+        if (path === "/maps" || path === "/berlin") {
+          window.location.replace("/maps/berlin");
+          return;
+        }
         if (path.indexOf("/maps/") !== 0) return;
         var segments = path.slice("/maps/".length).split("/").filter(Boolean);
-        if (!segments.length) return;
+        if (!segments.length) {
+          window.location.replace("/maps/berlin");
+          return;
+        }
         var params = new URLSearchParams();
         params.set("city", segments[0]);
         if (segments.length > 1) params.set("category", segments[1]);

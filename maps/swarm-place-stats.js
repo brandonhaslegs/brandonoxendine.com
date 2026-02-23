@@ -25,9 +25,9 @@ window.SWARM_PLACE_STATS = {
     "lastVisit": "2020-06-06"
   },
   "berlin|angry chicken|52.50060,13.42291": {
-    "count": 3,
+    "count": 2,
     "firstVisit": "2017-06-17",
-    "lastVisit": "2024-09-20"
+    "lastVisit": "2018-01-27"
   },
   "berlin|annelies|52.49855,13.43493": {
     "count": 2,
@@ -60,9 +60,9 @@ window.SWARM_PLACE_STATS = {
     "lastVisit": "2024-04-27"
   },
   "berlin|benedict|52.49693,13.32389": {
-    "count": 7,
+    "count": 4,
     "firstVisit": "2018-04-02",
-    "lastVisit": "2024-11-26"
+    "lastVisit": "2022-03-25"
   },
   "berlin|berlin tantuni|52.48105,13.42527": {
     "count": 1,
@@ -110,9 +110,9 @@ window.SWARM_PLACE_STATS = {
     "lastVisit": "2024-05-25"
   },
   "berlin|chicago williams bbq|52.50299,13.33727": {
-    "count": 3,
-    "firstVisit": "2016-06-09",
-    "lastVisit": "2017-05-29"
+    "count": 1,
+    "firstVisit": "2017-12-17",
+    "lastVisit": "2017-12-17"
   },
   "berlin|chicha|52.49319,13.42791": {
     "count": 5,
@@ -135,8 +135,8 @@ window.SWARM_PLACE_STATS = {
     "lastVisit": "2021-01-23"
   },
   "berlin|chutnify|52.53844,13.41888": {
-    "count": 2,
-    "firstVisit": "2021-08-18",
+    "count": 1,
+    "firstVisit": "2023-03-10",
     "lastVisit": "2023-03-10"
   },
   "berlin|chen che|52.52748,13.40264": {
@@ -168,11 +168,6 @@ window.SWARM_PLACE_STATS = {
     "count": 5,
     "firstVisit": "2017-03-15",
     "lastVisit": "2018-12-01"
-  },
-  "berlin|crackbuns|52.50311,13.40996": {
-    "count": 1,
-    "firstVisit": "2021-09-24",
-    "lastVisit": "2021-09-24"
   },
   "berlin|dan thai food|52.54755,13.36896": {
     "count": 3,
@@ -275,8 +270,8 @@ window.SWARM_PLACE_STATS = {
     "lastVisit": "2023-05-19"
   },
   "berlin|good morning vietnam|52.49021,13.38918": {
-    "count": 3,
-    "firstVisit": "2017-03-25",
+    "count": 2,
+    "firstVisit": "2019-10-03",
     "lastVisit": "2023-07-02"
   },
   "berlin|gotcilla japanese fast food|52.48612,13.43500": {
@@ -340,9 +335,9 @@ window.SWARM_PLACE_STATS = {
     "lastVisit": "2023-06-05"
   },
   "berlin|jones ice cream|52.49048,13.35345": {
-    "count": 6,
+    "count": 5,
     "firstVisit": "2018-04-29",
-    "lastVisit": "2025-04-20"
+    "lastVisit": "2022-07-03"
   },
   "berlin|kantine kohlmann|52.50014,13.43875": {
     "count": 1,
@@ -580,8 +575,8 @@ window.SWARM_PLACE_STATS = {
     "lastVisit": "2021-06-01"
   },
   "berlin|piri s|52.48070,13.43327": {
-    "count": 27,
-    "firstVisit": "2015-05-30",
+    "count": 23,
+    "firstVisit": "2022-10-30",
     "lastVisit": "2025-10-19"
   },
   "berlin|redo xxl berlin|52.45459,13.38482": {
@@ -608,11 +603,6 @@ window.SWARM_PLACE_STATS = {
     "count": 1,
     "firstVisit": "2024-01-17",
     "lastVisit": "2024-01-17"
-  },
-  "berlin|rundstuck warm|52.47397,13.42542": {
-    "count": 1,
-    "firstVisit": "2015-06-30",
-    "lastVisit": "2015-06-30"
   },
   "berlin|s h i z u k u|52.48770,13.42040": {
     "count": 1,
@@ -675,9 +665,9 @@ window.SWARM_PLACE_STATS = {
     "lastVisit": "2025-05-01"
   },
   "berlin|sticks n sushi|52.50198,13.36511": {
-    "count": 3,
+    "count": 2,
     "firstVisit": "2017-04-07",
-    "lastVisit": "2023-04-18"
+    "lastVisit": "2023-03-12"
   },
   "berlin|stranero|52.55219,13.36392": {
     "count": 4,
@@ -730,9 +720,9 @@ window.SWARM_PLACE_STATS = {
     "lastVisit": "2023-08-12"
   },
   "berlin|umami|52.53444,13.41945": {
-    "count": 5,
+    "count": 4,
     "firstVisit": "2016-09-08",
-    "lastVisit": "2017-09-29"
+    "lastVisit": "2017-06-23"
   },
   "berlin|ushido|52.54223,13.41626": {
     "count": 1,
@@ -789,20 +779,10 @@ window.SWARM_PLACE_STATS = {
     "firstVisit": "2015-07-27",
     "lastVisit": "2015-12-24"
   },
-  "berlin|zenkichi|52.52641,13.39442": {
-    "count": 1,
-    "firstVisit": "2015-06-13",
-    "lastVisit": "2015-06-13"
-  },
   "berlin|zola paul lincke ufer kreuzberg|52.49609,13.42234": {
     "count": 3,
     "firstVisit": "2016-08-26",
     "lastVisit": "2018-06-20"
-  },
-  "berlin|zum schusterjungen|52.54092,13.41420": {
-    "count": 1,
-    "firstVisit": "2017-04-27",
-    "lastVisit": "2017-04-27"
   },
   "berlin|zur alten laterne|52.44513,13.57429": {
     "count": 1,
@@ -865,9 +845,9 @@ window.SWARM_PLACE_STATS = {
     "lastVisit": "2026-01-24"
   },
   "berlin|aera|52.50237,13.32763": {
-    "count": 11,
+    "count": 5,
     "firstVisit": "2020-10-24",
-    "lastVisit": "2026-01-24"
+    "lastVisit": "2025-08-14"
   },
   "berlin|bekarei|52.54432,13.42265": {
     "count": 1,
@@ -993,11 +973,6 @@ window.SWARM_PLACE_STATS = {
     "count": 4,
     "firstVisit": "2016-05-30",
     "lastVisit": "2018-01-27"
-  },
-  "berlin|round edgy|52.52408,13.40730": {
-    "count": 3,
-    "firstVisit": "2025-06-26",
-    "lastVisit": "2025-11-02"
   },
   "berlin|scratch|52.49027,13.40258": {
     "count": 1,
@@ -1610,9 +1585,9 @@ window.SWARM_PLACE_STATS = {
     "lastVisit": "2018-12-01"
   },
   "berlin|griessmuehle|52.47633,13.45780": {
-    "count": 20,
+    "count": 19,
     "firstVisit": "2015-07-10",
-    "lastVisit": "2020-09-21"
+    "lastVisit": "2020-01-27"
   },
   "berlin|gorgonzola club|52.50115,13.41662": {
     "count": 1,
@@ -1679,11 +1654,6 @@ window.SWARM_PLACE_STATS = {
     "firstVisit": "2024-04-12",
     "lastVisit": "2024-10-03"
   },
-  "berlin|delphi lux|52.50580,13.32994": {
-    "count": 2,
-    "firstVisit": "2023-06-09",
-    "lastVisit": "2025-12-16"
-  },
   "berlin|hochbunker pallasstra e|52.49405,13.35920": {
     "count": 1,
     "firstVisit": "2021-09-17",
@@ -1695,9 +1665,9 @@ window.SWARM_PLACE_STATS = {
     "lastVisit": "2018-03-03"
   },
   "berlin|soho house|52.52760,13.41547": {
-    "count": 15,
+    "count": 14,
     "firstVisit": "2015-08-21",
-    "lastVisit": "2022-04-09"
+    "lastVisit": "2022-02-03"
   },
   "berlin|columbiahalle|52.48475,13.39248": {
     "count": 3,
@@ -1713,11 +1683,6 @@ window.SWARM_PLACE_STATS = {
     "count": 1,
     "firstVisit": "2025-01-28",
     "lastVisit": "2025-01-28"
-  },
-  "berlin|bourbon dogs|52.53223,13.39308": {
-    "count": 2,
-    "firstVisit": "2016-02-21",
-    "lastVisit": "2016-05-14"
   },
   "berlin|mandy s|52.49561,13.42937": {
     "count": 1,
@@ -1865,8 +1830,8 @@ window.SWARM_PLACE_STATS = {
     "lastVisit": "2025-09-11"
   },
   "berlin|getranke hoffmann|52.48036,13.44232": {
-    "count": 3,
-    "firstVisit": "2019-04-06",
+    "count": 1,
+    "firstVisit": "2023-09-15",
     "lastVisit": "2023-09-15"
   },
   "berlin|gorgeous|52.54548,13.41242": {
@@ -1898,11 +1863,6 @@ window.SWARM_PLACE_STATS = {
     "count": 2,
     "firstVisit": "2024-01-20",
     "lastVisit": "2026-02-14"
-  },
-  "berlin|manufactum warenhaus|52.51098,13.32265": {
-    "count": 1,
-    "firstVisit": "2023-12-16",
-    "lastVisit": "2023-12-16"
   },
   "berlin|modulor|52.50338,13.41011": {
     "count": 16,
@@ -1969,11 +1929,6 @@ window.SWARM_PLACE_STATS = {
     "firstVisit": "2022-04-02",
     "lastVisit": "2022-04-02"
   },
-  "nyc|roberta s|40.70508,-73.93358": {
-    "count": 1,
-    "firstVisit": "2015-05-22",
-    "lastVisit": "2015-05-22"
-  },
   "nyc|sweetie s k chicken|40.72497,-73.95122": {
     "count": 1,
     "firstVisit": "2023-09-23",
@@ -1983,11 +1938,6 @@ window.SWARM_PLACE_STATS = {
     "count": 1,
     "firstVisit": "2018-05-21",
     "lastVisit": "2018-05-21"
-  },
-  "nyc|zenkichi|40.71898,-73.96084": {
-    "count": 1,
-    "firstVisit": "2015-06-13",
-    "lastVisit": "2015-06-13"
   },
   "nyc|zona rosa|40.71394,-73.94957": {
     "count": 1,
@@ -2080,19 +2030,9 @@ window.SWARM_PLACE_STATS = {
     "lastVisit": "2022-04-03"
   },
   "nyc|blue bottle coffee|40.71700,-73.96102": {
-    "count": 2,
-    "firstVisit": "2015-11-22",
+    "count": 1,
+    "firstVisit": "2023-09-21",
     "lastVisit": "2023-09-21"
-  },
-  "nyc|house of small wonder|40.71898,-73.96079": {
-    "count": 1,
-    "firstVisit": "2015-09-17",
-    "lastVisit": "2015-09-17"
-  },
-  "nyc|la cabra|40.72945,-73.98684": {
-    "count": 1,
-    "firstVisit": "2024-11-22",
-    "lastVisit": "2024-11-22"
   },
   "nyc|ruby s cafe|40.73108,-73.98836": {
     "count": 2,
@@ -2149,11 +2089,6 @@ window.SWARM_PLACE_STATS = {
     "firstVisit": "2022-04-06",
     "lastVisit": "2022-04-06"
   },
-  "nyc|foot locker|40.67897,-73.86642": {
-    "count": 1,
-    "firstVisit": "2017-12-22",
-    "lastVisit": "2017-12-22"
-  },
   "nyc|m noodle shop|40.71422,-73.95068": {
     "count": 2,
     "firstVisit": "2015-05-24",
@@ -2170,9 +2105,9 @@ window.SWARM_PLACE_STATS = {
     "lastVisit": "2018-05-26"
   },
   "nyc|buffalo exchange|40.74503,-73.99234": {
-    "count": 6,
-    "firstVisit": "2015-05-16",
-    "lastVisit": "2024-05-06"
+    "count": 1,
+    "firstVisit": "2022-04-09",
+    "lastVisit": "2022-04-09"
   },
   "nyc|coming soon|40.71499,-73.99171": {
     "count": 3,
@@ -2199,11 +2134,6 @@ window.SWARM_PLACE_STATS = {
     "firstVisit": "2015-11-18",
     "lastVisit": "2015-11-18"
   },
-  "bay area|brenda s meat three|37.77818,-122.43870": {
-    "count": 1,
-    "firstVisit": "2015-11-29",
-    "lastVisit": "2015-11-29"
-  },
   "bay area|citizen s band|37.77524,-122.41013": {
     "count": 1,
     "firstVisit": "2015-11-17",
@@ -2218,11 +2148,6 @@ window.SWARM_PLACE_STATS = {
     "count": 1,
     "firstVisit": "2015-11-18",
     "lastVisit": "2015-11-18"
-  },
-  "bay area|mission chinese food|37.76120,-122.41950": {
-    "count": 2,
-    "firstVisit": "2015-11-20",
-    "lastVisit": "2018-05-23"
   },
   "bay area|rich table|37.77487,-122.42285": {
     "count": 1,
@@ -2239,16 +2164,6 @@ window.SWARM_PLACE_STATS = {
     "firstVisit": "2015-11-21",
     "lastVisit": "2015-11-21"
   },
-  "bay area|tu lan|37.78189,-122.41009": {
-    "count": 1,
-    "firstVisit": "2015-11-20",
-    "lastVisit": "2015-11-20"
-  },
-  "bay area|arizmendi bakery|37.75258,-122.42092": {
-    "count": 1,
-    "firstVisit": "2015-11-19",
-    "lastVisit": "2015-11-19"
-  },
   "bay area|arizmendi bakery|37.76340,-122.46644": {
     "count": 1,
     "firstVisit": "2015-11-19",
@@ -2264,30 +2179,15 @@ window.SWARM_PLACE_STATS = {
     "firstVisit": "2015-11-18",
     "lastVisit": "2015-11-18"
   },
-  "bay area|blue bottle coffee|37.77633,-122.42324": {
-    "count": 2,
-    "firstVisit": "2015-11-22",
-    "lastVisit": "2023-09-21"
-  },
-  "bay area|blue bottle coffee|37.78246,-122.40776": {
-    "count": 2,
-    "firstVisit": "2015-11-22",
-    "lastVisit": "2023-09-21"
-  },
   "bay area|four barrel coffee|37.76702,-122.42178": {
     "count": 1,
     "firstVisit": "2015-11-18",
     "lastVisit": "2015-11-18"
   },
   "bay area|sightglass coffee|37.77704,-122.40845": {
-    "count": 3,
+    "count": 2,
     "firstVisit": "2015-11-17",
     "lastVisit": "2015-11-19"
-  },
-  "bay area|the mill|37.77649,-122.43789": {
-    "count": 1,
-    "firstVisit": "2021-04-29",
-    "lastVisit": "2021-04-29"
   },
   "bay area|the armory club|37.76841,-122.41979": {
     "count": 1,
@@ -2304,45 +2204,15 @@ window.SWARM_PLACE_STATS = {
     "firstVisit": "2015-11-17",
     "lastVisit": "2015-11-17"
   },
-  "bay area|mauerpark|37.76276,-122.42867": {
-    "count": 3,
-    "firstVisit": "2015-05-03",
-    "lastVisit": "2024-09-24"
-  },
   "bay area|bi rite market|37.76134,-122.42471": {
     "count": 1,
     "firstVisit": "2015-11-20",
     "lastVisit": "2015-11-20"
   },
-  "bay area|buffalo exchange|37.75344,-122.42104": {
-    "count": 6,
-    "firstVisit": "2015-05-16",
-    "lastVisit": "2024-05-06"
-  },
   "bay area|deli board|37.77758,-122.40706": {
     "count": 1,
     "firstVisit": "2015-11-19",
     "lastVisit": "2015-11-19"
-  },
-  "bay area|trader joe s|37.79062,-122.41808": {
-    "count": 13,
-    "firstVisit": "2015-11-23",
-    "lastVisit": "2025-11-29"
-  },
-  "bay area|trader joe s|37.78532,-122.40555": {
-    "count": 13,
-    "firstVisit": "2015-11-23",
-    "lastVisit": "2025-11-29"
-  },
-  "bay area|trader joe s|37.84557,-122.25253": {
-    "count": 13,
-    "firstVisit": "2015-11-23",
-    "lastVisit": "2025-11-29"
-  },
-  "bay area|trader joe s|37.80997,-122.24438": {
-    "count": 13,
-    "firstVisit": "2015-11-23",
-    "lastVisit": "2025-11-29"
   },
   "chicago|ed debevic s|41.89231,-87.62321": {
     "count": 1,
@@ -2378,11 +2248,6 @@ window.SWARM_PLACE_STATS = {
     "count": 1,
     "firstVisit": "2016-09-09",
     "lastVisit": "2016-09-09"
-  },
-  "chicago|portillo s hot dogs|41.89351,-87.63154": {
-    "count": 1,
-    "firstVisit": "2024-04-30",
-    "lastVisit": "2024-04-30"
   },
   "chicago|thank you|41.93216,-87.70717": {
     "count": 1,
@@ -2439,11 +2304,6 @@ window.SWARM_PLACE_STATS = {
     "firstVisit": "2024-05-06",
     "lastVisit": "2024-05-06"
   },
-  "chicago|simone s|41.85824,-87.65105": {
-    "count": 2,
-    "firstVisit": "2016-01-28",
-    "lastVisit": "2017-01-30"
-  },
   "chicago|the violet hour|41.90909,-87.67758": {
     "count": 2,
     "firstVisit": "2015-05-14",
@@ -2463,11 +2323,6 @@ window.SWARM_PLACE_STATS = {
     "count": 2,
     "firstVisit": "2016-09-10",
     "lastVisit": "2024-05-08"
-  },
-  "chicago|pick me up cafe|41.97123,-87.66809": {
-    "count": 1,
-    "firstVisit": "2015-05-17",
-    "lastVisit": "2015-05-17"
   },
   "chicago|starbucks reserve roastery|41.89392,-87.62460": {
     "count": 1,
@@ -2494,16 +2349,6 @@ window.SWARM_PLACE_STATS = {
     "firstVisit": "2016-09-11",
     "lastVisit": "2016-09-11"
   },
-  "chicago|banana nail supply|41.95274,-87.73116": {
-    "count": 1,
-    "firstVisit": "2024-05-06",
-    "lastVisit": "2024-05-06"
-  },
-  "chicago|fatso s last stand|41.91731,-87.65871": {
-    "count": 1,
-    "firstVisit": "2016-09-09",
-    "lastVisit": "2016-09-09"
-  },
   "chicago|devil dawgs wicker park|41.90805,-87.67337": {
     "count": 1,
     "firstVisit": "2024-05-06",
@@ -2514,13 +2359,8 @@ window.SWARM_PLACE_STATS = {
     "firstVisit": "2015-05-16",
     "lastVisit": "2015-05-16"
   },
-  "chicago|balenciaga|41.89534,-87.62493": {
-    "count": 7,
-    "firstVisit": "2018-05-21",
-    "lastVisit": "2024-04-11"
-  },
   "chicago|buffalo exchange|41.90869,-87.67505": {
-    "count": 6,
+    "count": 2,
     "firstVisit": "2015-05-16",
     "lastVisit": "2024-05-06"
   },
@@ -2564,25 +2404,10 @@ window.SWARM_PLACE_STATS = {
     "firstVisit": "2015-11-11",
     "lastVisit": "2023-08-24"
   },
-  "charleston|mellow mushroom|32.78259,-79.98610": {
-    "count": 1,
-    "firstVisit": "2017-12-26",
-    "lastVisit": "2017-12-26"
-  },
-  "charleston|mellow mushroom|32.78365,-79.93495": {
-    "count": 1,
-    "firstVisit": "2017-12-26",
-    "lastVisit": "2017-12-26"
-  },
   "charleston|millers all day|32.77666,-79.93260": {
     "count": 1,
     "firstVisit": "2023-08-24",
     "lastVisit": "2023-08-24"
-  },
-  "charleston|pane e vino|32.78769,-79.93855": {
-    "count": 1,
-    "firstVisit": "2016-05-18",
-    "lastVisit": "2016-05-18"
   },
   "charleston|pink bellies|32.79328,-79.94166": {
     "count": 1,
@@ -2610,9 +2435,9 @@ window.SWARM_PLACE_STATS = {
     "lastVisit": "2023-08-25"
   },
   "charleston|waffle house|32.78079,-79.96624": {
-    "count": 5,
-    "firstVisit": "2015-11-14",
-    "lastVisit": "2023-11-21"
+    "count": 1,
+    "firstVisit": "2016-03-13",
+    "lastVisit": "2016-03-13"
   },
   "charleston|xiao bao biscuit|32.79050,-79.94715": {
     "count": 2,
@@ -2623,11 +2448,6 @@ window.SWARM_PLACE_STATS = {
     "count": 2,
     "firstVisit": "2023-08-22",
     "lastVisit": "2023-08-27"
-  },
-  "charleston|earth fare|32.77654,-79.97494": {
-    "count": 6,
-    "firstVisit": "2016-08-21",
-    "lastVisit": "2025-11-27"
   },
   "charleston|brown s court bakery|32.79198,-79.94243": {
     "count": 5,
@@ -2653,11 +2473,6 @@ window.SWARM_PLACE_STATS = {
     "count": 3,
     "firstVisit": "2015-11-11",
     "lastVisit": "2015-11-14"
-  },
-  "charleston|home team bbq|32.79695,-79.99765": {
-    "count": 1,
-    "firstVisit": "2021-11-27",
-    "lastVisit": "2021-11-27"
   },
   "charleston|last saint|32.79521,-79.93960": {
     "count": 1,
@@ -2693,16 +2508,6 @@ window.SWARM_PLACE_STATS = {
     "count": 16,
     "firstVisit": "2015-10-02",
     "lastVisit": "2017-12-27"
-  },
-  "charleston|the alley|32.79407,-79.94087": {
-    "count": 1,
-    "firstVisit": "2020-11-28",
-    "lastVisit": "2020-11-28"
-  },
-  "charleston|candlefish|32.78238,-79.93387": {
-    "count": 5,
-    "firstVisit": "2015-11-11",
-    "lastVisit": "2023-08-20"
   },
   "charleston|coming street grocery|32.79190,-79.94355": {
     "count": 1,
@@ -2774,15 +2579,10 @@ window.SWARM_PLACE_STATS = {
     "firstVisit": "2023-04-14",
     "lastVisit": "2023-04-14"
   },
-  "los angeles|in n out burger|33.95371,-118.39678": {
-    "count": 2,
-    "firstVisit": "2015-11-23",
-    "lastVisit": "2022-09-27"
-  },
   "los angeles|chick fil a|33.88373,-118.32606": {
-    "count": 6,
-    "firstVisit": "2016-08-19",
-    "lastVisit": "2025-07-25"
+    "count": 1,
+    "firstVisit": "2022-10-04",
+    "lastVisit": "2022-10-04"
   },
   "los angeles|de buena planta|33.99144,-118.46983": {
     "count": 1,
@@ -2793,11 +2593,6 @@ window.SWARM_PLACE_STATS = {
     "count": 1,
     "firstVisit": "2022-10-03",
     "lastVisit": "2022-10-03"
-  },
-  "los angeles|taco bell|33.88144,-118.32615": {
-    "count": 6,
-    "firstVisit": "2016-03-10",
-    "lastVisit": "2025-12-03"
   },
   "los angeles|l e oyster bar|34.08901,-118.26898": {
     "count": 1,
@@ -2818,16 +2613,6 @@ window.SWARM_PLACE_STATS = {
     "count": 1,
     "firstVisit": "2022-09-28",
     "lastVisit": "2022-09-28"
-  },
-  "los angeles|target|33.86890,-118.35770": {
-    "count": 19,
-    "firstVisit": "2016-08-16",
-    "lastVisit": "2025-11-29"
-  },
-  "los angeles|ulta beauty|33.86835,-118.35401": {
-    "count": 4,
-    "firstVisit": "2017-12-26",
-    "lastVisit": "2025-08-07"
   },
   "los angeles|gjusta|33.99521,-118.47448": {
     "count": 1,
@@ -2874,24 +2659,19 @@ window.SWARM_PLACE_STATS = {
     "firstVisit": "2022-04-24",
     "lastVisit": "2022-04-24"
   },
-  "amsterdam|karakter|52.37048,4.86896": {
-    "count": 2,
-    "firstVisit": "2017-10-01",
-    "lastVisit": "2017-10-03"
-  },
   "amsterdam|louis|52.37699,4.89248": {
     "count": 1,
     "firstVisit": "2016-06-20",
     "lastVisit": "2016-06-20"
   },
   "amsterdam|vegan junk food bar|52.35724,4.89157": {
-    "count": 3,
-    "firstVisit": "2022-04-19",
+    "count": 2,
+    "firstVisit": "2022-04-20",
     "lastVisit": "2022-08-15"
   },
   "amsterdam|vegan junk food bar|52.36028,4.86306": {
-    "count": 3,
-    "firstVisit": "2022-04-19",
+    "count": 2,
+    "firstVisit": "2022-04-20",
     "lastVisit": "2022-08-15"
   },
   "amsterdam|cafe belgique|52.37433,4.89309": {
@@ -2954,11 +2734,6 @@ window.SWARM_PLACE_STATS = {
     "firstVisit": "2022-04-24",
     "lastVisit": "2022-04-24"
   },
-  "amsterdam|marqt|52.35471,4.90160": {
-    "count": 2,
-    "firstVisit": "2016-06-20",
-    "lastVisit": "2016-06-21"
-  },
   "amsterdam|sterk amsterdam|52.37157,4.87368": {
     "count": 2,
     "firstVisit": "2016-06-17",
@@ -2973,11 +2748,6 @@ window.SWARM_PLACE_STATS = {
     "count": 2,
     "firstVisit": "2021-10-19",
     "lastVisit": "2022-07-20"
-  },
-  "paris|le comptoir general|48.87242,2.36497": {
-    "count": 1,
-    "firstVisit": "2023-07-16",
-    "lastVisit": "2023-07-16"
   },
   "paris|le procope|48.85299,2.33880": {
     "count": 1,
@@ -3084,11 +2854,6 @@ window.SWARM_PLACE_STATS = {
     "firstVisit": "2024-11-23",
     "lastVisit": "2024-11-23"
   },
-  "bangkok|daddy and the muscle academy|13.74520,100.53218": {
-    "count": 1,
-    "firstVisit": "2024-11-20",
-    "lastVisit": "2024-11-20"
-  },
   "bangkok|mbk center|13.74475,100.52996": {
     "count": 1,
     "firstVisit": "2024-11-20",
@@ -3130,9 +2895,9 @@ window.SWARM_PLACE_STATS = {
     "lastVisit": "2023-12-16"
   },
   "rock hill|five guys|34.94256,-80.95976": {
-    "count": 11,
+    "count": 1,
     "firstVisit": "2015-09-30",
-    "lastVisit": "2025-11-28"
+    "lastVisit": "2015-09-30"
   },
   "rock hill|helen s hot chicken seafood rock hill|34.95684,-80.99673": {
     "count": 1,
@@ -3200,29 +2965,19 @@ window.SWARM_PLACE_STATS = {
     "lastVisit": "2025-07-27"
   },
   "rock hill|waffle house|34.97155,-80.99024": {
-    "count": 5,
-    "firstVisit": "2015-11-14",
-    "lastVisit": "2023-11-21"
+    "count": 1,
+    "firstVisit": "2017-12-23",
+    "lastVisit": "2017-12-23"
   },
   "rock hill|wingbonz|34.94407,-81.03201": {
     "count": 1,
     "firstVisit": "2021-11-21",
     "lastVisit": "2021-11-21"
   },
-  "rock hill|burgers barley|34.94172,-81.03582": {
-    "count": 4,
-    "firstVisit": "2017-02-28",
-    "lastVisit": "2023-11-29"
-  },
   "rock hill|elk ave tavern|34.92476,-81.02752": {
     "count": 1,
     "firstVisit": "2025-08-02",
     "lastVisit": "2025-08-02"
-  },
-  "rock hill|elsie s at kounter|34.92578,-81.02656": {
-    "count": 1,
-    "firstVisit": "2025-07-27",
-    "lastVisit": "2025-07-27"
   },
   "rock hill|legal remedy brewing|34.93042,-81.02489": {
     "count": 8,
@@ -3264,11 +3019,6 @@ window.SWARM_PLACE_STATS = {
     "firstVisit": "2023-09-29",
     "lastVisit": "2025-07-28"
   },
-  "rock hill|tattooed brews|34.92566,-81.02747": {
-    "count": 2,
-    "firstVisit": "2023-11-14",
-    "lastVisit": "2025-08-02"
-  },
   "riga|oak a burgers|56.95363,24.14619": {
     "count": 1,
     "firstVisit": "2022-09-12",
@@ -3309,35 +3059,15 @@ window.SWARM_PLACE_STATS = {
     "firstVisit": "2017-02-10",
     "lastVisit": "2017-02-10"
   },
-  "kyiv|fish market|50.45149,30.51509": {
-    "count": 1,
-    "firstVisit": "2017-12-30",
-    "lastVisit": "2017-12-30"
-  },
   "kyiv|kyiv food market|50.44213,30.54461": {
     "count": 1,
     "firstVisit": "2021-07-22",
     "lastVisit": "2021-07-22"
   },
-  "kyiv|mimosa|50.44175,30.52279": {
-    "count": 1,
-    "firstVisit": "2017-12-10",
-    "lastVisit": "2017-12-10"
-  },
   "kyiv|bar 13|50.45174,30.51099": {
     "count": 4,
     "firstVisit": "2016-04-09",
     "lastVisit": "2025-03-15"
-  },
-  "kyiv|milk bar|50.43891,30.51950": {
-    "count": 2,
-    "firstVisit": "2018-05-25",
-    "lastVisit": "2022-04-05"
-  },
-  "kyiv|golden gate|50.44876,30.51332": {
-    "count": 6,
-    "firstVisit": "2016-04-10",
-    "lastVisit": "2018-12-01"
   },
   "lisbon|a cevicheria|38.71597,-9.14750": {
     "count": 1,
@@ -3509,11 +3239,6 @@ window.SWARM_PLACE_STATS = {
     "firstVisit": "2016-10-08",
     "lastVisit": "2016-10-08"
   },
-  "krakow|bar|50.05061,19.94077": {
-    "count": 6,
-    "firstVisit": "2016-04-09",
-    "lastVisit": "2025-03-15"
-  },
   "krakow|hamsa|50.05318,19.94763": {
     "count": 1,
     "firstVisit": "2017-09-30",
@@ -3544,19 +3269,14 @@ window.SWARM_PLACE_STATS = {
     "firstVisit": "2017-09-30",
     "lastVisit": "2017-09-30"
   },
-  "charlotte|topgolf|35.28755,-80.77028": {
-    "count": 1,
-    "firstVisit": "2025-08-03",
-    "lastVisit": "2025-08-03"
-  },
   "charlotte|just for pleasure|35.17635,-80.88046": {
     "count": 1,
     "firstVisit": "2016-08-18",
     "lastVisit": "2016-08-18"
   },
   "charlotte|trader joe s|35.07886,-80.81793": {
-    "count": 13,
-    "firstVisit": "2015-11-23",
+    "count": 5,
+    "firstVisit": "2016-08-18",
     "lastVisit": "2025-11-29"
   },
   "marseille|le baron perche|43.28640,5.35937": {
@@ -3578,11 +3298,6 @@ window.SWARM_PLACE_STATS = {
     "count": 4,
     "firstVisit": "2022-02-25",
     "lastVisit": "2022-03-02"
-  },
-  "istanbul|balenciaga|41.06648,29.01655": {
-    "count": 7,
-    "firstVisit": "2018-05-21",
-    "lastVisit": "2024-04-11"
   },
   "hamburg|dim sum haus|53.55465,10.00843": {
     "count": 1,
@@ -3684,16 +3399,6 @@ window.SWARM_PLACE_STATS = {
     "firstVisit": "2024-06-17",
     "lastVisit": "2024-06-17"
   },
-  "vancouver|chicha|49.26273,-123.10209": {
-    "count": 5,
-    "firstVisit": "2015-10-10",
-    "lastVisit": "2022-02-12"
-  },
-  "frankfurt|chicago williams bbq|50.10613,8.65280": {
-    "count": 3,
-    "firstVisit": "2016-06-09",
-    "lastVisit": "2017-05-29"
-  },
   "frankfurt|pak choi|50.10734,8.66944": {
     "count": 1,
     "firstVisit": "2019-08-17",
@@ -3705,9 +3410,9 @@ window.SWARM_PLACE_STATS = {
     "lastVisit": "2020-07-31"
   },
   "metzingen|crocs|48.53550,9.28030": {
-    "count": 4,
+    "count": 1,
     "firstVisit": "2020-07-31",
-    "lastVisit": "2024-11-13"
+    "lastVisit": "2020-07-31"
   },
   "metzingen|nike factory store|48.53743,9.28292": {
     "count": 1,
@@ -3734,20 +3439,10 @@ window.SWARM_PLACE_STATS = {
     "firstVisit": "2024-06-12",
     "lastVisit": "2024-06-12"
   },
-  "den haag|starbucks|52.07687,4.31264": {
-    "count": 36,
-    "firstVisit": "2015-05-11",
-    "lastVisit": "2025-11-30"
-  },
   "dhermi|beyond a luxury boutique hotel|40.14488,19.62771": {
     "count": 2,
     "firstVisit": "2024-06-05",
     "lastVisit": "2024-06-07"
-  },
-  "united arab emirates|balenciaga|24.50097,54.38894": {
-    "count": 7,
-    "firstVisit": "2018-05-21",
-    "lastVisit": "2024-04-11"
   },
   "columbia|bar none|33.99806,-81.01528": {
     "count": 1,
@@ -3774,64 +3469,9 @@ window.SWARM_PLACE_STATS = {
     "firstVisit": "2016-09-25",
     "lastVisit": "2016-09-25"
   },
-  "wiesbaden|das burger|50.08302,8.24024": {
-    "count": 1,
-    "firstVisit": "2017-07-20",
-    "lastVisit": "2017-07-20"
-  },
-  "other|chicha|37.06250,-95.67707": {
-    "count": 5,
-    "firstVisit": "2015-10-10",
-    "lastVisit": "2022-02-12"
-  },
-  "other|gold cash gold|37.06250,-95.67707": {
-    "count": 1,
-    "firstVisit": "2015-05-12",
-    "lastVisit": "2015-05-12"
-  },
-  "other|kontor der guten dinge|37.06250,-95.67707": {
-    "count": 2,
-    "firstVisit": "2018-10-06",
-    "lastVisit": "2018-12-24"
-  },
-  "other|makoto|37.06250,-95.67707": {
-    "count": 1,
-    "firstVisit": "2015-05-27",
-    "lastVisit": "2015-05-27"
-  },
-  "other|nodi studio|37.06250,-95.67707": {
-    "count": 1,
-    "firstVisit": "2025-03-29",
-    "lastVisit": "2025-03-29"
-  },
   "other|opening ceremony|40.71961,-74.00097": {
     "count": 1,
     "firstVisit": "2018-05-21",
     "lastVisit": "2018-05-21"
-  },
-  "other|pop cereal cafe|37.06250,-95.67707": {
-    "count": 2,
-    "firstVisit": "2021-04-27",
-    "lastVisit": "2021-04-28"
-  },
-  "other|roberta s|37.06250,-95.67707": {
-    "count": 1,
-    "firstVisit": "2015-05-22",
-    "lastVisit": "2015-05-22"
-  },
-  "other|smoke bbq|37.06250,-95.67707": {
-    "count": 1,
-    "firstVisit": "2015-11-03",
-    "lastVisit": "2015-11-03"
-  },
-  "other|yuuka buffet|37.06250,-95.67707": {
-    "count": 1,
-    "firstVisit": "2019-11-30",
-    "lastVisit": "2019-11-30"
-  },
-  "other|mchale s irish pub|37.06250,-95.67707": {
-    "count": 6,
-    "firstVisit": "2015-05-10",
-    "lastVisit": "2017-02-27"
   }
 };

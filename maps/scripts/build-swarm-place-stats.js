@@ -8,6 +8,9 @@ const ROOT = process.cwd();
 const SWARM_DIR = path.join(ROOT, "Swarm Checkin Data");
 const PLACES_FILE = path.join(ROOT, "places-data.js");
 const OUTPUT_FILE = path.join(ROOT, "swarm-place-stats.js");
+const EXACT_MATCH_MAX_DISTANCE_METERS = 1200;
+const EXACT_MATCH_AGGREGATE_DISTANCE_METERS = 300;
+const STRONG_NAME_MATCH_MAX_DISTANCE_METERS = 1200;
 
 function normalizeText(value) {
   return String(value || "")
@@ -207,7 +210,9 @@ function chooseBestVenue(place, venues, byNormName) {
   for (const t of cityTokens) placeAcronyms.delete(t);
   const isGenericPlaceName = placeSig.size === 0 && placeAcronyms.size === 0;
   const isSingleSigPlaceName = placeSig.size === 1 && placeAcronyms.size === 0;
-  const partSet = new Set(placeNameParts(place.name));
+  const partSet = new Set(
+    placeNameParts(place.name).filter((part) => part && part !== placeNormName),
+  );
   const candidates = [];
 
   for (const venue of venues) {
@@ -246,10 +251,11 @@ function chooseBestVenue(place, venues, byNormName) {
     const exactPartName = partSet.has(venue.normName);
     const exactCompact =
       venue.compactName && placeCompact && venue.compactName === placeCompact;
+    const exactCompactNearby = exactCompact && dist <= EXACT_MATCH_MAX_DISTANCE_METERS;
     const acceptable =
-      exactCompact ||
+      exactCompactNearby ||
       exactPartName ||
-      nameScore >= 4 ||
+      (nameScore >= 4 && dist <= STRONG_NAME_MATCH_MAX_DISTANCE_METERS) ||
       (!isGenericPlaceName && acronymOverlap > 0 && dist <= 2500) ||
       (!isGenericPlaceName && nameScore >= 2.5 && dist <= 2500) ||
       (!isGenericPlaceName && nameScore >= 2 && dist <= 1200) ||
@@ -258,7 +264,7 @@ function chooseBestVenue(place, venues, byNormName) {
     if (!acceptable) continue;
     accepted.push({ venue, dist, nameScore, exactCompact, sigOverlap, acronymOverlap });
     const score =
-      (exactCompact ? 2000 : 0) + nameScore * 1000 - dist + Math.log(venue.count + 1) * 20;
+      (exactCompactNearby ? 2000 : 0) + nameScore * 1000 - dist + Math.log(venue.count + 1) * 20;
     if (score > bestScore) {
       bestScore = score;
       best = venue;
@@ -272,7 +278,7 @@ function chooseBestVenue(place, venues, byNormName) {
   const toAggregate = accepted.filter(
     ({ venue, dist, nameScore, exactCompact, sigOverlap, acronymOverlap }) => {
     const exactPartName = partSet.has(venue.normName);
-    if (exactCompact) return true;
+    if (exactCompact && dist <= EXACT_MATCH_AGGREGATE_DISTANCE_METERS) return true;
     if (exactPartName) return true;
     if (acronymOverlap > 0 && dist <= 800) return true;
     if (nameScore >= 2.5 && dist <= 220) return true;

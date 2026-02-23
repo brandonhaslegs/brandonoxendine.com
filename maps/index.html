@@ -4,6 +4,14 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
     <meta content="width=device-width,initial-scale=1" name="viewport">
+    <script>
+      (function () {
+        var path = (window.location.pathname || "").replace(/\/+$/, "");
+        if (path === "/maps") {
+          window.location.replace("/maps/berlin");
+        }
+      })();
+    </script>
     <base href="/maps/">
     <title>
       Maps &#128506;&#65039; Brandon Oxendine
