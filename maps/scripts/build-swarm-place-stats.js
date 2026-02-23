@@ -60,12 +60,14 @@ function significantTokens(normName) {
   );
 }
 
-function acronymTokens(normName) {
+function acronymTokens(rawName) {
   return new Set(
-    String(normName || "")
-      .split(" ")
+    String(rawName || "")
+      .split(/[^A-Za-z0-9]+/g)
       .map((t) => t.trim())
-      .filter((t) => t && t.length === 3 && !GENERIC_TOKENS.has(t)),
+      .filter((t) => t && /^[A-Z0-9]{2,5}$/.test(t))
+      .map((t) => t.toLowerCase())
+      .filter((t) => !GENERIC_TOKENS.has(t)),
   );
 }
 
@@ -195,12 +197,16 @@ function chooseBestVenue(place, venues, byNormName) {
 
   const placeNormName = normalizePlaceName(place.name);
   const placeCompact = compactName(place.name);
+  const placeTokens = placeNormName.split(" ").filter(Boolean);
+  const placeTypeTokens = new Set(["restaurant", "hotel", "bar", "cafe", "club"]);
+  const hasTypeToken = placeTokens.some((t) => placeTypeTokens.has(t));
   const placeSig = significantTokens(placeNormName);
-  const placeAcronyms = acronymTokens(placeNormName);
+  const placeAcronyms = acronymTokens(place.name);
   const cityTokens = normalizeText(place.city).split(" ").filter(Boolean);
   for (const t of cityTokens) placeSig.delete(t);
   for (const t of cityTokens) placeAcronyms.delete(t);
   const isGenericPlaceName = placeSig.size === 0 && placeAcronyms.size === 0;
+  const isSingleSigPlaceName = placeSig.size === 1 && placeAcronyms.size === 0;
   const partSet = new Set(placeNameParts(place.name));
   const candidates = [];
 
@@ -208,13 +214,13 @@ function chooseBestVenue(place, venues, byNormName) {
     const venueCompact = venue.compactName;
     const exactCompact = venueCompact && placeCompact && venueCompact === placeCompact;
     const venueSig = significantTokens(venue.normName);
-    const venueAcronyms = acronymTokens(venue.normName);
+    const venueAcronyms = acronymTokens(venue.name);
     const sigOverlap = [...venueSig].filter((t) => placeSig.has(t)).length;
     const acronymOverlap = [...venueAcronyms].filter((t) => placeAcronyms.has(t)).length;
     const overlapScore = tokenOverlapScore(placeNormName, venue.normName);
     const fuzzyName = overlapScore >= (isGenericPlaceName ? 4 : 2);
     const exactPartName = partSet.has(venue.normName);
-    if (exactCompact || fuzzyName || sigOverlap > 0 || acronymOverlap > 0 || exactPartName) {
+    if (exactCompact || fuzzyName || acronymOverlap > 0 || exactPartName) {
       candidates.push(venue);
     }
   }
@@ -234,7 +240,7 @@ function chooseBestVenue(place, venues, byNormName) {
     const dist = haversineMeters(placeLat, placeLng, venue.lat, venue.lng);
     const nameScore = tokenOverlapScore(placeNormName, venue.normName);
     const venueSig = significantTokens(venue.normName);
-    const venueAcronyms = acronymTokens(venue.normName);
+    const venueAcronyms = acronymTokens(venue.name);
     const sigOverlap = [...venueSig].filter((t) => placeSig.has(t)).length;
     const acronymOverlap = [...venueAcronyms].filter((t) => placeAcronyms.has(t)).length;
     const exactPartName = partSet.has(venue.normName);
@@ -245,10 +251,10 @@ function chooseBestVenue(place, venues, byNormName) {
       exactPartName ||
       nameScore >= 4 ||
       (!isGenericPlaceName && acronymOverlap > 0 && dist <= 2500) ||
-      (!isGenericPlaceName && sigOverlap > 0 && dist <= 2500) ||
       (!isGenericPlaceName && nameScore >= 2.5 && dist <= 2500) ||
       (!isGenericPlaceName && nameScore >= 2 && dist <= 1200) ||
       false;
+    if (isSingleSigPlaceName && hasTypeToken && !exactCompact && !exactPartName && nameScore < 2) continue;
     if (!acceptable) continue;
     accepted.push({ venue, dist, nameScore, exactCompact, sigOverlap, acronymOverlap });
     const score =
@@ -269,7 +275,6 @@ function chooseBestVenue(place, venues, byNormName) {
     if (exactCompact) return true;
     if (exactPartName) return true;
     if (acronymOverlap > 0 && dist <= 800) return true;
-    if (sigOverlap > 0 && dist <= 500) return true;
     if (nameScore >= 2.5 && dist <= 220) return true;
     return false;
     },
