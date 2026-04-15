@@ -25,7 +25,11 @@
     <script defer src="/assets/js/image-skeleton.js"></script>
     <style>
       html {
-        background: #000;
+        background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, .5)),
+          url("https://guesty-listing-images.s3.amazonaws.com/production/original_1197993514121985235_1955768170.jpg");
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
       }
 
       :root {
@@ -39,11 +43,7 @@
       body {
         width: 70%;
         font-family: var(--font-display);
-        background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, .5)),
-          url("https://guesty-listing-images.s3.amazonaws.com/production/original_1197993514121985235_1955768170.jpg");
-        background-size: cover;
-        background-attachment: fixed;
-        background-position: center;
+        background: transparent;
       }
 
       .agenda-header {
@@ -147,12 +147,17 @@
           --font-tag: 10px;
         }
 
+        html {
+          background: #000;
+          background-size: auto;
+          background-attachment: scroll;
+        }
+
         body {
           width: 100%;
           margin: 0;
           padding: 0 20px;
           box-sizing: border-box;
-          background-attachment: scroll;
         }
 
         body::before {
