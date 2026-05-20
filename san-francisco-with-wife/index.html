@@ -1,0 +1,723 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <title>San Francisco by Brandon Oxendine</title>
+    <meta
+      name="description"
+      content="A San Francisco itinerary for June 27–July 5, 2026."
+    />
+    <link
+      rel="canonical"
+      href="https://www.brandonoxendine.com/san-francisco-with-wife"
+    />
+    <link rel="stylesheet" href="/assets/css/reset.css" />
+    <link rel="stylesheet" href="/assets/css/site.css" />
+    <link rel="icon" href="/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Besley:wght@400;600;700&family=Inter:wght@400;600;700&display=swap"
+    />
+    <script defer src="/assets/js/image-skeleton.js"></script>
+    <style>
+      :root {
+        --font-lg: 24px;
+        --font-sm: 15px;
+        --font-tag: 12px;
+        --font-display: "Besley", serif;
+        --font-body: "Inter", sans-serif;
+        --text-strong: rgba(255, 255, 255, 0.98);
+        --text-body: rgba(255, 255, 255, 0.92);
+        --text-muted: rgba(255, 255, 255, 0.72);
+        --text-soft: rgba(255, 255, 255, 0.58);
+        --bg-image:
+          url("https://images.unsplash.com/photo-1501594907352-04cda38ebc29?auto=format&fit=crop&w=1800&q=80");
+      }
+
+      html {
+        background:
+          linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+          var(--bg-image),
+          linear-gradient(rgba(0, 0, 0, 0.86), rgba(0, 0, 0, 0.55)),
+          radial-gradient(circle at top, rgba(29, 78, 216, 0.28), transparent 40%),
+          linear-gradient(160deg, #111827, #111111 55%, #1f2937);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+      }
+
+      body {
+        width: 70%;
+        margin: 0 auto;
+        font-family: var(--font-display);
+        background: transparent;
+        color: var(--text-body);
+      }
+
+      a,
+      a:visited {
+        color: var(--text-strong);
+      }
+
+      .agenda-header {
+        margin-bottom: 48px;
+        padding-top: 48px;
+      }
+
+      .agenda-header h1 {
+        font-size: var(--font-lg);
+      }
+
+      .agenda-header p {
+        color: var(--text-muted);
+        font-size: var(--font-sm);
+        font-family: var(--font-body);
+      }
+
+      .agenda-day {
+        display: grid;
+        grid-template-columns: 180px 1fr;
+        gap: 0 32px;
+        border-top: 1px solid #333;
+        padding: 24px 0;
+      }
+
+      .agenda-day-label {
+        position: sticky;
+        top: 80px;
+        align-self: start;
+      }
+
+      .agenda-day-label .date {
+        font-size: var(--font-sm);
+        font-family: var(--font-body);
+        color: var(--text-soft);
+      }
+
+      .agenda-day-label .day-title {
+        font-size: var(--font-lg);
+        font-weight: 600;
+        color: var(--text-strong);
+      }
+
+      .agenda-day-content {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+      }
+
+      .agenda-block {
+        background: rgba(0, 0, 0, 0.5);
+        border-radius: 8px;
+        padding: 16px;
+        font-size: var(--font-lg);
+        line-height: 2;
+      }
+
+      .agenda-block .label {
+        display: block;
+        font-size: var(--font-sm);
+        font-family: var(--font-body);
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: var(--text-soft);
+        margin-bottom: 6px;
+      }
+
+      .tag {
+        display: inline-block;
+        background: #e53e3e;
+        color: #fff;
+        font-size: var(--font-tag);
+        font-family: var(--font-body);
+        font-weight: 700;
+        letter-spacing: 0.05em;
+        padding: 2px 8px;
+        border-radius: 4px;
+        vertical-align: middle;
+        margin-left: 8px;
+        margin-top: -2px;
+      }
+
+      @media (max-width: 800px) {
+        :root {
+          --font-lg: 18px;
+          --font-sm: 13px;
+          --font-tag: 10px;
+        }
+
+        html {
+          background: #000;
+          background-attachment: scroll;
+        }
+
+        body {
+          width: 100%;
+          margin: 0;
+          padding: 0 20px;
+          box-sizing: border-box;
+        }
+
+        body::before {
+          content: "";
+          position: fixed;
+          inset: 0;
+          z-index: -1;
+          background:
+            linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+            var(--bg-image),
+            linear-gradient(rgba(0, 0, 0, 0.86), rgba(0, 0, 0, 0.55)),
+            radial-gradient(circle at top, rgba(29, 78, 216, 0.28), transparent 40%),
+            linear-gradient(160deg, #111827, #111111 55%, #1f2937);
+          background-size: cover;
+          background-position: center;
+        }
+
+        .agenda-day {
+          grid-template-columns: 1fr;
+          gap: 8px;
+        }
+
+        .agenda-day-label {
+          position: static;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="agenda-header">
+        <h1>San Francisco</h1>
+        <p>
+          📍
+          <a
+            href="https://www.google.com/maps/place/2823+18th+St+%23520,+San+Francisco,+CA+94110"
+            target="_blank"
+            >2823 18th St #520, San Francisco, CA 94110</a
+          >
+        </p>
+        <p>🗓️ June 27–July 5, 2026</p>
+      </div>
+
+      <div class="agenda-day">
+        <div class="agenda-day-label">
+          <div class="date">Saturday, June 27</div>
+          <div class="day-title">Arrival</div>
+        </div>
+        <div class="agenda-day-content">
+          <div class="agenda-block">
+            <span class="label">Breakfast</span>
+            Travel day breakfast
+          </div>
+          <div class="agenda-block">
+            <span class="label">Lunch</span>
+            Travel day lunch
+          </div>
+          <div class="agenda-block">
+            <span class="label">Dinner</span>
+            🌯
+            <a
+              href="https://www.google.com/maps/search/Taqueria+El+Farolito+San+Francisco"
+              target="_blank"
+              >Taquería El Farolito</a
+            >
+            — after check-in
+          </div>
+          <div class="agenda-block">
+            <span class="label">Night</span>
+            ✈️ Arrive<br />
+            🏨 Check in
+          </div>
+        </div>
+      </div>
+
+      <div class="agenda-day">
+        <div class="agenda-day-label">
+          <div class="date">Sunday, June 28</div>
+          <div class="day-title">Pride Day</div>
+        </div>
+        <div class="agenda-day-content">
+          <div class="agenda-block">
+            <span class="label">Morning</span>
+            🎉
+            <a
+              href="https://www.google.com/maps/search/San+Francisco+Pride"
+              target="_blank"
+              >San Francisco Pride</a
+            >
+            — walk around
+          </div>
+          <div class="agenda-block">
+            <span class="label">Breakfast</span>
+            🥐
+            <a
+              href="https://www.google.com/maps/search/Arizmendi+Bakery+San+Francisco"
+              target="_blank"
+              >Arizmendi Bakery</a
+            >
+            — corn cherry scone ($5–7)
+          </div>
+          <div class="agenda-block">
+            <span class="label">Lunch</span>
+            🌯
+            <a
+              href="https://www.google.com/maps/search/Taqueria+El+Farolito+San+Francisco"
+              target="_blank"
+              >Taquería El Farolito</a
+            >
+            — super burrito ($14–18)
+          </div>
+          <div class="agenda-block">
+            <span class="label">Drinks</span>
+            🍸
+            <a
+              href="https://www.google.com/maps/search/Trick+Dog+San+Francisco"
+              target="_blank"
+              >Trick Dog</a
+            >
+            — cocktails ($50–65)
+          </div>
+          <div class="agenda-block">
+            <span class="label">Dinner</span>
+            🍕 <a href="https://maps.app.goo.gl/ZUXnXj3pz2GyQ2dE7" target="_blank">Little Star Pizza (Deep Dish)</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="agenda-day">
+        <div class="agenda-day-label">
+          <div class="date">Monday, June 29</div>
+          <div class="day-title">Touristy</div>
+        </div>
+        <div class="agenda-day-content">
+          <div class="agenda-block">
+            <span class="label">Breakfast</span>
+            🥐
+            <a
+              href="https://maps.app.goo.gl/Hg1s5RevwV47de4h7"
+              target="_blank"
+              >Tartine Manufactory</a
+            >
+            ($8–20)
+          </div>
+          <div class="agenda-block">
+            <span class="label">Late Morning</span>
+            🌊
+            <a
+              href="https://www.google.com/maps/search/Ferry+Building+San+Francisco"
+              target="_blank"
+              >Ferry Building</a
+            >
+            — walk
+          </div>
+          <div class="agenda-block">
+            <span class="label">Midday</span>
+            🚋
+            <a
+              href="https://www.google.com/maps/search/F+Market+%26+Wharves+San+Francisco"
+              target="_blank"
+              >F Market &amp; Wharves ride</a
+            >
+          </div>
+          <div class="agenda-block">
+            <span class="label">Lunch</span>
+            🍲
+            <a
+              href="https://www.google.com/maps/search/clam+chowder+bread+bowl+san+francisco"
+              target="_blank"
+              >Clam chowder in a bread bowl</a
+            >
+            ($12–20)
+          </div>
+          <div class="agenda-block">
+            <span class="label">Early Afternoon</span>
+            🚋
+            <a
+              href="https://www.google.com/maps/search/San+Francisco+cable+car+system"
+              target="_blank"
+              >San Francisco cable car system ride</a
+            >
+          </div>
+          <div class="agenda-block">
+            <span class="label">Afternoon</span>
+            🏮
+            <a
+              href="https://www.google.com/maps/search/Chinatown+San+Francisco"
+              target="_blank"
+              >Chinatown</a
+            >
+            — explore
+          </div>
+          <div class="agenda-block">
+            <span class="label">Dinner</span>
+            🍔
+            <a
+              href="https://www.google.com/maps/search/ABV+San+Francisco"
+              target="_blank"
+              >ABV</a
+            >
+            — burger (TBD)
+          </div>
+        </div>
+      </div>
+
+      <div class="agenda-day">
+        <div class="agenda-day-label">
+          <div class="date">Tuesday, June 30</div>
+          <div class="day-title">Driving Day</div>
+        </div>
+        <div class="agenda-day-content">
+          <div class="agenda-block">
+            <span class="label">Breakfast</span>
+            🥐
+            <a
+              href="https://maps.app.goo.gl/Hg1s5RevwV47de4h7"
+              target="_blank"
+              >Tartine Manufactory</a
+            >
+          </div>
+          <div class="agenda-block">
+            <span class="label">Morning (8:30–9:00)</span>
+            🚘 Pick up rental car, leave SF
+          </div>
+          <div class="agenda-block">
+            <span class="label">~10:00 AM</span>
+            🏢
+            <a
+              href="https://www.google.com/maps/search/Googleplex+Mountain+View"
+              target="_blank"
+              >Googleplex</a
+            >
+          </div>
+          <div class="agenda-block">
+            <span class="label">~11:30 AM</span>
+            🍎
+            <a
+              href="https://www.google.com/maps/search/Apple+Park+Visitor+Center"
+              target="_blank"
+              >Apple Park Visitor Center</a
+            >
+          </div>
+          <div class="agenda-block">
+            <span class="label">Lunch</span>
+            🍔
+            <a
+              href="https://www.google.com/maps/search/In-N-Out+Burger+near+Pleasant+Hill+CA"
+              target="_blank"
+              >In-N-Out Burger</a
+            >
+            — on the road
+          </div>
+          <div class="agenda-block">
+            <span class="label">Afternoon</span>
+            💅
+            <a
+              href="https://www.google.com/maps/search/nail+supply+san+jose+ca"
+              target="_blank"
+              >San Jose nail supply shopping</a
+            >
+            (TBD)
+          </div>
+          <div class="agenda-block">
+            <span class="label">Late Afternoon</span>
+            🏡
+            <a
+              href="https://www.google.com/maps/place/342+Belva+Ln,+Pleasant+Hill,+CA+94523"
+              target="_blank"
+              >Visit J</a
+            ><br />
+            📍 342 Belva Ln, Pleasant Hill, CA 94523
+          </div>
+          <div class="agenda-block">
+            <span class="label">Dinner</span>
+            🌶️
+            <a
+              href="https://maps.app.goo.gl/FSomTTtBQXBrzipD8"
+              target="_blank"
+              >Mission Chinese Food</a
+            >
+            — back in SF
+          </div>
+          <div class="agenda-block">
+            <span class="label">Night</span>
+            🌆 Drive back to SF
+          </div>
+        </div>
+      </div>
+
+      <div class="agenda-day">
+        <div class="agenda-day-label">
+          <div class="date">Wednesday, July 1</div>
+          <div class="day-title">Bar Hopping Day</div>
+        </div>
+        <div class="agenda-day-content">
+          <div class="agenda-block">
+            <span class="label">Breakfast</span>
+            🥐
+            <a
+              href="https://www.google.com/maps/search/Arizmendi+Bakery+San+Francisco"
+              target="_blank"
+              >Arizmendi Bakery</a
+            >
+          </div>
+          <div class="agenda-block">
+            <span class="label">Morning / Afternoon</span>
+            🧥
+            <a
+              href="https://www.google.com/maps/search/Haight-Ashbury+San+Francisco"
+              target="_blank"
+              >Haight-Ashbury</a
+            >
+            — thrifting + shops
+          </div>
+          <div class="agenda-block">
+            <span class="label">Lunch / Snacks</span>
+            🛒
+            <a
+              href="https://www.google.com/maps/search/Trader+Joe%27s+San+Francisco+Mission"
+              target="_blank"
+              >Trader Joe’s</a
+            >
+            — groceries, snacks, and easy lunch
+          </div>
+          <div class="agenda-block">
+            <span class="label">Dinner</span>
+            🍕
+            <a
+              href="https://maps.app.goo.gl/ZUXnXj3pz2GyQ2dE7"
+              target="_blank"
+              >Little Star Pizza (Deep Dish)</a
+            >
+          </div>
+          <div class="agenda-block">
+            <span class="label">Drinks (5 PM)</span>
+            🍹
+            <a
+              href="https://www.google.com/maps/search/Smuggler%27s+Cove+San+Francisco"
+              target="_blank"
+              >Smuggler’s Cove</a
+            >
+            — cocktails ($45–65)
+          </div>
+          <div class="agenda-block">
+            <span class="label">Late Night Options</span>
+            🍸 <a href="https://maps.app.goo.gl/wntaKY4Y4gDXcv6Y9" target="_blank">Butter Bar</a><br />
+            🍺 <a href="https://maps.app.goo.gl/4ettZ5coJCuCig359" target="_blank">Pop's Bar</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="agenda-day">
+        <div class="agenda-day-label">
+          <div class="date">Thursday, July 2</div>
+          <div class="day-title">Beach Day</div>
+        </div>
+        <div class="agenda-day-content">
+          <div class="agenda-block">
+            <span class="label">Breakfast</span>
+            🍩
+            <a
+              href="https://maps.app.goo.gl/UWKqRea6CEcXy1yV9"
+              target="_blank"
+              >Bob's Donut &amp; Pastry Shop</a
+            >
+          </div>
+          <div class="agenda-block">
+            <span class="label">Late Morning</span>
+            🌿
+            <a
+              href="https://www.google.com/maps/search/San+Francisco+Botanical+Garden"
+              target="_blank"
+              >Golden Gate Park Botanical Gardens</a
+            >
+          </div>
+          <div class="agenda-block">
+            <span class="label">Midday</span>
+            🌲
+            <a
+              href="https://www.google.com/maps/search/Presidio+San+Francisco"
+              target="_blank"
+              >The Presidio</a
+            >
+          </div>
+          <div class="agenda-block">
+            <span class="label">Lunch</span>
+            🍲
+            <a
+              href="https://www.google.com/maps/search/clam+chowder+bread+bowl+san+francisco"
+              target="_blank"
+              >Clam chowder in a bread bowl</a
+            >
+          </div>
+          <div class="agenda-block">
+            <span class="label">Afternoon</span>
+            🌊
+            <a
+              href="https://www.google.com/maps/search/Ocean+Beach+San+Francisco"
+              target="_blank"
+              >Ocean Beach</a
+            >
+          </div>
+          <div class="agenda-block">
+            <span class="label">Late Afternoon / Sunset</span>
+            🌄
+            <a
+              href="https://www.google.com/maps/search/Twin+Peaks+San+Francisco"
+              target="_blank"
+              >Twin Peaks</a
+            >
+          </div>
+          <div class="agenda-block">
+            <span class="label">Dinner</span>
+            🍽️
+            <a
+              href="https://www.google.com/maps/search/Rich+Table+San+Francisco"
+              target="_blank"
+              >Rich Table</a
+            >
+            — dinner (TBD)
+          </div>
+          <div class="agenda-block">
+            <span class="label">Optional Dinner</span>
+            🌶️ <a href="https://maps.app.goo.gl/FSomTTtBQXBrzipD8" target="_blank">Mission Chinese Food</a><br />
+            🍕 <a href="https://maps.app.goo.gl/ZUXnXj3pz2GyQ2dE7" target="_blank">Little Star Pizza (Deep Dish)</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="agenda-day">
+        <div class="agenda-day-label">
+          <div class="date">Friday, July 3</div>
+          <div class="day-title">Date Night</div>
+        </div>
+        <div class="agenda-day-content">
+          <div class="agenda-block">
+            <span class="label">Breakfast</span>
+            🍩
+            <a
+              href="https://maps.app.goo.gl/UWKqRea6CEcXy1yV9"
+              target="_blank"
+              >Bob's Donut &amp; Pastry Shop</a
+            >
+          </div>
+          <div class="agenda-block">
+            <span class="label">Lunch</span>
+            🌶️
+            <a
+              href="https://maps.app.goo.gl/FSomTTtBQXBrzipD8"
+              target="_blank"
+              >Mission Chinese Food</a
+            >
+          </div>
+          <div class="agenda-block">
+            <span class="label">Dinner</span>
+            🍷
+            <a
+              href="https://www.google.com/maps/search/Ernest+San+Francisco"
+              target="_blank"
+              >Ernest</a
+            >
+            — dinner ($70–110)
+          </div>
+          <div class="agenda-block">
+            <span class="label">After Dinner Options</span>
+            🍻 <a href="https://maps.app.goo.gl/muPNkVsAv96CipEH8" target="_blank">Delirium</a><br />
+            🍩 <a href="https://maps.app.goo.gl/UWKqRea6CEcXy1yV9" target="_blank">Bob's Donut &amp; Pastry Shop</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="agenda-day">
+        <div class="agenda-day-label">
+          <div class="date">Saturday, July 4</div>
+          <div class="day-title">Fireworks</div>
+        </div>
+        <div class="agenda-day-content">
+          <div class="agenda-block">
+            <span class="label">Breakfast</span>
+            🥐
+            <a
+              href="https://www.google.com/maps/search/Arizmendi+Bakery+San+Francisco"
+              target="_blank"
+              >Arizmendi Bakery</a
+            >
+          </div>
+          <div class="agenda-block">
+            <span class="label">Lunch</span>
+            🧺
+            <a
+              href="https://www.google.com/maps/search/Bi-Rite+Market+San+Francisco"
+              target="_blank"
+              >Bi-Rite Market</a
+            >
+            — drinks, snacks, and picnic lunch ($15–30)
+          </div>
+          <div class="agenda-block">
+            <span class="label">Afternoon</span>
+            🌞
+            <a
+              href="https://www.google.com/maps/search/Mission+Dolores+Park+San+Francisco"
+              target="_blank"
+              >Mission Dolores Park</a
+            >
+          </div>
+          <div class="agenda-block">
+            <span class="label">Dinner</span>
+            🍔
+            <a
+              href="https://www.google.com/maps/search/ABV+San+Francisco"
+              target="_blank"
+              >ABV</a
+            >
+            — burger before fireworks
+          </div>
+          <div class="agenda-block">
+            <span class="label">Evening</span>
+            🎆
+            <a
+              href="https://www.google.com/maps/search/San+Francisco+fireworks+waterfront"
+              target="_blank"
+              >Fireworks</a
+            >
+            (waterfront)
+          </div>
+        </div>
+      </div>
+
+      <div class="agenda-day">
+        <div class="agenda-day-label">
+          <div class="date">Sunday, July 5</div>
+          <div class="day-title">Departure</div>
+        </div>
+        <div class="agenda-day-content">
+          <div class="agenda-block">
+            <span class="label">Breakfast</span>
+            🥐
+            <a
+              href="https://maps.app.goo.gl/Hg1s5RevwV47de4h7"
+              target="_blank"
+              >Tartine Manufactory</a
+            >
+          </div>
+          <div class="agenda-block">
+            <span class="label">Lunch</span>
+            ☕ Coffee / light food before airport
+          </div>
+          <div class="agenda-block">
+            <span class="label">Dinner</span>
+            Dinner while traveling / after landing
+          </div>
+          <div class="agenda-block">
+            <span class="label">Afternoon</span>
+            ✈️ 5 PM flight
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
