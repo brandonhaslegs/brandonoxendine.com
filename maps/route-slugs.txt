@@ -28,6 +28,7 @@ Global category segments:
 
 City + available category segments:
 - Adelaide -> adelaide : flea-markets, restaurants
+- Albania -> albania : bars, cafes-and-bakeries, experiences, flea-markets, hotels, other-places, restaurants
 - Amsterdam -> amsterdam : arts, bars, cafes-and-bakeries, clubs, experiences, hotels, other-places, parks, restaurants, shops
 - Antwerpen -> antwerpen : restaurants
 - Argentina -> argentina : bars, other-places, restaurants
@@ -58,10 +59,8 @@ City + available category segments:
 - Denver -> denver : bars, cafes-and-bakeries, clubs, restaurants, shops
 - Des Moines -> des-moines : bars
 - Detroit -> detroit : bars, cafes-and-bakeries, hotels, other-places, restaurants, shops
-- Dhërmi -> dh-rmi : hotels, other-places
 - Dresden -> dresden : bars, clubs, other-places, restaurants, shops
 - Duisburg -> duisburg : experiences, parks
-- Durrës -> durr-s : bars, flea-markets, hotels, other-places, restaurants
 - Düsseldorf -> d-sseldorf : other-places, restaurants
 - Edinburgh -> edinburgh : bars, restaurants
 - Edisto Island -> edisto-island : bars, restaurants, shops
@@ -75,7 +74,6 @@ City + available category segments:
 - Frankfurt -> frankfurt : arts, bars, restaurants
 - Gipuzkoa -> gipuzkoa : bars, other-places, restaurants, shops
 - Girona -> girona : arts, other-places
-- Gjirokastër -> gjirokast-r : experiences, other-places
 - Glasgow -> glasgow : restaurants, shops
 - Grad Dubrovnik -> grad-dubrovnik : bars, restaurants
 - Greenville -> greenville : bars, restaurants
@@ -88,7 +86,6 @@ City + available category segments:
 - Istanbul -> istanbul : bars, clubs, nail-salons, other-places, parks, restaurants, shops
 - Iwakuni -> iwakuni : other-places, restaurants
 - Kraków -> krak-w : arts, bars, cafes-and-bakeries, clubs, music-venues, other-places, parks, restaurants
-- Krujë -> kruj : experiences, other-places
 - Kyiv -> kyiv : bars, cafes-and-bakeries, clubs, experiences, hotels, other-places, restaurants
 - Laramie -> laramie : bars, restaurants
 - Las Palmas -> las-palmas : bars, cafes-and-bakeries, clubs, experiences, hotels, other-places, parks, restaurants, shops
@@ -157,14 +154,12 @@ City + available category segments:
 - Stockholm -> stockholm : bars, shops
 - Sydney -> sydney : restaurants
 - Tbilisi -> tbilisi : cafes-and-bakeries, clubs, restaurants
-- Tiranë -> tiran : bars, cafes-and-bakeries, experiences, hotels, other-places, restaurants
 - Tokyo -> tokyo : arts, bars, cafes-and-bakeries, other-places, restaurants, shops
 - Toronto -> toronto : arts, bars, cafes-and-bakeries, hotels, restaurants, shops
 - Uccle -> uccle : bars, other-places
 - United Arab Emirates -> united-arab-emirates : other-places, restaurants, shops
 - Vancouver -> vancouver : bars, cafes-and-bakeries, restaurants
 - Vilnius -> vilnius : arts, bars, restaurants
-- Vlorë -> vlor : experiences
 - Warsaw -> warsaw : arts, bars, cafes-and-bakeries, hotels, other-places, restaurants, shops
 - Washington -> washington : cafes-and-bakeries, restaurants
 - Wien -> wien : arts, bars, cafes-and-bakeries, experiences, flea-markets, hotels, other-places, parks, restaurants, shops, vintage-shops

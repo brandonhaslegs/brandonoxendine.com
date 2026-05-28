@@ -1,4 +1,8 @@
 window.CITY_META = {
+  "Albania": {
+    "emoji": "🇦🇱",
+    "country": "Albania"
+  },
   "Adelaide": {
     "emoji": "📍",
     "country": "Australia"
