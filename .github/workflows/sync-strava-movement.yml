@@ -1,4 +1,4 @@
-name: Sync Strava runs
+name: Sync Strava movement
 
 on:
   workflow_dispatch:
@@ -16,7 +16,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-      - name: Build public run data
+      - name: Build public movement data
         env:
           STRAVA_CLIENT_ID: ${{ secrets.STRAVA_CLIENT_ID }}
           STRAVA_CLIENT_SECRET: ${{ secrets.STRAVA_CLIENT_SECRET }}
@@ -25,12 +25,12 @@ jobs:
           # Optional repository variables. Defaults protect the first/last 300m and publish public activities only.
           STRAVA_ROUTE_TRIM_METERS: ${{ vars.STRAVA_ROUTE_TRIM_METERS }}
           STRAVA_INCLUDE_PRIVATE: ${{ vars.STRAVA_INCLUDE_PRIVATE }}
-        run: node scripts/sync-strava-runs.mjs
+        run: node scripts/sync-strava-movement.mjs
       - name: Commit updated routes
         run: |
-          if git diff --quiet -- runs/data; then exit 0; fi
+          if git diff --quiet -- movement/data; then exit 0; fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add runs/data
-          git commit -m "Update running routes"
+          git add movement/data
+          git commit -m "Update movement data"
           git push

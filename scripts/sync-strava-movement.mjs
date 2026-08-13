@@ -3,7 +3,7 @@ import { resolve } from 'node:path';
 import { createCipheriv, createDecipheriv, randomBytes } from 'node:crypto';
 
 const apiUrl = 'https://www.strava.com/api/v3';
-const outputPath = resolve('movement/data/runs.json');
+const outputPath = resolve('movement/data/movement.json');
 const tokenPath = resolve('movement/data/.strava-refresh-token.enc');
 const configuredTrim = Number(process.env.STRAVA_ROUTE_TRIM_METERS);
 const trimMeters = Number.isFinite(configuredTrim) && configuredTrim >= 0 ? configuredTrim : 300;
@@ -109,5 +109,5 @@ const trackedActivities = activities
 const runs = trackedActivities.filter((activity) => activity.activityType === 'run');
 const data = { updatedAt: new Date().toISOString(), runs, activities: trackedActivities };
 await writeFile(outputPath, `${JSON.stringify(data, null, 2)}\n`);
-await writeFile(resolve('movement/data/runs-data.js'), `window.RUNS_DATA = ${JSON.stringify(data)};\n`);
+await writeFile(resolve('movement/data/movement-data.js'), `window.MOVEMENT_DATA = ${JSON.stringify(data)};\n`);
 console.log(`Wrote ${runs.length} runs and ${trackedActivities.length - runs.length} rides/walks to ${outputPath}`);

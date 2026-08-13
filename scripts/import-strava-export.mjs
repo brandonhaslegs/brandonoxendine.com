@@ -50,6 +50,6 @@ for (const row of rows.filter((entry) => activityType(values(entry, headers, 'Ac
 const validActivities = activities.filter((activity) => !excludedActivityIds.has(activity.id) && activity.date && activity.distanceMeters > 0 && activity.durationSeconds > 0).sort((a, b) => b.date.localeCompare(a.date));
 const validRuns = validActivities.filter((activity) => activity.activityType === 'run');
 const data = { updatedAt: new Date().toISOString(), importedFrom: 'Strava export', runs: validRuns, activities: validActivities };
-await writeFile(resolve('movement/data/runs.json'), `${JSON.stringify(data, null, 2)}\n`);
-await writeFile(resolve('movement/data/runs-data.js'), `window.RUNS_DATA = ${JSON.stringify(data)};\n`);
+await writeFile(resolve('movement/data/movement.json'), `${JSON.stringify(data, null, 2)}\n`);
+await writeFile(resolve('movement/data/movement-data.js'), `window.MOVEMENT_DATA = ${JSON.stringify(data)};\n`);
 console.log(`Imported ${validRuns.length} runs and ${validActivities.length - validRuns.length} rides/walks.`);

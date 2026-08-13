@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Runs • Brandon Oxendine</title>
-    <meta name="description" content="A map, chronicle, and training-progress dashboard for Brandon Oxendine's runs." />
+    <title>Movement • Brandon Oxendine</title>
+    <meta name="description" content="A map, history, and training-progress dashboard for Brandon Oxendine's movement." />
     <link rel="canonical" href="https://www.brandonoxendine.com/movement/" />
     <link rel="stylesheet" href="../assets/css/reset.css" />
     <link rel="stylesheet" href="../assets/css/site.css" />
@@ -38,17 +38,17 @@
           <section class="chart-card"><div class="chart-heading"><h2>Frequency</h2></div><div id="frequency-chart" class="chart" aria-label="Monthly run frequency chart"></div></section>
         </div>
       </section>
-      <section class="runs-map-panel" aria-label="Run routes">
-        <div id="map" role="region" aria-label="Map of running routes"></div>
+      <section class="runs-map-panel" aria-label="Activity routes">
+        <div id="map" role="region" aria-label="Map of activity routes"></div>
       </section>
       <section class="runs-history" aria-label="Activity history">
         <div class="history-controls" aria-label="Sort activity history"><div class="history-filter" id="history-filter" hidden><span id="history-filter-date"></span><button class="clear-month" id="clear-month" type="button">Clear</button></div><div class="sort-buttons"><button class="sort-button" data-sort-key="date" type="button">Date</button><button class="sort-button" data-sort-key="pace" type="button">Speed</button><button class="sort-button" data-sort-key="distance" type="button">Length</button></div></div>
         <div class="runs-list" id="runs-list" aria-live="polite"></div>
       </section>
     </main>
-    <footer class="runs-footer"><span id="status-message">Loading your training data…</span><select id="chart-range" aria-label="Filter runs by time range"><option value="all">All time</option><option value="last-12-months">Last 12 months</option><option value="last-24-months">Last 2 years</option></select><a href="https://www.strava.com/athletes/24642624" target="_blank" rel="noopener noreferrer">Data Source: Strava</a></footer>
+    <footer class="runs-footer"><span id="status-message">Loading your training data…</span><select id="chart-range" aria-label="Filter movement by time range"><option value="all">All time</option><option value="last-12-months">Last 12 months</option><option value="last-24-months">Last 2 years</option></select><a href="https://www.strava.com/athletes/24642624" target="_blank" rel="noopener noreferrer">Data Source: Strava</a></footer>
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-    <script src="./data/runs-data.js"></script>
+    <script src="./data/movement-data.js"></script>
     <script src="./app.js"></script>
   </body>
 </html>

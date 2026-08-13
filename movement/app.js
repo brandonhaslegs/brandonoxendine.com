@@ -141,6 +141,6 @@
   const renderData = (data) => {
     allRuns = Array.isArray(data.runs) ? data.runs : []; allActivities = Array.isArray(data.activities) ? data.activities : allRuns; const updateDate = typeof data.updatedAt === 'string' ? data.updatedAt.slice(0, 10) : null; $('#status-message').textContent = allRuns.length ? `Updated ${updateDate ? formatDate(updateDate) : 'recently'}.` : 'The archive will appear after the first sync.'; setupControls(); render();
   };
-  if (window.RUNS_DATA) renderData(window.RUNS_DATA);
-  else fetch('./data/runs.json', { cache: 'no-store' }).then((response) => { if (!response.ok) throw new Error('Could not load run data'); return response.json(); }).then(renderData).catch(() => { $('#status-message').textContent = 'The run archive is temporarily unavailable.'; });
+  if (window.MOVEMENT_DATA) renderData(window.MOVEMENT_DATA);
+  else fetch('./data/movement.json', { cache: 'no-store' }).then((response) => { if (!response.ok) throw new Error('Could not load movement data'); return response.json(); }).then(renderData).catch(() => { $('#status-message').textContent = 'The movement archive is temporarily unavailable.'; });
 })();
