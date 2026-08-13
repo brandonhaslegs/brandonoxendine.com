@@ -17,7 +17,7 @@
   const formatPace = (secondsPerKm) => Number.isFinite(secondsPerKm) && secondsPerKm > 0 ? `${Math.floor(secondsPerKm / 60)}:${String(Math.round(secondsPerKm % 60)).padStart(2, '0')} /km` : '—';
   const formatDate = (date) => new Intl.DateTimeFormat(undefined, { month: 'short', day: 'numeric', year: 'numeric' }).format(new Date(`${date}T12:00:00`));
   const formatStartTime = (time) => { if (!/^\d{2}:\d{2}$/.test(time || '')) return ''; const [hour, minute] = time.split(':').map(Number); return new Intl.DateTimeFormat(undefined, { hour: 'numeric', minute: '2-digit' }).format(new Date(2000, 0, 1, hour, minute)); };
-  const formatShortDate = (date) => new Intl.DateTimeFormat(undefined, { month: 'short', year: '2-digit' }).format(new Date(`${date}-01T12:00:00`));
+  const formatShortDate = (date) => new Intl.DateTimeFormat(undefined, { month: 'short', year: 'numeric' }).format(new Date(`${date}-01T12:00:00`));
   const sum = (items, field) => items.reduce((total, item) => total + (Number(item[field]) || 0), 0);
 
   function filterForRange(items) {
@@ -100,17 +100,17 @@
     const labels = [low, (low + high) / 2, high]; const path = points.map((point, index) => `${index ? 'L' : 'M'}${x(point.date).toFixed(1)},${y(point.value).toFixed(1)}`).join(' ');
     node.innerHTML = `<svg class="trend-chart" viewBox="0 0 ${width} ${height}" role="img" aria-label="Training trend from ${formatter(points[0].value)} to ${formatter(points.at(-1).value)}">${labels.map((value) => `<line class="chart-grid" x1="${pad.left}" x2="${width - pad.right}" y1="${y(value)}" y2="${y(value)}" /><text class="chart-label" x="0" y="${y(value) + 3}">${formatter(value)}</text>`).join('')}<path class="chart-line" d="${path}" />${points.map((point) => `<circle class="chart-dot chart-interactive${point.date.startsWith(selectedMonth || 'never') ? ' chart-selected' : ''}" data-month="${point.date.slice(0, 7)}" data-tooltip="${formatDate(point.date)} · ${formatter(point.value)}" cx="${x(point.date)}" cy="${y(point.value)}" r="3.5" tabindex="0" role="button"></circle>`).join('')}${monthAxis(bounds.start, bounds.end, x, height, pad)}</svg>`; bindMonthControls(node);
   }
-  function barChart(target, points, field, formatter) {
+  function barChart(target, points, field, formatter, totalLabel) {
     if (!points.length) return chartShell(target, 'Not enough data yet.');
     const node = chartShell(target); const width = 360; const height = 170; const pad = { top: 14, right: 8, bottom: 26, left: 36 }; const max = Math.max(...points.map((point) => point[field]), 1);
     const usableWidth = width - pad.left - pad.right; const step = usableWidth / points.length; const barWidth = Math.max(2, step - 2); const x = (date) => pad.left + points.findIndex((point) => point.date === date) * step + step / 2;
-    node.innerHTML = `<svg class="trend-chart" viewBox="0 0 ${width} ${height}" role="img" aria-label="Monthly activity chart"><line class="chart-grid" x1="${pad.left}" x2="${width - pad.right}" y1="${height - pad.bottom}" y2="${height - pad.bottom}" /><text class="chart-label" x="0" y="${pad.top + 4}">${formatter(max)}</text>${points.map((point) => { const barHeight = (point[field] / max) * (height - pad.top - pad.bottom); const barX = x(point.date) - barWidth / 2; const y = height - pad.bottom - barHeight; return `<rect class="chart-bar chart-interactive${point.date === selectedMonth ? ' chart-selected' : ''}" data-month="${point.date}" data-tooltip="${formatShortDate(point.date)} · ${formatter(point[field])}" x="${barX}" y="${y}" width="${barWidth}" height="${barHeight}" rx="1" tabindex="0" role="button"></rect>`; }).join('')}${monthAxis(points[0].date, points.at(-1).date, x, height, pad)}</svg>`; bindMonthControls(node);
+    node.innerHTML = `<svg class="trend-chart" viewBox="0 0 ${width} ${height}" role="img" aria-label="Monthly activity chart"><line class="chart-grid" x1="${pad.left}" x2="${width - pad.right}" y1="${height - pad.bottom}" y2="${height - pad.bottom}" /><text class="chart-label" x="0" y="${pad.top + 4}">${totalLabel}</text>${points.map((point) => { const barHeight = (point[field] / max) * (height - pad.top - pad.bottom); const barX = x(point.date) - barWidth / 2; const y = height - pad.bottom - barHeight; return `<rect class="chart-bar chart-interactive${point.date === selectedMonth ? ' chart-selected' : ''}" data-month="${point.date}" data-tooltip="${formatShortDate(point.date)} · ${formatter(point[field])}" x="${barX}" y="${y}" width="${barWidth}" height="${barHeight}" rx="1" tabindex="0" role="button"></rect>`; }).join('')}${monthAxis(points[0].date, points.at(-1).date, x, height, pad)}</svg>`; bindMonthControls(node);
   }
 
   function renderCharts(runs) {
     const bounds = chartBounds(runs); lineChart('#pace-chart', rollingTrend(runs, 'paceSecondsPerKm'), formatPace, bounds);
     lineChart('#heart-rate-chart', rollingTrend(runs.filter((run) => Number.isFinite(run.averageHeartRate)), 'averageHeartRate'), (value) => `${Math.round(value)} bpm`, bounds);
-    const months = monthlyTotals(runs); barChart('#distance-chart', months, 'distanceMeters', formatDistance); barChart('#frequency-chart', months, 'count', (value) => `${value} runs`);
+    const months = monthlyTotals(runs); barChart('#distance-chart', months, 'distanceMeters', formatDistance, formatDistance(sum(runs, 'distanceMeters'))); barChart('#frequency-chart', months, 'count', (value) => `${value} runs`, `${runs.length} runs`);
   }
 
   function selectRun(id, zoom = true) { const deselect = activeId === id; activeId = deselect ? null : id; render(); const run = allActivities.find((item) => item.id === id); if (!deselect) requestAnimationFrame(() => document.querySelector(`[data-run-id="${id}"]`)?.scrollIntoView({ behavior: 'smooth', block: 'nearest' })); if (!deselect && run && zoom && Array.isArray(run.coordinates) && run.coordinates.length > 1) map.fitBounds(L.latLngBounds(run.coordinates), { padding: [40, 40], maxZoom: 15 }); }
