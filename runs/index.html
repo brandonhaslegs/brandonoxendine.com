@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Runs • Brandon Oxendine</title>
+    <meta name="description" content="A map, chronicle, and training-progress dashboard for Brandon Oxendine's runs." />
+    <link rel="canonical" href="https://www.brandonoxendine.com/runs/" />
+    <link rel="stylesheet" href="../assets/css/reset.css" />
+    <link rel="stylesheet" href="../assets/css/site.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="icon" href="../favicon.png" />
+    <script defer src="../assets/js/include-header.js"></script>
+  </head>
+  <body class="full-width runs-page">
+    <header id="site-header">
+      <a href="/">Brandon Oxendine</a>
+      <nav><a href="/">Work</a><a href="/writing">Writing</a><a href="/info">Info</a></nav>
+    </header>
+    <main class="runs-dashboard">
+      <section class="runs-overview" aria-label="Training progress">
+        <div class="charts" aria-label="Training trends">
+          <dl class="run-stats" aria-label="All-time running statistics">
+            <div><dt>Runs</dt><dd id="stat-runs">—</dd></div>
+            <div><dt>Distance</dt><dd id="stat-distance">—</dd></div>
+            <div><dt>Time</dt><dd id="stat-time">—</dd></div>
+            <div><dt>Avg. Pace</dt><dd id="stat-pace">—</dd></div>
+            <div><dt>Avg. HR</dt><dd id="stat-heart-rate">—</dd></div>
+            <div><dt>Avg. Length</dt><dd id="stat-average-distance">—</dd></div>
+            <div><dt>Longest</dt><dd id="stat-longest">—</dd></div>
+            <div><dt>Avg. Time</dt><dd id="stat-average-time">—</dd></div>
+            <div><dt>Fastest Pace</dt><dd id="stat-fastest-pace">—</dd></div>
+          </dl>
+          <section class="chart-card"><div class="chart-heading"><h2>Pace</h2><p>30-day weighted average</p></div><div id="pace-chart" class="chart" aria-label="Pace trend chart"></div></section>
+          <section class="chart-card"><div class="chart-heading"><h2>Heart Rate</h2><p>30-day weighted average</p></div><div id="heart-rate-chart" class="chart" aria-label="Heart-rate trend chart"></div></section>
+          <section class="chart-card"><div class="chart-heading"><h2>Distance</h2><p>Monthly kilometres</p></div><div id="distance-chart" class="chart" aria-label="Monthly distance chart"></div></section>
+          <section class="chart-card"><div class="chart-heading"><h2>Frequency</h2><p>Runs by month</p></div><div id="frequency-chart" class="chart" aria-label="Monthly run frequency chart"></div></section>
+        </div>
+      </section>
+      <section class="runs-map-panel" aria-label="Run routes">
+        <div id="map" role="region" aria-label="Map of running routes"></div>
+      </section>
+      <section class="runs-history" aria-label="Activity history">
+        <div class="history-heading"><div><h2>History</h2><div class="history-filter" id="history-filter" hidden><span id="history-filter-date"></span><button class="clear-month" id="clear-month" type="button">Clear</button></div></div><div class="history-controls"><label class="sort-label" for="run-sort">Sort</label><select id="run-sort" aria-label="Sort activity history"><option value="date-desc">Newest first</option><option value="date-asc">Oldest first</option><option value="pace-asc">Fastest first</option><option value="pace-desc">Slowest first</option><option value="distance-desc">Longest first</option><option value="distance-asc">Shortest first</option></select></div></div>
+        <div class="runs-list" id="runs-list" aria-live="polite"></div>
+      </section>
+    </main>
+    <footer class="runs-footer"><span id="status-message">Loading your training data…</span><select id="chart-range" aria-label="Filter runs by time range"><option value="all">All time</option><option value="last-12-months">Last 12 months</option><option value="last-24-months">Last 2 years</option></select><a href="https://www.strava.com/athletes/24642624" target="_blank" rel="noopener noreferrer">Data Source: Strava</a></footer>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="./data/runs-data.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>

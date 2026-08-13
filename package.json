@@ -1,0 +1,8 @@
+{
+  "name": "brandonoxendine-com",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "fit-file-parser": "4.1.0"
+  }
+}
