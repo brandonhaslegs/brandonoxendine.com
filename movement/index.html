@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Runs • Brandon Oxendine</title>
     <meta name="description" content="A map, chronicle, and training-progress dashboard for Brandon Oxendine's runs." />
-    <link rel="canonical" href="https://www.brandonoxendine.com/runs/" />
+    <link rel="canonical" href="https://www.brandonoxendine.com/movement/" />
     <link rel="stylesheet" href="../assets/css/reset.css" />
     <link rel="stylesheet" href="../assets/css/site.css" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
@@ -42,7 +42,7 @@
         <div id="map" role="region" aria-label="Map of running routes"></div>
       </section>
       <section class="runs-history" aria-label="Activity history">
-        <div class="history-heading"><div><h2>History</h2><div class="history-filter" id="history-filter" hidden><span id="history-filter-date"></span><button class="clear-month" id="clear-month" type="button">Clear</button></div></div><div class="history-controls"><label class="sort-label" for="run-sort">Sort</label><select id="run-sort" aria-label="Sort activity history"><option value="date-desc">Newest first</option><option value="date-asc">Oldest first</option><option value="pace-asc">Fastest first</option><option value="pace-desc">Slowest first</option><option value="distance-desc">Longest first</option><option value="distance-asc">Shortest first</option></select></div></div>
+        <div class="history-controls" aria-label="Sort activity history"><div class="history-filter" id="history-filter" hidden><span id="history-filter-date"></span><button class="clear-month" id="clear-month" type="button">Clear</button></div><div class="sort-buttons"><button class="sort-button" data-sort-key="date" type="button">Date</button><button class="sort-button" data-sort-key="pace" type="button">Speed</button><button class="sort-button" data-sort-key="distance" type="button">Length</button></div></div>
         <div class="runs-list" id="runs-list" aria-live="polite"></div>
       </section>
     </main>

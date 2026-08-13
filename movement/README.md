@@ -1,6 +1,6 @@
 # Runs page
 
-The page reads generated public data from `/runs/data/`; it never receives Strava credentials. `runs-data.js` is included so the page also works when opened directly from the filesystem.
+The page reads generated public data from `/movement/data/`; it never receives Strava credentials. `runs-data.js` is included so the page also works when opened directly from the filesystem.
 
 ## First-time setup
 
