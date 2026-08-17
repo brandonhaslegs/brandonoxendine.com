@@ -17,7 +17,7 @@
 .filter-label { display: block; margin-bottom: 8px; color: #aaa; font-size: 13px; }
 .charts { display: grid; flex: 1; min-height: 0; grid-template-columns: repeat(6, minmax(0, 1fr)); grid-template-rows: repeat(3, minmax(86px, 1fr)) repeat(2, minmax(210px, 2.4fr)); gap: 0; }
 .run-stats div { grid-column: span 2; }
-.chart-card { position: relative; display: flex; min-width: 0; flex-direction: column; grid-column: span 3; padding: 16px; margin: 0; border: 0; border-right: 1px solid #333; border-bottom: 1px solid #333; background: #080808; }
+.chart-card { position: relative; display: flex; min-width: 0; flex-direction: column; grid-column: span 3; padding: 16px; margin: 0; border: 0; border-right: 1px solid #333; border-bottom: 1px solid #333; background: #000; }
 .chart-tooltip { position: absolute; z-index: 5; padding: 7px 9px; color: #000; background: #fff; font-size: 12px; font-weight: 700; line-height: 1; opacity: 0; pointer-events: none; transform: translateY(4px); transition: opacity .12s ease, transform .12s ease; white-space: nowrap; }
 .chart-tooltip.visible { opacity: 1; transform: translateY(0); }
 .chart-card:nth-last-child(-n + 2) { border-bottom: 0; }
@@ -47,7 +47,7 @@
 .sort-button { padding: 0; color: #999; border: 0; border-bottom: 1px solid transparent; background: transparent; font: inherit; font-size: 18px; cursor: pointer; }
 .sort-button.active { color: hotpink; border-bottom-color: currentColor; }
 .clear-month { padding: 0; color: hotpink; border: 0; border-bottom: 1px solid currentColor; background: transparent; font: inherit; font-size: 13px; cursor: pointer; }
-.runs-list { display: block; min-height: 0; overflow-y: auto; border-top: 0; scrollbar-color: #555 #111; }
+.runs-list { display: block; min-height: 0; overflow-y: auto; border-top: 0; scrollbar-color: #555 #000; }
 .run-card { display: block; width: 100%; padding: 16px 0; color: inherit; text-align: left; background: transparent; border: 0; border-bottom: 1px solid #333; font: inherit; cursor: pointer; }
 .run-card { padding: 16px 20px; border-right: 0; }
 .run-card:hover, .run-card.active { color: hotpink; }
@@ -58,8 +58,8 @@
 .activity-walk .run-type { color: #ffd84d; }
 .run-card-top { display: flex; justify-content: space-between; gap: 12px; font-weight: 700; }
 .run-card-meta { display: flex; gap: 12px; margin-top: 5px; color: #999; font-size: 14px; }
-#map { min-height: 520px; flex: 1; background: #151515; }
-.route-popup .leaflet-popup-content-wrapper, .route-popup .leaflet-popup-tip { color: #fff; background: #111; }
+#map { min-height: 520px; flex: 1; background: #000; }
+.route-popup .leaflet-popup-content-wrapper, .route-popup .leaflet-popup-tip { color: #fff; background: #000; }
 .route-popup .leaflet-popup-content { margin: 12px 14px; font-family: "ABC Maxi Round", sans-serif; }
 @media (max-width: 1100px) { .runs-dashboard { grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); grid-template-rows: auto auto; } .runs-history { grid-column: 1 / -1; grid-row: 2; max-height: 520px; border-top: 1px solid #333; border-left: 0; } }
 @media (max-width: 760px) { .runs-dashboard { grid-template-columns: 1fr; grid-template-rows: auto; } .runs-overview { border-right: 0; border-bottom: 1px solid #333; } .runs-map-panel { min-height: 540px; } .runs-history { grid-column: 1; grid-row: auto; } }
