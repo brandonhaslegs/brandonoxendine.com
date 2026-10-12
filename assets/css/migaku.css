@@ -1,0 +1,402 @@
+/* -------- MIGAKU CASE STUDY --------
+   Values below are Migaku's own tokens from the 2023 extension build. */
+body.migaku-page {
+  --mgk-ink: #00005a;
+  --mgk-tinted: #ede3ff;
+  --mgk-gradient: linear-gradient(180deg, #ff9345, #fe4670);
+  --mgk-shadow-1: 0 4px 5px rgba(0 0 90 / 10%), 0 -0.5px 2px rgba(0 0 90 / 6%), 0 1.3402px 1.5635px rgba(0 0 90 / 3.6%), 0 0.7513px 0.8765px rgba(0 0 90 / 1.8%), 0 0.399px 0.4655px rgba(0 0 90 / 0.6%);
+  --mgk-shadow-2: 0 9px 20px rgba(0 0 90 / 14%), 0 3.76px 8.3555px rgba(0 0 90 / 8.3%), 0 2.0103px 4.4673px rgba(0 0 90 / 5%), 0 1.1269px 2.5043px rgba(0 0 90 / 2.6%), 0 0.5985px 1.33px rgba(0 0 90 / 0.8%);
+  --mgk-shadow-3: 0 50px 65px rgba(0 0 90 / 17%), 0 15px 27.1554px rgba(0 0 90 / 10%), 0 8px 14.5186px rgba(0 0 90 / 8.5%), 0 3px 8.139px rgba(0 0 90 / 7.3%), 0 0.3819px 4.3226px rgba(0 0 90 / 4%), 0 -0.4313px 1.7987px rgba(0 0 90 / 1.3%);
+  background: #f7f3ff;
+  color: var(--mgk-ink);
+}
+
+@media (max-width: 900px) {
+  body.migaku-page header {
+    background: #f7f3ff;
+  }
+}
+
+body.migaku-page main h2 {
+  font-size: 32px;
+  margin: 24px 0 16px;
+}
+
+body.migaku-page .jump,
+body.migaku-page .provenance-note {
+  text-align: center;
+}
+
+body.migaku-page .provenance-note {
+  font-size: 15px;
+  opacity: 0.7;
+  max-width: 36em;
+  margin: 32px auto 0;
+}
+
+body.migaku-page .stats strong {
+  background: var(--mgk-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+body.migaku-page .columns > img {
+  margin: 0;
+}
+
+/* Stages: white panels that hold live specimens */
+.mgk-stage {
+  background: #fff;
+  border-radius: 24px;
+  padding: clamp(24px, 4vw, 56px);
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+}
+
+.mgk-stage figcaption {
+  font-family: "ABC Maxi Round", sans-serif;
+  font-weight: 300;
+  margin-top: 32px;
+}
+
+.mgk-stage code {
+  font-family: ui-monospace, Menlo, monospace;
+  font-size: 12px;
+}
+
+.mgk-wordmark img {
+  width: min(560px, 80%);
+}
+
+.mgk-cast-grid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: clamp(16px, 3vw, 48px);
+  align-items: end;
+}
+
+.mgk-cast-grid img {
+  width: 100%;
+  height: auto;
+  max-height: 180px;
+  object-fit: contain;
+}
+
+/* Color */
+.mgk-hero-swatches {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.mgk-big-swatch {
+  height: clamp(140px, 16vw, 220px);
+  border-radius: 16px;
+  padding: 16px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: #fff;
+  text-align: left;
+}
+
+.mgk-ink {
+  background: var(--mgk-ink);
+}
+
+.mgk-gradient {
+  background: var(--mgk-gradient);
+}
+
+.mgk-ink-ramp {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.mgk-ink-ramp div {
+  background: rgba(0 0 90 / var(--a));
+  border-radius: 12px;
+  aspect-ratio: 1.6;
+  padding: 10px 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: left;
+  color: #fff;
+  font-size: 14px;
+}
+
+.mgk-ink-ramp div:nth-child(n + 4) {
+  color: var(--mgk-ink);
+}
+
+.mgk-accents {
+  transition: background-color 250ms ease, color 250ms ease;
+}
+
+.mgk-accents[data-theme="dark"] {
+  background: #161633;
+  color: #fff;
+}
+
+.mgk-accents .mgk-theme-toggle {
+  border-color: rgba(0 0 90 / 15%);
+}
+
+.mgk-accents[data-theme="dark"] .mgk-theme-toggle {
+  border-color: rgba(255 255 255 / 25%);
+}
+
+.mgk-accents .mgk-theme-toggle button[aria-pressed="true"] {
+  background: var(--mgk-ink);
+  color: #fff;
+}
+
+.mgk-accents[data-theme="dark"] .mgk-theme-toggle button[aria-pressed="true"] {
+  background: #fff;
+  color: #161633;
+}
+
+.mgk-accent-table {
+  max-width: 760px;
+  margin: 24px auto 0;
+}
+
+.mgk-accent-head,
+.mgk-accent-row {
+  display: grid;
+  grid-template-columns: 96px repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  align-items: center;
+}
+
+.mgk-accent-head {
+  font-size: 13px;
+  opacity: 0.6;
+  margin-bottom: 8px;
+}
+
+.mgk-accent-row {
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+.mgk-accent-row i {
+  height: 48px;
+  border-radius: 12px;
+  transition: background-color 250ms ease;
+}
+
+.mgk-accent-row .lo { background: var(--lo); }
+.mgk-accent-row .base { background: var(--base); }
+.mgk-accent-row .hi { background: var(--hi); }
+
+.mgk-accents[data-theme="dark"] .lo { background: var(--lo-d); }
+.mgk-accents[data-theme="dark"] .base { background: var(--base-d); }
+.mgk-accents[data-theme="dark"] .hi { background: var(--hi-d); }
+
+/* Elevation */
+.mgk-elevation {
+  background: var(--mgk-tinted);
+}
+
+.mgk-elevation-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(16px, 4vw, 56px);
+  padding: 16px 0 48px;
+}
+
+.mgk-elevation-grid div {
+  background: #fff;
+  border-radius: 24px;
+  aspect-ratio: 1.3;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: left;
+}
+
+.mgk-elevation-grid small {
+  opacity: 0.6;
+  font-size: 13px;
+}
+
+.mgk-elevation-grid .e1 { box-shadow: var(--mgk-shadow-1); }
+.mgk-elevation-grid .e2 { box-shadow: var(--mgk-shadow-2); }
+.mgk-elevation-grid .e3 { box-shadow: var(--mgk-shadow-3); }
+
+/* Squiggle */
+.mgk-squiggle {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.mgk-squiggle-track {
+  position: relative;
+  height: 10px;
+  background: rgba(0 0 90 / 7%);
+}
+
+.mgk-squiggle-fill {
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 0;
+  background: var(--mgk-gradient);
+  transition: width 1.2s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+.mgk-squiggle.is-filled .mgk-squiggle-fill {
+  width: var(--progress, 66%);
+}
+
+/* Reading colors */
+.mgk-sentence {
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Yu Gothic", sans-serif;
+  font-size: clamp(24px, 3.4vw, 44px);
+  line-height: 1.8;
+  margin: 0 0 24px;
+}
+
+.mgk-sentence .w {
+  text-decoration-line: underline;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 8px;
+  transition: text-decoration-color 150ms ease;
+  cursor: default;
+}
+
+.mgk-sentence .unknown { text-decoration-color: #fe467080; }
+.mgk-sentence .unknown:hover { text-decoration-color: #fe4670; }
+.mgk-sentence .learning { text-decoration-color: #ff934580; }
+.mgk-sentence .learning:hover { text-decoration-color: #ff9345; }
+.mgk-sentence .known { text-decoration-color: transparent; }
+.mgk-sentence .known:hover { text-decoration-color: #00c7a4; }
+.mgk-sentence .ignored { text-decoration-color: transparent; }
+.mgk-sentence .ignored:hover { text-decoration-color: #989eae; }
+.mgk-sentence .tracked { text-decoration-color: #c6a5fa; }
+.mgk-sentence .tracked:hover { text-decoration-color: #672fc3; }
+
+body.case-study main .mgk-legend {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px 24px;
+  font-size: 14px;
+}
+
+body.case-study main .mgk-legend li {
+  margin: 0;
+}
+
+.mgk-legend i {
+  display: inline-block;
+  width: 20px;
+  height: 3px;
+  border-radius: 2px;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.mgk-legend .unknown { background: #fe4670; }
+.mgk-legend .learning { background: #ff9345; }
+.mgk-legend .tracked { background: #672fc3; }
+.mgk-legend .known { background: #00c7a4; }
+.mgk-legend .ignored { background: #989eae; }
+
+.mgk-legend small {
+  opacity: 0.6;
+}
+
+.mgk-pitch {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 2fr;
+  gap: 16px;
+  border-top: 2px solid rgba(0 0 90 / 7%);
+  padding-top: 24px;
+}
+
+.mgk-pitch span {
+  display: block;
+  font-family: "Hiragino Sans", "Noto Sans JP", sans-serif;
+  font-size: 40px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.mgk-pitch .tones {
+  font-family: "Inter", sans-serif;
+  font-size: 32px;
+}
+
+.mgk-pitch small {
+  font-size: 13px;
+  opacity: 0.6;
+}
+
+/* Icons */
+.mgk-icons img {
+  width: min(100%, 1008px);
+}
+
+.mgk-specimens {
+  align-items: start;
+}
+
+@media (max-width: 700px) {
+  .mgk-cast-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .mgk-hero-swatches {
+    grid-template-columns: 1fr;
+  }
+
+  .mgk-ink-ramp {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .mgk-accent-head,
+  .mgk-accent-row {
+    grid-template-columns: 72px repeat(3, minmax(0, 1fr));
+    font-size: 12px;
+  }
+
+  .mgk-elevation-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .mgk-pitch {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .mgk-pitch > div:last-child {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mgk-squiggle-fill,
+  .mgk-accents,
+  .mgk-accent-row i {
+    transition: none;
+  }
+}
+
+/* Specimen sheets render at their natural 1x size */
+.mgk-sheet .compare-stage {
+  max-width: var(--w);
+  margin: 0 auto;
+}
+
+.mgk-sheet img {
+  border-radius: 24px;
+}

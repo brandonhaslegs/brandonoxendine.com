@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" class="-mgk-variable-stroke-asset" viewBox="0 0 64 63">
+  <path fill="url(#Sun_svg__a)" d="M18.937 13.893 4.86 15.121l5.568 12.987L1.343 38.93l13.12 5.247 1.227 14.077 12.987-5.568L39.5 61.773l5.246-13.12 14.077-1.23-5.567-12.986 9.086-10.822-13.12-5.247L47.994 4.29 35.007 9.858 24.185.773l-5.248 13.12Z"/>
+  <path fill="url(#Sun_svg__b)" d="M17.623 31.337c0 7.802 6.325 14.127 14.128 14.127 7.802 0 14.128-6.325 14.128-14.127 0-7.803-6.326-14.128-14.128-14.128-7.803 0-14.128 6.325-14.128 14.128Z"/>
+  <path fill="#FAF" d="M27.676 34.14a3.86 3.86 0 0 1 3.564-.466 3.86 3.86 0 0 1 2.351 2.718c-2.105.494-4.739-.439-5.915-2.253Z"/>
+  <path stroke="#00005A" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5" d="M34.682 28.476a2.535 2.535 0 1 1 5.07 0M24.163 28.476a2.535 2.535 0 0 1 5.07 0M36.957 31.604a5 5 0 0 1-9.999 0h9.999Z"/>
+  <path fill="#00005A" d="M27.875 34.175a3.993 3.993 0 0 1 3.339-.325 3.994 3.994 0 0 1 2.376 2.368c.952-.345 1.78-.94 2.359-1.77.58-.831.894-1.844.888-2.856h-9.641c-.074.94.088 1.848.678 2.584Z"/>
+  <path fill="url(#Sun_svg__c)" d="M30.673 17.254c7.298.552 13.049 6.644 13.049 14.083s-5.75 13.53-13.05 14.082c.357.027.715.045 1.078.045 7.803 0 14.128-6.325 14.128-14.127 0-7.803-6.325-14.128-14.128-14.128-.363 0-.721.018-1.077.045Z"/>
+  <path stroke="#00005A" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5" d="M45.91 31.272c0 7.77-6.298 14.068-14.067 14.068-7.77 0-14.068-6.298-14.068-14.068 0-7.769 6.298-14.067 14.068-14.067 7.769 0 14.067 6.298 14.067 14.067Z"/>
+  <path stroke="#00005A" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5" d="m24.185.772 10.822 9.086L47.994 4.29l1.228 14.078 13.12 5.246-9.085 10.822 5.567 12.987-14.077 1.228-5.247 13.12-10.822-9.085-12.987 5.567-1.228-14.077-13.12-5.246 9.085-10.822L4.861 15.12l14.077-1.228L24.185.772Z"/>
+  <defs>
+    <linearGradient id="Sun_svg__a" x1="1.342" x2="62.342" y1="31.272" y2="31.272" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFE700"/>
+      <stop offset=".583" stop-color="#FFE700"/>
+      <stop offset="1" stop-color="#FFA5FF"/>
+    </linearGradient>
+    <linearGradient id="Sun_svg__b" x1="17.623" x2="45.878" y1="31.337" y2="31.337" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFE700"/>
+      <stop offset=".608" stop-color="#FF77AD"/>
+      <stop offset="1" stop-color="#FF77AD"/>
+    </linearGradient>
+    <linearGradient id="Sun_svg__c" x1="38.276" x2="38.276" y1="45.464" y2="17.209" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFE700"/>
+      <stop offset=".583" stop-color="#FFE700"/>
+      <stop offset="1" stop-color="#FFA5FF"/>
+    </linearGradient>
+  </defs>
+</svg>

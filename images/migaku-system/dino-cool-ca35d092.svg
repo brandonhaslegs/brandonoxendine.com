@@ -1,0 +1,421 @@
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" class="-mgk-variable-stroke-asset" viewBox="0 0 203 252">
+  <path fill="url(#DinosaurCool_svg__a)" d="M57.275 113.963c-.946.302-1.91.691-2.885.864-.623.11-1.252.038-1.8.466-.551.427-.446.753-.614 1.31-1.099 3.671-3.023 10.367-7.43 19.265-4.952 10.002-15.88 21.737-15.88 21.737s1.2.561 3.128 2.03c1.925 1.468 10.003 4.953 10.003 4.953s11.283 3.854 12.478 4.314c1.195.461.643 1.287.643 1.287l-1.195 3.393 48.48 17.105s5.284-15.084 5.927-16.735c.643-1.651 1.469-2.021 1.469-2.021l5.687-2.568c3.705-1.675 7.18-5.457 9.561-8.658a28.662 28.662 0 0 0 3.311-5.673c.73-1.68.845-4.55 2.544-5.395-4.526 2.568-9.177 5.083-13.703 7.651-1.612.917-3.594 1.094-5.356.513a6.642 6.642 0 0 1-3.969-3.666c-.667-1.579-1.272-3.182-1.924-4.766-.528-1.286-1.104-3.586-2.16-4.526-.912-.812-2.928-1.027-4.075-1.402-1.814-.585-3.624-1.176-5.438-1.761l-21.525-6.983c-3.158-1.023-6.374-2.078-9.067-4.027-5.073-3.676-7.602-10.544-6.119-16.635"/>
+  <path fill="url(#DinosaurCool_svg__b)" d="M70.046 163.192a5.686 5.686 0 0 1-3.297-7.296l5.275-14.206-2.29-.758-5.337 14.374a5.693 5.693 0 0 0 3.298 7.295l7.112 2.721c.586.226 1.19.341 1.781.37l-6.542-2.5Z"/>
+  <path fill="#FFF300" d="M132.348 97.06s1.008.364.643 1.833c-.364 1.468-2.567 8.898-2.567 8.898s-.274 1.469-1.651 1.099c-1.378-.37-50.097-14.403-50.097-14.403s-1.287 0-.826-1.469c.46-1.469 3.302-10.093 3.302-10.093s.091-1.195 1.651-.826c1.56.37 49.545 14.96 49.545 14.96Z"/>
+  <path fill="url(#DinosaurCool_svg__c)" d="M78.071 94.036c17.235 5.116 34.575 10.199 51.806 15.315a95.86 95.86 0 0 1-3.614 12.555c2.61 2.918 4.477 6.821 5.289 10.651-3.432 1.459-6.854 2.879-10.401 4.021-.12-1.439-.437-2.745-.926-4.103-5.88 2.932-11.754 6.023-17.393 9.393.12.705.038 1.367.158 2.073-9.964-3.293-20.072-6.235-30.03-9.527-3.96-1.31-8.044-2.688-11.125-5.495-4.013-3.648-5.774-9.59-4.402-14.836 4.925-.614 8.947-3.417 12.618-6.752 4.972-4.507 6.028-8.39 8.02-13.295Z"/>
+  <path fill="url(#DinosaurCool_svg__d)" d="M58.13 116.531c5.303-.662 9.632-3.681 13.587-7.271 5.351-4.857 6.493-9.037 8.634-14.322 16.457 4.886 32.996 9.743 49.473 14.624.014-.072.033-.139.048-.211-17.235-5.116-34.576-10.199-51.806-15.315-1.987 4.905-3.047 8.788-8.02 13.299-3.676 3.336-7.693 6.134-12.617 6.753-.735 2.803-.567 5.807.36 8.553-.274-2.035-.178-4.118.34-6.11Z"/>
+  <path fill="url(#DinosaurCool_svg__e)" d="m128.83 114.419 9.906-6.719c7.209-4.891 16.99.043 17.336 8.749l.518 12.949-7.122-6.556-3.888 9.013-5.49-8.365-8.62 8.696c-.878-3.724-2.635-7.05-5.265-9.829.629-2.457 1.747-5.558 2.625-7.938Z"/>
+  <path fill="url(#DinosaurCool_svg__f)" d="M150.106 11.764c-1.109-3.422-3.878-6.263-7.271-7.458-3.393-1.195-7.334-.715-10.338 1.262 2.524.144 4.876 1.128 6.829 2.736a12.121 12.121 0 0 1 4.013 6.296c2.26-.782 4.612-1.799 6.767-2.836Z"/>
+  <path stroke="#00005A" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5" d="M150.207 11.592c-2.467-6.278-9.455-9.474-15.819-7.238-.926.327-1.795.754-2.592 1.258"/>
+  <path fill="#00005A" d="m135.329 8.476 2.913 6.973c2.064 4.93 7.621 7.391 12.656 5.601a10.06 10.06 0 0 0 6.47-11.576L155.515.772l-20.186 7.704Z"/>
+  <path fill="#FFFFFE" d="m146.267 6.542-2.846 7.146s.292 1.68 1.823 2.26l4.157-10.717-3.134 1.31Z"/>
+  <path fill="url(#DinosaurCool_svg__g)" d="m67.176 178.367-8.274 23.023-.14-.005-14.82 42.951c-1.094 3.177 1.291 6.479 4.65 6.436l50.275-.648-.11-2.981a14.683 14.683 0 0 0-11.788-13.846l7.699-22.039 7.535-20.575"/>
+  <path stroke="#00005A" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5" d="m108.576 172.517-21.79 60.751"/>
+  <path fill="#00005A" d="m97.504 206.891-36.318-12.676a2.721 2.721 0 0 1-1.67-3.465l3.768-10.794a2.722 2.722 0 0 1 3.465-1.67l36.318 12.676a2.722 2.722 0 0 1 1.67 3.465l-3.768 10.794a2.714 2.714 0 0 1-3.465 1.67Z"/>
+  <path stroke="#00005A" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5" d="m97.504 206.891-36.318-12.676a2.721 2.721 0 0 1-1.67-3.465l3.768-10.794a2.722 2.722 0 0 1 3.465-1.67l36.318 12.676a2.722 2.722 0 0 1 1.67 3.465l-3.768 10.794a2.714 2.714 0 0 1-3.465 1.67Z"/>
+  <path fill="url(#DinosaurCool_svg__h)" d="m112.997 211.767-.216-.216.216.216Z"/>
+  <path stroke="#00005A" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5" d="M86.965 233.293a14.684 14.684 0 0 1 11.787 13.847l.11 2.98-50.274.648c-3.36.043-5.745-3.259-4.65-6.436"/>
+  <path fill="url(#DinosaurCool_svg__i)" d="m48.276 231.843-5.865-11.36 11.547-4.463s4.291 4.213 1.59 10.035c-2.703 5.822-7.272 5.788-7.272 5.788Z"/>
+  <path fill="url(#DinosaurCool_svg__j)" d="M42.603 220.559c4.267-.422 8.52-.993 12.747-1.708-.595-.802-.82-1.56-1.41-2.362-3.413 1.315-7.93 2.755-11.337 4.07Z"/>
+  <path fill="url(#DinosaurCool_svg__k)" d="m54.698 212.304-3.557-6.887 6.998-2.707s2.601 2.553.965 6.081c-1.632 3.532-4.406 3.513-4.406 3.513Z"/>
+  <path fill="url(#DinosaurCool_svg__l)" d="M51.42 206.022c2.706-.082 5.413-.163 8.12-.25-.556-.964-1.127-1.915-1.684-2.879-2.03.921-4.401 2.208-6.436 3.129Z"/>
+  <path stroke="#00005A" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5" d="m48.276 231.843-5.865-11.36 11.547-4.463s4.291 4.213 1.59 10.035c-2.703 5.822-7.272 5.788-7.272 5.788ZM54.698 212.304l-3.557-6.887 6.998-2.707s2.601 2.553.965 6.081c-1.632 3.532-4.406 3.513-4.406 3.513ZM128.854 114.376l9.93-6.685c7.228-4.867 16.986.1 17.302 8.811l.471 12.954-7.099-6.585-3.921 9.004-5.462-8.385-10.602 10.012"/>
+  <path fill="url(#DinosaurCool_svg__m)" d="m120.268 132.465 1.142 4.3 20.129-8.091c8.083-3.25 16.592 3.647 15.085 12.229l-2.246 12.761-5.568-7.919-5.711 7.987-3.59-9.34-21.996 12.882c-3.811 2.231-8.716.575-10.391-3.514l-4.77-11.701"/>
+  <path fill="url(#DinosaurCool_svg__n)" d="M104.343 88.953a80.395 80.395 0 0 0 3.177-20.757c.096-4.718-.22-9.494.802-14.096 1.661-7.464 7.449-14.308 14.427-17.432l-3.955-15.358a12.524 12.524 0 0 1 7.977-14.941c6.359-2.237 13.352.96 15.819 7.237l.499 1.267 25.989-10.578c10.127-4.122 21.66.926 25.5 11.164l7.29 19.438-46.401 18.458a9.458 9.458 0 0 1-11.936-4.516 10.977 10.977 0 0 0-12.676-5.63l-.11.03 1.656 3.858a5.715 5.715 0 0 1-.739 5.75l-3.725 4.785a6.33 6.33 0 0 0 1.186 8.941l41.755 31.494-1.752 1.685c-5.183 4.996-13.212 5.524-19.015 1.262l-14.864-10.837-.168 1.402c-.586 1.939-1.166 3.882-1.752 5.821"/>
+  <path fill="#fff" d="M119.02 93.206a394.434 394.434 0 0 0 3.998-12.642c.538.192 1.08.384 1.618.581-1.359 4.041-2.712 8.14-4.066 12.258M128.441 6.216c-3.047.782-5.625 3.187-6.623 6.172-.854 2.563-.576 5.351-.182 8.025a101.109 101.109 0 0 0 4.449 18.257c-7.161 2.179-13.242 8.341-15.315 15.531-2.074 7.194-.274 15.382 4.631 21.04-5.385-5.46-8.13-13.49-6.633-21.011 1.498-7.521 6.902-14.149 13.967-17.13-.043-.618-.043-1.387-.082-2.006-.321-4.775-1.646-9.325-3.1-13.885-.994-3.11-.408-6.767 1.329-9.526 1.738-2.76 4.368-4.79 7.559-5.467Z"/>
+  <path fill="#fff" d="M131.35 24.862a6.714 6.714 0 1 0 0-13.429 6.714 6.714 0 0 0 0 13.429ZM186.688 41.135l7.093 3.298a2.464 2.464 0 0 0 3.379-1.469l2.27-6.969M170.705 47.726l7.094 3.302a2.464 2.464 0 0 0 3.379-1.468l2.27-6.974M154.282 54.24l7.108 3.267a2.457 2.457 0 0 0 3.369-1.483L167 49.046M169.007 95.86l-.879-7.776a2.461 2.461 0 0 0-3.014-2.116l-7.132 1.694M154.93 84.907l-.878-7.775a2.462 2.462 0 0 0-3.015-2.116l-7.132 1.694"/>
+  <path fill="url(#DinosaurCool_svg__o)" d="M132.545 68.652c1.704-2.573 4.704-4.09 7.756-4.55 3.052-.46 6.172.024 9.167.758 2.995.735 5.937 1.719 8.97 2.28 3.033.562 6.004.418 9.038-.154a3.105 3.105 0 0 1 2.922 1.07c.687.846 1.152 2.011.514 2.895-3.806 5.284-9.767 8.965-16.193 10.002-.159-1.959-.663-3.93-1.171-5.831-3.317.019-6.816.527-9.897 1.746-3.638-2.529-7.66-5.428-11.106-8.216Z"/>
+  <path fill="#fff" d="M135.348 70.816c4.051-4.137 10.088-6.235 15.833-5.496-6.105-2.12-13.673-1.084-18.751 2.914 1.089.902 1.828 1.684 2.918 2.582Z"/>
+  <path fill="#00005A" d="M114.518 26.44c-2.442-3.047-5.044-6.21-8.648-7.712-3.605-1.508-8.505-.682-10.271 2.798-1.877 3.686.302 8.83-2.414 11.945-3.345 3.83-10.727.788-14.096 4.598-1.982 2.242-1.454 5.707-.47 8.53.705 2.025 1.583 4.007 1.929 6.119.345 2.116.072 4.453-1.31 6.085-2.06 2.434-6.182 2.957-7.257 5.961-1.632 4.56 5.682 8.956 3.772 13.4-1.272 2.961-5.855 3.403-6.95 6.436-.748 2.079.543 4.276 1.584 6.225 1.042 1.953 1.786 4.593.25 6.182-1.363 1.406-3.888 1.214-5.112 2.745-1.113 1.397-.576 3.504-1.315 5.126-.643 1.411-2.13 2.227-3.575 2.788-1.445.567-2.995 1.013-4.137 2.064-1.143 1.052-1.7 2.952-.725 4.156.01.351.34.764.686.706 14.36-2.385 20.067-14.768 22.855-25.811 3.1-12.273 5.505-18.358 9.47-29.978 3.96-11.615 21.42-20.868 25.734-32.362Z"/>
+  <path fill="url(#DinosaurCool_svg__p)" d="m53.22 173.026-9.067 28.36-.139-.004-14.82 42.95c-1.095 3.177 1.29 6.479 4.65 6.436l50.274-.648-.11-2.98a14.684 14.684 0 0 0-11.787-13.847l7.698-22.039 9.234-25.207"/>
+  <path fill="url(#DinosaurCool_svg__q)" d="M46.898 114.554a26.847 26.847 0 0 1-3.729-.898 26.949 26.949 0 0 1-18.444-21.204l-5.27-31.178a7.289 7.289 0 0 0-14.446.596l-3.312 38.976c-1.761 20.695 6.873 40.46 22.265 53.269"/>
+  <path fill="url(#DinosaurCool_svg__r)" d="m118.343 93.384 4.075-12.335s-16.265-7.598-14.134-24.664c1.766-14.144 14.801-19.731 14.801-19.731l-3.609-12.493-6.268 2.534A38.624 38.624 0 0 0 90.977 50.99L81.335 82.1"/>
+  <path fill="url(#DinosaurCool_svg__s)" d="m53.45 173.222-9.422 27.189c-5.701 16.904-11.216 34.647-14 42.394-2.207 6.148 1.623 7.991 3.816 7.962l50.274-.648-.038-1.041-46.804.6c-3.36.043-5.745-3.259-4.651-6.437l23.35-68.617"/>
+  <path fill="url(#DinosaurCool_svg__t)" d="M37.415 147.306c-9.369-4.828-16.506-13.774-21.492-23.081-5.275-9.848-7.78-21.161-7.161-32.314.696-12.455 2.356-24.401 2.688-36.875-3.768.706-6.398 4.531-6.494 8.361-.365 14.466-4.43 29.699-3.23 44.712 1.2 15.012 6.2 30.217 16.688 41.03 3.22 3.322 6.695 6.12 10.38 8.558"/>
+  <path fill="url(#DinosaurCool_svg__u)" d="M39.066 148.102a34.593 34.593 0 0 1-1.651-.796l1.65.796Z"/>
+  <path fill="#fff" d="M20.957 148.151c-10.27-10.794-15.18-25.835-16.366-40.699-1.2-15.018 2.865-30.247 3.23-44.712.067-2.75 1.445-5.491 3.61-7.085.004-.206.014-.413.019-.619-3.768.706-6.398 4.531-6.494 8.361-.365 14.466-4.43 29.699-3.23 44.712 1.2 15.017 6.2 30.217 16.688 41.03.278.288.561.572.844.85"/>
+  <path fill="url(#DinosaurCool_svg__v)" d="M26.414 114.885a1.963 1.963 0 1 0 0-3.926 1.963 1.963 0 0 0 0 3.926Z"/>
+  <path fill="url(#DinosaurCool_svg__w)" d="M34.87 126.514a4.53 4.53 0 1 0 .002-9.06 4.53 4.53 0 0 0-.001 9.06Z"/>
+  <path fill="url(#DinosaurCool_svg__x)" d="M107.996 83.156a2.567 2.567 0 1 0 0-5.135 2.567 2.567 0 0 0 0 5.135Z"/>
+  <path fill="url(#DinosaurCool_svg__y)" d="M118.43 78.553a30.736 30.736 0 0 0 3.791 3.09l.197-.594s-1.732-.812-3.988-2.496Z"/>
+  <path fill="url(#DinosaurCool_svg__z)" d="M55.792 114.535c-4.09.696-8.394.461-12.623-.878a26.965 26.965 0 0 1-7.799-3.96 26.907 26.907 0 0 0 10.449 6.307 15.598 15.598 0 0 1-.068-1.426c3.24.653 6.672.6 10.041-.043Z"/>
+  <path fill="url(#DinosaurCool_svg__A)" d="m78.388 92.54 13.04-41.574a22.088 22.088 0 0 1 2.5 2.184 38.61 38.61 0 0 1 4.315-9.177 11.743 11.743 0 0 1-3.249-1.123c3.49-6.34 9.786-11.893 16.304-15.041.422.998.705 2.073.835 3.192a38.948 38.948 0 0 1 3.936-1.882l4.329-1.752-.927-3.21-6.268 2.534a38.626 38.626 0 0 0-22.23 24.295L77.038 95.936"/>
+  <path fill="url(#DinosaurCool_svg__B)" d="M94.284 85.44c.264-.274.518-.553.768-.836 4.146-4.78 6.201-11.317 5.524-17.609-.557-5.188-2.966-10.141-6.638-13.847-.029.092-.062.178-.091.27l-9.114 29.41"/>
+  <path fill="url(#DinosaurCool_svg__C)" d="m84.805 82.57 9.037-29.157c.029-.091.062-.177.091-.268a22.515 22.515 0 0 0-2.5-2.184L81.77 81.754"/>
+  <path fill="url(#DinosaurCool_svg__D)" d="m84.805 82.57 9.037-29.157c.029-.091.062-.177.091-.268a22.525 22.525 0 0 0-2.5-2.184l-9.68 30.87"/>
+  <path fill="url(#DinosaurCool_svg__E)" d="M98.243 43.973c.715.134 1.45.206 2.198.206 6.508 0 11.783-5.275 11.783-11.783 0-.475-.034-.935-.091-1.396a38.613 38.613 0 0 0-13.89 12.973Z"/>
+  <path fill="url(#DinosaurCool_svg__F)" d="M94.994 42.845c1.008.523 2.097.907 3.25 1.123a38.601 38.601 0 0 1 13.894-12.973 11.833 11.833 0 0 0-.835-3.191c-6.518 3.148-12.815 8.701-16.309 15.041Z"/>
+  <path fill="url(#DinosaurCool_svg__G)" d="M94.994 42.845c1.008.523 2.097.907 3.25 1.123a38.601 38.601 0 0 1 13.894-12.973 11.833 11.833 0 0 0-.835-3.191c-6.518 3.148-12.815 8.701-16.309 15.041Z"/>
+  <path fill="url(#DinosaurCool_svg__H)" d="M55.792 114.535a26.975 26.975 0 0 0 8.365-2.894 31.13 31.13 0 0 1-8.365 2.894Z"/>
+  <path stroke="#00005A" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5" d="m129.704 85.646 20.753 15.268a14.78 14.78 0 0 0 19.015-1.262l1.752-1.685-41.755-31.495a6.33 6.33 0 0 1-1.186-8.94l3.725-4.786a5.696 5.696 0 0 0 .739-5.75l-1.656-3.858.11-.03a10.97 10.97 0 0 1 12.676 5.63 9.458 9.458 0 0 0 11.936 4.517l46.401-18.459-7.29-19.438c-3.84-10.237-15.373-15.286-25.5-11.163l-25.989 10.578-.499-1.267c-2.467-6.278-9.455-9.474-15.819-7.238-6.134 2.155-9.594 8.644-7.977 14.94l3.955 15.36"/>
+  <path stroke="#00005A" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5" d="M132.219 68.398c3.138-3.955 8.778-5.184 13.764-4.377 4.478.724 8.649 2.84 13.132 3.522 2.788.423 5.658.26 8.389-.446 2.669-.686 4.661 2.38 2.918 4.516-3.95 4.843-9.565 8.346-15.713 9.34M131.259 25.154a7.041 7.041 0 1 0 0-14.083 7.041 7.041 0 0 0 0 14.083Z"/>
+  <path fill="#00005A" d="M133.841 11.86c-1.176 4.314-2.357 8.63-3.533 12.944 3.331.557 6.71-1.291 7.689-4.521.984-3.23-1.08-7.032-4.156-8.424Z"/>
+  <path stroke="#00005A" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5" d="M185.675 12.244a143.15 143.15 0 0 1-11.835-1.977"/>
+  <path fill="#00005A" d="M131.143 43.58c3.547-.663 7.622-.816 10.334 1.569 1.636 1.44 2.471 3.552 3.695 5.352 1.224 1.8 3.192 3.844 5.323 3.398-3.336 2.284-5.707 5.936-6.441 9.915-4.315-.374-8.711 1.33-11.778 4.377-1.521-.739-2.865-1.502-3.902-2.846-1.032-1.339-1.622-3.081-1.334-4.752.499-2.874 3.297-4.703 4.804-7.199 1.762-2.903 1.277-7.06-.701-9.814Z"/>
+  <path stroke="#00005A" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5" d="m186.688 41.135 7.093 3.298a2.464 2.464 0 0 0 3.379-1.469l2.27-6.969M170.705 47.726l7.094 3.302a2.464 2.464 0 0 0 3.379-1.468l2.27-6.974M154.282 54.24l7.108 3.267a2.457 2.457 0 0 0 3.369-1.483L167 49.046M169.007 95.86l-.879-7.776a2.461 2.461 0 0 0-3.014-2.116l-7.132 1.694M154.93 84.907l-.878-7.775a2.462 2.462 0 0 0-3.015-2.116l-7.132 1.694M90.938 159.012a19.43 19.43 0 0 1 1.94 16.092M122.951 36.688c-5.755 2.38-10.497 7.108-12.901 12.853-2.405 5.745-2.434 12.44-.091 18.209 2.347 5.769 7.04 10.54 12.771 12.977l-4.075 12.157M55.154 169.153l-15.546-5.51c-24.9-10.516-40.2-35.861-37.91-62.791l3.31-38.977a7.286 7.286 0 0 1 7.09-6.666 7.29 7.29 0 0 1 7.357 6.071l5.27 31.177a26.947 26.947 0 0 0 18.444 21.204c14.25 4.507 29.45-3.441 33.87-17.72L90.972 50.99a38.614 38.614 0 0 1 22.231-24.295l6.268-2.534"/>
+  <path stroke="#00005A" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5" d="M11.853 55.38 8.949 89.52c-1.982 23.325 9.234 45.465 28.451 57.804"/>
+  <path stroke="#00005A" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5" d="M26.414 114.885a1.963 1.963 0 1 0 0-3.926 1.963 1.963 0 0 0 0 3.926ZM34.87 126.514a4.53 4.53 0 1 0 .002-9.06 4.53 4.53 0 0 0-.001 9.06Z"/>
+  <path fill="#00005A" d="M42.636 131.918a1.113 1.113 0 1 0 .001-2.226 1.113 1.113 0 0 0 0 2.226ZM101.392 52.09a1.114 1.114 0 1 0-.002-2.229 1.114 1.114 0 0 0 .002 2.228Z"/>
+  <path stroke="#00005A" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5" d="M107.996 83.156a2.567 2.567 0 1 0 0-5.135 2.567 2.567 0 0 0 0 5.135ZM111.303 27.808c.595 1.41.926 2.96.926 4.588 0 6.508-5.275 11.783-11.783 11.783-1.963 0-3.815-.48-5.447-1.33M129.732 150.469c-1.022 2.308-2.346 6.469-4.343 9.426-4.756 7.05-10.914 10.045-17.705 12.675M135.598 90.076l-9.215 32.031c2.524 2.799 4.29 6.427 5.221 10.233"/>
+  <path stroke="#00005A" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5" d="M103.379 122.42c7.16-2.333 14.801 1.862 16.687 9.148l1.344 5.192 20.129-8.091c8.083-3.249 16.592 3.647 15.085 12.229l-2.246 12.761-5.568-7.919-5.711 7.987-3.59-9.34-21.996 12.882c-3.811 2.232-8.716.576-10.391-3.514l-7.233-17.642"/>
+  <path fill="#00005A" d="M127.506 156.64a127.183 127.183 0 0 1-10.698 1.334c4.233-2.433 8.447-4.991 12.675-7.424-.48 2.27-.816 4.079-1.977 6.09Z"/>
+  <path stroke="#00005A" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5" d="M108.466 172.354a46.835 46.835 0 0 1-15.373 2.933l-13.616 37.172M94.221 85.498c.283-.293.557-.59.826-.898 4.146-4.78 6.201-11.317 5.524-17.61-.677-6.291-4.07-12.242-9.143-16.03"/>
+  <path stroke="#00005A" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5" d="M114.158 26.33c-2.443-3.048-4.679-6.1-8.284-7.602-3.604-1.508-8.504-.682-10.27 2.798-1.877 3.686.302 8.83-2.415 11.945-3.345 3.83-10.727.788-14.096 4.598-1.982 2.242-1.454 5.707-.47 8.53.705 2.025 1.584 4.007 1.93 6.119.345 2.116.071 4.453-1.311 6.085-2.059 2.434-6.182 2.957-7.257 5.961-1.632 4.56 5.683 8.956 3.773 13.4-1.272 2.961-5.856 3.403-6.95 6.436-.749 2.079.542 4.276 1.584 6.225 1.041 1.953 1.785 4.593.25 6.182-1.364 1.406-3.888 1.214-5.112 2.745-1.114 1.397-.576 3.504-1.315 5.126-.643 1.411-2.131 2.227-3.576 2.788-1.444.567-2.995 1.013-4.137 2.064-1.142 1.052-1.699 2.952-.725 4.156"/>
+  <path fill="#00005A" d="M129.325 85.905a19.236 19.236 0 0 1 3.921 12.464c.739-2.625 1.574-5.576 2.313-8.207-1.704-1.833-3.964-3.196-6.234-4.257ZM131.643 132.705c-2.098-6.824-.744-14.201 1.272-21.05-1.325 1.162-2.923 1.622-4.248 2.784-.139 2.044-2.27 6.086-1.723 8.058.197.711.682 1.301 1.123 1.891 2.04 2.736 3.091 4.943 3.576 8.317ZM122.202 33.4c-.643-3.48-3.345-6.5-6.738-7.517 1.391-.59 2.884-1.238 4.276-1.823.931 2.644 1.708 5.514 2.39 8.235"/>
+  <path fill="url(#DinosaurCool_svg__I)" d="m56.224 147.661-.216.216.216-.216Z"/>
+  <path fill="url(#DinosaurCool_svg__J)" d="m98.248 211.767-.216-.216.216.216Z"/>
+  <path stroke="#00005A" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5" d="m82.76 203.109-10.544 30.183a14.685 14.685 0 0 1 11.787 13.847l.11 2.981-50.274.647c-3.36.043-5.745-3.259-4.65-6.436l25.801-74.617"/>
+  <path fill="url(#DinosaurCool_svg__K)" d="m33.527 231.843-5.865-11.36 11.548-4.463s4.29 4.213 1.588 10.035c-2.697 5.826-7.27 5.788-7.27 5.788Z"/>
+  <path fill="url(#DinosaurCool_svg__L)" d="M27.854 220.559c4.267-.422 8.52-.993 12.748-1.708-.595-.802-.821-1.56-1.411-2.362-3.413 1.315-7.929 2.755-11.337 4.07Z"/>
+  <path fill="url(#DinosaurCool_svg__M)" d="m39.949 212.304-3.556-6.887 6.997-2.707s2.602 2.553.965 6.081c-1.632 3.532-4.406 3.513-4.406 3.513Z"/>
+  <path fill="url(#DinosaurCool_svg__N)" d="M36.67 206.022c2.708-.082 5.414-.163 8.121-.25-.556-.964-1.127-1.915-1.684-2.879-2.03.921-4.401 2.208-6.436 3.129Z"/>
+  <path stroke="#00005A" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5" d="m33.527 231.843-5.865-11.36 11.548-4.463s4.29 4.213 1.588 10.035c-2.697 5.826-7.27 5.788-7.27 5.788ZM39.949 212.304l-3.556-6.887 6.997-2.707s2.602 2.553.965 6.081c-1.632 3.532-4.406 3.513-4.406 3.513Z"/>
+  <path fill="#00005A" d="m120.964 13.948 2.913 6.974c2.064 4.929 7.622 7.391 12.656 5.6a10.06 10.06 0 0 0 6.47-11.575l-1.853-8.702-20.186 7.703Z"/>
+  <path stroke="#00005A" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="6" d="m123.44 14.196-3.921-.489a5.522 5.522 0 0 0-5.485 2.75"/>
+  <path fill="#FFFFFE" d="m129.421 13.324-2.847 7.146s.293 1.675 1.824 2.26l4.157-10.721-3.134 1.315Z"/>
+  <path fill="#00005A" d="M41.226 113.018c-3.686 13.587-11.087 26.147-21.185 35.957a2.807 2.807 0 0 0-.207 3.825c1.536 1.819 3.22 3.581 5.078 5.035a2.821 2.821 0 0 0 3.753-.23c11.346-11.523 19.822-26.417 23.523-42.159.374-1.593-.716-3.163-2.338-3.398-1.732-.249-3.561-.633-5.26-1.046-1.478-.36-2.966.542-3.364 2.016ZM83.307 201.794 46.99 189.118a2.721 2.721 0 0 1-1.67-3.465l3.768-10.794a2.717 2.717 0 0 1 3.465-1.67l36.318 12.675a2.722 2.722 0 0 1 1.67 3.466l-3.768 10.794a2.725 2.725 0 0 1-3.465 1.67Z"/>
+  <path stroke="#00005A" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5" d="M83.307 201.794 46.99 189.118a2.721 2.721 0 0 1-1.67-3.465l3.768-10.794a2.717 2.717 0 0 1 3.465-1.67l36.318 12.675a2.722 2.722 0 0 1 1.67 3.466l-3.768 10.794a2.725 2.725 0 0 1-3.465 1.67ZM41.226 113.018c-3.686 13.587-11.087 26.147-21.185 35.957a2.807 2.807 0 0 0-.207 3.825c1.536 1.819 3.22 3.581 5.078 5.035a2.821 2.821 0 0 0 3.753-.23c11.346-11.523 19.822-26.417 23.523-42.159.374-1.593-.716-3.163-2.338-3.398-1.732-.249-3.561-.633-5.26-1.046-1.478-.36-2.966.542-3.364 2.016ZM133.332 97.41l-51.47-15.535M130.102 109.347 77.879 94.181M119.994 132.509l-17.546 9.267M57.38 114.261s-3.652 13.899 12.494 19.514c16.145 5.616 33.13 10.53 33.13 10.53M87.142 146.691l-4.89 15.08a5.684 5.684 0 0 1-7.445 3.557l-7.112-2.722a5.685 5.685 0 0 1-3.298-7.295l5.337-14.374 17.408 5.754ZM68.333 145.567l16.846 6.038M85.29 96.603l-13.055 37.662M102.313 101.438l-13.275 38.29M118.684 106.241l-11.442 33.064M127.664 117.15l-52.852-16.208M62.012 112.609l57.738 18.396"/>
+  <path fill="#00005A" d="M104.233 173.995a44.56 44.56 0 0 1-12.959 6.177c.706-1.67 1.33-3.23 2.035-4.9 3.945-.039 8.246-.572 12.047-1.623"/>
+  <defs>
+    <linearGradient id="DinosaurCool_svg__a" x1="28.665" x2="130.698" y1="152.322" y2="152.322" gradientUnits="userSpaceOnUse">
+      <stop offset=".262" stop-color="#B070FF"/>
+      <stop offset=".412" stop-color="#AB6CFB"/>
+      <stop offset=".586" stop-color="#9D60F0"/>
+      <stop offset=".772" stop-color="#864CDE"/>
+      <stop offset=".964" stop-color="#6630C4"/>
+      <stop offset="1" stop-color="#5F2ABF"/>
+    </linearGradient>
+    <linearGradient id="DinosaurCool_svg__b" x1="64.038" x2="76.591" y1="153.314" y2="153.314" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#3FFFFF"/>
+      <stop offset=".509" stop-color="#3FC9FF"/>
+      <stop offset=".624" stop-color="#3DC6FF"/>
+      <stop offset=".721" stop-color="#36BBFF"/>
+      <stop offset=".812" stop-color="#2AAAFF"/>
+      <stop offset=".899" stop-color="#1A91FF"/>
+      <stop offset=".983" stop-color="#0571FF"/>
+      <stop offset="1" stop-color="#006AFF"/>
+    </linearGradient>
+    <linearGradient id="DinosaurCool_svg__c" x1="56.972" x2="131.551" y1="118.99" y2="118.99" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#00FF8A"/>
+      <stop offset=".391" stop-color="#00FD8A"/>
+      <stop offset=".554" stop-color="#00F689"/>
+      <stop offset=".675" stop-color="#00E987"/>
+      <stop offset=".775" stop-color="#00D884"/>
+      <stop offset=".862" stop-color="#00C181"/>
+      <stop offset=".939" stop-color="#00A57D"/>
+      <stop offset="1" stop-color="#008979"/>
+    </linearGradient>
+    <linearGradient id="DinosaurCool_svg__d" x1="56.975" x2="129.877" y1="108.339" y2="108.339" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFE700"/>
+      <stop offset=".086" stop-color="#FFE508"/>
+      <stop offset=".218" stop-color="#FFDF1D"/>
+      <stop offset=".381" stop-color="#FFD641"/>
+      <stop offset=".567" stop-color="#FFC972"/>
+      <stop offset=".773" stop-color="#FFB9B1"/>
+      <stop offset=".993" stop-color="#FFA6FC"/>
+      <stop offset="1" stop-color="#FFA5FF"/>
+    </linearGradient>
+    <linearGradient id="DinosaurCool_svg__e" x1="126.204" x2="156.587" y1="118.978" y2="118.978" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFE700"/>
+      <stop offset=".086" stop-color="#FFE508"/>
+      <stop offset=".218" stop-color="#FFDF1D"/>
+      <stop offset=".381" stop-color="#FFD641"/>
+      <stop offset=".567" stop-color="#FFC972"/>
+      <stop offset=".773" stop-color="#FFB9B1"/>
+      <stop offset=".993" stop-color="#FFA6FC"/>
+      <stop offset="1" stop-color="#FFA5FF"/>
+    </linearGradient>
+    <linearGradient id="DinosaurCool_svg__f" x1="132.493" x2="150.104" y1="9.13" y2="9.13" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFE700"/>
+      <stop offset=".086" stop-color="#FFE508"/>
+      <stop offset=".218" stop-color="#FFDF1D"/>
+      <stop offset=".381" stop-color="#FFD641"/>
+      <stop offset=".567" stop-color="#FFC972"/>
+      <stop offset=".773" stop-color="#FFB9B1"/>
+      <stop offset=".993" stop-color="#FFA6FC"/>
+      <stop offset="1" stop-color="#FFA5FF"/>
+    </linearGradient>
+    <linearGradient id="DinosaurCool_svg__g" x1="43.673" x2="102.202" y1="214.566" y2="214.566" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF565F"/>
+      <stop offset=".849" stop-color="#FF77AD"/>
+    </linearGradient>
+    <linearGradient id="DinosaurCool_svg__h" x1="112.738" x2="113.013" y1="211.581" y2="211.725" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFE700"/>
+      <stop offset=".086" stop-color="#FFE508"/>
+      <stop offset=".218" stop-color="#FFDF1D"/>
+      <stop offset=".381" stop-color="#FFD641"/>
+      <stop offset=".567" stop-color="#FFC972"/>
+      <stop offset=".773" stop-color="#FFB9B1"/>
+      <stop offset=".993" stop-color="#FFA6FC"/>
+      <stop offset="1" stop-color="#FFA5FF"/>
+    </linearGradient>
+    <linearGradient id="DinosaurCool_svg__i" x1="42.311" x2="56.071" y1="221.175" y2="225.013" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#A470FF"/>
+      <stop offset=".483" stop-color="#A26EFD"/>
+      <stop offset=".657" stop-color="#9B67F7"/>
+      <stop offset=".781" stop-color="#905CEC"/>
+      <stop offset=".881" stop-color="#7F4BDD"/>
+      <stop offset=".966" stop-color="#6A35C9"/>
+      <stop offset="1" stop-color="#5F2ABF"/>
+    </linearGradient>
+    <linearGradient id="DinosaurCool_svg__j" x1="43.699" x2="60.037" y1="216.951" y2="221.507" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#3FFFFF"/>
+      <stop offset=".509" stop-color="#3FC9FF"/>
+      <stop offset=".624" stop-color="#3DC6FF"/>
+      <stop offset=".721" stop-color="#36BBFF"/>
+      <stop offset=".812" stop-color="#2AAAFF"/>
+      <stop offset=".899" stop-color="#1A91FF"/>
+      <stop offset=".983" stop-color="#0571FF"/>
+      <stop offset="1" stop-color="#006AFF"/>
+    </linearGradient>
+    <linearGradient id="DinosaurCool_svg__k" x1="51.145" x2="59.486" y1="205.737" y2="208.063" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#A470FF"/>
+      <stop offset=".483" stop-color="#A26EFD"/>
+      <stop offset=".657" stop-color="#9B67F7"/>
+      <stop offset=".781" stop-color="#905CEC"/>
+      <stop offset=".881" stop-color="#7F4BDD"/>
+      <stop offset=".966" stop-color="#6A35C9"/>
+      <stop offset="1" stop-color="#5F2ABF"/>
+    </linearGradient>
+    <linearGradient id="DinosaurCool_svg__l" x1="52.218" x2="62.94" y1="203.483" y2="206.473" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#3FFFFF"/>
+      <stop offset=".509" stop-color="#3FC9FF"/>
+      <stop offset=".624" stop-color="#3DC6FF"/>
+      <stop offset=".721" stop-color="#36BBFF"/>
+      <stop offset=".812" stop-color="#2AAAFF"/>
+      <stop offset=".899" stop-color="#1A91FF"/>
+      <stop offset=".983" stop-color="#0571FF"/>
+      <stop offset="1" stop-color="#006AFF"/>
+    </linearGradient>
+    <linearGradient id="DinosaurCool_svg__m" x1="102.352" x2="156.8" y1="143.06" y2="143.06" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFE700"/>
+      <stop offset=".086" stop-color="#FFE508"/>
+      <stop offset=".218" stop-color="#FFDF1D"/>
+      <stop offset=".381" stop-color="#FFD641"/>
+      <stop offset=".567" stop-color="#FFC972"/>
+      <stop offset=".773" stop-color="#FFB9B1"/>
+      <stop offset=".993" stop-color="#FFA6FC"/>
+      <stop offset="1" stop-color="#FFA5FF"/>
+    </linearGradient>
+    <linearGradient id="DinosaurCool_svg__n" x1="103.345" x2="184.267" y1="25.25" y2="67.664" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFE700"/>
+      <stop offset=".086" stop-color="#FFE508"/>
+      <stop offset=".218" stop-color="#FFDF1D"/>
+      <stop offset=".381" stop-color="#FFD641"/>
+      <stop offset=".567" stop-color="#FFC972"/>
+      <stop offset=".773" stop-color="#FFB9B1"/>
+      <stop offset=".993" stop-color="#FFA6FC"/>
+      <stop offset="1" stop-color="#FFA5FF"/>
+    </linearGradient>
+    <linearGradient id="DinosaurCool_svg__o" x1="132.545" x2="171.217" y1="72.44" y2="72.44" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#3FFFFF"/>
+      <stop offset=".509" stop-color="#3FC9FF"/>
+      <stop offset=".624" stop-color="#3DC6FF"/>
+      <stop offset=".721" stop-color="#36BBFF"/>
+      <stop offset=".812" stop-color="#2AAAFF"/>
+      <stop offset=".899" stop-color="#1A91FF"/>
+      <stop offset=".983" stop-color="#0571FF"/>
+      <stop offset="1" stop-color="#006AFF"/>
+    </linearGradient>
+    <linearGradient id="DinosaurCool_svg__p" x1="28.924" x2="89.15" y1="211.896" y2="211.896" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF565F"/>
+      <stop offset=".849" stop-color="#FF77AD"/>
+    </linearGradient>
+    <linearGradient id="DinosaurCool_svg__q" x1="1.471" x2="46.9" y1="104.662" y2="104.662" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF565F"/>
+      <stop offset=".849" stop-color="#FF77AD"/>
+    </linearGradient>
+    <linearGradient id="DinosaurCool_svg__r" x1="81.332" x2="123.085" y1="58.772" y2="58.772" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF565F"/>
+      <stop offset=".849" stop-color="#FF77AD"/>
+    </linearGradient>
+    <linearGradient id="DinosaurCool_svg__s" x1="39.086" x2="91.198" y1="210.515" y2="225.047" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFE700"/>
+      <stop offset=".086" stop-color="#FFE508"/>
+      <stop offset=".218" stop-color="#FFDF1D"/>
+      <stop offset=".381" stop-color="#FFD641"/>
+      <stop offset=".567" stop-color="#FFC972"/>
+      <stop offset=".773" stop-color="#FFB9B1"/>
+      <stop offset=".993" stop-color="#FFA6FC"/>
+      <stop offset="1" stop-color="#FFA5FF"/>
+    </linearGradient>
+    <linearGradient id="DinosaurCool_svg__t" x1="-16.456" x2="48.903" y1="87.199" y2="121.456" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFE700"/>
+      <stop offset=".086" stop-color="#FFE508"/>
+      <stop offset=".218" stop-color="#FFDF1D"/>
+      <stop offset=".381" stop-color="#FFD641"/>
+      <stop offset=".567" stop-color="#FFC972"/>
+      <stop offset=".773" stop-color="#FFB9B1"/>
+      <stop offset=".993" stop-color="#FFA6FC"/>
+      <stop offset="1" stop-color="#FFA5FF"/>
+    </linearGradient>
+    <linearGradient id="DinosaurCool_svg__u" x1="37.265" x2="39.009" y1="147.194" y2="148.108" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFE700"/>
+      <stop offset=".086" stop-color="#FFE508"/>
+      <stop offset=".218" stop-color="#FFDF1D"/>
+      <stop offset=".381" stop-color="#FFD641"/>
+      <stop offset=".567" stop-color="#FFC972"/>
+      <stop offset=".773" stop-color="#FFB9B1"/>
+      <stop offset=".993" stop-color="#FFA6FC"/>
+      <stop offset="1" stop-color="#FFA5FF"/>
+    </linearGradient>
+    <linearGradient id="DinosaurCool_svg__v" x1="24.449" x2="28.377" y1="112.92" y2="112.92" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#A470FF"/>
+      <stop offset=".483" stop-color="#A26EFD"/>
+      <stop offset=".657" stop-color="#9B67F7"/>
+      <stop offset=".781" stop-color="#905CEC"/>
+      <stop offset=".881" stop-color="#7F4BDD"/>
+      <stop offset=".966" stop-color="#6A35C9"/>
+      <stop offset="1" stop-color="#5F2ABF"/>
+    </linearGradient>
+    <linearGradient id="DinosaurCool_svg__w" x1="30.341" x2="39.406" y1="121.986" y2="121.986" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#A470FF"/>
+      <stop offset=".483" stop-color="#A26EFD"/>
+      <stop offset=".657" stop-color="#9B67F7"/>
+      <stop offset=".781" stop-color="#905CEC"/>
+      <stop offset=".881" stop-color="#7F4BDD"/>
+      <stop offset=".966" stop-color="#6A35C9"/>
+      <stop offset="1" stop-color="#5F2ABF"/>
+    </linearGradient>
+    <linearGradient id="DinosaurCool_svg__x" x1="105.428" x2="110.565" y1="80.589" y2="80.589" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#A470FF"/>
+      <stop offset=".483" stop-color="#A26EFD"/>
+      <stop offset=".657" stop-color="#9B67F7"/>
+      <stop offset=".781" stop-color="#905CEC"/>
+      <stop offset=".881" stop-color="#7F4BDD"/>
+      <stop offset=".966" stop-color="#6A35C9"/>
+      <stop offset="1" stop-color="#5F2ABF"/>
+    </linearGradient>
+    <linearGradient id="DinosaurCool_svg__y" x1="118.428" x2="122.419" y1="80.101" y2="80.101" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF565F"/>
+      <stop offset=".849" stop-color="#FF77AD"/>
+    </linearGradient>
+    <linearGradient id="DinosaurCool_svg__z" x1="35.371" x2="120.402" y1="112.852" y2="112.852" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF565F"/>
+      <stop offset=".849" stop-color="#FF77AD"/>
+    </linearGradient>
+    <linearGradient id="DinosaurCool_svg__A" x1="54.851" x2="120.402" y1="60.05" y2="60.05" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFE700"/>
+      <stop offset=".086" stop-color="#FFE508"/>
+      <stop offset=".218" stop-color="#FFDF1D"/>
+      <stop offset=".381" stop-color="#FFD641"/>
+      <stop offset=".567" stop-color="#FFC972"/>
+      <stop offset=".773" stop-color="#FFB9B1"/>
+      <stop offset=".993" stop-color="#FFA6FC"/>
+      <stop offset="1" stop-color="#FFA5FF"/>
+    </linearGradient>
+    <linearGradient id="DinosaurCool_svg__B" x1="81.806" x2="100.697" y1="69.293" y2="69.293" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#A470FF"/>
+      <stop offset=".483" stop-color="#A26EFD"/>
+      <stop offset=".657" stop-color="#9B67F7"/>
+      <stop offset=".781" stop-color="#905CEC"/>
+      <stop offset=".881" stop-color="#7F4BDD"/>
+      <stop offset=".966" stop-color="#6A35C9"/>
+      <stop offset="1" stop-color="#5F2ABF"/>
+    </linearGradient>
+    <linearGradient id="DinosaurCool_svg__C" x1="48.109" x2="114.644" y1="66.768" y2="66.768" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF565F"/>
+      <stop offset=".849" stop-color="#FF77AD"/>
+    </linearGradient>
+    <linearGradient id="DinosaurCool_svg__D" x1="81.746" x2="99.235" y1="66.768" y2="66.768" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFE700"/>
+      <stop offset=".086" stop-color="#FFE508"/>
+      <stop offset=".218" stop-color="#FFDF1D"/>
+      <stop offset=".381" stop-color="#FFD641"/>
+      <stop offset=".567" stop-color="#FFC972"/>
+      <stop offset=".773" stop-color="#FFB9B1"/>
+      <stop offset=".993" stop-color="#FFA6FC"/>
+      <stop offset="1" stop-color="#FFA5FF"/>
+    </linearGradient>
+    <linearGradient id="DinosaurCool_svg__E" x1="94.996" x2="112.227" y1="37.589" y2="37.589" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#A470FF"/>
+      <stop offset=".483" stop-color="#A26EFD"/>
+      <stop offset=".657" stop-color="#9B67F7"/>
+      <stop offset=".781" stop-color="#905CEC"/>
+      <stop offset=".881" stop-color="#7F4BDD"/>
+      <stop offset=".966" stop-color="#6A35C9"/>
+      <stop offset="1" stop-color="#5F2ABF"/>
+    </linearGradient>
+    <linearGradient id="DinosaurCool_svg__F" x1="35.371" x2="120.402" y1="35.89" y2="35.89" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF565F"/>
+      <stop offset=".849" stop-color="#FF77AD"/>
+    </linearGradient>
+    <linearGradient id="DinosaurCool_svg__G" x1="94.996" x2="112.227" y1="35.89" y2="35.89" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFE700"/>
+      <stop offset=".086" stop-color="#FFE508"/>
+      <stop offset=".218" stop-color="#FFDF1D"/>
+      <stop offset=".381" stop-color="#FFD641"/>
+      <stop offset=".567" stop-color="#FFC972"/>
+      <stop offset=".773" stop-color="#FFB9B1"/>
+      <stop offset=".993" stop-color="#FFA6FC"/>
+      <stop offset="1" stop-color="#FFA5FF"/>
+    </linearGradient>
+    <linearGradient id="DinosaurCool_svg__H" x1="45.751" x2="76.874" y1="113.087" y2="113.087" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#A470FF"/>
+      <stop offset=".483" stop-color="#A26EFD"/>
+      <stop offset=".657" stop-color="#9B67F7"/>
+      <stop offset=".781" stop-color="#905CEC"/>
+      <stop offset=".881" stop-color="#7F4BDD"/>
+      <stop offset=".966" stop-color="#6A35C9"/>
+      <stop offset="1" stop-color="#5F2ABF"/>
+    </linearGradient>
+    <linearGradient id="DinosaurCool_svg__I" x1="56.07" x2="56.156" y1="147.744" y2="147.789" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFE700"/>
+      <stop offset=".086" stop-color="#FFE508"/>
+      <stop offset=".218" stop-color="#FFDF1D"/>
+      <stop offset=".381" stop-color="#FFD641"/>
+      <stop offset=".567" stop-color="#FFC972"/>
+      <stop offset=".773" stop-color="#FFB9B1"/>
+      <stop offset=".993" stop-color="#FFA6FC"/>
+      <stop offset="1" stop-color="#FFA5FF"/>
+    </linearGradient>
+    <linearGradient id="DinosaurCool_svg__J" x1="97.988" x2="98.264" y1="211.581" y2="211.725" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFE700"/>
+      <stop offset=".086" stop-color="#FFE508"/>
+      <stop offset=".218" stop-color="#FFDF1D"/>
+      <stop offset=".381" stop-color="#FFD641"/>
+      <stop offset=".567" stop-color="#FFC972"/>
+      <stop offset=".773" stop-color="#FFB9B1"/>
+      <stop offset=".993" stop-color="#FFA6FC"/>
+      <stop offset="1" stop-color="#FFA5FF"/>
+    </linearGradient>
+    <linearGradient id="DinosaurCool_svg__K" x1="27.562" x2="41.323" y1="221.175" y2="225.013" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#A470FF"/>
+      <stop offset=".483" stop-color="#A26EFD"/>
+      <stop offset=".657" stop-color="#9B67F7"/>
+      <stop offset=".781" stop-color="#905CEC"/>
+      <stop offset=".881" stop-color="#7F4BDD"/>
+      <stop offset=".966" stop-color="#6A35C9"/>
+      <stop offset="1" stop-color="#5F2ABF"/>
+    </linearGradient>
+    <linearGradient id="DinosaurCool_svg__L" x1="28.951" x2="45.288" y1="216.951" y2="221.507" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#3FFFFF"/>
+      <stop offset=".509" stop-color="#3FC9FF"/>
+      <stop offset=".624" stop-color="#3DC6FF"/>
+      <stop offset=".721" stop-color="#36BBFF"/>
+      <stop offset=".812" stop-color="#2AAAFF"/>
+      <stop offset=".899" stop-color="#1A91FF"/>
+      <stop offset=".983" stop-color="#0571FF"/>
+      <stop offset="1" stop-color="#006AFF"/>
+    </linearGradient>
+    <linearGradient id="DinosaurCool_svg__M" x1="36.397" x2="44.737" y1="205.738" y2="208.064" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#A470FF"/>
+      <stop offset=".483" stop-color="#A26EFD"/>
+      <stop offset=".657" stop-color="#9B67F7"/>
+      <stop offset=".781" stop-color="#905CEC"/>
+      <stop offset=".881" stop-color="#7F4BDD"/>
+      <stop offset=".966" stop-color="#6A35C9"/>
+      <stop offset="1" stop-color="#5F2ABF"/>
+    </linearGradient>
+    <linearGradient id="DinosaurCool_svg__N" x1="37.47" x2="48.191" y1="203.484" y2="206.474" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#3FFFFF"/>
+      <stop offset=".509" stop-color="#3FC9FF"/>
+      <stop offset=".624" stop-color="#3DC6FF"/>
+      <stop offset=".721" stop-color="#36BBFF"/>
+      <stop offset=".812" stop-color="#2AAAFF"/>
+      <stop offset=".899" stop-color="#1A91FF"/>
+      <stop offset=".983" stop-color="#0571FF"/>
+      <stop offset="1" stop-color="#006AFF"/>
+    </linearGradient>
+  </defs>
+</svg>
