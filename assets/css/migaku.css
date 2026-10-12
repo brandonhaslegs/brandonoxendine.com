@@ -407,3 +407,8 @@ body.case-study main .mgk-legend li {
 .mgk-sheet img {
   border-radius: 24px;
 }
+
+/* No hairline outlines around images on this page */
+body.migaku-page main img {
+  outline: none;
+}
