@@ -1,0 +1,1299 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Radicle Desktop by Brandon Oxendine</title>
+    <meta name="description" content="Seven months redesigning Radicle's desktop app, shipped one patch at a time." />
+    <link
+      rel="canonical"
+      href="https://www.brandonoxendine.com/projects/radicle-desktop"
+    />
+<link rel="stylesheet" href="/assets/css/reset.css" />
+<link rel="stylesheet" href="/assets/css/site.css" />
+<link rel="icon" href="/favicon.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+/>
+<script defer src="/assets/js/image-skeleton.js"></script>
+<script defer src="/assets/js/compare.js"></script>
+<script defer src="/assets/js/lightbox.js"></script>
+<script defer src="/assets/js/video.js"></script>
+</head>
+  <body class="case-study wide-media light-page">
+    <header id="site-header"></header>
+
+    <main>
+      <h1>Radicle Desktop</h1>
+
+      <p>
+        Seven months redesigning Radicle's desktop app. No Figma handoff this
+        time: I designed in the codebase and shipped every change as a patch.
+      </p>
+      <p>
+        Role: <a href="/pages/categories/visual-design">Visual Design</a>, <a href="/pages/categories/design-system">Design System</a>, <a href="/pages/categories/code">Code</a></p>
+
+      <hr />
+      <section>
+        <figure class="video">
+          <video src="/images/radicle-desktop/hero-video-06b3c46c.mp4" poster="/images/radicle-desktop/hero-video-poster-56c53216.webp" width="2400" height="1500" style="max-width: min(100%, 1440px)" data-autoplay muted loop playsinline preload="none"
+            aria-label="A tour of Radicle Desktop: the inbox, issues, patches, code review and boards."></video>
+          <figcaption>A tour of Radicle Desktop: the inbox, issues, patches, code review and boards.</figcaption>
+        </figure>
+      </section>
+      <hr />
+      <section>
+        <p>
+          Back in 2021 I designed <a href="/projects/radicle">Radicle's brand,
+          website and first app</a>. In 2026 I came back to work on the
+          product again. Radicle is a way to collaborate on code without a
+          central server: your repositories, issues and patches live on your
+          own machine and replicate peer to peer. <strong>Radicle Desktop</strong> is the
+          native app for all of that: browsing repos, filing issues, and
+          reviewing patches with your own node running underneath. (I also
+          worked on the web side, which has <a
+          href="/projects/radicle-explorer">its own case study</a>.)
+        </p>
+        <p>
+          This time I didn't hand anyone a Figma file. I designed directly in
+          the code and sent my work as patches, Radicle's version of pull
+          requests. So the tool I was designing was also the tool I used to
+          ship the designs, and the maintainers (mostly Rudolfs, who reviewed
+          an absurd amount of my work) reviewed my design decisions the same
+          way they review everyone's code. Every annoying thing I ran into
+          while using Radicle was something I could just go fix.
+        </p>
+        <div class="stats">
+          <div><strong>67</strong><span>patches opened</span></div>
+          <div><strong>40</strong><span>merged</span></div>
+          <div><strong>6</strong><span>open for review</span></div>
+          <div><strong>21</strong><span>prototypes, drafts &amp; explorations</span></div>
+        </div>
+        <p>
+          That last number matters too. Some of the best work here started as
+          a patch that got archived, folded into something bigger, or turned
+          into a prototype so the team could click through an idea before
+          anyone built the backend for it.
+        </p>
+      </section>
+      <hr />
+      <section>
+        <center>
+          Jump to:
+          <a href="#design-system">Design system</a>,
+          <a href="#patches">Code review</a>,
+          <a href="#issues">Issues</a>,
+          <a href="#sidebar">Sidebar</a>,
+          <a href="#inbox">Inbox</a>,
+          <a href="#writing">Writing</a>,
+          <a href="#smart-links">Smart links</a>,
+          <a href="#network">The network</a>,
+          <a href="#identity">Multi-device identity</a>,
+          <a href="#boards">Boards</a>,
+          <a href="#navigator">Navigator</a>
+        </center>
+      </section>
+      <hr />
+
+      <section>
+        <a id="design-system"></a>
+        <h1>Design system</h1>
+        <p>
+          Radicle got a new brand and the start of a new design system,
+          which we developed together with the studio
+          <a href="https://acolorbright.com" target="_blank">A Color Bright</a>.
+          My part was taking that system from a set of design files to two
+          shipping apps, and growing it as the apps needed more than the
+          first version covered.
+        </p>
+        <p>
+          Color works in two layers. Underneath are primitive neutrals: an
+          opaque ramp and a transparent ramp, each in a light and a dark
+          version. On top of those sit semantic tokens with names that say
+          what they're for: surfaces (base, canvas, subtle), text (primary
+          down to quaternary), borders, feedback colors, and brand. A
+          component never asks for a hex value. It asks for
+          "subtle surface" or "tertiary text", and switching between light
+          and dark mode only swaps what sits underneath.
+        </p>
+        <figure class="swatches" aria-label="Radicle color tokens: primitive neutral ramps, and semantic tokens mapped to them in light and dark mode.">
+          <div class="sw-block">
+            <div class="sw-heading">Primitives</div>
+            <div class="sw-ramp"><div class="sw-ramp-name">Light</div><div class="sw-ramp-steps"><div class="sw-step"><span class="sw-chip" style="background:#ffffff"></span><span class="sw-num">0</span></div><div class="sw-step"><span class="sw-chip" style="background:#f8f9fa"></span><span class="sw-num">50</span></div><div class="sw-step"><span class="sw-chip" style="background:#f1f3f5"></span><span class="sw-num">100</span></div><div class="sw-step"><span class="sw-chip" style="background:#e9ebef"></span><span class="sw-num">150</span></div><div class="sw-step"><span class="sw-chip" style="background:#e1e4e8"></span><span class="sw-num">200</span></div><div class="sw-step"><span class="sw-chip" style="background:#d6d9e0"></span><span class="sw-num">250</span></div><div class="sw-step"><span class="sw-chip" style="background:#c9cdd4"></span><span class="sw-num">300</span></div><div class="sw-step"><span class="sw-chip" style="background:#a2a7b1"></span><span class="sw-num">400</span></div><div class="sw-step"><span class="sw-chip" style="background:#7a8190"></span><span class="sw-num">500</span></div><div class="sw-step"><span class="sw-chip" style="background:#5a5f6b"></span><span class="sw-num">600</span></div><div class="sw-step"><span class="sw-chip" style="background:#3a3f49"></span><span class="sw-num">700</span></div><div class="sw-step"><span class="sw-chip" style="background:#1f232b"></span><span class="sw-num">800</span></div><div class="sw-step"><span class="sw-chip" style="background:#0b0d12"></span><span class="sw-num">900</span></div></div></div>
+            <div class="sw-ramp"><div class="sw-ramp-name">Dark</div><div class="sw-ramp-steps"><div class="sw-step"><span class="sw-chip" style="background:#00060f"></span><span class="sw-num">0</span></div><div class="sw-step"><span class="sw-chip" style="background:#0a1018"></span><span class="sw-num">50</span></div><div class="sw-step"><span class="sw-chip" style="background:#141a22"></span><span class="sw-num">100</span></div><div class="sw-step"><span class="sw-chip" style="background:#1f242c"></span><span class="sw-num">150</span></div><div class="sw-step"><span class="sw-chip" style="background:#29303a"></span><span class="sw-num">200</span></div><div class="sw-step"><span class="sw-chip" style="background:#33383f"></span><span class="sw-num">250</span></div><div class="sw-step"><span class="sw-chip" style="background:#3d4248"></span><span class="sw-num">300</span></div><div class="sw-step"><span class="sw-chip" style="background:#52565c"></span><span class="sw-num">400</span></div><div class="sw-step"><span class="sw-chip" style="background:#666a6f"></span><span class="sw-num">500</span></div><div class="sw-step"><span class="sw-chip" style="background:#8f9296"></span><span class="sw-num">600</span></div><div class="sw-step"><span class="sw-chip" style="background:#b8babc"></span><span class="sw-num">700</span></div><div class="sw-step"><span class="sw-chip" style="background:#e0e1e2"></span><span class="sw-num">800</span></div><div class="sw-step"><span class="sw-chip" style="background:#ffffff"></span><span class="sw-num">900</span></div></div></div>
+          </div>
+          <div class="sw-block">
+            <div class="sw-heading sw-cols"><span>Semantic token</span><span>Light</span><span>Dark</span></div>
+            <div class="sw-row"><code class="sw-token"><span class="sw-prefix">--color-</span>surface-base</code><span class="sw-pair"><span class="sw-chip" style="background:#f8f9fa"></span><span class="sw-ref">light-50</span></span><span class="sw-pair"><span class="sw-chip" style="background:#00060f"></span><span class="sw-ref">dark-0</span></span></div><div class="sw-row"><code class="sw-token"><span class="sw-prefix">--color-</span>surface-canvas</code><span class="sw-pair"><span class="sw-chip" style="background:#ffffff"></span><span class="sw-ref">light-0</span></span><span class="sw-pair"><span class="sw-chip" style="background:#0a1018"></span><span class="sw-ref">dark-50</span></span></div><div class="sw-row"><code class="sw-token"><span class="sw-prefix">--color-</span>surface-subtle</code><span class="sw-pair"><span class="sw-chip" style="background:#f1f3f5"></span><span class="sw-ref">light-100</span></span><span class="sw-pair"><span class="sw-chip" style="background:#141a22"></span><span class="sw-ref">dark-100</span></span></div><div class="sw-row"><code class="sw-token"><span class="sw-prefix">--color-</span>border-subtle</code><span class="sw-pair"><span class="sw-chip" style="background:#e9ebef"></span><span class="sw-ref">light-150</span></span><span class="sw-pair"><span class="sw-chip" style="background:#1f242c"></span><span class="sw-ref">dark-150</span></span></div><div class="sw-row"><code class="sw-token"><span class="sw-prefix">--color-</span>text-tertiary</code><span class="sw-pair"><span class="sw-chip" style="background:#5a5f6b"></span><span class="sw-ref">light-600</span></span><span class="sw-pair"><span class="sw-chip" style="background:#8f9296"></span><span class="sw-ref">dark-600</span></span></div><div class="sw-row"><code class="sw-token"><span class="sw-prefix">--color-</span>text-secondary</code><span class="sw-pair"><span class="sw-chip" style="background:#3a3f49"></span><span class="sw-ref">light-700</span></span><span class="sw-pair"><span class="sw-chip" style="background:#b8babc"></span><span class="sw-ref">dark-700</span></span></div><div class="sw-row"><code class="sw-token"><span class="sw-prefix">--color-</span>text-primary</code><span class="sw-pair"><span class="sw-chip" style="background:#0b0d12"></span><span class="sw-ref">light-900</span></span><span class="sw-pair"><span class="sw-chip" style="background:#ffffff"></span><span class="sw-ref">dark-900</span></span></div><div class="sw-row"><code class="sw-token"><span class="sw-prefix">--color-</span>surface-brand</code><span class="sw-pair"><span class="sw-chip" style="background:#1c77ff"></span><span class="sw-ref">blue-500</span></span><span class="sw-pair"><span class="sw-chip" style="background:#1c77ff"></span><span class="sw-ref">blue-500</span></span></div>
+          </div>
+          <figcaption>Components use the names on the left. Light and dark mode only change what they point to.</figcaption>
+        </figure>
+        <p>
+          Type is just as small a set. The interface uses one typeface,
+          Booton, in three weights: regular, semibold, and a medium that sits
+          at 468 instead of the usual 500, so it reads as a step up from body
+          text without competing with headings. There are seven heading
+          sizes and three body sizes, and each token is a full font
+          shorthand (size, line height and weight together), so a component
+          picks one name and gets the whole style. Code uses JetBrains Mono,
+          and people can switch it to their system monospace in settings.
+        </p>
+        <figure class="type-system" aria-label="Radicle type tokens: Booton in three weights, heading and body sizes, and JetBrains Mono for code.">
+          <div class="ty-block ty-hero">
+            <div class="ty-face"><div class="ty-face-sample" style="font-weight:400">Aa</div><div class="ty-face-name">Booton Regular · 400</div></div>
+            <div class="ty-face"><div class="ty-face-sample" style="font-weight:468">Aa</div><div class="ty-face-name">Booton Medium · 468</div></div>
+            <div class="ty-face"><div class="ty-face-sample" style="font-weight:600">Aa</div><div class="ty-face-name">Booton Semibold · 600</div></div>
+          </div>
+          <div class="ty-block">
+            <div class="sw-heading">Headings and body</div>
+<div class="ty-row"><code class="ty-token"><span class="sw-prefix">--txt-</span>heading-xxl</code><span class="ty-spec">32/36 · 600</span><span class="ty-sample" style="font-weight:600;font-size:32px;line-height:36px">Offline-first sync</span></div>
+<div class="ty-row"><code class="ty-token"><span class="sw-prefix">--txt-</span>heading-xl</code><span class="ty-spec">28/32 · 600</span><span class="ty-sample" style="font-weight:600;font-size:28px;line-height:32px">Offline-first sync</span></div>
+<div class="ty-row"><code class="ty-token"><span class="sw-prefix">--txt-</span>heading-l</code><span class="ty-spec">22/28 · 600</span><span class="ty-sample" style="font-weight:600;font-size:22px;line-height:28px">Offline edits lost when a peer reconnects</span></div>
+<div class="ty-row"><code class="ty-token"><span class="sw-prefix">--txt-</span>heading-m</code><span class="ty-spec">18/20 · 600</span><span class="ty-sample" style="font-weight:600;font-size:18px;line-height:20px">Offline edits lost when a peer reconnects</span></div>
+<div class="ty-row"><code class="ty-token"><span class="sw-prefix">--txt-</span>heading-s</code><span class="ty-spec">16/20 · 600</span><span class="ty-sample" style="font-weight:600;font-size:16px;line-height:20px">Offline edits lost when a peer reconnects</span></div>
+<div class="ty-row"><code class="ty-token"><span class="sw-prefix">--txt-</span>heading-xs</code><span class="ty-spec">14/20 · 600</span><span class="ty-sample" style="font-weight:600;font-size:14px;line-height:20px">Offline edits lost when a peer reconnects</span></div>
+<div class="ty-row"><code class="ty-token"><span class="sw-prefix">--txt-</span>heading-xxs</code><span class="ty-spec">12/16 · 600</span><span class="ty-sample" style="font-weight:600;font-size:12px;line-height:16px">Offline edits lost when a peer reconnects</span></div>
+<div class="ty-row"><code class="ty-token"><span class="sw-prefix">--txt-</span>body-l-regular</code><span class="ty-spec">16/24 · 400</span><span class="ty-sample" style="font-weight:400;font-size:16px;line-height:24px">Queued ops are replayed after the handshake finishes.</span></div>
+<div class="ty-row"><code class="ty-token"><span class="sw-prefix">--txt-</span>body-m-regular</code><span class="ty-spec">14/20 · 400</span><span class="ty-sample" style="font-weight:400;font-size:14px;line-height:20px">Queued ops are replayed after the handshake finishes.</span></div>
+<div class="ty-row"><code class="ty-token"><span class="sw-prefix">--txt-</span>body-m-medium</code><span class="ty-spec">14/20 · 468</span><span class="ty-sample" style="font-weight:468;font-size:14px;line-height:20px">Queued ops are replayed after the handshake finishes.</span></div>
+<div class="ty-row"><code class="ty-token"><span class="sw-prefix">--txt-</span>body-m-semibold</code><span class="ty-spec">14/20 · 600</span><span class="ty-sample" style="font-weight:600;font-size:14px;line-height:20px">Queued ops are replayed after the handshake finishes.</span></div>
+<div class="ty-row"><code class="ty-token"><span class="sw-prefix">--txt-</span>body-s-regular</code><span class="ty-spec">12/16 · 400</span><span class="ty-sample" style="font-weight:400;font-size:12px;line-height:16px">Queued ops are replayed after the handshake finishes.</span></div>
+          </div>
+          <div class="ty-block">
+            <div class="sw-heading">Code</div>
+<div class="ty-row"><code class="ty-token"><span class="sw-prefix">--txt-</span>code-regular</code><span class="ty-spec">14/20 · 400</span><span class="ty-sample ty-mono" style="font-weight:400;font-size:14px;line-height:20px">git push rad HEAD:refs/patches</span></div>
+          </div>
+          <figcaption>Each token sets size, line height and weight at once. Sizes in pixels.</figcaption>
+        </figure>
+        <p>
+          A system is also a set of rules. Buttons are a good example: there
+          is very rarely a primary action on a screen, so a filled brand
+          button is saved for the one thing you came to do (Review on a
+          patch, New issue on the issue list), and everything else in the top
+          bar is a quiet ghost button. Every variant and size lives in one
+          place so nobody has to guess.
+        </p>
+        <figure class="buttons-system" aria-label="The button system: four variants in three intents, and three sizes.">
+          <div class="bs-grid">
+            <div class="bs-row bs-head"><span class="bs-label"></span><span class="bs-cell">Brand</span><span class="bs-cell">Destructive</span><span class="bs-cell">Neutral</span></div>
+<div class="bs-row"><span class="bs-label">Primary</span><span class="bs-cell"><span class="bs-btn bs-primary bs-brand">Brand</span></span><span class="bs-cell"><span class="bs-btn bs-primary bs-destructive">Destructive</span></span><span class="bs-cell"><span class="bs-btn bs-primary bs-neutral">Neutral</span></span></div>
+<div class="bs-row"><span class="bs-label">Secondary</span><span class="bs-cell"><span class="bs-btn bs-secondary bs-brand">Brand</span></span><span class="bs-cell"><span class="bs-btn bs-secondary bs-destructive">Destructive</span></span><span class="bs-cell"><span class="bs-btn bs-secondary bs-neutral">Neutral</span></span></div>
+<div class="bs-row"><span class="bs-label">Outline</span><span class="bs-cell"><span class="bs-btn bs-outline bs-brand">Brand</span></span><span class="bs-cell"><span class="bs-btn bs-outline bs-destructive">Destructive</span></span><span class="bs-cell"><span class="bs-btn bs-outline bs-neutral">Neutral</span></span></div>
+<div class="bs-row"><span class="bs-label">Ghost</span><span class="bs-cell"><span class="bs-btn bs-ghost bs-brand">Brand</span></span><span class="bs-cell"><span class="bs-btn bs-ghost bs-destructive">Destructive</span></span><span class="bs-cell"><span class="bs-btn bs-ghost bs-neutral">Neutral</span></span></div>
+            <div class="bs-row bs-sizes"><span class="bs-label">Sizes</span><span class="bs-cell"><span class="bs-btn bs-outline bs-neutral bs-small">Small</span></span><span class="bs-cell"><span class="bs-btn bs-outline bs-neutral bs-regular">Regular</span></span><span class="bs-cell"><span class="bs-btn bs-outline bs-neutral bs-large">Large</span></span></div>
+          </div>
+          <figcaption>Four variants, three intents, three sizes.</figcaption>
+        </figure>
+        <p>
+          The payoff has been bigger than I expected. Because every color has
+          a name that says what it's for, and every component follows the
+          same few rules, the system is easy to build with, for people and
+          for AI. The team builds a lot of Radicle with Claude Code, and a
+          good design system turns out to be exactly what it needs: it picks
+          the right token and the right button on its own. Most of the time
+          developers can build new features with very little back and forth
+          with me, and my job shifts from drawing every screen to reviewing
+          and refining.
+        </p>
+        <p>
+          I also updated the app icon to the new brand.
+        </p>
+        <figure class="vignette">
+          <div class="vignette-panel">
+            <div class="vignette-item">
+              <img class="no-outline" src="/images/radicle-desktop/icon-after-3a576384.webp" width="512" height="512"
+                alt="The new app icon." loading="lazy" decoding="async" />
+            </div>
+          </div>
+          <figcaption>The new app icon.</figcaption>
+        </figure>
+      </section>
+      <hr />
+
+      <section>
+        <a id="patches"></a>
+        <h1>Patches and code review</h1>
+        <p>
+          This was the big one. Patches are Radicle's pull requests, and they
+          are the heart of any code collaboration tool. Redesigning them took
+          about five weeks of hands-on work, roughly 180 commits, and 52
+          revisions of the patch itself before it merged in August. It's the
+          part of this whole project I'm proudest of.
+        </p>
+        <p>
+          The old patch page made reviewing feel like doing your taxes.
+          Revisions lived in a sidebar. Comments lived in one place and
+          everything else (new revisions, reviews, merges) lived somewhere
+          else, so you had to piece together what happened yourself. Leaving
+          a review meant leaving a pile of separate comments and hoping they
+          added up to an opinion.
+        </p>
+        <figure class="compare" data-show="after">
+          <div class="compare-toggle" role="group" aria-label="Show version">
+            <button type="button" data-version="before" aria-pressed="false">Before</button>
+            <button type="button" data-version="after" aria-pressed="true">After</button>
+          </div>
+          <div class="compare-stage">
+            <div class="compare-layer" data-version="before">
+              <img src="/images/radicle-desktop/patch-before-e6089657.webp" width="2400" height="1500"
+                alt="Before: The patch page before and after." loading="lazy" decoding="async" />
+            </div>
+            <div class="compare-layer" data-version="after">
+              <img src="/images/radicle-desktop/patch-after-22ee4138.webp" width="2400" height="1500"
+                alt="After: The patch page before and after." loading="lazy" decoding="async" />
+            </div>
+          </div>
+          <figcaption>The patch page before and after.</figcaption>
+        </figure>
+
+        <h2>One timeline</h2>
+        <p>
+          The core idea is simple: a patch is a story, so tell it in order.
+          The new Activity tab is a single timeline where everything that
+          happened to a patch shows up when it happened. Opening it, every
+          new revision and its commits, comments, reviews, label and state
+          changes, and finally the merge.
+        </p>
+        <figure class="video">
+          <video src="/images/radicle-desktop/timeline-scroll-199d5a92.mp4" style="max-width: min(100%, 1000px)" data-autoplay muted loop playsinline preload="none"
+            aria-label="The Activity timeline, top to bottom."></video>
+          <figcaption>The Activity timeline, top to bottom.</figcaption>
+        </figure>
+        <p>
+          Everything hangs off one continuous rail, and every row puts its
+          icon on that rail, so your eye can run straight down the history.
+          The typography does a lot of quiet work: the verbs ("pushed",
+          "commented", "accepted") are set in a lighter tertiary color and the
+          things that matter, the people and the content, carry the weight.
+          It sounds small, but a timeline where every word is the same
+          weight is a wall.
+        </p>
+        <figure class="vignette">
+          <div class="vignette-panel">
+            <div class="vignette-item">
+              <img src="/images/radicle-desktop/tl-rail-efa1cf56.webp" width="1016" height="626"
+                alt="Opened, revisions, commits, comments, reviews and label changes on one rail." loading="lazy" decoding="async" />
+            </div>
+          </div>
+          <figcaption>Opened, revisions, commits, comments, reviews and label changes on one rail.</figcaption>
+        </figure>
+        <p>
+          Anything that can expand tells you so. Hover a revision and its
+          icon turns into an expand arrow and the row gets a background. Only
+          rows that actually toggle get that hover state, so you never wonder
+          if something is clickable. Click it and it opens in place with its
+          description, the commits that are new in that revision, and a
+          preview of the diff, animated open with a CSS grid transition.
+        </p>
+        <figure class="video">
+          <video src="/images/radicle-desktop/expand-revision-90d39862.mp4" style="max-width: min(100%, 1000px)" data-autoplay muted loop playsinline preload="none"
+            aria-label="Expanding a revision in place."></video>
+          <figcaption>Expanding a revision in place.</figcaption>
+        </figure>
+        <figure class="video">
+          <video src="/images/radicle-desktop/collapsed-runs-0339f45d.mp4" style="max-width: min(100%, 1000px)" data-autoplay muted loop playsinline preload="none"
+            aria-label="Unfolding collapsed revisions."></video>
+          <figcaption>Unfolding collapsed revisions.</figcaption>
+        </figure>
+        <p>
+          Reviews became first-class citizens of the timeline. Each one shows
+          as a pill colored by its verdict (green for accepted, red for
+          rejected, grey when someone only left comments) with the summary
+          right next to it. Expand it and the reviewer's code comments sit
+          nested underneath, each trimmed to just the lines it's about, with
+          a toggle for more context.
+        </p>
+        <figure class="vignette">
+          <div class="vignette-panel">
+            <div class="vignette-item">
+              <img src="/images/radicle-desktop/tl-review-pills-2b51fb22.webp" width="1016" height="1512"
+                alt="Review verdicts, and a review expanded with its code comments." loading="lazy" decoding="async" />
+            </div>
+            <div class="vignette-item">
+              <img src="/images/radicle-desktop/tl-review-expanded-5140152c.webp" width="1032" height="592"
+                alt="Review verdicts, and a review expanded with its code comments." loading="lazy" decoding="async" />
+            </div>
+          </div>
+          <figcaption>Review verdicts, and a review expanded with its code comments.</figcaption>
+        </figure>
+        <figure class="video">
+          <video src="/images/radicle-desktop/review-c4fcc616.mp4" style="max-width: min(100%, 1000px)" data-autoplay muted loop playsinline preload="none"
+            aria-label="A review opening up in the timeline."></video>
+          <figcaption>A review opening up in the timeline.</figcaption>
+        </figure>
+
+        <h2>Changes and reviews</h2>
+        <p>
+          The Changes tab is the diff, built on the <a href="https://diffs.com/" target="_blank">Pierre</a> diff engine, with
+          a revision picker, diff settings, and a way to mark files as
+          reviewed as you work through them, so you always know how far
+          along you are.
+        </p>
+        <figure>
+          <img src="/images/radicle-desktop/patch-changes-76fd1ea3.webp" width="2400" height="1500"
+            alt="The Changes tab." loading="lazy" decoding="async" />
+          <figcaption>The Changes tab.</figcaption>
+        </figure>
+        <figure class="vignette">
+          <div class="vignette-panel">
+            <div class="vignette-item">
+              <img src="/images/radicle-desktop/tl-inline-comment-a9b2732d.webp" width="800" height="515"
+                alt="Comment on a line to start a review." loading="lazy" decoding="async" />
+            </div>
+          </div>
+          <figcaption>Comment on a line to start a review.</figcaption>
+        </figure>
+        <p>
+          Reviews work the way you'd expect from GitHub, which honestly is
+          the point. Click a line of code and leave a comment, and you've
+          started a draft review. A bar floats in at the bottom of the
+          window with your pending comments and your file progress. When
+          you're done you publish everything at once with a verdict. And if
+          you just want to leave a quick note on a line without the whole
+          ceremony, you can do that too.
+        </p>
+        <figure class="video">
+          <video src="/images/radicle-desktop/draft-review-05fa27b6.mp4" style="max-width: min(100%, 1176px)" data-autoplay muted loop playsinline preload="none"
+            aria-label="Starting a review from a line of code."></video>
+          <figcaption>Starting a review from a line of code.</figcaption>
+        </figure>
+        <figure class="vignette">
+          <div class="vignette-panel">
+            <div class="vignette-item">
+              <img src="/images/radicle-desktop/review-bar-9e790408.webp" width="1144" height="66"
+                alt="The draft review bar, and publishing a verdict." loading="lazy" decoding="async" />
+            </div>
+            <div class="vignette-item">
+              <img src="/images/radicle-desktop/review-publish-2a6fa6af.webp" width="384" height="246"
+                alt="The draft review bar, and publishing a verdict." loading="lazy" decoding="async" />
+            </div>
+          </div>
+          <figcaption>The draft review bar, and publishing a verdict.</figcaption>
+        </figure>
+
+        <h2>The header</h2>
+        <p>
+          The top of the page answers "what is this and where is it at"
+          before you scroll. The state (open, draft, archived) is a dropdown
+          right next to the title, and authors can change the state of their
+          own patches. Underneath, one row of metadata leads with the diff
+          stats, which link straight to the Changes tab, then the author,
+          reviewers and labels.
+        </p>
+        <figure class="vignette">
+          <div class="vignette-panel">
+            <div class="vignette-item">
+              <img src="/images/radicle-desktop/tl-metadata-df9e03f8.webp" width="1016" height="106"
+                alt="Title, state and metadata." loading="lazy" decoding="async" />
+            </div>
+          </div>
+          <figcaption>Title, state and metadata.</figcaption>
+        </figure>
+        <figure class="video">
+          <video src="/images/radicle-desktop/state-dropdown-6c94fadc.mp4" style="max-width: min(100%, 1032px)" data-autoplay muted loop playsinline preload="none"
+            aria-label="Changing a patch&#x27;s state."></video>
+          <figcaption>Changing a patch&#x27;s state.</figcaption>
+        </figure>
+
+        <h2>The conversation</h2>
+        <p>
+          And then the human part. Replies are indented in their own boxes so
+          threads read as threads. Reactions show who reacted, highlight your
+          own, and work on code comments and the patch description too.
+        </p>
+        <figure class="vignette">
+          <div class="vignette-panel">
+            <div class="vignette-item">
+              <img src="/images/radicle-desktop/tl-thread-5991ea65.webp" width="996" height="920"
+                alt="A busy thread with replies and reactions." loading="lazy" decoding="async" />
+            </div>
+          </div>
+          <figcaption>A busy thread with replies and reactions.</figcaption>
+        </figure>
+        <p>
+          Action buttons only show up on hover, so a long thread isn't a wall
+          of icons. Hover anyone's name for a card with what they've been
+          working on. And the comment box stays open at the bottom of the
+          page instead of hiding behind a button.
+        </p>
+        <figure class="vignette">
+          <div class="vignette-panel">
+            <div class="vignette-item">
+              <img src="/images/radicle-desktop/hover-card-473a70e7.webp" width="296" height="394"
+                alt="Hover anyone for who they are and what they&#x27;ve been working on." loading="lazy" decoding="async" />
+            </div>
+          </div>
+          <figcaption>Hover anyone for who they are and what they&#x27;ve been working on.</figcaption>
+        </figure>
+
+      </section>
+      <hr />
+
+      <section>
+        <a id="issues"></a>
+        <h1>Issues that match patches</h1>
+        <p>
+          Once patches looked like that, the issue page looked like it came
+          from a different app. I rebuilt it to match: the sidebar is gone,
+          the state control sits next to the title, and the author, labels
+          and assignees form a row of chips underneath. The description gets
+          its own block and the timeline leads with who opened the issue.
+          Authors who aren't maintainers can now close their own issues,
+          which seems obvious but wasn't possible before.
+        </p>
+        <figure class="compare" data-show="after">
+          <div class="compare-toggle" role="group" aria-label="Show version">
+            <button type="button" data-version="before" aria-pressed="false">Before</button>
+            <button type="button" data-version="after" aria-pressed="true">After</button>
+          </div>
+          <div class="compare-stage">
+            <div class="compare-layer" data-version="before">
+              <img src="/images/radicle-desktop/issue-before-0ba35b90.webp" width="2400" height="1500"
+                alt="Before: The issue page before and after." loading="lazy" decoding="async" />
+            </div>
+            <div class="compare-layer" data-version="after">
+              <img src="/images/radicle-desktop/issue-after-cf298c54.webp" width="2400" height="1500"
+                alt="After: The issue page before and after." loading="lazy" decoding="async" />
+            </div>
+          </div>
+          <figcaption>The issue page before and after.</figcaption>
+        </figure>
+        <figure class="vignette">
+          <div class="vignette-panel">
+            <div class="vignette-item">
+              <img src="/images/radicle-desktop/issue-title-row-d30ffefc.webp" width="780" height="116"
+                alt="State next to the title, with author, labels and assignees underneath." loading="lazy" decoding="async" />
+            </div>
+          </div>
+          <figcaption>State next to the title, with author, labels and assignees underneath.</figcaption>
+        </figure>
+      </section>
+      <hr />
+
+      <section>
+        <a id="sidebar"></a>
+        <h1>The sidebar</h1>
+        <p>
+          The sidebar is where you live in Radicle Desktop: your inbox, your
+          repos, and the issues and patches inside them. It was a fixed
+          column that only got longer as you seeded more repos. I rebuilt it
+          across a handful of patches so it gets out of your way when you
+          want it to and stays organized when you don't.
+        </p>
+        <figure class="video">
+          <video src="/images/radicle-desktop/sidebar-tour-d4115361.mp4" style="max-width: min(100%, 1440px)" data-autoplay muted loop playsinline preload="none"
+            aria-label="The sidebar in action."></video>
+          <figcaption>The sidebar in action.</figcaption>
+        </figure>
+
+        <h2>Collapse it</h2>
+        <p>
+          The sidebar collapses to a narrow rail of icons. There are two
+          ways to do it, so whatever your hand is already doing works:
+        </p>
+        <ul>
+          <li>Press Cmd+B (Ctrl+B on Linux and Windows).</li>
+          <li>Click the sidebar button next to Back and Forward.</li>
+        </ul>
+        <p>
+          The rail keeps only what you reach for all day: Back, Forward and
+          Reload, the inbox, your pinned repos, and the Issues and Patches of
+          the repo you're in. Everything else (your identity, the full repo
+          list, the guide, settings, node status, counters) waits in the
+          expanded view. Every row is the same square, so an icon never moves
+          depending on the label next to it, and the column of icons lines up
+          with the macOS window buttons. Hover anything on the rail for a
+          tooltip with its name, whether it's private, and how many open
+          issues or patches it has. Private repos get a small lock badge on
+          their avatar.
+        </p>
+        <figure class="video">
+          <video src="/images/radicle-desktop/sidebar-toggle-46b68a9a.mp4" style="max-width: min(100%, 1440px)" data-autoplay muted loop playsinline preload="none"
+            aria-label="Collapsing and expanding with Cmd+B."></video>
+          <figcaption>Collapsing and expanding with Cmd+B.</figcaption>
+        </figure>
+
+        <h2>Resize it</h2>
+        <p>
+          Drag the edge to make the sidebar anywhere from narrow to wide. The
+          edge tracks your pointer exactly, with no animation lagging behind.
+          Keep dragging past the minimum and it snaps closed into the rail.
+          Drag back out and it opens again, all in a single gesture, so you
+          can close and reopen it without letting go. And if you pull on the
+          collapsed rail but not far enough, it stretches a little and eases
+          back, so it feels like it's resisting you rather than ignoring you.
+          Both the width and whether it's collapsed are remembered next time
+          you open the app.
+        </p>
+        <figure class="video">
+          <video src="/images/radicle-desktop/sidebar-drag-f03e9847.mp4" style="max-width: min(100%, 1440px)" data-autoplay muted loop playsinline preload="none"
+            aria-label="Resize, collapse past the edge, and reopen in one gesture."></video>
+          <figcaption>Resize, collapse past the edge, and reopen in one gesture.</figcaption>
+        </figure>
+        <figure class="video">
+          <video src="/images/radicle-desktop/sidebar-rubberband-d3225184.mp4" style="max-width: min(100%, 1440px)" data-autoplay muted loop playsinline preload="none"
+            aria-label="The rail resists a pull that doesn&#x27;t go far enough."></video>
+          <figcaption>The rail resists a pull that doesn&#x27;t go far enough.</figcaption>
+        </figure>
+
+        <h2>Organize your repos</h2>
+        <ul>
+          <li>
+            Pin the repos you care about. Pinned repos sit on top, and you
+            can drag them into whatever order you like.
+          </li>
+          <li>
+            Cmd+1 through Cmd+9 jump to a repo by its position in the
+            sidebar.
+          </li>
+          <li>
+            Filter the list by typing. The filter button slides over and
+            turns into a close button while it's open, so it's clear how to
+            get out.
+          </li>
+          <li>
+            Right-click a repo to stop seeding it or view its identity
+            document.
+          </li>
+          <li>
+            The Guide button can be hidden once you know your way around, with
+            a quick confirmation and a way to bring it back in Settings.
+          </li>
+        </ul>
+        <figure class="vignette">
+          <div class="vignette-panel">
+            <div class="vignette-item">
+              <img src="/images/radicle-desktop/sidebar-context-menu-8d519a13.webp" width="244" height="220"
+                alt="The repo menu, stopping seeding, and hiding the Guide." loading="lazy" decoding="async" />
+            </div>
+            <div class="vignette-item">
+              <img src="/images/radicle-desktop/sidebar-stop-seeding-8ce09df4.webp" width="416" height="334"
+                alt="The repo menu, stopping seeding, and hiding the Guide." loading="lazy" decoding="async" />
+            </div>
+            <div class="vignette-item">
+              <img src="/images/radicle-desktop/sidebar-guide-hide-f047c70e.webp" width="271" height="214"
+                alt="The repo menu, stopping seeding, and hiding the Guide." loading="lazy" decoding="async" />
+            </div>
+          </div>
+          <figcaption>The repo menu, stopping seeding, and hiding the Guide.</figcaption>
+        </figure>
+
+        <h2>Motion and rhythm</h2>
+        <p>
+          When you open a repo, its Issues and Patches unfurl underneath it.
+          The repo list rolls open and closed the same way. Collapsing the
+          sidebar crossfades between the two views instead of trying to morph
+          every row, label and button into its counterpart, which looked
+          busy and felt slow.
+        </p>
+        <p>
+          Then the unglamorous part. The spacing had drifted into gaps of 16,
+          24, 32, 28 and 36 pixels that nobody had chosen on purpose. Now
+          it's two values: 16 between rows and 32 between sections. And the
+          icon buttons, which came in four different sizes, are all the same
+          size now.
+        </p>
+        <figure class="video">
+          <video src="/images/radicle-desktop/sidebar-repo-nav-d00383f6.mp4" style="max-width: min(100%, 1440px)" data-autoplay muted loop playsinline preload="none"
+            aria-label="Opening repos, and the repo list rolling open."></video>
+          <figcaption>Opening repos, and the repo list rolling open.</figcaption>
+        </figure>
+      </section>
+      <hr />
+
+      <section>
+        <a id="inbox"></a>
+        <h1>Inbox</h1>
+        <p>
+          The inbox was one very long list. If you'd been away for a week it
+          was hundreds of rows of "someone left a comment." The redesign
+          adds a <strong>Latest</strong> view sorted by time, collapses long
+          runs of notifications so the overview is actually an overview, and
+          adds an <strong>Involves me</strong> filter for things you opened,
+          were assigned to, or took part in.
+        </p>
+        <figure class="compare" data-show="after">
+          <div class="compare-toggle" role="group" aria-label="Show version">
+            <button type="button" data-version="before" aria-pressed="false">Before</button>
+            <button type="button" data-version="after" aria-pressed="true">After</button>
+          </div>
+          <div class="compare-stage">
+            <div class="compare-layer" data-version="before">
+              <img src="/images/radicle-desktop/inbox-before-91ce1b81.webp" width="2400" height="1500"
+                alt="Before: The inbox before, and after, grouped by repository." loading="lazy" decoding="async" />
+            </div>
+            <div class="compare-layer" data-version="after">
+              <img src="/images/radicle-desktop/inbox-after-4780dfab.webp" width="2400" height="1500"
+                alt="After: The inbox before, and after, grouped by repository." loading="lazy" decoding="async" />
+            </div>
+          </div>
+          <figcaption>The inbox before, and after, grouped by repository.</figcaption>
+        </figure>
+        <figure class="vignette">
+          <div class="vignette-panel">
+            <div class="vignette-item">
+              <img src="/images/radicle-desktop/inbox-toolbar-a8c72b55.webp" width="359" height="64"
+                alt="Sort by repo or by time, and filter to what involves you." loading="lazy" decoding="async" />
+            </div>
+          </div>
+          <figcaption>Sort by repo or by time, and filter to what involves you.</figcaption>
+        </figure>
+        <figure class="vignette">
+          <div class="vignette-panel">
+            <div class="vignette-item">
+              <img src="/images/radicle-desktop/inbox-group-445ba062.webp" width="600" height="126"
+                alt="Long runs of updates collapse so the overview stays an overview." loading="lazy" decoding="async" />
+            </div>
+          </div>
+          <figcaption>Long runs of updates collapse so the overview stays an overview.</figcaption>
+        </figure>
+      </section>
+      <hr />
+
+      <section>
+        <a id="writing"></a>
+        <h1>Writing</h1>
+        <p>
+          A lot of Radicle is writing: issues, patch descriptions, comments,
+          reviews. So the editor should feel like every other good Markdown
+          editor. Cmd+B, Cmd+I, Cmd+E and Cmd+K format your selection.
+          Pasting a URL over selected text makes a link. Task list
+          checkboxes are clickable now instead of making you edit
+          <code>- [ ]</code> by hand. Mermaid diagrams render, GitHub style
+          alerts render, and images in READMEs finally show up.
+        </p>
+        <figure class="vignette">
+          <div class="vignette-panel">
+            <div class="vignette-item">
+              <img src="/images/radicle-desktop/md-mermaid-a9076bc6.webp" width="900" height="561"
+                alt="A Mermaid diagram, an alert, and a clickable task list." loading="lazy" decoding="async" />
+            </div>
+            <div class="vignette-item">
+              <img src="/images/radicle-desktop/md-alert-d24024bb.webp" width="900" height="92"
+                alt="A Mermaid diagram, an alert, and a clickable task list." loading="lazy" decoding="async" />
+            </div>
+            <div class="vignette-item">
+              <img src="/images/radicle-desktop/md-tasks-5229c419.webp" width="900" height="216"
+                alt="A Mermaid diagram, an alert, and a clickable task list." loading="lazy" decoding="async" />
+            </div>
+          </div>
+          <figcaption>A Mermaid diagram, an alert, and a clickable task list.</figcaption>
+        </figure>
+        <p>
+          And keyboard shortcuts everywhere, with a <code>?</code> modal that
+          lists them all.
+        </p>
+        <figure class="vignette">
+          <div class="vignette-panel">
+            <div class="vignette-item">
+              <img src="/images/radicle-desktop/shortcuts-38c7fa3d.webp" width="978" height="652"
+                alt="The keyboard shortcuts modal." loading="lazy" decoding="async" />
+            </div>
+          </div>
+          <figcaption>The keyboard shortcuts modal.</figcaption>
+        </figure>
+      </section>
+      <hr />
+
+      <section>
+        <a id="smart-links"></a>
+        <h1>Smart links</h1>
+        <p>
+          On GitHub, a link to an issue is a URL on github.com. Radicle has
+          no github.com. The same repo might be on a dozen seeds and viewed
+          through any number of explorers, so a link to one website is a
+          link that can rot. I wanted references that point at the
+          <em>thing</em>, not at a website that happens to show it.
+        </p>
+        <p>
+          So references are stored as <code>rad:</code> URIs (and
+          <code>did:key:</code> for people), following Radicle's own spec for
+          them, and the app works out where to show them. I wrote up the
+          decision as an architecture record so the web explorer could adopt
+          the same approach, and built the parsing as a small standalone
+          library it can reuse.
+        </p>
+        <figure class="video">
+          <video src="/images/radicle-desktop/smart-links-784699e9.mp4" style="max-width: min(100%, 1550px)" data-autoplay muted loop playsinline preload="none"
+            aria-label="Writing with smart links."></video>
+          <figcaption>Writing with smart links.</figcaption>
+        </figure>
+
+        <h2>Writing them</h2>
+        <p>
+          Nobody should have to type a URI. In any comment box,
+          <code>@</code> suggests people, issues and patches, and
+          <code>#</code> narrows that down to just issues and patches. Paste a
+          Radicle ID, a commit hash, a person's ID or an explorer URL, and the
+          app offers to turn it into a link labelled with the real title or
+          name. Short commit hashes get expanded so they stay unique.
+        </p>
+        <figure class="vignette">
+          <div class="vignette-panel">
+            <div class="vignette-item">
+              <img src="/images/radicle-desktop/sl-at-eda25543.webp" width="1030" height="521"
+                alt="Type @ for anyone or anything, or # for issues and patches." loading="lazy" decoding="async" />
+            </div>
+            <div class="vignette-item">
+              <img src="/images/radicle-desktop/sl-hash-bb8dcbce.webp" width="1016" height="158"
+                alt="Type @ for anyone or anything, or # for issues and patches." loading="lazy" decoding="async" />
+            </div>
+          </div>
+          <figcaption>Type @ for anyone or anything, or # for issues and patches.</figcaption>
+        </figure>
+        <figure class="vignette">
+          <div class="vignette-panel">
+            <div class="vignette-item">
+              <img src="/images/radicle-desktop/sl-paste-8e07d3e9.webp" width="1016" height="136"
+                alt="Paste an explorer link and get the real title." loading="lazy" decoding="async" />
+            </div>
+          </div>
+          <figcaption>Paste an explorer link and get the real title.</figcaption>
+        </figure>
+
+        <h2>Reading them</h2>
+        <p>
+          Repos, issues, patches, commits and people render as chips, so a
+          reference reads as what it is. Files (down to line ranges),
+          branches, tags and lists render as labelled links. Click one and
+          it opens right in the app if the repo is on your machine, and in
+          your explorer of choice if it isn't. Right click for the explorer
+          link or the raw <code>rad:</code> URI.
+        </p>
+        <figure class="vignette">
+          <div class="vignette-panel">
+            <div class="vignette-item">
+              <img src="/images/radicle-desktop/sl-chips-dc7a87f0.webp" width="990" height="202"
+                alt="Every kind of reference, rendered." loading="lazy" decoding="async" />
+            </div>
+          </div>
+          <figcaption>Every kind of reference, rendered.</figcaption>
+        </figure>
+        <figure class="vignette">
+          <div class="vignette-panel">
+            <div class="vignette-item">
+              <img src="/images/radicle-desktop/sl-menu-2636ea72.webp" width="244" height="115"
+                alt="Files and branches as labelled links, and the right click menu." loading="lazy" decoding="async" />
+            </div>
+          </div>
+          <figcaption>Files and branches as labelled links, and the right click menu.</figcaption>
+        </figure>
+
+        <h2>Opening them from anywhere</h2>
+        <p>
+          The app also registers itself for <code>rad:</code> links, so one
+          clicked in a terminal, a chat app or a browser opens straight in
+          Radicle Desktop. That's the payoff for storing links this way:
+          they work everywhere, and they never point at a server that might
+          not be there tomorrow.
+        </p>
+      </section>
+      <hr />
+
+      <section>
+        <a id="network"></a>
+        <h1>Making the network visible</h1>
+        <p>
+          The hardest UX problem in a peer to peer app is that nobody knows
+          where their stuff actually is. Did my patch make it to anyone? Is
+          this repo up to date? Who's allowed to change it? A bunch of my
+          work was about turning invisible network state into something you
+          can see.
+        </p>
+        <p>
+          The tiny Online/Offline popover became a <strong>node</strong>
+          window that answers the real question, which is whether your work
+          has reached the network: "Latest patch reached 11 nodes." You can
+          see and change a repository's seeding policy, described by whose
+          work you'll get rather than by refs. And you can set your
+          preferred seeds and which explorer links open in.
+        </p>
+        <figure class="vignette">
+          <div class="vignette-panel">
+            <div class="vignette-item">
+              <img src="/images/radicle-desktop/node-modal-e86ca356.webp" width="640" height="528"
+                alt="The node window, and preferred seeds in Settings." loading="lazy" decoding="async" />
+            </div>
+            <div class="vignette-item">
+              <img src="/images/radicle-desktop/seeds-settings-b8d64b1c.webp" width="630" height="202"
+                alt="The node window, and preferred seeds in Settings." loading="lazy" decoding="async" />
+            </div>
+          </div>
+          <figcaption>The node window, and preferred seeds in Settings.</figcaption>
+        </figure>
+        <p>
+          Every repository now has a readable <strong>identity
+          document</strong>: who the delegates are, how many have to sign
+          off on a change, and a timeline of every change to those rules,
+          including who signed and who didn't. And
+          <strong>Releases</strong> brought Radicle's new artifact system to
+          the desktop app, so you can publish a release with files attached
+          and download them verified against their content ID.
+        </p>
+        <figure class="vignette">
+          <div class="vignette-panel">
+            <div class="vignette-item">
+              <img src="/images/radicle-desktop/identity-f098dfd2.webp" width="1016" height="444"
+                alt="The identity document and Releases." loading="lazy" decoding="async" />
+            </div>
+            <div class="vignette-item">
+              <img src="/images/radicle-desktop/releases-232ba411.webp" width="1008" height="703"
+                alt="The identity document and Releases." loading="lazy" decoding="async" />
+            </div>
+          </div>
+          <figcaption>The identity document and Releases.</figcaption>
+        </figure>
+      </section>
+      <hr />
+
+      <section>
+        <a id="identity"></a>
+        <h1>One identity, many devices</h1>
+        <p>
+          Here's a problem you don't have on a normal website: on Radicle,
+          you are a key. There's no account on a server, no password, no
+          "log in on your new laptop". Your identity is a cryptographic key
+          that lives on one machine. So your laptop and your desktop are two
+          different people as far as the network is concerned, and if you
+          lose the machine, you lose yourself.
+        </p>
+        <p>
+          The protocol team proposed a fix: make a person a repository. Your
+          profile and the set of keys allowed to act as you live in a repo of
+          their own, replicated like everything else, and changing it takes
+          signatures from your other devices. It's an elegant idea and a
+          really hard thing to explain. My job was to figure out what it
+          would feel like to use, before anyone built it.
+        </p>
+        <p>
+          So I built a click-through prototype inside the real app, running on
+          fake data, that walked through every flow in the spec. My rule was
+          that nothing goes in the prototype unless it's planned for the
+          first version, so the team was reacting to the real thing and not
+          a wish list.
+        </p>
+        <figure class="vignette">
+          <div class="vignette-panel">
+            <div class="vignette-item">
+              <img src="/images/radicle-desktop/pr-identity-button-bd188f27.webp" width="272" height="175"
+                alt="Your profile, from the sidebar." loading="lazy" decoding="async" />
+            </div>
+          </div>
+          <figcaption>Your profile, from the sidebar.</figcaption>
+        </figure>
+
+        <h2>Your profile, as others see it</h2>
+        <p>
+          A profile has a name, a bio, links and an avatar, like anywhere
+          else. The twist is that it's published to the network and
+          replicated to everyone who follows you, so old values stay in the
+          history forever. I put a live preview right above the form, showing
+          your hover card and your Explorer page, so what you edit and what
+          other people see are the same thing. And the form tells you plainly
+          that what you write is permanent, before you write your home
+          address in there.
+        </p>
+        <figure class="vignette">
+          <div class="vignette-panel">
+            <div class="vignette-item">
+              <img src="/images/radicle-desktop/pr-preview-hovercard-ae132a34.webp" width="304" height="320"
+                alt="The live preview, as a hover card and as an Explorer page." loading="lazy" decoding="async" />
+            </div>
+            <div class="vignette-item">
+              <img src="/images/radicle-desktop/pr-preview-explorer-103d107d.webp" width="304" height="735"
+                alt="The live preview, as a hover card and as an Explorer page." loading="lazy" decoding="async" />
+            </div>
+          </div>
+          <figcaption>The live preview, as a hover card and as an Explorer page.</figcaption>
+        </figure>
+        <figure class="vignette">
+          <div class="vignette-panel">
+            <div class="vignette-item">
+              <img src="/images/radicle-desktop/pr-permanence-warning-20f97865.webp" width="752" height="134"
+                alt="Being honest about what &quot;save&quot; means on a peer to peer network." loading="lazy" decoding="async" />
+            </div>
+          </div>
+          <figcaption>Being honest about what &quot;save&quot; means on a peer to peer network.</figcaption>
+        </figure>
+
+        <h2>Keys and two kinds of agreement</h2>
+        <p>
+          This is where it gets subtle. There are two separate rules, and
+          mixing them up would be dangerous. Changing <em>who you are</em>
+          (adding or removing a device) needs a majority of your controlling
+          keys. Changing <em>your profile</em> (your bio, your avatar) only
+          needs the signatures your profile requires. The Keys page keeps
+          those two apart visually so nobody thinks updating their bio needs
+          three devices, or that adding a device only needs one.
+        </p>
+        <figure class="vignette">
+          <div class="vignette-panel">
+            <div class="vignette-item">
+              <img src="/images/radicle-desktop/pr-quorums-41f98d0d.webp" width="832" height="220"
+                alt="Two different rules, kept visibly apart." loading="lazy" decoding="async" />
+            </div>
+          </div>
+          <figcaption>Two different rules, kept visibly apart.</figcaption>
+        </figure>
+        <p>
+          Keys also come in two kinds. Some can act as you, some can change
+          who you are, and some do both. A key that can change your identity
+          but never sits on a device is a recovery key. The list shows each
+          key's role, and if you have fewer than three controlling keys the
+          app warns you, because losing one device shouldn't lock you out.
+        </p>
+        <figure class="vignette">
+          <div class="vignette-panel">
+            <div class="vignette-item">
+              <img src="/images/radicle-desktop/pr-keys-list-af9fa277.webp" width="815" height="224"
+                alt="Each key&#x27;s role, and a nudge toward a safer setup." loading="lazy" decoding="async" />
+            </div>
+            <div class="vignette-item">
+              <img src="/images/radicle-desktop/pr-few-controllers-warning-9a3dc364.webp" width="832" height="186"
+                alt="Each key&#x27;s role, and a nudge toward a safer setup." loading="lazy" decoding="async" />
+            </div>
+          </div>
+          <figcaption>Each key&#x27;s role, and a nudge toward a safer setup.</figcaption>
+        </figure>
+
+        <h2>Adding a device</h2>
+        <p>
+          Adding a device goes in one direction only. On the new machine you
+          run a command that prints an enrollment code. On a device you
+          already trust, you approve it, either from a notification or by
+          pasting the code. No comparing fingerprints, no two-way handshake.
+        </p>
+        <figure class="video">
+          <video src="/images/radicle-desktop/pr-add-device-cb89785b.mp4" style="max-width: min(100%, 1176px)" data-autoplay muted loop playsinline preload="none"
+            aria-label="Adding a new device, end to end."></video>
+          <figcaption>Adding a new device, end to end.</figcaption>
+        </figure>
+        <figure class="vignette">
+          <div class="vignette-panel">
+            <div class="vignette-item">
+              <img src="/images/radicle-desktop/pr-enroll-code-ee2b8d89.webp" width="640" height="328"
+                alt="The enrollment code from the new device." loading="lazy" decoding="async" />
+            </div>
+          </div>
+          <figcaption>The enrollment code from the new device.</figcaption>
+        </figure>
+        <figure class="vignette">
+          <div class="vignette-panel">
+            <div class="vignette-item">
+              <img src="/images/radicle-desktop/pr-approval-notification-b61f38af.webp" width="832" height="299"
+                alt="The request arriving on a trusted device, and approving it." loading="lazy" decoding="async" />
+            </div>
+            <div class="vignette-item">
+              <img src="/images/radicle-desktop/pr-approval-approved-76d272ed.webp" width="832" height="277"
+                alt="The request arriving on a trusted device, and approving it." loading="lazy" decoding="async" />
+            </div>
+          </div>
+          <figcaption>The request arriving on a trusted device, and approving it.</figcaption>
+        </figure>
+
+        <h2>A recovery key you can actually use</h2>
+        <p>
+          The spec asks apps to make an offline recovery key easy to set up,
+          so it's a short guided flow. You get a recovery phrase, confirm
+          you've stored it somewhere safe, and sign it into your identity.
+          If your identity needs more than one device to agree, the change
+          is proposed and waits for your other devices to approve it.
+        </p>
+        <figure class="vignette">
+          <div class="vignette-panel">
+            <div class="vignette-item">
+              <img src="/images/radicle-desktop/pr-recovery-1-dd9db92a.webp" width="576" height="332"
+                alt="Setting up an offline recovery key." loading="lazy" decoding="async" />
+            </div>
+            <div class="vignette-item">
+              <img src="/images/radicle-desktop/pr-recovery-2-68864223.webp" width="576" height="512"
+                alt="Setting up an offline recovery key." loading="lazy" decoding="async" />
+            </div>
+            <div class="vignette-item">
+              <img src="/images/radicle-desktop/pr-recovery-3-4fd48815.webp" width="576" height="304"
+                alt="Setting up an offline recovery key." loading="lazy" decoding="async" />
+            </div>
+          </div>
+          <figcaption>Setting up an offline recovery key.</figcaption>
+        </figure>
+
+      </section>
+      <hr />
+
+      <section>
+        <a id="boards"></a>
+        <h1>Boards</h1>
+        <p>
+          Seeing your work as a board, the way you would in Linear or GitHub
+          Projects, is something people expect from any project tool. On a
+          normal platform that's just a feature on a server. On Radicle there is no server, so the
+          question becomes: where does a board live, and who's allowed to
+          move things on it?
+        </p>
+        <p>
+          The answer is that a board is its own collaborative object, stored
+          in the repository and replicated peer to peer like issues and
+          patches are. It only stores where each card sits. Titles, labels,
+          state and assignees all come from the issues and patches
+          themselves, so a board can never drift out of sync with the work
+          it shows.
+        </p>
+        <figure class="video">
+          <video src="/images/radicle-desktop/boards-drag-6ac36af5.mp4" style="max-width: min(100%, 1760px)" data-autoplay muted loop playsinline preload="none"
+            aria-label="Moving work across the board."></video>
+          <figcaption>Moving work across the board.</figcaption>
+        </figure>
+
+        <h2>Cards that reflect the real work</h2>
+        <ul>
+          <li>
+            Every issue and patch shows up on the board without anyone adding
+            it. Cards nobody has placed yet are ordered by priority, then
+            age.
+          </li>
+          <li>
+            Cards show what you need at a glance: priority, labels, who it's
+            assigned to, and how old it is.
+          </li>
+          <li>
+            A patch that mentions an issue shows up on that issue's card. An
+            open patch moves the issue to In Review, and a merged patch
+            closes it.
+          </li>
+          <li>
+            Repositories can share cards from other public repositories, so a
+            board can cover a project that spans several repos.
+          </li>
+        </ul>
+        <figure class="vignette">
+          <div class="vignette-panel">
+            <div class="vignette-item">
+              <img src="/images/radicle-desktop/boards-column-26a53c96.webp" width="288" height="856"
+                alt="A column of cards." loading="lazy" decoding="async" />
+            </div>
+          </div>
+          <figcaption>A column of cards.</figcaption>
+        </figure>
+        <figure class="vignette">
+          <div class="vignette-panel">
+            <div class="vignette-item">
+              <img src="/images/radicle-desktop/boards-card-371efa73.webp" width="263" height="118"
+                alt="A card up close, and an issue with its linked patch." loading="lazy" decoding="async" />
+            </div>
+            <div class="vignette-item">
+              <img src="/images/radicle-desktop/boards-linked-patch-b54a9307.webp" width="263" height="118"
+                alt="A card up close, and an issue with its linked patch." loading="lazy" decoding="async" />
+            </div>
+          </div>
+          <figcaption>A card up close, and an issue with its linked patch.</figcaption>
+        </figure>
+        <figure class="vignette">
+          <div class="vignette-panel">
+            <div class="vignette-item">
+              <img src="/images/radicle-desktop/boards-in-review-f7cd69f9.webp" width="319" height="198"
+                alt="An issue moved to In Review by its patch, and a card from another repo." loading="lazy" decoding="async" />
+            </div>
+            <div class="vignette-item">
+              <img src="/images/radicle-desktop/boards-cross-repo-69874ed2.webp" width="263" height="118"
+                alt="An issue moved to In Review by its patch, and a card from another repo." loading="lazy" decoding="async" />
+            </div>
+          </div>
+          <figcaption>An issue moved to In Review by its patch, and a card from another repo.</figcaption>
+        </figure>
+
+        <h2>Columns that mean something</h2>
+        <p>
+          A column isn't just a label. Each one either keeps issues open,
+          closes them as solved, or closes them as something else. Dragging
+          an issue into Done actually closes the issue, for everyone, not
+          just on your board. A repo can have several boards, but the app
+          doesn't mention that until someone makes a second one.
+        </p>
+        <figure class="vignette">
+          <div class="vignette-panel">
+            <div class="vignette-item">
+              <img src="/images/radicle-desktop/boards-column-settings-2595f1f2.webp" width="512" height="474"
+                alt="Choosing what a column does to an issue." loading="lazy" decoding="async" />
+            </div>
+          </div>
+          <figcaption>Choosing what a column does to an issue.</figcaption>
+        </figure>
+        <figure class="video">
+          <video src="/images/radicle-desktop/boards-picker-ad7ebc5d.mp4" style="max-width: min(100%, 964px)" data-autoplay muted loop playsinline preload="none"
+            aria-label="Switching boards, and editing columns."></video>
+          <figcaption>Switching boards, and editing columns.</figcaption>
+        </figure>
+        <figure class="vignette">
+          <div class="vignette-panel">
+            <div class="vignette-item">
+              <img src="/images/radicle-desktop/boards-board-picker-5acd8afa.webp" width="307" height="285"
+                alt="The board picker." loading="lazy" decoding="async" />
+            </div>
+          </div>
+          <figcaption>The board picker.</figcaption>
+        </figure>
+
+        <h2>Who can move a card</h2>
+        <p>
+          This was the interesting design problem. With no server, there's no
+          admin panel deciding permissions. Every peer has to reach the same
+          verdict on its own about whether a move was allowed. The rule we
+          landed on: maintainers can move anything, the author of an issue or
+          patch can move their own card, and anyone assigned to an issue can
+          move it too. An assignee's move even points back to the moment a
+          maintainer assigned them, as proof every peer can check. Moves that
+          aren't allowed are simply ignored.
+        </p>
+        <p>
+          In the interface, that means a card you can't move doesn't pretend
+          you can. Pick it up and it stretches a little, shows a lock, and
+          settles back where it was. Press Escape mid-drag and the card goes
+          home too.
+        </p>
+        <figure class="video">
+          <video src="/images/radicle-desktop/boards-locked-ce45781c.mp4" style="max-width: min(100%, 1760px)" data-autoplay muted loop playsinline preload="none"
+            aria-label="A card you&#x27;re not allowed to move."></video>
+          <figcaption>A card you&#x27;re not allowed to move.</figcaption>
+        </figure>
+        <figure class="video">
+          <video src="/images/radicle-desktop/boards-escape-2bba1878.mp4" style="max-width: min(100%, 1760px)" data-autoplay muted loop playsinline preload="none"
+            aria-label="Escape puts a card back where it was."></video>
+          <figcaption>Escape puts a card back where it was.</figcaption>
+        </figure>
+        <figure class="vignette">
+          <div class="vignette-panel">
+            <div class="vignette-item">
+              <img src="/images/radicle-desktop/boards-locked-card-c701d70a.webp" width="263" height="118"
+                alt="The lock, and a card&#x27;s menu." loading="lazy" decoding="async" />
+            </div>
+            <div class="vignette-item">
+              <img src="/images/radicle-desktop/boards-menu-546f5ea9.webp" width="192" height="419"
+                alt="The lock, and a card&#x27;s menu." loading="lazy" decoding="async" />
+            </div>
+          </div>
+          <figcaption>The lock, and a card&#x27;s menu.</figcaption>
+        </figure>
+      </section>
+      <hr />
+
+      <section>
+        <a id="navigator"></a>
+        <h1>A universal navigator</h1>
+        <p>
+          People share Radicle links everywhere: chat, email, issues, the
+          terminal. Those links come in a lot of shapes. There are explorer
+          URLs on any number of different seeds, <code>rad://</code> URIs, and
+          bare IDs. Getting from one of those to the right place in the app
+          meant clicking through by hand. So I built one place to go
+          anywhere: press Cmd+K.
+        </p>
+        <figure class="video">
+          <video src="/images/radicle-desktop/navigator-search-9cd7e345.mp4" style="max-width: min(100%, 1176px)" data-autoplay muted loop playsinline preload="none"
+            aria-label="Searching across every repo."></video>
+          <figcaption>Searching across every repo.</figcaption>
+        </figure>
+
+        <h2>Paste anything</h2>
+        <p>
+          Paste any Radicle link or ID and the navigator takes you straight
+          to the repo, issue, patch or commit it points at. It doesn't matter
+          which seed or explorer the link came from. If it points to
+          something that isn't on your machine yet, it tells you instead of
+          leaving you on a blank page.
+        </p>
+        <figure class="video">
+          <video src="/images/radicle-desktop/navigator-paste-0b98aaf3.mp4" style="max-width: min(100%, 1176px)" data-autoplay muted loop playsinline preload="none"
+            aria-label="Paste a link from anywhere and go there."></video>
+          <figcaption>Paste a link from anywhere and go there.</figcaption>
+        </figure>
+        <figure class="vignette">
+          <div class="vignette-panel">
+            <div class="vignette-item">
+              <img src="/images/radicle-desktop/navigator-not-local-5f48b4fc.webp" width="576" height="140"
+                alt="When the thing you pasted isn&#x27;t on your machine." loading="lazy" decoding="async" />
+            </div>
+          </div>
+          <figcaption>When the thing you pasted isn&#x27;t on your machine.</figcaption>
+        </figure>
+
+        <h2>Search everything</h2>
+        <p>
+          Type instead, and it searches the titles and IDs of every issue and
+          patch across every repo on your machine, with open ones first.
+          With nothing typed, it lists your repos in the same order as the
+          sidebar, pinned ones first, so the shortcut is also the fastest
+          way to switch repos.
+        </p>
+        <figure class="vignette">
+          <div class="vignette-panel">
+            <div class="vignette-item">
+              <img src="/images/radicle-desktop/navigator-empty-a35af2a5.webp" width="576" height="348"
+                alt="Your repos at a glance, and search results across repos." loading="lazy" decoding="async" />
+            </div>
+            <div class="vignette-item">
+              <img src="/images/radicle-desktop/navigator-results-6ebfd3da.webp" width="576" height="272"
+                alt="Your repos at a glance, and search results across repos." loading="lazy" decoding="async" />
+            </div>
+          </div>
+          <figcaption>Your repos at a glance, and search results across repos.</figcaption>
+        </figure>
+      </section>
+      <hr />
+
+      <section>
+        <a id="user-pages"></a>
+        <h1>User pages</h1>
+        <p>
+          I also prototyped user pages: everything a person has done across
+          the repos on your machine, with a contribution calendar. The same
+          idea is now in review for the web explorer.
+        </p>
+        <figure class="vignette">
+          <div class="vignette-panel">
+            <div class="vignette-item">
+              <img src="/images/radicle-desktop/user-calendar-vignette-e8b568ad.webp" width="888" height="575"
+                alt="A contribution calendar and a feed of someone&#x27;s work across repos." loading="lazy" decoding="async" />
+            </div>
+          </div>
+          <figcaption>A contribution calendar and a feed of someone&#x27;s work across repos.</figcaption>
+        </figure>
+      </section>
+      <hr />
+
+      <section>
+        <h1>What I took away</h1>
+        <p>
+          Designing in the code meant I could make the call on things a
+          mockup never shows: what happens when a list is empty, what a
+          patch with 40 revisions looks like, how a sidebar should feel when
+          you drag it past its minimum. It also meant every design decision
+          had to survive code review, which made my reasoning a lot
+          sharper. If you read the patch descriptions, they're mostly design
+          rationale.
+        </p>
+        <p>
+          And honestly, using Radicle to ship the redesign of Radicle was the
+          best user research I could have done.
+        </p>
+      </section>
+      <hr />
+      <section>
+        <div class="project-nav">
+          <div class="project-nav-item">
+            <p>Previous project</p>
+            <h2><a href="/projects/migaku">Migaku</a></h2>
+          </div>
+          <div class="project-nav-item">
+            <p>Next project</p>
+            <h2><a href="/projects/radicle-explorer">Radicle Explorer</a></h2>
+          </div>
+        </div>
+      </section>
+      <hr />
+    </main>
+    <script src="/assets/js/include-header.js"></script>
+  </body>
+</html>

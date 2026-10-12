@@ -1,0 +1,497 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Radicle Explorer by Brandon Oxendine</title>
+    <meta name="description" content="Redesigning Radicle's web explorer and website to match the desktop app, shipped one patch at a time." />
+    <link
+      rel="canonical"
+      href="https://www.brandonoxendine.com/projects/radicle-explorer"
+    />
+<link rel="stylesheet" href="/assets/css/reset.css" />
+<link rel="stylesheet" href="/assets/css/site.css" />
+<link rel="icon" href="/favicon.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+/>
+<script defer src="/assets/js/image-skeleton.js"></script>
+<script defer src="/assets/js/compare.js"></script>
+<script defer src="/assets/js/lightbox.js"></script>
+<script defer src="/assets/js/video.js"></script>
+</head>
+  <body class="case-study wide-media light-page">
+    <header id="site-header"></header>
+
+    <main>
+      <h1>Radicle Explorer</h1>
+
+      <p>
+        Redesigning Radicle's web explorer and website so they feel like the
+        same product as the desktop app. Designed in the codebase and shipped
+        as patches.
+      </p>
+      <p>
+        Role: <a href="/pages/categories/visual-design">Visual Design</a>, <a href="/pages/categories/design-system">Design System</a>, <a href="/pages/categories/copywriting">Copywriting</a>, <a href="/pages/categories/website">Website</a>, <a href="/pages/categories/code">Code</a></p>
+
+      <hr />
+      <section>
+        <figure>
+          <img src="/images/radicle-explorer/explorer-hero-20de4296.webp" width="2400" height="1500"
+            alt="Explorer&#x27;s patch page, rebuilt to match the desktop app." loading="lazy" decoding="async" />
+          <figcaption>Explorer&#x27;s patch page, rebuilt to match the desktop app.</figcaption>
+        </figure>
+      </section>
+      <hr />
+      <section>
+        <p>
+          Radicle is a way to collaborate on code without a central server.
+          Repositories, issues and patches live on people's own machines and
+          replicate peer to peer, with always-on seed nodes keeping things
+          available. <strong>Radicle Explorer</strong> is the web app for
+          browsing what those seeds host. It's usually the first thing
+          someone sees of a Radicle project, often from a link somebody
+          posted. The same repo also holds radicle.dev, the marketing site.
+        </p>
+        <p>
+          While I was redesigning <a href="/projects/radicle-desktop">Radicle
+          Desktop</a>, Explorer kept falling behind. A patch looked one way in
+          the app and completely different on the web. So I took the same
+          approach here: design in the code, ship patches, and let the
+          maintainers review design decisions the same way they review
+          everyone's code.
+        </p>
+        <div class="stats">
+          <div><strong>40</strong><span>patches opened</span></div>
+          <div><strong>7</strong><span>merged</span></div>
+          <div><strong>18</strong><span>open for review</span></div>
+          <div><strong>15</strong><span>explorations</span></div>
+        </div>
+      </section>
+      <hr />
+      <section>
+        <center>
+          Jump to:
+          <a href="#foundation">Design system</a>,
+          <a href="#patches">Patches</a>,
+          <a href="#repo">Repo pages</a>,
+          <a href="#profiles">Profiles</a>,
+          <a href="#mobile">Mobile</a>,
+          <a href="#website">Website</a>
+        </center>
+      </section>
+      <hr />
+
+      <section>
+        <a id="foundation"></a>
+        <h1>Design system</h1>
+        <p>
+          Explorer moved onto the same design system as the desktop app,
+          built on the new brand we developed with
+          <a href="https://acolorbright.com" target="_blank">A Color Bright</a>
+          (there's more on how the system works in the
+          <a href="/projects/radicle-desktop#design-system">Radicle Desktop
+          case study</a>). Code blocks, READMEs and headers moved onto the new
+          canvas color, the brand blue got simpler, and the favicon and app
+          icons were updated. I also built a design system modal right inside
+          the app, so anyone working on Explorer has one place to check which
+          color token, type style or button to use, instead of guessing from
+          whatever the last person did.
+        </p>
+        <figure class="vignette">
+          <div class="vignette-panel">
+            <div class="vignette-item">
+              <img src="/images/radicle-explorer/explorer-ds-tokens-19686364.webp" width="1200" height="1380"
+                alt="The design system modal&#x27;s color tokens." loading="lazy" decoding="async" />
+            </div>
+          </div>
+          <figcaption>The design system modal&#x27;s color tokens.</figcaption>
+        </figure>
+        <figure class="vignette">
+          <div class="vignette-panel">
+            <div class="vignette-item">
+              <img src="/images/radicle-explorer/explorer-ds-buttons-1cda0112.webp" width="1200" height="558"
+                alt="Every button variant, side by side." loading="lazy" decoding="async" />
+            </div>
+          </div>
+          <figcaption>Every button variant, side by side.</figcaption>
+        </figure>
+      </section>
+      <hr />
+
+      <section>
+        <a id="patches"></a>
+        <h1>Patches that match the desktop app</h1>
+        <p>
+          The web patch page got rebuilt to match the new desktop one: a
+          single column, one timeline of comments, revisions and reviews, and
+          the metadata up top. To show the same lifecycle events as desktop
+          (opened as a draft, archived, reopened), the web needed data it
+          didn't have, so the patch also adds a small endpoint to the server.
+          Older nodes without it still render the page fine.
+        </p>
+        <figure class="compare" data-show="after">
+          <div class="compare-toggle" role="group" aria-label="Show version">
+            <button type="button" data-version="before" aria-pressed="false">Before</button>
+            <button type="button" data-version="after" aria-pressed="true">After</button>
+          </div>
+          <div class="compare-stage">
+            <div class="compare-layer" data-version="before">
+              <img src="/images/radicle-explorer/explorer-patch-before-3af1d2a5.webp" width="2400" height="1500"
+                alt="Before: The patch page before and after." loading="lazy" decoding="async" />
+            </div>
+            <div class="compare-layer" data-version="after">
+              <img src="/images/radicle-explorer/explorer-patch-after-20de4296.webp" width="2400" height="1500"
+                alt="After: The patch page before and after." loading="lazy" decoding="async" />
+            </div>
+          </div>
+          <figcaption>The patch page before and after.</figcaption>
+        </figure>
+        <p>
+          Comment threads got the desktop treatment too: replies indented in
+          their own boxes, reactions with real emoji, and a copy link button
+          on every comment. Open a link to a comment and it gets a ring in
+          the brand color so you can find it.
+        </p>
+        <figure class="vignette">
+          <div class="vignette-panel">
+            <div class="vignette-item">
+              <img src="/images/radicle-explorer/thread-before-62eec04b.webp" width="1128" height="453"
+                alt="A comment thread before and after: replies indented in their own boxes, with real emoji reactions." loading="lazy" decoding="async" />
+            </div>
+            <div class="vignette-item">
+              <img src="/images/radicle-explorer/thread-vignette-017054cc.webp" width="1128" height="461"
+                alt="A comment thread before and after: replies indented in their own boxes, with real emoji reactions." loading="lazy" decoding="async" />
+            </div>
+          </div>
+          <figcaption>A comment thread before and after: replies indented in their own boxes, with real emoji reactions.</figcaption>
+        </figure>
+        <figure class="vignette">
+          <div class="vignette-panel">
+            <div class="vignette-item">
+              <img src="/images/radicle-explorer/comment-link-vignette-14b6bcf6.webp" width="1136" height="227"
+                alt="Linking straight to a comment." loading="lazy" decoding="async" />
+            </div>
+          </div>
+          <figcaption>Linking straight to a comment.</figcaption>
+        </figure>
+      </section>
+      <hr />
+
+      <section>
+        <a id="repo"></a>
+        <h1>Repo pages</h1>
+        <p>
+          The repo page stacked two rows of tabs with the repo header
+          sandwiched in between. Now the repo header comes first and there's
+          a single row: Files, Commits, Issues, Patches, Releases.
+        </p>
+        <figure class="compare" data-show="after">
+          <div class="compare-toggle" role="group" aria-label="Show version">
+            <button type="button" data-version="before" aria-pressed="false">Before</button>
+            <button type="button" data-version="after" aria-pressed="true">After</button>
+          </div>
+          <div class="compare-stage">
+            <div class="compare-layer" data-version="before">
+              <img src="/images/radicle-explorer/repo-before-bcbdf21a.webp" width="2400" height="1500"
+                alt="Before: The repo page before and after." loading="lazy" decoding="async" />
+            </div>
+            <div class="compare-layer" data-version="after">
+              <img src="/images/radicle-explorer/repo-after-87f8e52d.webp" width="2400" height="1500"
+                alt="After: The repo page before and after." loading="lazy" decoding="async" />
+            </div>
+          </div>
+          <figcaption>The repo page before and after.</figcaption>
+        </figure>
+        <figure class="vignette">
+          <div class="vignette-panel">
+            <div class="vignette-item">
+              <img src="/images/radicle-explorer/repo-header-before-23a32a29.webp" width="1200" height="292"
+                alt="Two rows of tabs with the header in between, and one row after it." loading="lazy" decoding="async" />
+            </div>
+            <div class="vignette-item">
+              <img src="/images/radicle-explorer/repo-header-after-4c248d7d.webp" width="1200" height="292"
+                alt="Two rows of tabs with the header in between, and one row after it." loading="lazy" decoding="async" />
+            </div>
+          </div>
+          <figcaption>Two rows of tabs with the header in between, and one row after it.</figcaption>
+        </figure>
+        <figure class="compare" data-show="after">
+          <div class="compare-toggle" role="group" aria-label="Show version">
+            <button type="button" data-version="before" aria-pressed="false">Before</button>
+            <button type="button" data-version="after" aria-pressed="true">After</button>
+          </div>
+          <div class="compare-stage">
+            <div class="compare-layer" data-version="before">
+              <img src="/images/radicle-explorer/repo-issues-before-5a98e8ee.webp" width="2400" height="1500"
+                alt="Before: The same change on a sub page." loading="lazy" decoding="async" />
+            </div>
+            <div class="compare-layer" data-version="after">
+              <img src="/images/radicle-explorer/repo-issues-after-a7fee1b5.webp" width="2400" height="1500"
+                alt="After: The same change on a sub page." loading="lazy" decoding="async" />
+            </div>
+          </div>
+          <figcaption>The same change on a sub page.</figcaption>
+        </figure>
+        <p>
+          Commits became a timeline like the desktop app's. Since commits are
+          already grouped by day, each row shows the time instead of another
+          "21 days ago", and hashes and times line up in a column on the
+          right.
+        </p>
+        <figure class="compare" data-show="after">
+          <div class="compare-toggle" role="group" aria-label="Show version">
+            <button type="button" data-version="before" aria-pressed="false">Before</button>
+            <button type="button" data-version="after" aria-pressed="true">After</button>
+          </div>
+          <div class="compare-stage">
+            <div class="compare-layer" data-version="before">
+              <img src="/images/radicle-explorer/commits-before-2f2a7318.webp" width="2400" height="1500"
+                alt="Before: Commits before and after." loading="lazy" decoding="async" />
+            </div>
+            <div class="compare-layer" data-version="after">
+              <img src="/images/radicle-explorer/commits-after-6d22d877.webp" width="2400" height="1500"
+                alt="After: Commits before and after." loading="lazy" decoding="async" />
+            </div>
+          </div>
+          <figcaption>Commits before and after.</figcaption>
+        </figure>
+        <figure class="vignette">
+          <div class="vignette-panel">
+            <div class="vignette-item">
+              <img src="/images/radicle-explorer/commits-vignette-f199f85a.webp" width="1136" height="308"
+                alt="Commit rows, with the hover state." loading="lazy" decoding="async" />
+            </div>
+          </div>
+          <figcaption>Commit rows, with the hover state.</figcaption>
+        </figure>
+        <p>
+          Every repo also got a readable identity document page: who the
+          delegates are and how many of them have to agree before a change
+          counts.
+        </p>
+        <figure class="vignette">
+          <div class="vignette-panel">
+            <div class="vignette-item">
+              <img src="/images/radicle-explorer/identity-vignette-f4f29e4f.webp" width="1200" height="264"
+                alt="The identity document." loading="lazy" decoding="async" />
+            </div>
+          </div>
+          <figcaption>The identity document.</figcaption>
+        </figure>
+      </section>
+      <hr />
+
+      <section>
+        <a id="profiles"></a>
+        <h1>Profiles</h1>
+        <p>
+          A user page used to list the repos someone maintains and that's it.
+          Now it shows what they've actually done: every repo they maintain or
+          contributed to, a contribution calendar, and a feed of their patches
+          and issues across repos. This needed new server endpoints too, built
+          so older nodes keep showing the old page instead of breaking.
+        </p>
+        <figure class="compare" data-show="after">
+          <div class="compare-toggle" role="group" aria-label="Show version">
+            <button type="button" data-version="before" aria-pressed="false">Before</button>
+            <button type="button" data-version="after" aria-pressed="true">After</button>
+          </div>
+          <div class="compare-stage">
+            <div class="compare-layer" data-version="before">
+              <img src="/images/radicle-explorer/profile-before-2ecdd9a9.webp" width="2400" height="1500"
+                alt="Before: User profiles before and after." loading="lazy" decoding="async" />
+            </div>
+            <div class="compare-layer" data-version="after">
+              <img src="/images/radicle-explorer/profile-after-28503890.webp" width="2400" height="1500"
+                alt="After: User profiles before and after." loading="lazy" decoding="async" />
+            </div>
+          </div>
+          <figcaption>User profiles before and after.</figcaption>
+        </figure>
+        <figure class="vignette">
+          <div class="vignette-panel">
+            <div class="vignette-item">
+              <img src="/images/radicle-explorer/calendar-vignette-0d977e48.webp" width="1119" height="402"
+                alt="The contribution calendar, and repos badged by how someone contributed." loading="lazy" decoding="async" />
+            </div>
+            <div class="vignette-item">
+              <img src="/images/radicle-explorer/repo-cards-vignette-f6cdd2d1.webp" width="1119" height="159"
+                alt="The contribution calendar, and repos badged by how someone contributed." loading="lazy" decoding="async" />
+            </div>
+          </div>
+          <figcaption>The contribution calendar, and repos badged by how someone contributed.</figcaption>
+        </figure>
+      </section>
+      <hr />
+
+      <section>
+        <a id="mobile"></a>
+        <h1>Mobile</h1>
+        <p>
+          Lots of people open Explorer links on their phones, and the repo
+          page wasn't great there. The file list now shows inline instead of
+          hiding behind a Browse button, the branch row stays on one line, the
+          node picker stays visible, and the delegates info moved below the
+          README where it's out of the way.
+        </p>
+        <div class="columns columns-4">
+          <figure>
+            <img src="/images/radicle-explorer/mobile-before-610d4a59.webp" width="780" height="1688"
+              alt="Before, then the inline file list, the one line branch row and the node picker." loading="lazy" decoding="async" />
+          </figure>
+          <figure>
+            <img src="/images/radicle-explorer/mobile-files-93bb1905.webp" width="780" height="1688"
+              alt="Before, then the inline file list, the one line branch row and the node picker." loading="lazy" decoding="async" />
+          </figure>
+          <figure>
+            <img src="/images/radicle-explorer/mobile-branch-53d988bc.webp" width="780" height="1688"
+              alt="Before, then the inline file list, the one line branch row and the node picker." loading="lazy" decoding="async" />
+          </figure>
+          <figure>
+            <img src="/images/radicle-explorer/mobile-node-8ebdbd40.webp" width="780" height="1688"
+              alt="Before, then the inline file list, the one line branch row and the node picker." loading="lazy" decoding="async" />
+          </figure>
+        </div>
+        <figure><figcaption>Before, then the inline file list, the one line branch row and the node picker.</figcaption></figure>
+      </section>
+      <hr />
+
+      <section>
+        <a id="website"></a>
+        <h1>The website</h1>
+        <p>
+          radicle.dev lives in the same repo, so it got patches too. The How
+          it works page was a scrolling slide presentation that was hard to
+          read and harder to link to. I turned it into a normal two column
+          page with an illustration next to each idea.
+        </p>
+        <figure class="compare" data-show="after">
+          <div class="compare-toggle" role="group" aria-label="Show version">
+            <button type="button" data-version="before" aria-pressed="false">Before</button>
+            <button type="button" data-version="after" aria-pressed="true">After</button>
+          </div>
+          <div class="compare-stage">
+            <div class="compare-layer" data-version="before">
+              <img src="/images/radicle-explorer/principles-before-8511ea9a.webp" width="2400" height="1500"
+                alt="Before: How it works, before and after." loading="lazy" decoding="async" />
+            </div>
+            <div class="compare-layer" data-version="after">
+              <img src="/images/radicle-explorer/principles-after-d598db8c.webp" width="2400" height="1500"
+                alt="After: How it works, before and after." loading="lazy" decoding="async" />
+            </div>
+          </div>
+          <figcaption>How it works, before and after.</figcaption>
+        </figure>
+        <p>
+          I pulled the illustrations into their own component and gave each a
+          small ambient animation. They
+          switch off if you prefer reduced motion.
+        </p>
+        <figure class="vignette">
+          <div class="vignette-panel">
+            <div class="vignette-item">
+              <img src="/images/radicle-explorer/principle-vignette-34a75f10.webp" width="1136" height="485"
+                alt="&quot;Everyone runs a node.&quot;" loading="lazy" decoding="async" />
+            </div>
+          </div>
+          <figcaption>&quot;Everyone runs a node.&quot;</figcaption>
+        </figure>
+        <p>
+          I also did a copy pass across the whole site (sentence case,
+          clearer calls to action, and fewer em dashes), added staggered
+          entrances when a page loads, and animated the sidebar sub
+          navigation with CSS view transitions. Then I explored a Get started
+          page, with a call to action in the header pointing to it.
+        </p>
+        <figure class="vignette">
+          <div class="vignette-panel">
+            <div class="vignette-item">
+              <img src="/images/radicle-explorer/header-before-3b649073.webp" width="1200" height="46"
+                alt="The header, before and after adding &quot;Get started&quot;." loading="lazy" decoding="async" />
+            </div>
+            <div class="vignette-item">
+              <img src="/images/radicle-explorer/header-after-8e01b819.webp" width="1200" height="46"
+                alt="The header, before and after adding &quot;Get started&quot;." loading="lazy" decoding="async" />
+            </div>
+          </div>
+          <figcaption>The header, before and after adding &quot;Get started&quot;.</figcaption>
+        </figure>
+        <figure>
+          <img src="/images/radicle-explorer/get-started-d4bc8859.webp" width="2400" height="1500"
+            alt="The Get started page." loading="lazy" decoding="async" />
+          <figcaption>The Get started page.</figcaption>
+        </figure>
+        <p>
+          I also explored a redesign of the node page, the landing page for
+          a seed. The old one was a sidebar and a grid of cards. The new one
+          explains what Explorer is for first-time visitors and gives the
+          seed itself a real header.
+        </p>
+        <figure class="compare" data-show="after">
+          <div class="compare-toggle" role="group" aria-label="Show version">
+            <button type="button" data-version="before" aria-pressed="false">Before</button>
+            <button type="button" data-version="after" aria-pressed="true">After</button>
+          </div>
+          <div class="compare-stage">
+            <div class="compare-layer" data-version="before">
+              <img src="/images/radicle-explorer/node-before-9d106dee.webp" width="2400" height="1500"
+                alt="Before: A seed&#x27;s node page, before and after." loading="lazy" decoding="async" />
+            </div>
+            <div class="compare-layer" data-version="after">
+              <img src="/images/radicle-explorer/node-after-364bdab6.webp" width="2400" height="1500"
+                alt="After: A seed&#x27;s node page, before and after." loading="lazy" decoding="async" />
+            </div>
+          </div>
+          <figcaption>A seed&#x27;s node page, before and after.</figcaption>
+        </figure>
+        <p>
+          My favorite exploration was a page about GitHub's uptime. It charts
+          GitHub's own status page data since 2022, which adds up to more
+          than 72 days of degraded or unavailable service. Radicle doesn't
+          have that problem, because there's no server to go down.
+        </p>
+        <figure class="vignette">
+          <div class="vignette-panel">
+            <div class="vignette-item">
+              <img src="/images/radicle-explorer/github-chart-a86915f8.webp" width="1136" height="522"
+                alt="&quot;Can&#x27;t go down if there&#x27;s no server.&quot;" loading="lazy" decoding="async" />
+            </div>
+          </div>
+          <figcaption>&quot;Can&#x27;t go down if there&#x27;s no server.&quot;</figcaption>
+        </figure>
+      </section>
+      <hr />
+
+      <section>
+        <h1>What I took away</h1>
+        <p>
+          The web is where most people meet Radicle, and for a while it felt
+          like a different product from the desktop app. Most of this work was
+          closing that gap. It also taught me to design for nodes I don't
+          control: every new feature here has to degrade gracefully on seeds
+          that haven't upgraded yet, which is a very peer to peer kind of
+          design constraint.
+        </p>
+      </section>
+      <hr />
+      <section>
+        <div class="project-nav">
+          <div class="project-nav-item">
+            <p>Previous project</p>
+            <h2><a href="/projects/radicle-desktop">Radicle Desktop</a></h2>
+          </div>
+          <div class="project-nav-item">
+            <p>Next project</p>
+            <h2><a href="/projects/radicle">Radicle (2021)</a></h2>
+          </div>
+        </div>
+      </section>
+      <hr />
+    </main>
+    <script src="/assets/js/include-header.js"></script>
+  </body>
+</html>
