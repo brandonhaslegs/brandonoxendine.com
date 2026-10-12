@@ -6,23 +6,8 @@ body.grover-page main h2 {
   margin: 24px 0 16px;
 }
 
-body.grover-page .jump,
-body.grover-page .grv-note {
+body.grover-page .jump {
   text-align: center;
-}
-
-body.grover-page .grv-note {
-  opacity: 0.75;
-  margin-top: 12px;
-}
-
-body.grover-page iframe {
-  display: block;
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  height: auto;
-  border: 0;
-  border-radius: 0.5vw;
 }
 
 .grv-stage {
@@ -43,17 +28,15 @@ body.grover-page iframe {
   margin-top: 32px;
 }
 
-/* Category menu, first layer */
+/* Category menu: both layers */
 .grv-menu-demo {
   display: grid;
-  grid-template-columns: auto minmax(0, 1fr);
-  gap: 16px 56px;
-  align-items: start;
+  gap: 16px;
+  justify-items: start;
   text-align: left;
 }
 
 .grv-pill {
-  grid-column: 1;
   display: inline-flex;
   align-items: center;
   gap: 12px;
@@ -73,26 +56,35 @@ body.grover-page iframe {
   background: radial-gradient(circle, #333 1.6px, transparent 1.8px) 0 0 / 6px 6px;
 }
 
-body.case-study main ul.grv-menu {
-  grid-column: 1;
+.grv-menu {
+  display: grid;
+  grid-template-columns: 280px 280px;
+  max-width: 100%;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.13), 0px 0px 3px rgba(0, 0, 0, 0.05);
+}
+
+body.case-study main .grv-menu ul {
   list-style: none;
   margin: 0;
   padding: 8px 0;
-  width: 280px;
-  background: #fff;
-  border-radius: 8px;
-  box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.13), 0px 0px 3px rgba(0, 0, 0, 0.05);
 }
 
 body.case-study main .grv-menu li {
   margin: 0;
 }
 
+body.case-study main .grv-menu ul.grv-menu-main {
+  padding-bottom: 0;
+}
+
 body.grover-page main .grv-menu a {
   display: flex;
   align-items: center;
   gap: 16px;
-  height: 48px;
+  min-height: 48px;
   padding: 0 16px;
   border: 0;
   color: #333;
@@ -101,11 +93,42 @@ body.grover-page main .grv-menu a {
   transition: background-color 0.1s cubic-bezier(0.4, 0, 0.2, 1), color 0.1s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-body.grover-page main .grv-menu a:hover,
-body.grover-page main .grv-menu a:focus-visible {
-  background: color-mix(in srgb, var(--accent) 15%, transparent);
+/* The open category shares the panel's tint, so the row runs into it. */
+body.grover-page main .grv-menu-main a[aria-current="true"],
+body.grover-page main .grv-menu-main a:focus-visible {
+  background: color-mix(in srgb, var(--accent) 15%, #fff);
   color: var(--accent);
   outline: none;
+}
+
+.grv-sub-panel {
+  display: grid;
+}
+
+.grv-sub {
+  grid-area: 1 / 1;
+  background: color-mix(in srgb, var(--accent) 15%, #fff);
+}
+
+.grv-sub[hidden] {
+  display: none;
+}
+
+body.grover-page main .grv-sub a:hover,
+body.grover-page main .grv-sub a:focus-visible {
+  color: var(--accent);
+  outline: none;
+}
+
+body.grover-page main .grv-sub .grv-view-all a {
+  display: inline-flex;
+  min-height: 0;
+  height: 36px;
+  margin: 8px 16px;
+  padding: 0 16px;
+  border-radius: 18px;
+  background: #fff;
+  font-weight: 700;
 }
 
 .grv-menu img {
@@ -115,13 +138,10 @@ body.grover-page main .grv-menu a:focus-visible {
 }
 
 .grv-swatches {
-  grid-column: 2;
-  grid-row: 1 / span 2;
   display: grid;
-  grid-template-columns: repeat(2, max-content);
-  justify-content: start;
+  grid-template-columns: repeat(5, max-content);
   gap: 12px 24px;
-  align-self: center;
+  margin-top: 24px;
   font-family: ui-monospace, Menlo, monospace;
   font-size: 13px;
 }
@@ -218,27 +238,20 @@ body.grover-page main .grv-menu a:focus-visible {
 
 @media (max-width: 700px) {
   .grv-menu-demo {
+    justify-items: stretch;
+  }
+
+  .grv-menu {
     grid-template-columns: 1fr;
   }
 
   .grv-swatches {
-    grid-column: 1;
-    grid-row: auto;
-  }
-
-  body.case-study main ul.grv-menu {
-    width: 100%;
+    grid-template-columns: repeat(2, max-content);
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
   body.grover-page main .grv-menu a {
     transition: none;
-  }
-}
-
-@media (max-width: 900px) {
-  body.grover-page header {
-    background: #fff;
   }
 }
