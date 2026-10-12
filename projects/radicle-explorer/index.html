@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="robots" content="noindex" />
     <title>Radicle Explorer by Brandon Oxendine</title>
-    <meta name="description" content="Redesigning Radicle's web explorer and website to match the desktop app, shipped one patch at a time." />
+    <meta name="description" content="Redesigning Radicle’s web explorer and website to match the desktop app, shipped one patch at a time." />
     <link
       rel="canonical"
       href="https://www.brandonoxendine.com/projects/radicle-explorer"
@@ -31,7 +31,7 @@
       <h1>Radicle Explorer</h1>
 
       <p>
-        Redesigning Radicle's web explorer and website so they feel like the
+        Redesigning Radicle’s web explorer and website so they feel like the
         same product as the desktop app. Designed in the codebase and shipped
         as patches.
       </p>
@@ -43,17 +43,17 @@
         <figure>
           <img src="/images/radicle-explorer/explorer-hero-20de4296.webp" width="2400" height="1500"
             alt="Explorer&#x27;s patch page, rebuilt to match the desktop app." loading="lazy" decoding="async" />
-          <figcaption>Explorer&#x27;s patch page, rebuilt to match the desktop app.</figcaption>
+          <figcaption>Explorer’s patch page, rebuilt to match the desktop app.</figcaption>
         </figure>
       </section>
       <hr />
       <section>
         <p>
           Radicle is a way to collaborate on code without a central server.
-          Repositories, issues and patches live on people's own machines and
+          Repositories, issues and patches live on people’s own machines and
           replicate peer to peer, with always-on seed nodes keeping things
           available. <strong>Radicle Explorer</strong> is the web app for
-          browsing what those seeds host. It's usually the first thing
+          browsing what those seeds host. It’s usually the first thing
           someone sees of a Radicle project, often from a link somebody
           posted. The same repo also holds radicle.dev, the marketing site.
         </p>
@@ -63,7 +63,7 @@
           the app and completely different on the web. So I took the same
           approach here: design in the code, ship patches, and let the
           maintainers review design decisions the same way they review
-          everyone's code.
+          everyone’s code.
         </p>
         <div class="stats">
           <div><strong>40</strong><span>patches opened</span></div>
@@ -93,7 +93,7 @@
           Explorer moved onto the same design system as the desktop app,
           built on the new brand we developed with
           <a href="https://acolorbright.com" target="_blank">A Color Bright</a>
-          (there's more on how the system works in the
+          (there’s more on how the system works in the
           <a href="/projects/radicle-desktop#design-system">Radicle Desktop
           case study</a>). Code blocks, READMEs and headers moved onto the new
           canvas color, the brand blue got simpler, and the favicon and app
@@ -109,7 +109,7 @@
                 alt="The design system modal&#x27;s color tokens." loading="lazy" decoding="async" />
             </div>
           </div>
-          <figcaption>The design system modal&#x27;s color tokens.</figcaption>
+          <figcaption>The design system modal’s color tokens.</figcaption>
         </figure>
         <figure class="vignette">
           <div class="vignette-panel">
@@ -131,7 +131,7 @@
           single column, one timeline of comments, revisions and reviews, and
           the metadata up top. To show the same lifecycle events as desktop
           (opened as a draft, archived, reopened), the web needed data it
-          didn't have, so the patch also adds a small endpoint to the server.
+          didn’t have, so the patch also adds a small endpoint to the server.
           Older nodes without it still render the page fine.
         </p>
         <figure class="compare" data-show="after">
@@ -187,7 +187,7 @@
         <h1>Repo pages</h1>
         <p>
           The repo page stacked two rows of tabs with the repo header
-          sandwiched in between. Now the repo header comes first and there's
+          sandwiched in between. Now the repo header comes first and there’s
           a single row: Files, Commits, Issues, Patches, Releases.
         </p>
         <figure class="compare" data-show="after">
@@ -238,9 +238,9 @@
           <figcaption>The same change on a sub page.</figcaption>
         </figure>
         <p>
-          Commits became a timeline like the desktop app's. Since commits are
+          Commits became a timeline like the desktop app’s. Since commits are
           already grouped by day, each row shows the time instead of another
-          "21 days ago", and hashes and times line up in a column on the
+          “21 days ago”, and hashes and times line up in a column on the
           right.
         </p>
         <figure class="compare" data-show="after">
@@ -290,8 +290,8 @@
         <a id="profiles"></a>
         <h1>Profiles</h1>
         <p>
-          A user page used to list the repos someone maintains and that's it.
-          Now it shows what they've actually done: every repo they maintain or
+          A user page used to list the repos someone maintains and that’s it.
+          Now it shows what they’ve actually done: every repo they maintain or
           contributed to, a contribution calendar, and a feed of their patches
           and issues across repos. This needed new server endpoints too, built
           so older nodes keep showing the old page instead of breaking.
@@ -334,10 +334,10 @@
         <h1>Mobile</h1>
         <p>
           Lots of people open Explorer links on their phones, and the repo
-          page wasn't great there. The file list now shows inline instead of
+          page wasn’t great there. The file list now shows inline instead of
           hiding behind a Browse button, the branch row stays on one line, the
           node picker stays visible, and the delegates info moved below the
-          README where it's out of the way.
+          README where it’s out of the way.
         </p>
         <div class="columns columns-4">
           <figure>
@@ -399,7 +399,7 @@
                 alt="&quot;Everyone runs a node.&quot;" loading="lazy" decoding="async" />
             </div>
           </div>
-          <figcaption>&quot;Everyone runs a node.&quot;</figcaption>
+          <figcaption>“Everyone runs a node.”</figcaption>
         </figure>
         <p>
           I also did a copy pass across the whole site (sentence case,
@@ -419,7 +419,7 @@
                 alt="The header, before and after adding &quot;Get started&quot;." loading="lazy" decoding="async" />
             </div>
           </div>
-          <figcaption>The header, before and after adding &quot;Get started&quot;.</figcaption>
+          <figcaption>The header, before and after adding “Get started”.</figcaption>
         </figure>
         <figure>
           <img src="/images/radicle-explorer/get-started-d4bc8859.webp" width="2400" height="1500"
@@ -447,13 +447,13 @@
                 alt="After: A seed&#x27;s node page, before and after." loading="lazy" decoding="async" />
             </div>
           </div>
-          <figcaption>A seed&#x27;s node page, before and after.</figcaption>
+          <figcaption>A seed’s node page, before and after.</figcaption>
         </figure>
         <p>
-          My favorite exploration was a page about GitHub's uptime. It charts
-          GitHub's own status page data since 2022, which adds up to more
-          than 72 days of degraded or unavailable service. Radicle doesn't
-          have that problem, because there's no server to go down.
+          My favorite exploration was a page about GitHub’s uptime. It charts
+          GitHub’s own status page data since 2022, which adds up to more
+          than 72 days of degraded or unavailable service. Radicle doesn’t
+          have that problem, because there’s no server to go down.
         </p>
         <figure class="vignette">
           <div class="vignette-panel">
@@ -462,7 +462,7 @@
                 alt="&quot;Can&#x27;t go down if there&#x27;s no server.&quot;" loading="lazy" decoding="async" />
             </div>
           </div>
-          <figcaption>&quot;Can&#x27;t go down if there&#x27;s no server.&quot;</figcaption>
+          <figcaption>“Can’t go down if there’s no server.”</figcaption>
         </figure>
       </section>
       <hr />
@@ -472,9 +472,9 @@
         <p>
           The web is where most people meet Radicle, and for a while it felt
           like a different product from the desktop app. Most of this work was
-          closing that gap. It also taught me to design for nodes I don't
+          closing that gap. It also taught me to design for nodes I don’t
           control: every new feature here has to degrade gracefully on seeds
-          that haven't upgraded yet, which is a very peer to peer kind of
+          that haven’t upgraded yet, which is a very peer to peer kind of
           design constraint.
         </p>
       </section>
