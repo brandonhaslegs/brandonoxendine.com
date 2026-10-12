@@ -96,7 +96,13 @@
       card.dataset.color = palette[(index + 1) % palette.length];
       themeProject(card, card.dataset.color);
     };
-    card.addEventListener('click', next);
+    // Hover cycles the color with a mouse; touch has no hover, so a tap does.
+    card.addEventListener('pointerenter', (event) => {
+      if (event.pointerType === 'mouse') next();
+    });
+    card.addEventListener('click', (event) => {
+      if (event.pointerType !== 'mouse') next();
+    });
     card.addEventListener('keydown', (event) => {
       if (event.key === 'Enter' || event.key === ' ') {
         event.preventDefault();

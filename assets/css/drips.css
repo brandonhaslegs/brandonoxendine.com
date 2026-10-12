@@ -484,6 +484,13 @@
   cursor: pointer;
 }
 
+/* Project cards change color on hover, so they aren't click targets. */
+@media (hover: hover) {
+  [data-projects] .drips-card-wrap {
+    cursor: default;
+  }
+}
+
 .drips-card {
   box-shadow: var(--elevation-low);
   border-radius: 1rem 0 1rem 1rem;
@@ -561,39 +568,52 @@
 }
 
 /* Icons and emoji re-theme with the lab */
-.drips-icons {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(44px, 1fr));
-  gap: 4px;
+/* Icon and emoji grids fill the width with even spacing: the glyphs grow
+   with the width, columns spread with space-between, and the same gap
+   separates the rows and the next group (half of it sits under the
+   heading). The sizes are
+   declared on the group but resolve (in cqi) on its children. */
+.drips-group:has(> .drips-icons, > .drips-emoji) {
+  container-type: inline-size;
+  --gap: calc((100cqi - var(--cols) * var(--size)) / (var(--cols) - 1));
 }
 
-.drips-icons > * {
+.drips-group:has(> .drips-icons) {
+  --cols: 12;
+  --size: max(24px, calc(100cqi / var(--cols) * 0.45));
+}
+
+.drips-group:has(> .drips-emoji) {
+  --cols: 7;
+  --size: calc(100cqi / var(--cols) * 0.6);
+}
+
+.drips-group:has(> .drips-icons, > .drips-emoji) > .typo-header-5 {
+  margin-bottom: max(16px, calc(var(--gap) / 2));
+}
+
+.drips-group:has(> .drips-icons) + .drips-group:has(> .drips-emoji) {
+  margin-top: 0;
+}
+
+.drips-group:has(+ .drips-group > .drips-emoji) > .drips-icons {
+  margin-bottom: var(--gap);
+}
+
+.drips-icons,
+.drips-emoji {
   display: grid;
-  place-items: center;
-  height: 44px;
+  grid-template-columns: repeat(var(--cols), var(--size));
+  justify-content: space-between;
+  row-gap: var(--gap);
 }
 
 .drips-icons svg,
-.drips-icons img {
-  width: 24px;
-  height: 24px;
-}
-
-.drips-emoji {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(64px, 1fr));
-  gap: 12px;
-}
-
-.drips-emoji > * {
-  display: grid;
-  place-items: center;
-}
-
+.drips-icons img,
 .drips-emoji svg,
 .drips-emoji img {
-  width: 48px;
-  height: 48px;
+  width: var(--size);
+  height: var(--size);
 }
 
 /* Corner diagram */
@@ -664,6 +684,16 @@ body.drips-page figure.lab-figure > .drips-lab + figcaption {
 
   .drips-type-specimen {
     grid-template-columns: 1fr;
+  }
+
+  .drips-group:has(> .drips-icons) {
+    --cols: 8;
+  }
+}
+
+@media (max-width: 440px) {
+  .drips-group:has(> .drips-icons) {
+    --cols: 6;
   }
 }
 
