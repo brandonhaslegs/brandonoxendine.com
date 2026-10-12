@@ -57,6 +57,7 @@ body.fuzzco-page main img {
 }
 
 .fz-stage {
+  box-sizing: border-box;
   border: 3px solid var(--fz-red);
   padding: clamp(20px, 4vw, 48px);
 }
@@ -122,6 +123,7 @@ body.fuzzco-page main img {
 }
 
 .fz-window {
+  box-sizing: border-box;
   position: relative;
   border: 3px solid var(--fz-red);
   height: min(72vh, 680px);
@@ -266,6 +268,8 @@ body.fuzzco-page main .fz-img img {
 }
 
 .fz-code {
+  box-sizing: border-box;
+  max-width: 100%;
   border: 3px solid var(--fz-red);
   padding: 20px 24px;
   overflow-x: auto;
