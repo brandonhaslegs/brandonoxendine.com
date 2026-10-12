@@ -42,13 +42,13 @@
       <section>
         <figure>
           <img src="/images/migaku/migaku-home-page-top-73996c04.png" width="2500" height="1359"
-            alt="The top of Migaku's home page: the gradient wordmark over an illustrated world." loading="eager" decoding="async" />
+            alt="The top of Migaku’s home page: the gradient wordmark over an illustrated world." loading="eager" decoding="async" />
           <figcaption>The top of the home page I designed for migaku.com.</figcaption>
         </figure>
 
         <p>
           Migaku teaches languages through the things you already watch and
-          read. A browser extension reads the page or the subtitles you're
+          read. A browser extension reads the page or the subtitles you’re
           looking at, shows you which words you know, and lets you turn any
           sentence into a flash card. A separate app is where you study those
           cards. The people who use it are serious: they want to be fluent, not
@@ -61,10 +61,10 @@
           was to give it a personality worth remembering and then make that
           personality usable. I redrew the wordmark, built the color, type and
           component system in Figma, drew the icon set, and worked with the
-          illustrator Enisaurus on a cast of characters. Migaku's engineers
-          built the system into the extension and the apps; the extension's
-          changelog from that period is full of entries like "match designs in
-          Figma".
+          illustrator Enisaurus on a cast of characters. Migaku’s engineers
+          built the system into the extension and the apps; the extension’s
+          changelog from that period is full of entries like “match designs in
+          Figma”.
         </p>
 
         <figure class="compare" data-show="after">
@@ -119,7 +119,7 @@
       <section id="brand">
         <h2>Brand</h2>
         <p>
-          Migaku's audience started with Japanese learners, people who grew up
+          Migaku’s audience started with Japanese learners, people who grew up
           on anime, manga and games and are happy to have a little fun. So the
           brand leans in: a rounded, heavy wordmark with the Tomoe swirl from
           the old logo tucked into the M, an orange-to-pink gradient that runs
@@ -129,7 +129,7 @@
 
         <figure class="mgk-stage mgk-wordmark">
           <img src="/images/migaku-system/migaku-logo-ace4e3d1.svg" width="153" height="30" alt="The Migaku wordmark." class="no-outline" />
-          <figcaption>The wordmark, straight from the extension's SVG.</figcaption>
+          <figcaption>The wordmark, straight from the extension’s SVG.</figcaption>
         </figure>
 
         <p>
@@ -241,13 +241,13 @@
           Two families. GT Maru Black does all the shouting: headings, buttons,
           the little uppercase labels. Inter at a slightly heavy 500 does
           everything you actually read. There are ten named styles, each with a
-          mobile and a desktop size that switch at 1024px, and that's the whole
+          mobile and a desktop size that switch at 1024px, and that’s the whole
           scale. The heading with the gradient fill is a modifier, not a
           separate style.
         </p>
         <figure>
           <img style="max-width: 1200px" src="/images/migaku-system/type-light-1fb70718.webp" width="2400" height="2382"
-            alt="Migaku's ten type styles, from headingHuge to smallCaption, at desktop sizes." class="zoomable" loading="lazy" decoding="async" />
+            alt="Migaku’s ten type styles, from headingHuge to smallCaption, at desktop sizes." class="zoomable" loading="lazy" decoding="async" />
           <figcaption>The type scale at desktop sizes. Rebuilt from the production stylesheet.</figcaption>
         </figure>
       </section>
@@ -286,7 +286,7 @@
         <p>
           Form controls share the gradient: a checked checkbox, a selected
           radio and the knob of a switched-on toggle all fill with it, so
-          "on" always looks like the brand. Inputs are fully rounded, and
+          “on” always looks like the brand. Inputs are fully rounded, and
           instead of a focus ring color they lift off the page with the
           elevation-2 shadow.
         </p>
@@ -312,8 +312,8 @@
         <p>
           Then the small stuff that does most of the talking: status labels in
           any accent, the blue known-words counter that sits in the toolbar,
-          callouts, toasts, and a progress bar that's a squiggle instead of a
-          line. In code it's a clip path built from repeating segments, so it fits any width without
+          callouts, toasts, and a progress bar that’s a squiggle instead of a
+          line. In code it’s a clip path built from repeating segments, so it fits any width without
           stretching.
         </p>
 
@@ -321,7 +321,7 @@
           <div class="mgk-squiggle" data-progress="66" role="img" aria-label="A wavy progress bar, two thirds full.">
             <div class="mgk-squiggle-track"><div class="mgk-squiggle-fill"></div></div>
           </div>
-          <figcaption>The squiggle, live. The segment geometry is ported from Migaku's progress bar component.</figcaption>
+          <figcaption>The squiggle, live. The segment geometry is ported from Migaku’s progress bar component.</figcaption>
         </figure>
 
         <figure class="compare mgk-sheet" style="--w: 905px" data-show="before">
@@ -344,10 +344,10 @@
 
         <p>
           One constraint shaped a lot of this. The extension draws its UI on
-          top of other people's websites (YouTube, Netflix, news sites), so
-          the system can't trust the page around it. Every component is scoped
+          top of other people’s websites (YouTube, Netflix, news sites), so
+          the system can’t trust the page around it. Every component is scoped
           under one class, both themes can be applied to any subtree, and
-          there's a pixel fallback for every rem value, because the host page
+          there’s a pixel fallback for every rem value, because the host page
           might have changed what a rem is.
         </p>
 
@@ -357,13 +357,13 @@
       <section id="reading">
         <h2>Reading colors</h2>
         <p>
-          Migaku's most important UI isn't a component at all. It's the text of
-          whatever page you're on, which the extension underlines word by word
+          Migaku’s most important UI isn’t a component at all. It’s the text of
+          whatever page you’re on, which the extension underlines word by word
           to show what you know. That needed its own small system: one color
           per word status, quiet at rest and full strength on hover, plus colors
           for pitch accent in Japanese and tones in Chinese. They borrow from
-          the same accents, so a word you're learning is the same orange as
-          the "Learning" label on its card.
+          the same accents, so a word you’re learning is the same orange as
+          the “Learning” label on its card.
         </p>
 
         <figure class="mgk-stage mgk-reading">
@@ -383,7 +383,7 @@
             <div><span lang="ja" style="color: #2880ff">端</span><small>はし · heiban</small></div>
             <div><span lang="zh" class="tones"><b style="color: #fe4670">mā</b> <b style="color: #fba335">má</b> <b style="color: #38b8a1">mǎ</b> <b style="color: #2880ff">mà</b> <b style="color: #73798c">ma</b></span><small>Mandarin tones 1 to 5</small></div>
           </div>
-          <figcaption>Word status underlines, and the same word, はし, in three pitch accents. Rebuilt with the extension's parser colors.</figcaption>
+          <figcaption>Word status underlines, and the same word, はし, in three pitch accents. Rebuilt with the extension’s parser colors.</figcaption>
         </figure>
       </section>
 
@@ -406,10 +406,10 @@
       <section id="extension">
         <h2>The extension</h2>
         <p>
-          The browser extension is the heart of Migaku. Without it there's
+          The browser extension is the heart of Migaku. Without it there’s
           nothing in your flash cards. It parses text on any site and subtitles
           on the big streaming platforms, adds a toolbar with your known-words
-          count and the page's comprehension score, and opens a popup
+          count and the page’s comprehension score, and opens a popup
           dictionary when you click a word, where you can build a card from the
           sentence you just saw.
         </p>
@@ -422,14 +422,14 @@
           <div class="compare-stage">
             <div class="compare-layer" data-version="before">
               <img src="/images/migaku-system/login-light-4f7dba97.webp" width="1500" height="1300"
-                alt="The extension's login window in light mode, with the hot spring illustration, wordmark, inputs and a gradient Log in button." loading="lazy" decoding="async" />
+                alt="The extension’s login window in light mode, with the hot spring illustration, wordmark, inputs and a gradient Log in button." loading="lazy" decoding="async" />
             </div>
             <div class="compare-layer" data-version="after">
               <img src="/images/migaku-system/login-dark-2fd7e701.webp" width="1500" height="1300"
-                alt="The extension's login window in dark mode." loading="lazy" decoding="async" />
+                alt="The extension’s login window in dark mode." loading="lazy" decoding="async" />
             </div>
           </div>
-          <figcaption>The extension's own window, captured from the June 2023 build. Most of the system is on this one screen.</figcaption>
+          <figcaption>The extension’s own window, captured from the June 2023 build. Most of the system is on this one screen.</figcaption>
         </figure>
 
         <figure>
@@ -452,7 +452,7 @@
                 alt="Dark theme: the same four comprehension cards." loading="lazy" decoding="async" />
             </div>
           </div>
-          <figcaption>The page parser, which tells you how much of a page you're likely to understand.</figcaption>
+          <figcaption>The page parser, which tells you how much of a page you’re likely to understand.</figcaption>
         </figure>
 
         <figure>
@@ -471,18 +471,18 @@
         <p>
           The study app had the opposite problem from the brand. It had to be
           fun without being goofy, because the people using it are trying very
-          hard to get fluent and don't want to be patronized. So the
+          hard to get fluent and don’t want to be patronized. So the
           characters and the gradient show up around the edges, at the start
           and the end of a session, and the studying itself is calm and fast.
         </p>
 
         <figure>
           <div class="columns columns-3">
-            <img src="/images/migaku/Starter-cards-76dd29b9.png" width="750" height="1632" alt="The home screen before you've added any cards." loading="lazy" decoding="async" />
+            <img src="/images/migaku/Starter-cards-76dd29b9.png" width="750" height="1632" alt="The home screen before you’ve added any cards." loading="lazy" decoding="async" />
             <img src="/images/migaku/Reviewed-a-deck-3116aa4c.png" width="750" height="1632" alt="A deck in the middle of studying." loading="lazy" decoding="async" />
             <img src="/images/migaku/Reviewed-a-deck-1-7fc19444.png" width="750" height="1632" alt="All done for the day." loading="lazy" decoding="async" />
           </div>
-          <figcaption>Before you start, while you study, and when you're done for the day.</figcaption>
+          <figcaption>Before you start, while you study, and when you’re done for the day.</figcaption>
         </figure>
 
         <figure>
@@ -537,9 +537,9 @@
         <h2>Three years later</h2>
         <p>
           The best test of a design system is what happens after the designer
-          leaves. Migaku's marketing site has since gone in its own direction,
+          leaves. Migaku’s marketing site has since gone in its own direction,
           with a dark hero and Inter headlines, and the study app has grown a
-          lot of new features. But open migaku.com's stylesheet today and the
+          lot of new features. But open migaku.com’s stylesheet today and the
           foundation is still there: the same gradient, the same ink, the same
           six accents and three contrast steps, the same shadows, the same type
           scale and button specs, the same wordmark and characters. The icon

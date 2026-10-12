@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Radicle Desktop by Brandon Oxendine</title>
-    <meta name="description" content="Seven months redesigning Radicle's desktop app, shipped one patch at a time." />
+    <meta name="description" content="Seven months redesigning Radicle’s desktop app, shipped one patch at a time." />
     <link
       rel="canonical"
       href="https://www.brandonoxendine.com/projects/radicle-desktop"
@@ -30,7 +30,7 @@
       <h1>Radicle Desktop</h1>
 
       <p>
-        Seven months redesigning Radicle's desktop app. No Figma handoff this
+        Seven months redesigning Radicle’s desktop app. No Figma handoff this
         time: I designed in the codebase and shipped every change as a patch.
       </p>
       <p>
@@ -47,8 +47,8 @@
       <hr />
       <section>
         <p>
-          I've worked at Radicle since 2020. Early on I designed
-          <a href="/projects/radicle">Radicle's brand, website and first
+          I’ve worked at Radicle since 2020. Early on I designed
+          <a href="/projects/radicle">Radicle’s brand, website and first
           app</a>, and in 2026 I turned to the desktop app. Radicle is a way to collaborate on code without a
           central server: your repositories, issues and patches live on your
           own machine and replicate peer to peer. <strong>Radicle Desktop</strong> is the
@@ -56,12 +56,12 @@
           reviewing patches with your own node running underneath.
         </p>
         <p>
-          This time I didn't hand anyone a Figma file. I designed directly in
-          the code and sent my work as patches, Radicle's version of pull
+          This time I didn’t hand anyone a Figma file. I designed directly in
+          the code and sent my work as patches, Radicle’s version of pull
           requests. So the tool I was designing was also the tool I used to
           ship the designs, and the maintainers (mostly Rudolfs, who reviewed
           an absurd amount of my work) reviewed my design decisions the same
-          way they review everyone's code. Every annoying thing I ran into
+          way they review everyone’s code. Every annoying thing I ran into
           while using Radicle was something I could just go fix.
         </p>
         <div class="stats">
@@ -105,10 +105,10 @@
           Color works in two layers. Underneath are primitive neutrals: an
           opaque ramp and a transparent ramp, each in a light and a dark
           version. On top of those sit semantic tokens with names that say
-          what they're for: surfaces (base, canvas, subtle), text (primary
+          what they’re for: surfaces (base, canvas, subtle), text (primary
           down to quaternary), borders, feedback colors, and brand. A
           component never asks for a hex value. It asks for
-          "subtle surface" or "tertiary text", and switching between light
+          “subtle surface” or “tertiary text”, and switching between light
           and dark mode only swaps what sits underneath.
         </p>
         <figure class="swatches" aria-label="Radicle color tokens: primitive neutral ramps, and semantic tokens mapped to them in light and dark mode.">
@@ -181,7 +181,7 @@
         </figure>
         <p>
           The payoff has been bigger than I expected. Because every color has
-          a name that says what it's for, and every component follows the
+          a name that says what it’s for, and every component follows the
           same few rules, the system is easy to build with, for people and
           for AI. The team builds a lot of Radicle with Claude Code, and a
           good design system turns out to be exactly what it needs: it picks
@@ -209,11 +209,11 @@
         <a id="patches"></a>
         <h1>Patches and code review</h1>
         <p>
-          This was the big one. Patches are Radicle's pull requests, and they
+          This was the big one. Patches are Radicle’s pull requests, and they
           are the heart of any code collaboration tool. Redesigning them took
           about five weeks of hands-on work, roughly 180 commits, and 52
-          revisions of the patch itself before it merged in August. It's the
-          part of this whole project I'm proudest of.
+          revisions of the patch itself before it merged in August. It’s the
+          part of this whole project I’m proudest of.
         </p>
         <p>
           The old patch page made reviewing feel like doing your taxes.
@@ -257,8 +257,8 @@
         <p>
           Everything hangs off one continuous rail, and every row puts its
           icon on that rail, so your eye can run straight down the history.
-          The typography does a lot of quiet work: the verbs ("pushed",
-          "commented", "accepted") are set in a lighter tertiary color and the
+          The typography does a lot of quiet work: the verbs (“pushed”,
+          “commented”, “accepted”) are set in a lighter tertiary color and the
           things that matter, the people and the content, carry the weight.
           It sounds small, but a timeline where every word is the same
           weight is a wall.
@@ -294,8 +294,8 @@
           Reviews became first-class citizens of the timeline. Each one shows
           as a pill colored by its verdict (green for accepted, red for
           rejected, grey when someone only left comments) with the summary
-          right next to it. Expand it and the reviewer's code comments sit
-          nested underneath, each trimmed to just the lines it's about, with
+          right next to it. Expand it and the reviewer’s code comments sit
+          nested underneath, each trimmed to just the lines it’s about, with
           a toggle for more context.
         </p>
         <figure class="vignette">
@@ -339,11 +339,11 @@
           <figcaption>Comment on a line to start a review.</figcaption>
         </figure>
         <p>
-          Reviews work the way you'd expect from GitHub, which honestly is
-          the point. Click a line of code and leave a comment, and you've
+          Reviews work the way you’d expect from GitHub, which honestly is
+          the point. Click a line of code and leave a comment, and you’ve
           started a draft review. A bar floats in at the bottom of the
           window with your pending comments and your file progress. When
-          you're done you publish everything at once with a verdict. And if
+          you’re done you publish everything at once with a verdict. And if
           you just want to leave a quick note on a line without the whole
           ceremony, you can do that too.
         </p>
@@ -368,7 +368,7 @@
 
         <h2>The header</h2>
         <p>
-          The top of the page answers "what is this and where is it at"
+          The top of the page answers “what is this and where is it at”
           before you scroll. The state (open, draft, archived) is a dropdown
           right next to the title, and authors can change the state of their
           own patches. Underneath, one row of metadata leads with the diff
@@ -387,7 +387,7 @@
         <figure class="video">
           <video src="/images/radicle-desktop/state-dropdown-6c94fadc.mp4" style="max-width: min(100%, 1032px)" data-autoplay muted loop playsinline preload="none"
             aria-label="Changing a patch&#x27;s state."></video>
-          <figcaption>Changing a patch&#x27;s state.</figcaption>
+          <figcaption>Changing a patch’s state.</figcaption>
         </figure>
 
         <h2>The conversation</h2>
@@ -406,8 +406,8 @@
           <figcaption>A busy thread with replies and reactions.</figcaption>
         </figure>
         <p>
-          Action buttons only show up on hover, so a long thread isn't a wall
-          of icons. Hover anyone's name for a card with what they've been
+          Action buttons only show up on hover, so a long thread isn’t a wall
+          of icons. Hover anyone’s name for a card with what they’ve been
           working on. And the comment box stays open at the bottom of the
           page instead of hiding behind a button.
         </p>
@@ -418,7 +418,7 @@
                 alt="Hover anyone for who they are and what they&#x27;ve been working on." loading="lazy" decoding="async" />
             </div>
           </div>
-          <figcaption>Hover anyone for who they are and what they&#x27;ve been working on.</figcaption>
+          <figcaption>Hover anyone for who they are and what they’ve been working on.</figcaption>
         </figure>
 
       </section>
@@ -433,8 +433,8 @@
           the state control sits next to the title, and the author, labels
           and assignees form a row of chips underneath. The description gets
           its own block and the timeline leads with who opened the issue.
-          Authors who aren't maintainers can now close their own issues,
-          which seems obvious but wasn't possible before.
+          Authors who aren’t maintainers can now close their own issues,
+          which seems obvious but wasn’t possible before.
         </p>
         <figure class="compare" data-show="after">
           <div class="compare-toggle" role="group" aria-label="Show version">
@@ -473,7 +473,7 @@
           repos, and the issues and patches inside them. It was a fixed
           column that only got longer as you seeded more repos. I rebuilt it
           across a handful of patches so it gets out of your way when you
-          want it to and stays organized when you don't.
+          want it to and stays organized when you don’t.
         </p>
         <figure class="video">
           <video src="/images/radicle-desktop/sidebar-tour-d4115361.mp4" style="max-width: min(100%, 1440px)" data-autoplay muted loop playsinline preload="none"
@@ -493,12 +493,12 @@
         <p>
           The rail keeps only what you reach for all day: Back, Forward and
           Reload, the inbox, your pinned repos, and the Issues and Patches of
-          the repo you're in. Everything else (your identity, the full repo
+          the repo you’re in. Everything else (your identity, the full repo
           list, the guide, settings, node status, counters) waits in the
           expanded view. Every row is the same square, so an icon never moves
           depending on the label next to it, and the column of icons lines up
           with the macOS window buttons. Hover anything on the rail for a
-          tooltip with its name, whether it's private, and how many open
+          tooltip with its name, whether it’s private, and how many open
           issues or patches it has. Private repos get a small lock badge on
           their avatar.
         </p>
@@ -516,8 +516,8 @@
           Drag back out and it opens again, all in a single gesture, so you
           can close and reopen it without letting go. And if you pull on the
           collapsed rail but not far enough, it stretches a little and eases
-          back, so it feels like it's resisting you rather than ignoring you.
-          Both the width and whether it's collapsed are remembered next time
+          back, so it feels like it’s resisting you rather than ignoring you.
+          Both the width and whether it’s collapsed are remembered next time
           you open the app.
         </p>
         <figure class="video">
@@ -528,7 +528,7 @@
         <figure class="video">
           <video src="/images/radicle-desktop/sidebar-rubberband-d3225184.mp4" style="max-width: min(100%, 1440px)" data-autoplay muted loop playsinline preload="none"
             aria-label="The rail resists a pull that doesn&#x27;t go far enough."></video>
-          <figcaption>The rail resists a pull that doesn&#x27;t go far enough.</figcaption>
+          <figcaption>The rail resists a pull that doesn’t go far enough.</figcaption>
         </figure>
 
         <h2>Organize your repos</h2>
@@ -543,7 +543,7 @@
           </li>
           <li>
             Filter the list by typing. The filter button slides over and
-            turns into a close button while it's open, so it's clear how to
+            turns into a close button while it’s open, so it’s clear how to
             get out.
           </li>
           <li>
@@ -593,8 +593,8 @@
         <a id="inbox"></a>
         <h1>Inbox</h1>
         <p>
-          The inbox was one very long list. If you'd been away for a week it
-          was hundreds of rows of "someone left a comment." The redesign
+          The inbox was one very long list. If you’d been away for a week it
+          was hundreds of rows of “someone left a comment.” The redesign
           adds a <strong>Latest</strong> view sorted by time, collapses long
           runs of notifications so the overview is actually an overview, and
           adds an <strong>Involves me</strong> filter for things you opened,
@@ -695,7 +695,7 @@
         </p>
         <p>
           So references are stored as <code>rad:</code> URIs (and
-          <code>did:key:</code> for people), following Radicle's own spec for
+          <code>did:key:</code> for people), following Radicle’s own spec for
           them, and the app works out where to show them.
         </p>
         <figure class="video">
@@ -709,7 +709,7 @@
           Nobody should have to type a URI. In any comment box,
           <code>@</code> suggests people, issues and patches, and
           <code>#</code> narrows that down to just issues and patches. Paste a
-          Radicle ID, a commit hash, a person's ID or an explorer URL, and the
+          Radicle ID, a commit hash, a person’s ID or an explorer URL, and the
           app offers to turn it into a link labelled with the real title or
           name. Short commit hashes get expanded so they stay unique.
         </p>
@@ -742,7 +742,7 @@
           reference reads as what it is. Files (down to line ranges),
           branches, tags and lists render as labelled links. Click one and
           it opens right in the app if the repo is on your machine, and in
-          your explorer of choice if it isn't. Right click for the explorer
+          your explorer of choice if it isn’t. Right click for the explorer
           link or the raw <code>rad:</code> URI.
         </p>
         <figure class="vignette">
@@ -768,7 +768,7 @@
         <p>
           The app also registers itself for <code>rad:</code> links, so one
           clicked in a terminal, a chat app or a browser opens straight in
-          Radicle Desktop. That's the payoff for storing links this way:
+          Radicle Desktop. That’s the payoff for storing links this way:
           they work everywhere, and they never point at a server that might
           not be there tomorrow.
         </p>
@@ -781,16 +781,16 @@
         <p>
           The hardest UX problem in a peer to peer app is that nobody knows
           where their stuff actually is. Did my patch make it to anyone? Is
-          this repo up to date? Who's allowed to change it? A bunch of my
+          this repo up to date? Who’s allowed to change it? A bunch of my
           work was about turning invisible network state into something you
           can see.
         </p>
         <p>
           The tiny Online/Offline popover became a <strong>node</strong>
           window that answers the real question, which is whether your work
-          has reached the network: "Latest patch reached 11 nodes." You can
-          see and change a repository's seeding policy, described by whose
-          work you'll get rather than by refs. And you can set your
+          has reached the network: “Latest patch reached 11 nodes.” You can
+          see and change a repository’s seeding policy, described by whose
+          work you’ll get rather than by refs. And you can set your
           preferred seeds and which explorer links open in.
         </p>
         <figure class="vignette">
@@ -810,8 +810,8 @@
           Every repository now has a readable <strong>identity
           document</strong>: who the delegates are, how many have to sign
           off on a change, and a timeline of every change to those rules,
-          including who signed and who didn't. And
-          <strong>Releases</strong> brought Radicle's new artifact system to
+          including who signed and who didn’t. And
+          <strong>Releases</strong> brought Radicle’s new artifact system to
           the desktop app, so you can publish a release with files attached
           and download them verified against their content ID.
         </p>
@@ -835,9 +835,9 @@
         <a id="identity"></a>
         <h1>One identity, many devices</h1>
         <p>
-          Here's a problem you don't have on a normal website: on Radicle,
-          you are a key. There's no account on a server, no password, no
-          "log in on your new laptop". Your identity is a cryptographic key
+          Here’s a problem you don’t have on a normal website: on Radicle,
+          you are a key. There’s no account on a server, no password, no
+          “log in on your new laptop”. Your identity is a cryptographic key
           that lives on one machine. So your laptop and your desktop are two
           different people as far as the network is concerned, and if you
           lose the machine, you lose yourself.
@@ -846,14 +846,14 @@
           The protocol team proposed a fix: make a person a repository. Your
           profile and the set of keys allowed to act as you live in a repo of
           their own, replicated like everything else, and changing it takes
-          signatures from your other devices. It's an elegant idea and a
+          signatures from your other devices. It’s an elegant idea and a
           really hard thing to explain. My job was to figure out what it
           would feel like to use, before anyone built it.
         </p>
         <p>
           So I built a click-through prototype inside the real app, running on
           fake data, that walked through every flow in the spec. My rule was
-          that nothing goes in the prototype unless it's planned for the
+          that nothing goes in the prototype unless it’s planned for the
           first version, so the team was reacting to the real thing and not
           a wish list.
         </p>
@@ -870,7 +870,7 @@
         <h2>Your profile, as others see it</h2>
         <p>
           A profile has a name, a bio, links and an avatar, like anywhere
-          else. The twist is that it's published to the network and
+          else. The twist is that it’s published to the network and
           replicated to everyone who follows you, so old values stay in the
           history forever. I put a live preview right above the form, showing
           your hover card and your Explorer page, so what you edit and what
@@ -898,7 +898,7 @@
                 alt="Being honest about what &quot;save&quot; means on a peer to peer network." loading="lazy" decoding="async" />
             </div>
           </div>
-          <figcaption>Being honest about what &quot;save&quot; means on a peer to peer network.</figcaption>
+          <figcaption>Being honest about what “save” means on a peer to peer network.</figcaption>
         </figure>
 
         <h2>Keys and two kinds of agreement</h2>
@@ -924,8 +924,8 @@
           Keys also come in two kinds. Some can act as you, some can change
           who you are, and some do both. A key that can change your identity
           but never sits on a device is a recovery key. The list shows each
-          key's role, and if you have fewer than three controlling keys the
-          app warns you, because losing one device shouldn't lock you out.
+          key’s role, and if you have fewer than three controlling keys the
+          app warns you, because losing one device shouldn’t lock you out.
         </p>
         <figure class="vignette">
           <div class="vignette-panel">
@@ -938,7 +938,7 @@
                 alt="Each key&#x27;s role, and a nudge toward a safer setup." loading="lazy" decoding="async" />
             </div>
           </div>
-          <figcaption>Each key&#x27;s role, and a nudge toward a safer setup.</figcaption>
+          <figcaption>Each key’s role, and a nudge toward a safer setup.</figcaption>
         </figure>
 
         <h2>Adding a device</h2>
@@ -979,8 +979,8 @@
         <h2>A recovery key you can actually use</h2>
         <p>
           The spec asks apps to make an offline recovery key easy to set up,
-          so it's a short guided flow. You get a recovery phrase, confirm
-          you've stored it somewhere safe, and sign it into your identity.
+          so it’s a short guided flow. You get a recovery phrase, confirm
+          you’ve stored it somewhere safe, and sign it into your identity.
           If your identity needs more than one device to agree, the change
           is proposed and waits for your other devices to approve it.
         </p>
@@ -1011,8 +1011,8 @@
         <p>
           Seeing your work as a board, the way you would in Linear or GitHub
           Projects, is something people expect from any project tool. On a
-          normal platform that's just a feature on a server. On Radicle there is no server, so the
-          question becomes: where does a board live, and who's allowed to
+          normal platform that’s just a feature on a server. On Radicle there is no server, so the
+          question becomes: where does a board live, and who’s allowed to
           move things on it?
         </p>
         <p>
@@ -1037,11 +1037,11 @@
             age.
           </li>
           <li>
-            Cards show what you need at a glance: priority, labels, who it's
+            Cards show what you need at a glance: priority, labels, who it’s
             assigned to, and how old it is.
           </li>
           <li>
-            A patch that mentions an issue shows up on that issue's card. An
+            A patch that mentions an issue shows up on that issue’s card. An
             open patch moves the issue to In Review, and a merged patch
             closes it.
           </li>
@@ -1088,11 +1088,11 @@
 
         <h2>Columns that mean something</h2>
         <p>
-          A column isn't just a label. Each one either keeps issues open,
+          A column isn’t just a label. Each one either keeps issues open,
           closes them as solved, or closes them as something else. Dragging
           an issue into Done actually closes the issue, for everyone, not
           just on your board. A repo can have several boards, but the app
-          doesn't mention that until someone makes a second one.
+          doesn’t mention that until someone makes a second one.
         </p>
         <figure class="vignette">
           <div class="vignette-panel">
@@ -1120,17 +1120,17 @@
 
         <h2>Who can move a card</h2>
         <p>
-          This was the interesting design problem. With no server, there's no
+          This was the interesting design problem. With no server, there’s no
           admin panel deciding permissions. Every peer has to reach the same
           verdict on its own about whether a move was allowed. The rule we
           landed on: maintainers can move anything, the author of an issue or
           patch can move their own card, and anyone assigned to an issue can
-          move it too. An assignee's move even points back to the moment a
+          move it too. An assignee’s move even points back to the moment a
           maintainer assigned them, as proof every peer can check. Moves that
-          aren't allowed are simply ignored.
+          aren’t allowed are simply ignored.
         </p>
         <p>
-          In the interface, that means a card you can't move doesn't pretend
+          In the interface, that means a card you can’t move doesn’t pretend
           you can. Pick it up and it stretches a little, shows a lock, and
           settles back where it was. Press Escape mid-drag and the card goes
           home too.
@@ -1138,7 +1138,7 @@
         <figure class="video">
           <video src="/images/radicle-desktop/boards-locked-ce45781c.mp4" style="max-width: min(100%, 1760px)" data-autoplay muted loop playsinline preload="none"
             aria-label="A card you&#x27;re not allowed to move."></video>
-          <figcaption>A card you&#x27;re not allowed to move.</figcaption>
+          <figcaption>A card you’re not allowed to move.</figcaption>
         </figure>
         <figure class="video">
           <video src="/images/radicle-desktop/boards-escape-2bba1878.mp4" style="max-width: min(100%, 1760px)" data-autoplay muted loop playsinline preload="none"
@@ -1156,7 +1156,7 @@
                 alt="The lock, and a card&#x27;s menu." loading="lazy" decoding="async" />
             </div>
           </div>
-          <figcaption>The lock, and a card&#x27;s menu.</figcaption>
+          <figcaption>The lock, and a card’s menu.</figcaption>
         </figure>
       </section>
       <hr />
@@ -1181,9 +1181,9 @@
         <h2>Paste anything</h2>
         <p>
           Paste any Radicle link or ID and the navigator takes you straight
-          to the repo, issue, patch or commit it points at. It doesn't matter
+          to the repo, issue, patch or commit it points at. It doesn’t matter
           which seed or explorer the link came from. If it points to
-          something that isn't on your machine yet, it tells you instead of
+          something that isn’t on your machine yet, it tells you instead of
           leaving you on a blank page.
         </p>
         <figure class="video">
@@ -1198,7 +1198,7 @@
                 alt="When the thing you pasted isn&#x27;t on your machine." loading="lazy" decoding="async" />
             </div>
           </div>
-          <figcaption>When the thing you pasted isn&#x27;t on your machine.</figcaption>
+          <figcaption>When the thing you pasted isn’t on your machine.</figcaption>
         </figure>
 
         <h2>Search everything</h2>
@@ -1240,7 +1240,7 @@
                 alt="A contribution calendar and a feed of someone&#x27;s work across repos." loading="lazy" decoding="async" />
             </div>
           </div>
-          <figcaption>A contribution calendar and a feed of someone&#x27;s work across repos.</figcaption>
+          <figcaption>A contribution calendar and a feed of someone’s work across repos.</figcaption>
         </figure>
       </section>
       <hr />
@@ -1253,7 +1253,7 @@
           patch with 40 revisions looks like, how a sidebar should feel when
           you drag it past its minimum. It also meant every design decision
           had to survive code review, which made my reasoning a lot
-          sharper. If you read the patch descriptions, they're mostly design
+          sharper. If you read the patch descriptions, they’re mostly design
           rationale.
         </p>
         <p>
