@@ -9,9 +9,9 @@
       rel="canonical"
       href="https://www.brandonoxendine.com/projects/drips"
     />
-<link rel="stylesheet" href="/assets/css/reset.css?v=20261012" />
-<link rel="stylesheet" href="/assets/css/site.css?v=20261012" />
-<link rel="stylesheet" href="/assets/css/drips.css?v=20261012" />
+<link rel="stylesheet" href="/assets/css/reset.css?v=20261012b" />
+<link rel="stylesheet" href="/assets/css/site.css?v=20261012b" />
+<link rel="stylesheet" href="/assets/css/drips.css?v=20261012b" />
 <link rel="icon" href="/favicon.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,9 +19,9 @@
   rel="stylesheet"
   href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
 />
-<script defer src="/assets/js/image-skeleton.js?v=20261012"></script>
-<script defer src="/assets/js/lightbox.js?v=20261012"></script>
-<script defer src="/assets/js/drips.js?v=20261012"></script>
+<script defer src="/assets/js/image-skeleton.js?v=20261012b"></script>
+<script defer src="/assets/js/lightbox.js?v=20261012b"></script>
+<script defer src="/assets/js/drips.js?v=20261012b"></script>
 </head>
   <body class="case-study wide-media light-page drips-page">
     <header id="site-header"></header>
@@ -49,18 +49,18 @@
           cards, a sense that money is serious business. Drips is about
           funding the people who maintain open source, which is a warmer idea
           than that, and I wanted it to look like it. The brand has a point of
-          view (a serif italic with real personality, hard black outlines, a
-          corner that drips) and I didn’t want the app to be the boring
+          view (a serif italic with real personality, hard black outlines,
+          rounded corners except in the top right so everything kind of looks
+          like a droplet) and I didn’t want the app to be the boring
           sibling of an exciting website. So the system is one thing: the same
           type, outlines and shapes run from the landing page into every form
           and modal in the product.
         </p>
         <p>
           The app started life on the Radicle design system, which I had
-          worked on before. Jason Efstathiou and I restyled it for Drips on a
-          branch that carries both our names, and it has kept growing for
-          three years: new flows, new products, new themes. I worked in Figma
-          and in the issue tracker. I’ve opened more than 300 issues on the
+          worked on before. Jason Efstathiou and I restyled it for Drips, and it
+          has kept growing for three years: new flows, new products, new
+          themes. I worked in Figma and in the issue tracker. I’ve opened more than 300 issues on the
           app: design specs, new icons and illustrations, copy changes and
           design QA, many of them pointing at frames in the Drips Figma file
           for the engineers to build from.
@@ -80,7 +80,6 @@
           <a href="#projects">Project colors</a>,
           <a href="#website">Website</a>,
           <a href="#app">App</a>,
-          <a href="#illustrations">Illustrations</a>,
           <a href="#conference">Conference materials</a>
         </p>
       </section>
@@ -284,16 +283,13 @@
               </div>
             </div>
           </div>
-          <figcaption>A working sample of the Drips design system, built from its real tokens and component styles.</figcaption>
+          <figcaption>A working sample of the Drips design system.</figcaption>
         </figure>
 
         <p>
-          A few decisions hold the whole thing together. Borders aren’t
-          borders: they’re hairline box-shadows that turn into a solid outline
-          with a hard, unblurred drop when you hover, and the element lifts two
-          pixels to meet you. Nothing in the system uses a soft shadow. The
-          drip corner, square at the top right and round everywhere else, is
-          on every button, card, input, badge and modal. And each color token
+          Shadows in the app are hard lines, never soft blurs. The drip corner,
+          square at the top right and round everywhere else, is on every
+          button, card, input, badge and modal. And each color token
           comes in a base and three levels (a tint, a stronger tint and a
           readable shade) so any color can be used for a background, a
           border or text without picking new values.
@@ -315,8 +311,7 @@
         <p>
           Because every component asks for a token and never a hex value, a
           theme is just a different set of values. Drips has three: light,
-          dark, and h4x0r, a green-on-black terminal theme that lives on from
-          Radicle. On top of that you can choose a primary color. A small
+          dark, and h4x0r, a green-on-black terminal theme. On top of that you can choose a primary color. A small
           script runs before the page paints, reads your choices and sets
           them on the page, so there’s never a flash of the wrong theme.
         </p>
@@ -352,10 +347,7 @@
           Themes are global, but Drips also lets each project bring its own
           color. When you claim a project you pick an emoji and one of fifteen
           colors, and the project’s card, avatar, badge and page are themed
-          with it. In code, a wrapper re-declares just the four primary tokens
-          for everything inside it: the color, a 17% tint, a 37% tint and a
-          shade thirty steps darker (or lighter, in the dark themes). Nothing
-          inside needs to know. Click a card to cycle its color; it works in
+          with it. Click a card to cycle its color; it works in
           every theme above.
         </p>
 
@@ -376,7 +368,7 @@
               </div>
             </div>
           </div>
-          <figcaption>Project cards rebuilt from the app’s component, each with its own color. Sample data; the colors are from the real palette of fifteen.</figcaption>
+          <figcaption>Project cards rebuilt from the app’s component, each with its own color.</figcaption>
         </figure>
       </section>
 
@@ -547,71 +539,7 @@
           <figcaption>Various modals from the app.</figcaption>
         </figure>
 
-        <div class="columns columns-3">
-          <figure>
-            <img
-              src="/images/drips/Screenshot-2023-11-07-at-12-7676fde1.19.03.png" width="920" height="1692"
-              alt="" loading="lazy" decoding="async" />
-          </figure>
-
-          <figure>
-            <img
-              src="/images/drips/Screenshot-2023-11-07-at-12-6f1b4ff5.20.13.png" width="922" height="1684"
-              alt="" loading="lazy" decoding="async" />
-          </figure>
-
-          <figure>
-            <img
-              src="/images/drips/Screenshot-2023-11-07-at-12-cf2c430c.25.36.png" width="922" height="1678"
-              alt="" loading="lazy" decoding="async" />
-          </figure>
-        </div>
-
         <p class="jump"><a href="https://drips.network/app" target="_blank">Check out the app ↗</a></p>
-      </section>
-      <hr />
-      <section id="illustrations">
-        <h2>Illustrations</h2>
-
-        <p>
-          A range of illustrations were made from larger spot illustrations
-          below, to other more utilitarian things like customized emojis and a
-          full icon set.
-        </p>
-
-        <div class="columns columns-3">
-          <figure>
-            <img src="/images/drips/Multi-chain-e321878e.png" width="1000" height="1000" alt="" loading="lazy" decoding="async" />
-          </figure>
-
-          <figure>
-            <img
-              src="/images/drips/No-need-to-wrap-tokens-b4f4759d.png" width="1000" height="1000"
-              alt="" loading="lazy" decoding="async" />
-          </figure>
-
-          <figure>
-            <img src="/images/drips/Multi-token-8e1350b1.png" width="1000" height="1000" alt="" loading="lazy" decoding="async" />
-          </figure>
-
-          <figure>
-            <img
-              src="/images/drips/Optimized-for-1000s-of-senders-d350db9e.png" width="1000" height="1000"
-              alt="" loading="lazy" decoding="async" />
-          </figure>
-
-          <figure>
-            <img
-              src="/images/drips/One-balance-for-all-your-streams-5b8e4a6b.png" width="1000" height="1000"
-              alt="" loading="lazy" decoding="async" />
-          </figure>
-        </div>
-
-        <p>
-          The custom icons and customized Twemoji are part of the system, so
-          they’re shown live, in every theme, <a href="#system">in the design system
-          section above</a>.
-        </p>
       </section>
       <hr />
       <section id="conference">
@@ -829,6 +757,6 @@
       </section>
       <hr />
     </main>
-    <script src="/assets/js/include-header.js?v=20261012"></script>
+    <script src="/assets/js/include-header.js?v=20261012b"></script>
   </body>
 </html>

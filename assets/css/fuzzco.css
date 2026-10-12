@@ -8,12 +8,6 @@ body.fuzzco-page {
   color: var(--fz-red);
 }
 
-@media (max-width: 900px) {
-  body.fuzzco-page header {
-    background: #fff;
-  }
-}
-
 body.fuzzco-page a:hover {
   color: var(--fz-red);
   background: var(--fz-yellow);
