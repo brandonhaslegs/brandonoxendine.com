@@ -4,149 +4,283 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Fuzzco.com by Brandon Oxendine</title>
-    <meta
-      name="description"
-      content="I led the design on the Fuzzco website while I was there. We released it in 
-2015 and I have to say it’s still looking strong and quite current for its 
-age."
-    />
+    <meta name="description" content="Fuzzco's studio site, 2015 to 2023: a three-color identity, a row-based layout system that ran the homepage and every case study, and a homepage that scrolled itself forever." />
     <link
       rel="canonical"
       href="https://www.brandonoxendine.com/projects/fuzzco"
     />
 <link rel="stylesheet" href="/assets/css/reset.css" />
 <link rel="stylesheet" href="/assets/css/site.css" />
+<link rel="stylesheet" href="/assets/css/fuzzco.css" />
 <link rel="icon" href="/favicon.png" />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link
-  rel="stylesheet"
-  href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
-/>
 <script defer src="/assets/js/image-skeleton.js"></script>
+<script defer src="/assets/js/compare.js"></script>
+<script defer src="/assets/js/lightbox.js"></script>
+<script defer src="/assets/js/fuzzco.js"></script>
 </head>
-  <body class="fuzzco">
+  <body class="case-study wide-media fuzzco-page">
     <header id="site-header"></header>
 
     <main>
-      <section class="project-intro">
-        <h1>Fuzzco.com</h1>
-        <p>
-          I led the design on the Fuzzco website while I was there. It was a
-          dynamic but simple studio website that lived on for 8 years (that’s an
-          eternity in design studio website years).
-        </p>
-        <p>
-          Role: <a href="/pages/categories/visual-design">Visual Design</a></p>
-      </section>
+      <h1>Fuzzco.com</h1>
+
+      <p>
+        The website of Fuzzco, the design studio where I was a designer and
+        later Design Director. I led its design in 2015, and it ran almost unchanged
+        for eight years.
+      </p>
+      <p>
+        Role: Design Director · <a href="/pages/categories/visual-design">Visual Design</a></p>
 
       <hr />
       <section>
         <figure>
-          <img
-            src="/images/fuzzco/fuzzco-home-1-f6e9de02.jpg" width="2500" height="2613"
-            alt="fuzzco-home-1.jpg" loading="lazy" decoding="async" />
+          <img src="/images/fuzzco-system/page-home-2016-f710bdf0.webp" width="2400" height="1500"
+            alt="Fuzzco.com's homepage in 2016: a red bar, the Office, Work and Contact navigation, and a full-width studio photo." loading="eager" decoding="async" />
+          <figcaption>The homepage in 2016, from the Wayback Machine.</figcaption>
         </figure>
 
         <p>
-          The main eye-catching feature of the Fuzzco site is definitely the
-          auto-scrolling home page. We wanted to grab attention and do something
-          a bit crazy, but still present our work in a minimal and respectable
-          way. What we came up with is a feed of images and text (customizable
-          by anyone via the backend) that auto-scrolls. The page also has “no
-          end” meaning when you reach one end, the other end appears. So a user
-          can literally scroll forever. It’s fun.
+          A studio site has a hard job. It has to show a lot of very different
+          work, change every few weeks, and still look like the studio rather
+          than like its clients. Case study pages usually go wrong in one of
+          two ways: each one is designed and built by hand, so new work takes
+          forever to go up, or they all come out of one rigid template and look
+          generic.
         </p>
         <p>
-          Another noteworthy feature of this page is that when a user scrolls
-          the page on their own, the auto-scroll will then begin scrolling in
-          the direction the user began scrolling.
+          The answer was a small system. A strict identity (three colors, one
+          typeface, one line weight) holds everything together, and a single
+          layout module lets anyone in the studio compose a page from rows.
+          That same module ran the homepage and every case study for eight
+          years, from March 2015 until the site was replaced in 2023.
         </p>
 
-        <figure>
-          <img
-            src="/images/fuzzco/fuzzco-home-2-16b5414d.jpg" width="2500" height="2613"
-            alt="fuzzco-home-2.jpg" loading="lazy" decoding="async" />
-        </figure>
+        <div class="stats">
+          <div><strong>8</strong><span>years live</span></div>
+          <div><strong>3</strong><span>colors</span></div>
+          <div><strong>1</strong><span>typeface</span></div>
+          <div><strong>12</strong><span>columns</span></div>
+        </div>
 
-        <figure>
-          <img
-            src="/images/fuzzco/fuzzco-scroll-5bf2c11e.gif" width="800" height="600"
-            alt="fuzzco-scroll.gif" loading="lazy" decoding="async" />
-        </figure>
+        <p class="jump">
+          Jump to:
+          <a href="#identity">Identity</a>,
+          <a href="#layout">Layout system</a>,
+          <a href="#scroll">The endless homepage</a>,
+          <a href="#office">Office</a>
+        </p>
       </section>
+
       <hr />
-      <section>
+      <section id="identity">
+        <h2>Three colors, one typeface</h2>
+        <p>
+          The identity is almost nothing, on purpose. Everything (text,
+          links, rules, borders) is one red on white. Yellow appears only when
+          you touch something: a hover, a text selection. There's no black and
+          no gray anywhere on the site. Every line is the same 3px red stroke.
+          And there's one typeface, GT Haptik, in one weight, from the 150px
+          display size down to the 15px footer.
+        </p>
+
+        <figure class="fz-stage">
+          <div class="fz-colors">
+            <div style="--c: #FFFFFF"><i></i><span>canvas</span><code>#FFFFFF</code></div>
+            <div style="--c: #F72E2A"><i></i><span>primary</span><code>#F72E2A</code></div>
+            <div style="--c: #FFFF00"><i></i><span>secondary, hover only</span><code>#FFFF00</code></div>
+            <div class="fz-stroke"><i></i><span>stroke</span><code>3px solid primary</code></div>
+          </div>
+          <figcaption>The whole palette, from the site's original stylesheet.</figcaption>
+        </figure>
+
         <figure>
-          <img
-            src="/images/fuzzco/fuzzco-contact-d09c6d6d.png" width="2500" height="1639"
-            alt="fuzzco-contact.png" loading="lazy" decoding="async" />
+          <img src="/images/fuzzco-system/type-83b02b38.webp" width="2400" height="1682" style="max-width: 1200px"
+            alt="The type scale in GT Haptik: 150, 70, 54, 30, 18 and 15 pixels, all in red." class="zoomable" loading="lazy" decoding="async" />
+          <figcaption>The type scale at its largest breakpoint, set in GT Haptik. Rebuilt from the original stylesheet.</figcaption>
         </figure>
       </section>
+
       <hr />
-      <section>
+      <section id="layout">
+        <h2>A layout system anyone could use</h2>
         <p>
-          One huge feature we built on the site was a super easy and flexible
-          system for adding case studies. Sites that have case studies often
-          suffer from either doing them far too custom and as a result taking
-          forever to publish new work, or looking too generic because it’s based
-          on a generic template.
+          Every page is a stack of rows on a 12-column grid with a 3% gutter,
+          and each row is split into columns: one full-width, two halves, three
+          thirds, four quarters. Each cell holds one of three things. An image,
+          which reserves its exact proportions before it loads so the page
+          never jumps, and can show its title in a small white square on hover.
+          A text box, with a fill (empty, a red stroke, or solid red), an
+          alignment, and a size. Or a blank, which is how you push an image off
+          center. That's the whole vocabulary.
         </p>
         <p>
-          On Fuzzco.com we developed a super simple system for adding images
-          text, and links that makes it easy to upload images, position text
-          wherever you want, and make every case study feel special. This same
-          layout system powers the home page too, allowing anyone to update it
-          and keep it fresh.
+          The one clever bit is that text sizes itself to its column. A
+          sentence in a full-width row comes out at 54px, in a half at 30px,
+          in a third or a quarter at 18px, so editors almost never had to pick
+          a size. The pages look composed rather than templated because the
+          ingredients vary (image proportions, blanks, the three text
+          treatments, a different split on every row), not because anyone
+          placed things by hand.
         </p>
 
+        <figure class="fz-demo-figure">
+          <div class="fz-demo-bar">
+            <button type="button" class="fz-toggle" data-fz-grid aria-pressed="false">Show grid</button>
+            <button type="button" class="fz-toggle" data-fz-play aria-pressed="true">Auto-scroll on</button>
+          </div>
+          <div class="fz-window">
+            <div class="fz-scroller" tabindex="0" aria-label="A working sample of the Fuzzco homepage feed. It scrolls itself; scroll it to change direction.">
+            <div class="fz-feed">
+              <template class="fz-section">
+                <div class="fz-row">
+                  <div class="fz-col col12 fz-text">A creative agency. We partner with clients to design influential brand experiences.</div>
+                </div>
+                <div class="fz-row">
+                  <a class="fz-col col6 fz-img" href="#layout" style="--ratio: 66%"><img src="/images/fuzzco-system/cell-people-7c66e384.webp" alt="" loading="lazy" data-no-skeleton /><span class="fz-title">The Studio</span></a>
+                  <a class="fz-col col6 fz-img" href="#layout" style="--ratio: 66%"><img src="/images/fuzzco-system/cell-candlefish-30e0d722.webp" alt="" loading="lazy" data-no-skeleton /><span class="fz-title">Candlefish</span></a>
+                </div>
+                <div class="fz-row">
+                  <div class="fz-col col4 fz-blank"></div>
+                  <div class="fz-col col4 fz-text fz-stroke-box">Mohawk General Store</div>
+                  <div class="fz-col col4 fz-blank"></div>
+                </div>
+                <div class="fz-row">
+                  <a class="fz-col col12 fz-img" href="#layout" style="--ratio: 45%"><img src="/images/fuzzco-system/cell-mohawk-a8b97a3d.webp" alt="" loading="lazy" data-no-skeleton /><span class="fz-title">Mohawk</span></a>
+                </div>
+                <div class="fz-row">
+                  <div class="fz-col col4 fz-text fz-fill-box">Brand identity, packaging and e-commerce.</div>
+                  <a class="fz-col col4 fz-img" href="#layout" style="--ratio: 146%"><img src="/images/fuzzco-system/cell-hugh-ca782b9f.webp" alt="" loading="lazy" data-no-skeleton /><span class="fz-title">Hugh &amp; Crye</span></a>
+                  <div class="fz-col col4 fz-text">Charleston and Portland.</div>
+                </div>
+                <div class="fz-row">
+                  <a class="fz-col col12 fz-img" href="#layout" style="--ratio: 45%"><img src="/images/fuzzco-system/cell-obey-e0ed5be3.webp" alt="" loading="lazy" data-no-skeleton /><span class="fz-title">Obey</span></a>
+                </div>
+              </template>
+            </div>
+            </div>
+            <div class="fz-grid-overlay" aria-hidden="true"><div><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+          </div>
+          <figcaption>A working sample of the system: the real grid, gutters, colors, strokes and auto-sizing text, with imagery from the archived site. The type is a stand-in for GT Haptik. Scroll inside it.</figcaption>
+        </figure>
+
         <figure>
-          <img
-            src="/images/fuzzco/fuzzco-case-study-850316d6.jpg" width="2500" height="9594"
-            alt="fuzzco-case-study.jpg" loading="lazy" decoding="async" />
+          <div class="columns columns-2">
+            <img src="/images/fuzzco-system/page-mohawk-99fc6089.webp" width="2400" height="1500" alt="The Mohawk General Store case study." loading="lazy" decoding="async" />
+            <img src="/images/fuzzco-system/page-candlefish-bd9cf7df.webp" width="2400" height="1500" alt="The Candlefish case study." loading="lazy" decoding="async" />
+          </div>
+          <figcaption>Two case studies built with it, as archived in 2017.</figcaption>
+        </figure>
+
+        <figure>
+          <img src="/images/fuzzco/fuzzco-case-study-850316d6.jpg" width="2500" height="9594" alt="A full case study page made of stacked rows." loading="lazy" decoding="async" class="fz-tall" />
+          <figcaption>A whole case study, row by row.</figcaption>
         </figure>
       </section>
+
       <hr />
-      <section>
-        <figure>
-          <img
-            src="/images/fuzzco/fuzzco-where-9a85ac45.jpg" width="2500" height="2432"
-            alt="fuzzco-where.jpg" loading="lazy" decoding="async" />
-        </figure>
-
+      <section id="scroll">
+        <h2>The endless homepage</h2>
         <p>
-          One last little feature that I love about this site is on the Office
-          page. We did illustrations of the Fuzzco locations and then displayed
-          the weather on top of the current time at that office. The thing I
-          love about it is that the sun (or cloud, or moon) moves across the sky
-          in the illustration according to the current time. It’s one of my
-          favorite things I’ve ever done. I love tiny details like that that
-          barely make a difference but just show an almost insane sense of
-          refinement.
+          We wanted the homepage to grab attention and do something a bit
+          crazy, while still presenting the work plainly. So it scrolls
+          itself. The homepage is a curated section built from the same rows
+          as the case studies, and the site stacks ten copies of it and starts
+          you in the middle. It drifts down by a pixel every 30 milliseconds,
+          about 33 pixels a second. When you get near either end, a section is
+          quietly moved from one end to the other and the scroll position is
+          compensated, so it never runs out in either direction.
+        </p>
+        <p>
+          And if you scroll yourself, it stops to let you,
+          and when you let go it carries on in the direction you were going.
+          Scroll up and the whole studio starts drifting upward. The sample
+          above does exactly the same thing, ported from the original
+          JavaScript.
         </p>
 
         <figure>
-          <img
-            src="/images/fuzzco/fuzzco-building-weather-time-feature-9be4e788.gif" width="800" height="600"
-            alt="fuzzco-building-weather-time-feature.gif" loading="lazy" decoding="async" />
+          <img src="/images/fuzzco/fuzzco-scroll-5bf2c11e.gif" width="800" height="600" alt="The homepage scrolling on its own." loading="lazy" decoding="async" />
+          <figcaption>The homepage scrolling itself.</figcaption>
+        </figure>
+
+        <pre class="fz-code"><code>// Stop automatic scroll when user is scrolling, and change direction if need be.
+if (page.prevScroll + 2 &lt; scrollTop || page.prevScroll - 2 &gt; scrollTop) {
+  page.stopScrolling = true;
+  clearTimeout(page.startScrollTimer);
+  page.startScrollTimer = setTimeout(function() { page.stopScrolling = false; }, 50);
+  if (page.prevScroll + 30 &lt; scrollTop) { page.goingDown = false; }
+  if (page.prevScroll - 30 &gt; scrollTop) { page.goingDown = true; }
+}</code></pre>
+        <p class="fz-code-note">From the site's original JavaScript, recovered from the archive. (Yes, <code>goingDown: true</code> scrolls up.)</p>
+
+        <figure>
+          <div class="columns columns-2">
+            <img src="/images/fuzzco/fuzzco-home-1-f6e9de02.jpg" width="2500" height="2613" alt="The homepage feed." loading="lazy" decoding="async" />
+            <img src="/images/fuzzco/fuzzco-home-2-16b5414d.jpg" width="2500" height="2613" alt="More of the homepage feed." loading="lazy" decoding="async" />
+          </div>
         </figure>
       </section>
+
+      <hr />
+      <section id="office">
+        <h2>Office</h2>
+        <p>
+          The Office page had one box per studio, in Charleston and Portland,
+          each with a line drawing of the building, the local time, the
+          weather, the temperature and how many people work there. The weather
+          icon sits in the sky and moves across it through the day: its
+          position is how far the city is between sunrise and sunset (or
+          sunset and sunrise, when it turns into a moon). Hover a box and the
+          lights come on in the windows.
+        </p>
+        <p>
+          It's one of my favorite things I've ever made. It barely makes a
+          difference to anyone, and that's exactly why I like it.
+        </p>
+
+        <figure class="compare" data-show="after">
+          <div class="compare-toggle" role="group" aria-label="Show version">
+            <button type="button" data-version="before" aria-pressed="false">Lights off</button>
+            <button type="button" data-version="after" aria-pressed="true">Lights on</button>
+          </div>
+          <div class="compare-stage">
+            <div class="compare-layer" data-version="before">
+              <img src="/images/fuzzco-system/page-office-80728515.webp" width="2400" height="885"
+                alt="Charleston and Portland boxes with time, weather, temperature and headcount." loading="lazy" decoding="async" />
+            </div>
+            <div class="compare-layer" data-version="after">
+              <img src="/images/fuzzco-system/page-office-hover-ac7a9498.webp" width="2400" height="885"
+                alt="The Charleston box on hover, its name highlighted yellow and the building's windows lit." loading="lazy" decoding="async" />
+            </div>
+          </div>
+          <figcaption>The Office page in June 2017, at rest and with Charleston hovered.</figcaption>
+        </figure>
+
+        <figure>
+          <img src="/images/fuzzco/fuzzco-building-weather-time-feature-9be4e788.gif" width="800" height="600" alt="The building illustrations, weather icons and time." loading="lazy" decoding="async" />
+        </figure>
+
+        <figure>
+          <img src="/images/fuzzco/fuzzco-where-9a85ac45.jpg" width="2500" height="2432" alt="The Where page." loading="lazy" decoding="async" />
+        </figure>
+
+        <figure>
+          <img src="/images/fuzzco/fuzzco-contact-d09c6d6d.png" width="2500" height="1639" alt="The Contact page." loading="lazy" decoding="async" />
+          <figcaption>The Contact page.</figcaption>
+        </figure>
+      </section>
+
       <hr />
       <section>
         <div class="project-nav">
           <div class="project-nav-item">
             <p>Previous project</p>
-            <h2>
-              <a href="/projects/startups-get-grover">Startups get Grover</a>
-            </h2>
+            <h2><a href="/projects/migaku">Migaku</a></h2>
           </div>
           <div class="project-nav-item">
             <p>Next project</p>
-            <h2>
-              <a href="/projects/product-design/is-there-a-line-at"
-                >Is there a line at…?</a
-              >
-            </h2>
+            <h2><a href="/projects/radicle-desktop">Radicle</a></h2>
           </div>
         </div>
       </section>
