@@ -312,3 +312,24 @@
     transition: none;
   }
 }
+
+/* Cycling collection tile */
+.range-cycle {
+  display: block;
+  position: relative;
+  aspect-ratio: 1;
+}
+
+.range-cycle img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 0;
+  visibility: hidden;
+}
+
+.range-cycle img.is-active {
+  visibility: visible;
+}
