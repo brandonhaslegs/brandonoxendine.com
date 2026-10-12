@@ -702,3 +702,8 @@ figure.tabs {
     transition: none;
   }
 }
+
+/* No hairline outlines around images on this page */
+body.drips-page main img {
+  outline: none;
+}
