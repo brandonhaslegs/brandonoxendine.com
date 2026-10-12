@@ -51,6 +51,26 @@
   color: hotpink;
 }
 
+.home-hero h1 em {
+  position: relative;
+  white-space: nowrap;
+}
+
+.hero-emoji {
+  /* Positioned by its center, in units of the headline size, then scaled
+     down, so the stickers stay pinned to the words at every breakpoint. */
+  position: absolute;
+  left: var(--x);
+  top: var(--y);
+  font-size: inherit;
+  line-height: 1;
+  transform: translate(-50%, -50%) rotate(var(--r)) scale(0.44);
+  pointer-events: none;
+  user-select: none;
+}
+
+
+
 .home-hero-meta {
   max-width: 34em;
   margin-left: calc(100% / 3);
