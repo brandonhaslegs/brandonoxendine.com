@@ -4,13 +4,14 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Drips by Brandon Oxendine</title>
-    <meta name="description" content="An app that allows users to stream money to anyone, with the underlying goal to make open source work sustainable. The visual identity and user experience" />
+    <meta name="description" content="The Drips design system: one visual language for brand and product, with themes, primary colors and per-project colors built on tokens." />
     <link
       rel="canonical"
       href="https://www.brandonoxendine.com/projects/drips"
     />
 <link rel="stylesheet" href="/assets/css/reset.css" />
 <link rel="stylesheet" href="/assets/css/site.css" />
+<link rel="stylesheet" href="/assets/css/drips.css" />
 <link rel="icon" href="/favicon.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,36 +20,369 @@
   href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
 />
 <script defer src="/assets/js/image-skeleton.js"></script>
+<script defer src="/assets/js/lightbox.js"></script>
+<script defer src="/assets/js/drips.js"></script>
 </head>
-  <body>
+  <body class="case-study wide-media light-page drips-page">
     <header id="site-header"></header>
 
     <main>
-      <section class="project-intro">
-        <h1>Drips</h1>
+      <h1>Drips</h1>
+
+      <p>
+        Drips lets anyone stream money to the open source projects they depend
+        on, by the second, or split it across lists of projects. I designed the
+        product, the website and a design system that makes the brand and the
+        app the same thing.
+      </p>
+      <p>
+        Role: <a href="/pages/categories/visual-design">Visual Design</a>, <a href="/pages/categories/branding">Branding</a>, <a href="/pages/categories/illustration">Illustration</a>, <a href="/pages/categories/icons">Icons</a>, <a href="/pages/categories/design-system">Design System</a><br />Illustration, Branding: <a href="https://woahthatscrazy.com" target="_blank">Matt Massara</a><br />Other designers: <a href="https://jason-e.dev" target="_blank">Jason Efstathiou</a>, <a href="https://everettwilliams.info" target="_blank">Everett Williams</a><br />Live at <a href="https://drips.network" target="_blank">drips.network</a></p>
+
+      <hr />
+      <section>
+        <figure>
+          <img src="/images/drips/header-16bba265.png" width="1570" height="574" alt="The Drips wordmark with chains, coins and sparkles." loading="eager" decoding="async" />
+        </figure>
+
         <p>
-          <strong
-            >An app that allows users to stream money to anyone, with the
-            underlying goal to make open source work sustainable. The visual
-            identity and user experience were created to stand apart from
-            typical crypto or finance apps, while still being super intuitive
-            and easy to use.</strong
-          >
+          Most crypto and finance apps look the same: dark gradients, glassy
+          cards, a sense that money is serious business. Drips is about
+          funding the people who maintain open source, which is a warmer idea
+          than that, and I wanted it to look like it. The brand has a point of
+          view (a serif italic with real personality, hard black outlines, a
+          corner that drips) and I didn't want the app to be the boring
+          sibling of an exciting website. So the system is one thing: the same
+          type, outlines and shapes run from the landing page into every form
+          and modal in the product.
         </p>
         <p>
-          Role: <a href="/pages/categories/visual-design">Visual Design</a>, <a href="/pages/categories/branding">Branding</a>, <a href="/pages/categories/illustration">Illustration</a>, <a href="/pages/categories/icons">Icons</a>, <a href="/pages/categories/design-system">Design System</a><br />Illustration, Branding: <a href="https://woahthatscrazy.com" target="_blank">Matt Massara</a><br />Other designers: <a href="https://jason-e.dev" target="_blank">Jason Efstathiou</a>, <a href="https://everettwilliams.info" target="_blank" >Everett Williams</a></p>
-        <p>
-          View it live:
-          <a href="https://drips.network" target="_blank">drips.network</a>
+          The app started life on the Radicle design system, which I had
+          worked on before. Jason Efstathiou and I restyled it for Drips on a
+          branch that carries both our names, and it has kept growing for
+          three years: new flows, new products, new themes. I worked in Figma
+          and in the issue tracker. I've opened more than 300 issues on the
+          app: design specs, new icons and illustrations, copy changes and
+          design QA, many of them pointing at frames in the Drips Figma file
+          for the engineers to build from.
+        </p>
+
+        <div class="stats">
+          <div><strong>3</strong><span>themes: light, dark and h4x0r</span></div>
+          <div><strong>5</strong><span>primary colors to choose from</span></div>
+          <div><strong>15</strong><span>project colors</span></div>
+          <div><strong>332</strong><span>issues I opened on the app</span></div>
+        </div>
+
+        <p class="jump">
+          Jump to:
+          <a href="#system">Design system</a>,
+          <a href="#themes">Themes</a>,
+          <a href="#projects">Project colors</a>,
+          <a href="#website">Website</a>,
+          <a href="#app">App</a>,
+          <a href="#illustrations">Illustrations</a>,
+          <a href="#conference">Conference materials</a>
         </p>
       </section>
 
-      <section>
-        <figure>
-          <img src="/images/drips/header-16bba265.png" width="1570" height="574" alt="" loading="lazy" decoding="async" />
+      <hr />
+      <section id="system">
+        <h2>Design system</h2>
+        <p>
+          Everything below is live. It runs on Drips' actual tokens and
+          component styles, copied from the app's source, and the switches at
+          the top do exactly what the Settings page in the app does: they set
+          a theme and a primary color, and every token underneath follows.
+          Hover the buttons and the card to see the outline style.
+        </p>
+
+        <figure class="lab-figure">
+          <div class="drips-lab" id="drips-lab">
+            <div class="drips-controls">
+              <div>
+                <span class="typo-header-5 muted">Theme</span>
+                <div class="drips-segmented" data-attr="theme" role="group" aria-label="Theme">
+                  <button type="button" data-value="" aria-pressed="true">Light</button>
+                  <button type="button" data-value="dark" aria-pressed="false">Dark</button>
+                  <button type="button" data-value="h4x0r" aria-pressed="false">h4x0r</button>
+                </div>
+              </div>
+              <div>
+                <span class="typo-header-5 muted">Primary color</span>
+                <div class="drips-segmented" data-attr="primary-color" role="group" aria-label="Primary color">
+                  <button type="button" data-value="" aria-pressed="true">Default</button>
+                  <button type="button" data-value="blue" aria-pressed="false">Blue</button>
+                  <button type="button" data-value="red" aria-pressed="false">Red</button>
+                  <button type="button" data-value="orange" aria-pressed="false">Orange</button>
+                  <button type="button" data-value="pink" aria-pressed="false">Pink</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="drips-group">
+              <h3 class="typo-header-5">Type</h3>
+              <div class="drips-type-specimen">
+                <div class="big">Fund open source</div>
+                <div>
+                  <p class="typo-header-1">Redaction, italic</p>
+                  <p class="muted">Every h1 and every project name. Everything else is Inter, with a few stylistic sets switched on.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="drips-group">
+              <h3 class="typo-header-5">Color</h3>
+              <div class="drips-swatches" data-swatches>
+                <div class="drips-swatch" style="--c: var(--color-primary)"><i></i><span>primary</span><code data-token="--color-primary"></code></div>
+                <div class="drips-swatch" style="--c: var(--color-primary-level-1)"><i></i><span>primary-level-1</span><code data-token="--color-primary-level-1"></code></div>
+                <div class="drips-swatch" style="--c: var(--color-primary-level-2)"><i></i><span>primary-level-2</span><code data-token="--color-primary-level-2"></code></div>
+                <div class="drips-swatch" style="--c: var(--color-primary-level-6)"><i></i><span>primary-level-6</span><code data-token="--color-primary-level-6"></code></div>
+                <div class="drips-swatch" style="--c: var(--color-positive)"><i></i><span>positive</span><code data-token="--color-positive"></code></div>
+                <div class="drips-swatch" style="--c: var(--color-caution)"><i></i><span>caution</span><code data-token="--color-caution"></code></div>
+                <div class="drips-swatch" style="--c: var(--color-negative)"><i></i><span>negative</span><code data-token="--color-negative"></code></div>
+                <div class="drips-swatch" style="--c: var(--color-background)"><i></i><span>background</span><code data-token="--color-background"></code></div>
+                <div class="drips-swatch" style="--c: var(--color-foreground-level-1)"><i></i><span>foreground-level-1</span><code data-token="--color-foreground-level-1"></code></div>
+                <div class="drips-swatch" style="--c: var(--color-foreground-level-2)"><i></i><span>foreground-level-2</span><code data-token="--color-foreground-level-2"></code></div>
+                <div class="drips-swatch" style="--c: var(--color-foreground-level-3)"><i></i><span>foreground-level-3</span><code data-token="--color-foreground-level-3"></code></div>
+                <div class="drips-swatch" style="--c: var(--color-foreground-level-4)"><i></i><span>foreground-level-4</span><code data-token="--color-foreground-level-4"></code></div>
+                <div class="drips-swatch" style="--c: var(--color-foreground-level-5)"><i></i><span>foreground-level-5</span><code data-token="--color-foreground-level-5"></code></div>
+                <div class="drips-swatch" style="--c: var(--color-foreground-level-6)"><i></i><span>foreground-level-6</span><code data-token="--color-foreground-level-6"></code></div>
+                <div class="drips-swatch" style="--c: var(--color-foreground)"><i></i><span>foreground</span><code data-token="--color-foreground"></code></div>
+              </div>
+            </div>
+
+            <div class="drips-group">
+              <h3 class="typo-header-5">Shape</h3>
+              <div class="drips-corner">
+                <figure><div style="height: 40px; border-radius: 0.5rem 0 0.5rem 0.5rem"></div><figcaption>small chips<br /><code>0.5rem 0 0.5rem 0.5rem</code></figcaption></figure>
+                <figure><div style="height: 64px; border-radius: 1rem 0 1rem 1rem"></div><figcaption>buttons, cards<br /><code>1rem 0 1rem 1rem</code></figcaption></figure>
+                <figure><div style="height: 88px; border-radius: 1.5rem 0 1.5rem 1.5rem"></div><figcaption>large buttons<br /><code>1.5rem 0 1.5rem 1.5rem</code></figcaption></figure>
+                <figure><div style="height: 112px; border-radius: 2rem 0 2rem 2rem"></div><figcaption>modals, inputs, badges<br /><code>2rem 0 2rem 2rem</code></figcaption></figure>
+              </div>
+            </div>
+
+            <div class="drips-group">
+              <h3 class="typo-header-5">Elevation</h3>
+              <div class="drips-elevation">
+                <div class="low">low · at rest</div>
+                <div class="medium">medium · hover</div>
+                <div class="high">high · modals</div>
+              </div>
+            </div>
+
+            <div class="drips-group">
+              <h3 class="typo-header-5">Buttons</h3>
+              <div class="drips-row">
+                <button type="button" class="drips-btn"><span class="inner normal with-icon"><img data-inline data-no-skeleton src="/images/drips-system/icons/Wallet.svg" alt="" width="24" height="24" />Connect</span></button>
+                <button type="button" class="drips-btn"><span class="inner primary with-icon"><img data-inline data-no-skeleton src="/images/drips-system/icons/TokenStreams.svg" alt="" width="24" height="24" />Start a stream</span></button>
+                <button type="button" class="drips-btn"><span class="inner caution">Top up</span></button>
+                <button type="button" class="drips-btn"><span class="inner destructive">Delete Drip List</span></button>
+                <button type="button" class="drips-btn"><span class="inner ghost">Cancel</span></button>
+              </div>
+              <div class="drips-row">
+                <button type="button" class="drips-btn size-large"><span class="inner primary">Fund this project</span></button>
+                <button type="button" class="drips-btn size-small"><span class="inner normal">Explore projects</span></button>
+                <button type="button" class="drips-btn" aria-label="Search"><span class="inner normal"><img data-inline data-no-skeleton src="/images/drips-system/icons/MagnifyingGlass.svg" alt="" width="24" height="24" /></span></button>
+                <button type="button" class="drips-btn disabled" tabindex="-1"><span class="inner primary">Disabled</span></button>
+              </div>
+            </div>
+
+            <div class="drips-group">
+              <h3 class="typo-header-5">Inputs and status</h3>
+              <div class="drips-row">
+                <input class="drips-input" placeholder="github.com/owner/repo" aria-label="GitHub URL" />
+                <input class="drips-input invalid" value="github.com/not-a-repo" aria-label="Invalid GitHub URL" />
+                <label class="drips-toggle"><input type="checkbox" checked /><span class="slider"><span class="head"></span></span><span>Slow mode</span></label>
+              </div>
+              <div class="drips-row">
+                <span class="drips-badge positive">Active</span>
+                <span class="drips-badge caution">Paused</span>
+                <span class="drips-badge caution">Scheduled</span>
+                <span class="drips-badge negative">Out of funds</span>
+                <span class="drips-badge foreground">Ended</span>
+              </div>
+            </div>
+
+            <div class="drips-group">
+              <h3 class="typo-header-5">Icons</h3>
+              <div class="drips-icons">
+                <img data-inline data-no-skeleton src="/images/drips-system/icons/Explore.svg" alt="" width="24" height="24" />
+                <img data-inline data-no-skeleton src="/images/drips-system/icons/TokenStreams.svg" alt="" width="24" height="24" />
+                <img data-inline data-no-skeleton src="/images/drips-system/icons/DripList.svg" alt="" width="24" height="24" />
+                <img data-inline data-no-skeleton src="/images/drips-system/icons/Box.svg" alt="" width="24" height="24" />
+                <img data-inline data-no-skeleton src="/images/drips-system/icons/User.svg" alt="" width="24" height="24" />
+                <img data-inline data-no-skeleton src="/images/drips-system/icons/Wallet.svg" alt="" width="24" height="24" />
+                <img data-inline data-no-skeleton src="/images/drips-system/icons/Coin.svg" alt="" width="24" height="24" />
+                <img data-inline data-no-skeleton src="/images/drips-system/icons/CoinFlying.svg" alt="" width="24" height="24" />
+                <img data-inline data-no-skeleton src="/images/drips-system/icons/Splits.svg" alt="" width="24" height="24" />
+                <img data-inline data-no-skeleton src="/images/drips-system/icons/Ecosystem.svg" alt="" width="24" height="24" />
+                <img data-inline data-no-skeleton src="/images/drips-system/icons/Droplet.svg" alt="" width="24" height="24" />
+                <img data-inline data-no-skeleton src="/images/drips-system/icons/Heart.svg" alt="" width="24" height="24" />
+                <img data-inline data-no-skeleton src="/images/drips-system/icons/HeartFace.svg" alt="" width="24" height="24" />
+                <img data-inline data-no-skeleton src="/images/drips-system/icons/Github.svg" alt="" width="24" height="24" />
+                <img data-inline data-no-skeleton src="/images/drips-system/icons/Git.svg" alt="" width="24" height="24" />
+                <img data-inline data-no-skeleton src="/images/drips-system/icons/Branch.svg" alt="" width="24" height="24" />
+                <img data-inline data-no-skeleton src="/images/drips-system/icons/Commit.svg" alt="" width="24" height="24" />
+                <img data-inline data-no-skeleton src="/images/drips-system/icons/Merge.svg" alt="" width="24" height="24" />
+                <img data-inline data-no-skeleton src="/images/drips-system/icons/Patch.svg" alt="" width="24" height="24" />
+                <img data-inline data-no-skeleton src="/images/drips-system/icons/Fork.svg" alt="" width="24" height="24" />
+                <img data-inline data-no-skeleton src="/images/drips-system/icons/Globe.svg" alt="" width="24" height="24" />
+                <img data-inline data-no-skeleton src="/images/drips-system/icons/MagnifyingGlass.svg" alt="" width="24" height="24" />
+                <img data-inline data-no-skeleton src="/images/drips-system/icons/Bell.svg" alt="" width="24" height="24" />
+                <img data-inline data-no-skeleton src="/images/drips-system/icons/Settings.svg" alt="" width="24" height="24" />
+                <img data-inline data-no-skeleton src="/images/drips-system/icons/Lock.svg" alt="" width="24" height="24" />
+                <img data-inline data-no-skeleton src="/images/drips-system/icons/Key.svg" alt="" width="24" height="24" />
+                <img data-inline data-no-skeleton src="/images/drips-system/icons/Link.svg" alt="" width="24" height="24" />
+                <img data-inline data-no-skeleton src="/images/drips-system/icons/Copy.svg" alt="" width="24" height="24" />
+                <img data-inline data-no-skeleton src="/images/drips-system/icons/Pen.svg" alt="" width="24" height="24" />
+                <img data-inline data-no-skeleton src="/images/drips-system/icons/Trash.svg" alt="" width="24" height="24" />
+                <img data-inline data-no-skeleton src="/images/drips-system/icons/Download.svg" alt="" width="24" height="24" />
+                <img data-inline data-no-skeleton src="/images/drips-system/icons/Sharrow.svg" alt="" width="24" height="24" />
+                <img data-inline data-no-skeleton src="/images/drips-system/icons/Trophy.svg" alt="" width="24" height="24" />
+                <img data-inline data-no-skeleton src="/images/drips-system/icons/ThumbsUp.svg" alt="" width="24" height="24" />
+                <img data-inline data-no-skeleton src="/images/drips-system/icons/Chat.svg" alt="" width="24" height="24" />
+                <img data-inline data-no-skeleton src="/images/drips-system/icons/Email.svg" alt="" width="24" height="24" />
+                <img data-inline data-no-skeleton src="/images/drips-system/icons/Calendar.svg" alt="" width="24" height="24" />
+                <img data-inline data-no-skeleton src="/images/drips-system/icons/Graph.svg" alt="" width="24" height="24" />
+                <img data-inline data-no-skeleton src="/images/drips-system/icons/Filter.svg" alt="" width="24" height="24" />
+                <img data-inline data-no-skeleton src="/images/drips-system/icons/List.svg" alt="" width="24" height="24" />
+                <img data-inline data-no-skeleton src="/images/drips-system/icons/House.svg" alt="" width="24" height="24" />
+                <img data-inline data-no-skeleton src="/images/drips-system/icons/Sun.svg" alt="" width="24" height="24" />
+                <img data-inline data-no-skeleton src="/images/drips-system/icons/Moon.svg" alt="" width="24" height="24" />
+                <img data-inline data-no-skeleton src="/images/drips-system/icons/Network.svg" alt="" width="24" height="24" />
+                <img data-inline data-no-skeleton src="/images/drips-system/icons/Ethereum.svg" alt="" width="24" height="24" />
+                <img data-inline data-no-skeleton src="/images/drips-system/icons/Wave.svg" alt="" width="24" height="24" />
+                <img data-inline data-no-skeleton src="/images/drips-system/icons/X.svg" alt="" width="24" height="24" />
+                <img data-inline data-no-skeleton src="/images/drips-system/icons/Orcid.svg" alt="" width="24" height="24" />
+              </div>
+            </div>
+
+            <div class="drips-group">
+              <h3 class="typo-header-5">Custom emoji</h3>
+              <div class="drips-emoji">
+                <img data-inline data-no-skeleton src="/images/drips-system/emoji/1f4b0.svg" alt="Money bag" width="48" height="48" />
+                <img data-inline data-no-skeleton src="/images/drips-system/emoji/1f4b8.svg" alt="Money with wings" width="48" height="48" />
+                <img data-inline data-no-skeleton src="/images/drips-system/emoji/1f911.svg" alt="Money-mouth face" width="48" height="48" />
+                <img data-inline data-no-skeleton src="/images/drips-system/emoji/1f45b.svg" alt="Purse" width="48" height="48" />
+                <img data-inline data-no-skeleton src="/images/drips-system/emoji/1fad7.svg" alt="Pouring liquid" width="48" height="48" />
+                <img data-inline data-no-skeleton src="/images/drips-system/emoji/1fad9.svg" alt="Jar" width="48" height="48" />
+                <img data-inline data-no-skeleton src="/images/drips-system/emoji/1fae7.svg" alt="Bubbles" width="48" height="48" />
+                <img data-inline data-no-skeleton src="/images/drips-system/emoji/1f310.svg" alt="Globe" width="48" height="48" />
+                <img data-inline data-no-skeleton src="/images/drips-system/emoji/1f578.svg" alt="Spider web" width="48" height="48" />
+                <img data-inline data-no-skeleton src="/images/drips-system/emoji/1f9d0.svg" alt="Face with monocle" width="48" height="48" />
+                <img data-inline data-no-skeleton src="/images/drips-system/emoji/1f480.svg" alt="Skull" width="48" height="48" />
+                <img data-inline data-no-skeleton src="/images/drips-system/emoji/1f510.svg" alt="Locked with key" width="48" height="48" />
+                <img data-inline data-no-skeleton src="/images/drips-system/emoji/1f5f3.svg" alt="Ballot box" width="48" height="48" />
+                <img data-inline data-no-skeleton src="/images/drips-system/emoji/1f46a.svg" alt="Family" width="48" height="48" />
+                <img data-inline data-no-skeleton src="/images/drips-system/emoji/1f389.svg" alt="Party popper" width="48" height="48" />
+                <img data-inline data-no-skeleton src="/images/drips-system/emoji/1f440.svg" alt="Eyes" width="48" height="48" />
+                <img data-inline data-no-skeleton src="/images/drips-system/emoji/23f3.svg" alt="Hourglass" width="48" height="48" />
+                <img data-inline data-no-skeleton src="/images/drips-system/emoji/23e9.svg" alt="Fast-forward" width="48" height="48" />
+                <img data-inline data-no-skeleton src="/images/drips-system/emoji/26a0.svg" alt="Warning" width="48" height="48" />
+                <img data-inline data-no-skeleton src="/images/drips-system/emoji/2705.svg" alt="Check mark" width="48" height="48" />
+                <img data-inline data-no-skeleton src="/images/drips-system/emoji/270f.svg" alt="Pencil" width="48" height="48" />
+              </div>
+            </div>
+          </div>
+          <figcaption>A working sample of the Drips design system, built from its real tokens and component styles.</figcaption>
         </figure>
 
-        <h1>Website</h1>
+        <p>
+          A few decisions hold the whole thing together. Borders aren't
+          borders: they're hairline box-shadows that turn into a solid outline
+          with a hard, unblurred drop when you hover, and the element lifts two
+          pixels to meet you. Nothing in the system uses a soft shadow. The
+          drip corner, square at the top right and round everywhere else, is
+          on every button, card, input, badge and modal. And each color token
+          comes in a base and three levels (a tint, a stronger tint and a
+          readable shade) so any color can be used for a background, a
+          border or text without picking new values.
+        </p>
+        <p>
+          The icon set and the emoji follow the same rules. I drew the icons
+          for the app, around funding and code. For small illustrations I
+          redrew a set of Twemoji in our line style. Both are colored only
+          with theme tokens, so they change with everything else when you
+          switch themes. On buttons with a colored background, the text color
+          isn't chosen by hand: the app measures the brightness of the
+          current primary color and picks black or white.
+        </p>
+      </section>
+
+      <hr />
+      <section id="themes">
+        <h2>Themes</h2>
+        <p>
+          Because every component asks for a token and never a hex value, a
+          theme is just a different set of values. Drips has three: light,
+          dark, and h4x0r, a green-on-black terminal theme that lives on from
+          Radicle. On top of that you can choose a primary color. A small
+          script runs before the page paints, reads your choices and sets
+          them on the page, so there's never a flash of the wrong theme.
+        </p>
+
+        <figure class="tabs" data-tabs>
+          <div class="compare-toggle" role="group" aria-label="Theme">
+            <button type="button" data-tab="0" aria-pressed="true">Light</button>
+            <button type="button" data-tab="1" aria-pressed="false">Dark</button>
+            <button type="button" data-tab="2" aria-pressed="false">h4x0r</button>
+          </div>
+          <div class="tabs-stage">
+            <img data-panel="0" src="/images/drips-system/app-explore-light-6cc64a40.webp" width="2400" height="1500" alt="The Explore page in the light theme." loading="lazy" decoding="async" />
+            <img data-panel="1" src="/images/drips-system/app-explore-dark-ca185f1a.webp" width="2400" height="1500" alt="The Explore page in the dark theme." loading="lazy" decoding="async" />
+            <img data-panel="2" src="/images/drips-system/app-explore-h4x0r-debcf172.webp" width="2400" height="1500" alt="The Explore page in the h4x0r theme, green on black with an orange primary." loading="lazy" decoding="async" />
+          </div>
+          <figcaption>The Explore page in each theme, captured from drips.network.</figcaption>
+        </figure>
+
+        <figure>
+          <div class="columns columns-3">
+            <img src="/images/drips-system/app-explore-light-pink-6b43d809.webp" width="2400" height="1500" alt="Explore with the pink primary color." loading="lazy" decoding="async" />
+            <img src="/images/drips-system/app-explore-light-orange-f708de46.webp" width="2400" height="1500" alt="Explore with the orange primary color." loading="lazy" decoding="async" />
+            <img src="/images/drips-system/app-explore-dark-red-31febe8e.webp" width="2400" height="1500" alt="Explore in dark with the red primary color." loading="lazy" decoding="async" />
+          </div>
+          <figcaption>The pink and orange primary colors in the light theme, and red in the dark theme.</figcaption>
+        </figure>
+      </section>
+
+      <hr />
+      <section id="projects">
+        <h2>Project colors</h2>
+        <p>
+          Themes are global, but Drips also lets each project bring its own
+          color. When you claim a project you pick an emoji and one of fifteen
+          colors, and the project's card, avatar, badge and page are themed
+          with it. In code, a wrapper re-declares just the four primary tokens
+          for everything inside it: the color, a 17% tint, a 37% tint and a
+          shade thirty steps darker (or lighter, in the dark themes). Nothing
+          inside needs to know. Click a card to cycle its color; it works in
+          every theme above.
+        </p>
+
+        <figure class="lab-figure">
+          <div class="drips-lab" data-follow="drips-lab">
+            <div class="drips-projects" data-projects>
+              <div class="drips-card-wrap" tabindex="0" role="button" data-color="#27C537" aria-label="FFmpeg project card, click to change color">
+                <div class="drips-card"><div class="band"></div><div class="avatar">🎞️</div><div class="name">ffmpeg</div><div class="typo-text-small muted">FFmpeg/FFmpeg</div><div class="cubbies"><span><img data-inline data-no-skeleton src="/images/drips-system/icons/TokenStreams.svg" alt="" width="20" height="20" />$2,499</span><span><img data-inline data-no-skeleton src="/images/drips-system/icons/DripList.svg" alt="" width="20" height="20" />4</span></div></div>
+              </div>
+              <div class="drips-card-wrap" tabindex="0" role="button" data-color="#FF84DC" aria-label="svelte project card, click to change color">
+                <div class="drips-card"><div class="band"></div><div class="avatar">🌇</div><div class="name">svelte</div><div class="typo-text-small muted">sveltejs/svelte</div><div class="cubbies"><span><img data-inline data-no-skeleton src="/images/drips-system/icons/TokenStreams.svg" alt="" width="20" height="20" />$28,570</span><span><img data-inline data-no-skeleton src="/images/drips-system/icons/DripList.svg" alt="" width="20" height="20" />12</span></div></div>
+              </div>
+              <div class="drips-card-wrap" tabindex="0" role="button" data-color="#9B5DFF" aria-label="libgit2 project card, click to change color">
+                <div class="drips-card"><div class="band"></div><div class="avatar">🔮</div><div class="name">libgit2</div><div class="typo-text-small muted">libgit2/libgit2</div><div class="cubbies"><span><img data-inline data-no-skeleton src="/images/drips-system/icons/TokenStreams.svg" alt="" width="20" height="20" />$55,580</span><span><img data-inline data-no-skeleton src="/images/drips-system/icons/DripList.svg" alt="" width="20" height="20" />2</span></div></div>
+              </div>
+              <div class="drips-card-wrap" tabindex="0" role="button" data-color="#27939A" aria-label="rollup project card, click to change color">
+                <div class="drips-card"><div class="band"></div><div class="avatar">🏛️</div><div class="name">rollup</div><div class="typo-text-small muted">rollup/rollup</div><div class="cubbies"><span><img data-inline data-no-skeleton src="/images/drips-system/icons/TokenStreams.svg" alt="" width="20" height="20" />$2,053</span><span><img data-inline data-no-skeleton src="/images/drips-system/icons/DripList.svg" alt="" width="20" height="20" />3</span></div></div>
+              </div>
+            </div>
+          </div>
+          <figcaption>Project cards rebuilt from the app's component, each with its own color. Sample data; the colors are from the real palette of fifteen.</figcaption>
+        </figure>
+      </section>
+
+      <hr />
+      <section id="website">
+        <h2>Website</h2>
 
         <p>
           The landing page is decorated with an animated interpretation of the
@@ -110,17 +444,12 @@
           <figcaption>The website footer.</figcaption>
         </figure>
 
-        <h1>
-          <a href="https://drips.network" target="_blank"
-            >Check out the website</a
-          >
-          ↗️
-        </h1>
+        <p class="jump"><a href="https://drips.network" target="_blank">Check out the website ↗</a></p>
       </section>
 
       <hr />
-      <section>
-        <h1>App</h1>
+      <section id="app">
+        <h2>App</h2>
 
         <p>
           It’s not common for a brand and the UI of the corresponding app to be
@@ -128,11 +457,6 @@
           boundaries of design, but promoting boring looking apps. I don’t
           believe in that, so the app also uses the controversial brand font,
           and black outlines for UI elements.
-        </p>
-        <p>
-          The theming we implemented in the app makes it possible to choose a
-          normie theme though, which will make the app look like every other
-          app.
         </p>
 
         <figure>
@@ -243,22 +567,11 @@
           </figure>
         </div>
 
-        <p>
-          Also OBVIOUSLY the whole website and app is fully responsive and the
-          theming doesn’t only apply to the app, it updates the landing page
-          too. 😏
-        </p>
-
-        <h1>
-          <a href="https://drips.network/app" target="_blank"
-            >Check out the app</a
-          >
-          ↗️
-        </h1>
+        <p class="jump"><a href="https://drips.network/app" target="_blank">Check out the app ↗</a></p>
       </section>
       <hr />
-      <section>
-        <h1>Illustrations</h1>
+      <section id="illustrations">
+        <h2>Illustrations</h2>
 
         <p>
           A range of illustrations were made from larger spot illustrations
@@ -295,291 +608,14 @@
         </div>
 
         <p>
-          Often emojis are the easiest way to put a quick illustration into a
-          design, like in the header of a modal. I decided to take the Twemoji
-          emojis and customize them to fit our design system. I think it works,
-          and it’s an efficient way to make new small illustrations.
+          The custom emoji and the icon set are part of the system, so they're
+          shown live, in every theme, <a href="#system">in the design system
+          section above</a>.
         </p>
-
-        <div class="columns columns-3">
-          <figure>
-            <img src="/images/drips/1f4b0-3480755b.png" width="500" height="500" alt="" loading="lazy" decoding="async" />
-          </figure>
-          <figure>
-            <img src="/images/drips/1f578-ca118d7f.png" width="500" height="500" alt="" loading="lazy" decoding="async" />
-          </figure>
-          <figure>
-            <img src="/images/drips/1f9d0-a24a3093.png" width="500" height="500" alt="" loading="lazy" decoding="async" />
-          </figure>
-          <figure>
-            <img src="/images/drips/1f45b-1d67031b.png" width="500" height="500" alt="" loading="lazy" decoding="async" />
-          </figure>
-          <figure>
-            <img src="/images/drips/1f480-b99a670a.png" width="500" height="500" alt="" loading="lazy" decoding="async" />
-          </figure>
-          <figure>
-            <img src="/images/drips/1f310-0fadc173.png" width="500" height="500" alt="" loading="lazy" decoding="async" />
-          </figure>
-          <figure>
-            <img src="/images/drips/1f4b8-45d7dbef.png" width="500" height="500" alt="" loading="lazy" decoding="async" />
-          </figure>
-          <figure>
-            <img src="/images/drips/1f911-2f6ebac8.png" width="500" height="500" alt="" loading="lazy" decoding="async" />
-          </figure>
-          <figure>
-            <img src="/images/drips/1fad7-dd013f79.png" width="500" height="500" alt="" loading="lazy" decoding="async" />
-          </figure>
-          <figure>
-            <img src="/images/drips/1fad9-5ed9fd6d.png" width="500" height="500" alt="" loading="lazy" decoding="async" />
-          </figure>
-          <figure>
-            <img src="/images/drips/270F-3df7faf7.png" width="500" height="500" alt="" loading="lazy" decoding="async" />
-          </figure>
-          <figure>
-            <img src="/images/drips/lock-and-key-fef9bdb6.png" width="500" height="500" alt="" loading="lazy" decoding="async" />
-          </figure>
-        </div>
-        <p>
-          I drew a full icon set for the app which includes a lot of custom
-          icons in specific funding and coding themes.
-        </p>
-
-        <div class="columns columns-4">
-          <figure>
-            <img src="/images/radicle/at-9bc14417.png" width="500" height="500" alt="at.png" loading="lazy" decoding="async" />
-          </figure>
-          <figure>
-            <img src="/images/drips/bell-74617b89.png" width="300" height="300" alt="bell.png" loading="lazy" decoding="async" />
-          </figure>
-          <figure>
-            <img src="/images/drips/blockie-ce8a0f3d.png" width="300" height="300" alt="blockie.png" loading="lazy" decoding="async" />
-          </figure>
-          <figure>
-            <img src="/images/radicle/box-3060fbd2.png" width="500" height="500" alt="box.png" loading="lazy" decoding="async" />
-          </figure>
-          <figure>
-            <img src="/images/radicle/branch-85fc6073.png" width="500" height="500" alt="branch.png" loading="lazy" decoding="async" />
-          </figure>
-          <figure>
-            <img src="/images/drips/chat-aa2efd42.png" width="300" height="300" alt="chat.png" loading="lazy" decoding="async" />
-          </figure>
-          <figure>
-            <img
-              src="/images/drips/checkedBox-e7c33675.png" width="300" height="300"
-              alt="checkedBox.png" loading="lazy" decoding="async" />
-          </figure>
-          <figure>
-            <img
-              src="/images/drips/chevronLeftRight-6f9c06aa.png" width="300" height="300"
-              alt="chevronLeftRight.png" loading="lazy" decoding="async" />
-          </figure>
-          <figure>
-            <img src="/images/drips/coin-006cc143.png" width="300" height="300" alt="coin.png" loading="lazy" decoding="async" />
-          </figure>
-          <figure>
-            <img src="/images/drips/anchor-6f6bb42b.png" width="300" height="300" alt="anchor.png" loading="lazy" decoding="async" />
-          </figure>
-          <figure>
-            <img src="/images/drips/commit-4dfeec16.png" width="300" height="300" alt="commit.png" loading="lazy" decoding="async" />
-          </figure>
-          <figure>
-            <img src="/images/drips/copy-cf28f870.png" width="300" height="300" alt="copy.png" loading="lazy" decoding="async" />
-          </figure>
-          <figure>
-            <img
-              src="/images/drips/crossCircle-8de93f99.png" width="300" height="300"
-              alt="crossCircle.png" loading="lazy" decoding="async" />
-          </figure>
-          <figure>
-            <img src="/images/drips/delegate-52e0c858.png" width="300" height="300" alt="delegate.png" loading="lazy" decoding="async" />
-          </figure>
-          <figure>
-            <img src="/images/drips/device-38ba9131.png" width="300" height="300" alt="device.png" loading="lazy" decoding="async" />
-          </figure>
-          <figure>
-            <img src="/images/drips/download-8b123822.png" width="300" height="300" alt="download.png" loading="lazy" decoding="async" />
-          </figure>
-          <figure>
-            <img src="/images/drips/droplet-28ba366d.png" width="300" height="300" alt="droplet.png" loading="lazy" decoding="async" />
-          </figure>
-          <figure>
-            <img src="/images/drips/envelope-484227b8.png" width="300" height="300" alt="envelope.png" loading="lazy" decoding="async" />
-          </figure>
-          <figure>
-            <img
-              src="/images/drips/exclamationCircle-2d9e260b.png" width="300" height="300"
-              alt="exclamationCircle.png" loading="lazy" decoding="async" />
-          </figure>
-          <figure>
-            <img src="/images/drips/explore-d852de2e.png" width="300" height="300" alt="explore.png" loading="lazy" decoding="async" />
-          </figure>
-          <figure>
-            <img
-              src="/images/drips/eyeClosed-9ff0b13e.png" width="300" height="300"
-              alt="eyeClosed.png" loading="lazy" decoding="async" />
-          </figure>
-          <figure>
-            <img src="/images/drips/eyeOpen-b038589d.png" width="300" height="300" alt="eyeOpen.png" loading="lazy" decoding="async" />
-          </figure>
-          <figure>
-            <img src="/images/radicle/file-4a852d2d.png" width="500" height="500" alt="file.png" loading="lazy" decoding="async" />
-          </figure>
-          <figure>
-            <img src="/images/radicle/folder-602aa23e.png" width="500" height="500" alt="folder.png" loading="lazy" decoding="async" />
-          </figure>
-          <figure>
-            <img src="/images/radicle/fork-bad3542c.png" width="500" height="500" alt="fork.png" loading="lazy" decoding="async" />
-          </figure>
-          <figure>
-            <img src="/images/drips/globe-1463f98f.png" width="300" height="300" alt="globe.png" loading="lazy" decoding="async" />
-          </figure>
-          <figure>
-            <img src="/images/radicle/heart-eecde41b.png" width="500" height="500" alt="heart.png" loading="lazy" decoding="async" />
-          </figure>
-          <figure>
-            <img src="/images/radicle/house-2f44d1a4.png" width="500" height="500" alt="house.png" loading="lazy" decoding="async" />
-          </figure>
-          <figure>
-            <img
-              src="/images/drips/infoCircle-ee47470a.png" width="300" height="300"
-              alt="infoCircle.png" loading="lazy" decoding="async" />
-          </figure>
-          <figure>
-            <img src="/images/radicle/key-102ebe88.png" width="500" height="500" alt="key.png" loading="lazy" decoding="async" />
-          </figure>
-          <figure>
-            <img src="/images/radicle/label-4769c596.png" width="500" height="500" alt="label.png" loading="lazy" decoding="async" />
-          </figure>
-          <figure>
-            <img src="/images/drips/ledger-fee07aef.png" width="300" height="300" alt="ledger.png" loading="lazy" decoding="async" />
-          </figure>
-          <figure>
-            <img src="/images/drips/link-a540dd68.png" width="300" height="300" alt="link.png" loading="lazy" decoding="async" />
-          </figure>
-          <figure>
-            <img src="/images/radicle/lock-22833c5e.png" width="500" height="500" alt="lock.png" loading="lazy" decoding="async" />
-          </figure>
-          <figure>
-            <img
-              src="/images/drips/magnifyingGlass-2f7e241b.png" width="300" height="300"
-              alt="magnifyingGlass.png" loading="lazy" decoding="async" />
-          </figure>
-          <figure>
-            <img src="/images/radicle/Merge-466c4ef4.png" width="500" height="500" alt="merge.png" loading="lazy" decoding="async" />
-          </figure>
-          <figure>
-            <img src="/images/drips/moon-9d6a7f1c.png" width="300" height="300" alt="moon.png" loading="lazy" decoding="async" />
-          </figure>
-          <figure>
-            <img src="/images/drips/network-9a441388.png" width="300" height="300" alt="network.png" loading="lazy" decoding="async" />
-          </figure>
-          <figure>
-            <img src="/images/drips/orgs-b0a185f5.png" width="300" height="300" alt="orgs.png" loading="lazy" decoding="async" />
-          </figure>
-          <figure>
-            <img src="/images/drips/patch-041e9e35.png" width="300" height="300" alt="patch.png" loading="lazy" decoding="async" />
-          </figure>
-          <figure>
-            <img src="/images/drips/pen-e1b69482.png" width="300" height="300" alt="pen.png" loading="lazy" decoding="async" />
-          </figure>
-          <figure>
-            <img src="/images/drips/play-573c2e31.png" width="300" height="300" alt="play.png" loading="lazy" decoding="async" />
-          </figure>
-          <figure>
-            <img
-              src="/images/drips/proposals-f144ce7e.png" width="300" height="300"
-              alt="proposals.png" loading="lazy" decoding="async" />
-          </figure>
-          <figure>
-            <img src="/images/drips/question-661e13e4.png" width="300" height="300" alt="question.png" loading="lazy" decoding="async" />
-          </figure>
-          <figure>
-            <img
-              src="/images/radicle/registered-50d8c6bf.png" width="500" height="500"
-              alt="registered.png" loading="lazy" decoding="async" />
-          </figure>
-          <figure>
-            <img src="/images/radicle/review-e57e372a.png" width="500" height="500" alt="review.png" loading="lazy" decoding="async" />
-          </figure>
-          <figure>
-            <img src="/images/drips/road-9a2787d3.png" width="300" height="300" alt="road.png" loading="lazy" decoding="async" />
-          </figure>
-          <figure>
-            <img src="/images/drips/server-a75a8662.png" width="300" height="300" alt="server.png" loading="lazy" decoding="async" />
-          </figure>
-          <figure>
-            <img
-              src="/images/radicle/settings-b616e6a3.png" width="500" height="500"
-              alt="settings.png" loading="lazy" decoding="async" />
-          </figure>
-          <figure>
-            <img src="/images/drips/sharrow-02c212d0.png" width="300" height="300" alt="sharrow.png" loading="lazy" decoding="async" />
-          </figure>
-          <figure>
-            <img src="/images/drips/radicle-39213fd9.png" width="300" height="300" alt="radicle.png" loading="lazy" decoding="async" />
-          </figure>
-          <figure>
-            <img src="/images/drips/linux-d1c8167b.png" width="300" height="300" alt="linux.png" loading="lazy" decoding="async" />
-          </figure>
-          <figure>
-            <img src="/images/drips/ethereum-0ba214ed.png" width="300" height="300" alt="ethereum.png" loading="lazy" decoding="async" />
-          </figure>
-          <figure>
-            <img
-              src="/images/drips/etherscan-05ed908b.png" width="300" height="300"
-              alt="etherscan.png" loading="lazy" decoding="async" />
-          </figure>
-          <figure>
-            <img src="/images/drips/discord-bc8e429e.png" width="300" height="300" alt="discord.png" loading="lazy" decoding="async" />
-          </figure>
-          <figure>
-            <img src="/images/drips/git-14a4aaca.png" width="300" height="300" alt="git.png" loading="lazy" decoding="async" />
-          </figure>
-          <figure>
-            <img src="/images/drips/github-22b5fdd4.png" width="300" height="300" alt="github.png" loading="lazy" decoding="async" />
-          </figure>
-          <figure>
-            <img src="/images/drips/gitlab-85e3624d.png" width="300" height="300" alt="gitlab.png" loading="lazy" decoding="async" />
-          </figure>
-          <figure>
-            <img src="/images/drips/mac-087db84c.png" width="300" height="300" alt="mac.png" loading="lazy" decoding="async" />
-          </figure>
-          <figure>
-            <img src="/images/drips/splits-2f5d3fde.png" width="300" height="300" alt="splits.png" loading="lazy" decoding="async" />
-          </figure>
-          <figure>
-            <img src="/images/drips/sun-66fdba5c.png" width="300" height="300" alt="sun.png" loading="lazy" decoding="async" />
-          </figure>
-          <figure>
-            <img src="/images/drips/thumbsUp-64f6a453.png" width="300" height="300" alt="thumbsUp.png" loading="lazy" decoding="async" />
-          </figure>
-          <figure>
-            <img
-              src="/images/drips/transactions-67b9b886.png" width="300" height="300"
-              alt="transactions.png" loading="lazy" decoding="async" />
-          </figure>
-          <figure>
-            <img src="/images/radicle/trash-8d262292.png" width="500" height="500" alt="trash.png" loading="lazy" decoding="async" />
-          </figure>
-          <figure>
-            <img src="/images/drips/trophy-35adf072.png" width="300" height="300" alt="trophy.png" loading="lazy" decoding="async" />
-          </figure>
-          <figure>
-            <img src="/images/drips/user-1dcf3102.png" width="300" height="300" alt="user.png" loading="lazy" decoding="async" />
-          </figure>
-          <figure>
-            <img src="/images/drips/wallet-986c875e.png" width="300" height="300" alt="wallet.png" loading="lazy" decoding="async" />
-          </figure>
-          <figure>
-            <img
-              src="/images/drips/walletConnect-54d0547d.png" width="300" height="300"
-              alt="walletConnect.png" loading="lazy" decoding="async" />
-          </figure>
-        </div>
       </section>
       <hr />
-      <section>
-        <h2>Conference Materials</h2>
+      <section id="conference">
+        <h2>Conference materials</h2>
 
         <p>
           Drips sponsored and is active at many Web3 conferences, so there was
@@ -746,11 +782,11 @@
         <div class="project-nav">
           <div class="project-nav-item">
             <p>Previous project</p>
-            <h2><a href="/projects/fun-ding">✷ fun—ding</a></h2>
+            <h2><a href="/projects/radicle-desktop">Radicle</a></h2>
           </div>
           <div class="project-nav-item">
             <p>Next project</p>
-            <h2><a href="/projects/migaku">Migaku</a></h2>
+            <h2><a href="/projects/grover">Grover</a></h2>
           </div>
         </div>
       </section>
