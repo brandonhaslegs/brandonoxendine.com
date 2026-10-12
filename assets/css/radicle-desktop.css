@@ -498,7 +498,7 @@ figure.rds[data-theme="dark"] {
   color: var(--text-primary);
 }
 
-/* Icons: 115 glyphs in full rows of 23 (5 when narrow). Drawn on a 16px
+/* Icons: 115 glyphs in full rows of 23 (5 on phones). Drawn on a 16px
    grid and shown at exactly 2x; one gap spaces the columns and rows. */
 .rds-panel {
   container-type: inline-size;
@@ -525,9 +525,18 @@ figure.rds[data-theme="dark"] {
   height: var(--size);
 }
 
+/* Narrower panels keep 23 columns at the icons' native 16px; only phones
+   drop to 5 columns. */
 @container (max-width: 1000px) {
   .rds-icon-grid {
+    --size: 16px;
+  }
+}
+
+@container (max-width: 440px) {
+  .rds-icon-grid {
     --cols: 5;
+    --size: 32px;
   }
 }
 
