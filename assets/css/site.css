@@ -719,6 +719,18 @@ body.categories figcaption p + p {
   width: 100%;
 }
 
+/* Grover's category icons fill most of their canvas; the rest of the set
+   sits at about a fifth. Scale them down so the grid reads evenly. */
+.icon-grid .image-frame:has(img[src*="/images/grover/"]) {
+  aspect-ratio: 1;
+  display: grid;
+  place-items: center;
+}
+
+.icon-grid img[src*="/images/grover/"] {
+  width: 30%;
+}
+
 /* -------- POST LIST -------- */
 .post-list article {
   margin-bottom: 80px;
