@@ -163,16 +163,37 @@ body.grover-page main .grv-sub .grv-view-all a {
 }
 
 /* Icons */
+/* 42 icons in full rows: 14, 7 or 6 columns. The icons grow with the
+   width and the row gap matches the column gap. */
+.grv-icons {
+  container-type: inline-size;
+  --cols: 14;
+}
+
 .grv-icon-sheet {
+  --size: max(32px, calc(100cqi / var(--cols) * 0.55));
+  --gap: calc((100cqi - var(--cols) * var(--size)) / (var(--cols) - 1));
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(56px, 1fr));
-  gap: 16px 8px;
-  justify-items: center;
+  grid-template-columns: repeat(var(--cols), var(--size));
+  justify-content: space-between;
+  row-gap: var(--gap);
 }
 
 .grv-icon-sheet img {
-  width: 40px;
-  height: 40px;
+  width: var(--size);
+  height: var(--size);
+}
+
+@media (max-width: 900px) {
+  .grv-icons {
+    --cols: 7;
+  }
+}
+
+@media (max-width: 440px) {
+  .grv-icons {
+    --cols: 6;
+  }
 }
 
 .grv-icons figcaption {
