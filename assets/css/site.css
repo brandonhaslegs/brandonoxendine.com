@@ -772,6 +772,13 @@ body.categories figcaption p + p {
   width: 30%;
 }
 
+/* On phones the cells are small, so zoom into each icon's empty margin. */
+@media (max-width: 600px) {
+  .icon-grid img {
+    transform: scale(1.75);
+  }
+}
+
 /* -------- POST LIST -------- */
 .post-list article {
   margin-bottom: 80px;
