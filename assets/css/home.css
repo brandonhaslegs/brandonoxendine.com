@@ -94,7 +94,7 @@
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
   gap: 24px;
-  align-items: start;
+  align-items: center;
   color: inherit;
 }
 
@@ -120,7 +120,7 @@
   color: hotpink;
 }
 
-.system-card-years {
+.system-card-position {
   margin-bottom: 16px !important;
 }
 
