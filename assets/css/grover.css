@@ -31,6 +31,8 @@ body.grover-page .jump {
 /* Category menu: both layers */
 .grv-menu-demo {
   display: grid;
+  grid-template-columns: max-content;
+  justify-content: center;
   gap: 16px;
   justify-items: start;
   text-align: left;
@@ -173,6 +175,10 @@ body.grover-page main .grv-sub .grv-view-all a {
   height: 40px;
 }
 
+.grv-icons figcaption {
+  margin-top: 32px;
+}
+
 
 /* Foundations */
 .grv-foundations {
@@ -238,6 +244,7 @@ body.grover-page main .grv-sub .grv-view-all a {
 
 @media (max-width: 700px) {
   .grv-menu-demo {
+    grid-template-columns: minmax(0, 1fr);
     justify-items: stretch;
   }
 
