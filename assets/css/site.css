@@ -45,11 +45,6 @@ body.home {
   padding-right: var(--home-gutter);
 }
 
-body.home header {
-  padding-left: var(--home-gutter);
-  padding-right: var(--home-gutter);
-}
-
 body.collection-page header {
   position: static;
 }
@@ -71,7 +66,7 @@ header {
   top: 0;
   z-index: 10;
   background: transparent;
-  padding: 12px 20px;
+  padding: 12px clamp(24px, 5vw, 80px);
   width: 100vw;
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
@@ -110,7 +105,6 @@ header nav a[aria-current="page"] {
 }
 
 @media (max-width: 480px) {
-  body.home header,
   header {
     padding-left: 16px;
     padding-right: 16px;
