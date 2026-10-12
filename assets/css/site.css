@@ -1162,11 +1162,24 @@ body.wide-media {
 }
 
 body.wide-media main > section > figure,
-body.wide-media main > section > .columns {
+body.wide-media main > section > .columns,
+body.natural-media main > section > :is(.image-frame, a:has(img), div:has(img)) {
   width: min(calc(100vw - 80px), 1600px);
   max-width: none;
   margin-left: 50%;
   transform: translateX(-50%);
+}
+
+body.natural-media main > section > a:has(img) {
+  display: block;
+}
+
+/* Wide media gets room to breathe above and below. */
+body.wide-media main > section > figure,
+body.wide-media main > section > .columns,
+body.natural-media main > section > :is(.image-frame, a:has(img), div:has(img)) {
+  margin-top: 64px;
+  margin-bottom: 64px;
 }
 
 body.wide-media main > section > figure figcaption {
@@ -1177,9 +1190,35 @@ body.wide-media main > section > figure figcaption {
 
 @media (max-width: 768px) {
   body.wide-media main > section > figure,
-  body.wide-media main > section > .columns {
+  body.wide-media main > section > .columns,
+  body.natural-media main > section > :is(.image-frame, a:has(img), div:has(img)) {
     width: calc(100vw - 40px);
+    margin-top: 40px;
+    margin-bottom: 40px;
   }
+}
+
+/* Older case studies: figures go wide, but each image stays at its natural
+   size (never narrower than the text column) so small files aren't
+   stretched. */
+body.natural-media main img {
+  width: auto;
+  min-width: min(100%, 800px);
+  max-width: 100%;
+}
+
+body.natural-media main :not(section) > .image-frame {
+  width: fit-content;
+  min-width: min(100%, 800px);
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body.natural-media main img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* -------- LIGHT CASE STUDY PAGES -------- */
