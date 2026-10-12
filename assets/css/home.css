@@ -148,17 +148,12 @@
   height: 100%;
   object-fit: contain;
   border-radius: 0;
-  transition: transform 600ms cubic-bezier(0.2, 0.7, 0.2, 1);
 }
 
 .system-card-stage .image-frame {
   height: 100%;
   background: transparent;
   border-radius: 0;
-}
-
-.system-card-link:hover .system-card-stage img {
-  transform: scale(1.02);
 }
 
 /* Range */
@@ -304,7 +299,6 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .system-card-stage img,
   .system-card h3 {
     transition: none;
   }
