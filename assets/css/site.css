@@ -1379,8 +1379,8 @@ figure.swatches {
   border-top: 1px solid #e9ebef;
 }
 
-.sw-token {
-  font-family: inherit;
+.sw-token,
+body.case-study main code.sw-token {
   font-size: 15px;
   color: #0b0d12;
   overflow: hidden;
@@ -1426,8 +1426,9 @@ figure.swatches figcaption {
     grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr) minmax(0, 1fr);
     gap: 8px;
   }
-  .sw-token {
-    font-size: 11px;
+  .sw-token,
+  body.case-study main code.sw-token {
+    font-size: 12px;
   }
   .sw-pair {
     gap: 6px;
@@ -1498,8 +1499,8 @@ figure.type-system {
   border-top: 1px solid #e9ebef;
 }
 
-.ty-token {
-  font-family: inherit;
+.ty-token,
+body.case-study main code.ty-token {
   font-size: 15px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -1543,6 +1544,10 @@ figure.type-system figcaption {
   }
   .ty-spec {
     display: none;
+  }
+  .ty-token,
+  body.case-study main code.ty-token {
+    font-size: 13px;
   }
   .ty-sample {
     white-space: normal;

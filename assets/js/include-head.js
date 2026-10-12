@@ -25,8 +25,8 @@
     head.appendChild(script);
   };
 
-  addLink('stylesheet', '/assets/css/reset.css');
-  addLink('stylesheet', '/assets/css/site.css');
+  addLink('stylesheet', '/assets/css/reset.css?v=20261012');
+  addLink('stylesheet', '/assets/css/site.css?v=20261012');
   addLink('icon', '/favicon.png');
   addLink('preconnect', 'https://fonts.googleapis.com');
   addLink('preconnect', 'https://fonts.gstatic.com', { crossorigin: '' });
@@ -34,5 +34,5 @@
     'stylesheet',
     'https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap'
   );
-  addScript('/assets/js/image-skeleton.js', { defer: true });
+  addScript('/assets/js/image-skeleton.js?v=20261012', { defer: true });
 })();
