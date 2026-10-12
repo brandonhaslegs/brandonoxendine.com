@@ -1081,6 +1081,15 @@ figure.video figcaption {
   margin-top: 12px;
 }
 
+/* -------- EMBEDS -------- */
+main iframe[src*="player.vimeo.com"] {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  border: 0;
+}
+
 /* -------- LIGHTBOX -------- */
 img.zoomable {
   cursor: zoom-in;
