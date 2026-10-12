@@ -88,8 +88,7 @@ body.fuzzco-page main img {
   display: block;
 }
 
-.fz-colors code,
-.fz-code code {
+.fz-colors code {
   font-family: ui-monospace, Menlo, monospace;
   font-size: 13px;
 }
@@ -267,20 +266,6 @@ body.fuzzco-page main .fz-img img {
   opacity: 1;
 }
 
-.fz-code {
-  box-sizing: border-box;
-  max-width: 100%;
-  border: 3px solid var(--fz-red);
-  padding: 20px 24px;
-  overflow-x: auto;
-  font-size: 13px;
-  line-height: 1.6;
-  margin: 32px 0 8px;
-}
-
-.fz-code-note {
-  font-size: 15px;
-}
 
 @media (max-width: 700px) {
   .fz-colors {

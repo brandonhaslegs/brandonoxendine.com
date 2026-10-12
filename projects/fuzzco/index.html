@@ -195,8 +195,7 @@
           And if you scroll yourself, it stops to let you,
           and when you let go it carries on in the direction you were going.
           Scroll up and the whole studio starts drifting upward. The sample
-          above does exactly the same thing, ported from the original
-          JavaScript.
+          above works the same way.
         </p>
 
         <figure>
@@ -204,15 +203,6 @@
           <figcaption>The homepage scrolling itself.</figcaption>
         </figure>
 
-        <pre class="fz-code"><code>// Stop automatic scroll when user is scrolling, and change direction if need be.
-if (page.prevScroll + 2 &lt; scrollTop || page.prevScroll - 2 &gt; scrollTop) {
-  page.stopScrolling = true;
-  clearTimeout(page.startScrollTimer);
-  page.startScrollTimer = setTimeout(function() { page.stopScrolling = false; }, 50);
-  if (page.prevScroll + 30 &lt; scrollTop) { page.goingDown = false; }
-  if (page.prevScroll - 30 &gt; scrollTop) { page.goingDown = true; }
-}</code></pre>
-        <p class="fz-code-note">From the site's original JavaScript, recovered from the archive. (Yes, <code>goingDown: true</code> scrolls up.)</p>
 
         <figure>
           <div class="columns columns-2">
