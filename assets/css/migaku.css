@@ -67,7 +67,9 @@ body.migaku-page .columns > img {
 }
 
 .mgk-wordmark img {
+  display: block;
   width: min(560px, 80%);
+  margin: 0 auto;
 }
 
 .mgk-cast-grid {
