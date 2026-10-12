@@ -1,0 +1,596 @@
+/* -------- SYSTEM CASE STUDIES --------
+   Shared chrome for the design system case studies. The portfolio frame
+   (black, ABC Maxi Round) stays constant; everything inside a .ds-stage
+   is themed by the system's own tokens, set per project as --ds-* vars. */
+
+body.system-page {
+  width: auto;
+  max-width: none;
+  margin: 0;
+  padding: 0 20px 20px;
+}
+
+.system-page main {
+  max-width: 1360px;
+  margin: 0 auto;
+}
+
+.system-page main a {
+  border-bottom: 1px solid currentColor;
+}
+
+.system-page main a:has(> img),
+.system-page main .ds-stage a {
+  border-bottom: none;
+}
+
+/* Cover */
+.ds-cover {
+  background: var(--ds-bg);
+  color: var(--ds-fg);
+  font-family: var(--ds-font, inherit);
+  border-radius: 0.5vw;
+  margin: 0 0 24px;
+  padding: clamp(24px, 5vw, 72px);
+  min-height: min(78vh, 760px);
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 40px;
+  overflow: hidden;
+  position: relative;
+}
+
+.ds-cover-media {
+  align-self: end;
+}
+
+.ds-cover-media img {
+  border-radius: 0;
+}
+
+.ds-intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+  gap: 24px;
+  margin: 0 0 120px;
+}
+
+.ds-intro h1 {
+  font-size: clamp(48px, 7vw, 112px);
+  line-height: 0.95;
+  letter-spacing: -0.03em;
+  margin: 0;
+}
+
+.ds-intro-lede {
+  font-size: clamp(22px, 2.2vw, 32px);
+  line-height: 1.2;
+  margin: 0 0 32px;
+  text-wrap: pretty;
+}
+
+.ds-meta {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 16px 24px;
+  margin: 0;
+}
+
+.ds-meta div {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 8px;
+}
+
+.ds-meta dt {
+  font-size: 14px;
+  opacity: 0.5;
+}
+
+.ds-meta dd {
+  margin: 0;
+}
+
+/* Chapter nav */
+.ds-toc {
+  position: sticky;
+  top: 52px;
+  z-index: 9;
+  background: #000;
+  margin: 0 -20px 80px;
+  padding: 10px 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.ds-toc ol {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  gap: 24px;
+  max-width: 1360px;
+  white-space: nowrap;
+  font-size: 14px;
+}
+
+.system-page .ds-toc a {
+  border-bottom: none;
+  opacity: 0.5;
+  transition: opacity 150ms ease;
+}
+
+.system-page .ds-toc a:hover,
+.system-page .ds-toc a[aria-current="true"] {
+  opacity: 1;
+  color: #fff;
+}
+
+.ds-toc a[aria-current="true"] span {
+  color: hotpink;
+}
+
+/* Chapters */
+.ds-chapter {
+  margin: 0 0 160px;
+  scroll-margin-top: 110px;
+}
+
+.ds-chapter-head {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+  gap: 24px;
+  border-top: 1px solid #fff;
+  padding-top: 16px;
+  margin-bottom: 48px;
+}
+
+.ds-chapter-head h2 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.ds-chapter-head h2 span {
+  opacity: 0.5;
+  margin-right: 12px;
+  font-variant-numeric: tabular-nums;
+}
+
+.ds-chapter-head p {
+  margin: 0;
+  max-width: 38em;
+}
+
+.ds-chapter-head p + p {
+  margin-top: 16px;
+}
+
+.ds-sub {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+  gap: 24px;
+  margin: 72px 0 24px;
+}
+
+.ds-sub h3 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.ds-sub p {
+  margin: 0;
+  opacity: 0.75;
+  max-width: 38em;
+}
+
+/* Stages: system-themed specimen panels */
+.ds-stage {
+  background: var(--ds-bg);
+  color: var(--ds-fg);
+  font-family: var(--ds-font, inherit);
+  border-radius: 0.5vw;
+  padding: clamp(20px, 4vw, 56px);
+  position: relative;
+  overflow: hidden;
+}
+
+.ds-stage + .ds-stage,
+.ds-grid + .ds-stage,
+.ds-stage + .ds-grid {
+  margin-top: 24px;
+}
+
+.ds-stage img {
+  border-radius: 0;
+}
+
+.ds-stage.is-flush {
+  padding: 0;
+}
+
+.ds-stage.is-light {
+  background: var(--ds-bg-light, #fff);
+  color: var(--ds-fg-light, #000);
+}
+
+.ds-grid {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(var(--cols, 2), minmax(0, 1fr));
+}
+
+.ds-grid > .ds-stage {
+  margin: 0;
+}
+
+.ds-caption {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  font-size: 14px;
+  margin-top: 12px;
+  opacity: 0.75;
+}
+
+.ds-caption p {
+  margin: 0;
+}
+
+/* Provenance labels */
+.prov {
+  flex: none;
+  font-size: 12px;
+  line-height: 1;
+  padding: 5px 8px 4px;
+  border-radius: 99px;
+  border: 1px solid currentColor;
+  white-space: nowrap;
+  align-self: flex-start;
+}
+
+.prov::before {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+  margin-right: 6px;
+  vertical-align: 1px;
+}
+
+.prov-capture {
+  color: #9be29b;
+}
+
+.prov-original {
+  color: #fff;
+}
+
+.prov-rebuilt {
+  color: hotpink;
+}
+
+.ds-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  align-items: center;
+  font-size: 14px;
+  opacity: 0.9;
+  margin: 24px 0 0;
+}
+
+/* Specimen primitives */
+.swatch-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 12px;
+}
+
+.swatch {
+  font-size: 12px;
+  line-height: 1.3;
+}
+
+.swatch-chip {
+  aspect-ratio: 4 / 3;
+  border-radius: 6px;
+  background: var(--c);
+  box-shadow: inset 0 0 0 1px rgba(127, 127, 127, 0.25);
+  margin-bottom: 8px;
+}
+
+.swatch code,
+.token-table code,
+.ds-code code {
+  font-family: ui-monospace, "SF Mono", Menlo, monospace;
+  font-size: 12px;
+}
+
+.swatch span {
+  display: block;
+  opacity: 0.6;
+}
+
+.ramp {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(0, 1fr);
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+.ramp > div {
+  aspect-ratio: 1 / 1.2;
+  background: var(--c);
+  display: flex;
+  align-items: flex-end;
+  padding: 6px;
+  font-size: 10px;
+  font-family: ui-monospace, "SF Mono", Menlo, monospace;
+}
+
+.type-row {
+  display: grid;
+  grid-template-columns: 9em minmax(0, 1fr);
+  gap: 16px;
+  align-items: baseline;
+  padding: 14px 0;
+  border-bottom: 1px solid color-mix(in srgb, currentColor 15%, transparent);
+}
+
+.type-row:last-child {
+  border-bottom: none;
+}
+
+.type-row code {
+  font-family: ui-monospace, "SF Mono", Menlo, monospace;
+  font-size: 11px;
+  opacity: 0.6;
+  line-height: 1.5;
+}
+
+.type-row > div {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.space-row {
+  display: grid;
+  grid-template-columns: 6em minmax(0, 1fr);
+  gap: 16px;
+  align-items: center;
+  font-family: ui-monospace, "SF Mono", Menlo, monospace;
+  font-size: 12px;
+  padding: 4px 0;
+}
+
+.space-row i {
+  display: block;
+  height: 12px;
+  width: var(--w);
+  background: var(--ds-accent, hotpink);
+  border-radius: 2px;
+}
+
+.icon-sheet {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(56px, 1fr));
+  gap: 4px;
+}
+
+.icon-sheet > * {
+  aspect-ratio: 1;
+  display: grid;
+  place-items: center;
+  border-radius: 6px;
+}
+
+.icon-sheet svg,
+.icon-sheet img {
+  width: 24px;
+  height: 24px;
+}
+
+.token-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.token-table th,
+.token-table td {
+  text-align: left;
+  padding: 8px 12px 8px 0;
+  border-bottom: 1px solid color-mix(in srgb, currentColor 15%, transparent);
+  vertical-align: top;
+}
+
+.token-table th {
+  font-weight: 400;
+  opacity: 0.5;
+}
+
+.ds-code {
+  background: color-mix(in srgb, currentColor 6%, transparent);
+  border-radius: 6px;
+  padding: 16px 20px;
+  overflow-x: auto;
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.6;
+  white-space: pre;
+}
+
+/* Theme switcher for live specimens */
+.ds-switch {
+  display: inline-flex;
+  gap: 4px;
+  padding: 3px;
+  border-radius: 99px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+
+.ds-switch button {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: 0;
+  border-radius: 99px;
+  padding: 4px 12px;
+  cursor: pointer;
+}
+
+.ds-switch button[aria-pressed="true"] {
+  background: #fff;
+  color: #000;
+}
+
+.ds-switch button:focus-visible {
+  outline: 2px solid hotpink;
+  outline-offset: 2px;
+}
+
+/* Contribution */
+.contribution-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.contribution-list li {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 12px;
+}
+
+.contribution-list h4 {
+  margin: 0 0 8px;
+  font-size: 18px;
+}
+
+.contribution-list p {
+  margin: 0;
+  opacity: 0.75;
+}
+
+.commit-log {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-family: ui-monospace, "SF Mono", Menlo, monospace;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.commit-log li {
+  display: grid;
+  grid-template-columns: 6.5em 5em minmax(0, 1fr);
+  gap: 12px;
+  padding: 6px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.commit-log time,
+.commit-log code {
+  opacity: 0.5;
+}
+
+.ds-stat-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 24px;
+  margin: 0 0 48px;
+}
+
+.ds-stat-row div {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 12px;
+}
+
+.ds-stat-row strong {
+  display: block;
+  font-size: clamp(40px, 4vw, 64px);
+  line-height: 1;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  margin-bottom: 8px;
+}
+
+.ds-stat-row span {
+  opacity: 0.6;
+  font-size: 14px;
+}
+
+.ds-pagination {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  border-top: 1px solid #fff;
+  padding-top: 16px;
+  margin-bottom: 40px;
+}
+
+.ds-pagination p {
+  margin: 0;
+  opacity: 0.5;
+  font-size: 14px;
+}
+
+.ds-pagination a {
+  font-size: clamp(28px, 3vw, 44px);
+  font-weight: 700;
+}
+
+.ds-pagination div:last-child {
+  text-align: right;
+}
+
+@media (max-width: 900px) {
+  .ds-intro,
+  .ds-chapter-head,
+  .ds-sub {
+    grid-template-columns: 1fr;
+  }
+
+  .ds-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ds-chapter {
+    margin-bottom: 104px;
+  }
+
+  .type-row {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+
+  .commit-log li {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .ds-caption {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .ds-toc {
+    top: 50px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .system-page * {
+    transition-duration: 0ms !important;
+    animation-duration: 0ms !important;
+  }
+}
