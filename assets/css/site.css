@@ -1050,6 +1050,46 @@ body.case-study main code {
   max-width: 100%;
 }
 
+.vignette-panel.vignette-cols-3,
+.vignette-panel.vignette-cols-4 {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: center;
+  justify-items: center;
+}
+
+.vignette-panel.vignette-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+/* A lone card on the last row sits in the middle. */
+.vignette-cols-4 .vignette-item:last-child:nth-child(4n + 1) {
+  grid-column: 2 / span 2;
+}
+
+/* Show each capture at its 1x UI size so they all read at one scale. */
+.vignette-cols-3 .vignette-item img,
+.vignette-cols-4 .vignette-item img {
+  width: var(--w);
+}
+
+@media (max-width: 900px) {
+  .vignette-panel.vignette-cols-4 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .vignette-cols-4 .vignette-item:last-child:nth-child(4n + 1) {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 700px) {
+  .vignette-panel.vignette-cols-3,
+  .vignette-panel.vignette-cols-4 {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
 .vignette-item img {
   width: auto;
   max-width: 100%;
