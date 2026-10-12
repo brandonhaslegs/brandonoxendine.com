@@ -1,0 +1,262 @@
+/* -------- GROVER CASE STUDY --------
+   Values are Grover's own: category accents from the 2019 catalog data,
+   menu rows from the archived November 2019 stylesheet. */
+body.grover-page main h2 {
+  font-size: 32px;
+  margin: 24px 0 16px;
+}
+
+body.grover-page .jump,
+body.grover-page .grv-note {
+  text-align: center;
+}
+
+body.grover-page .grv-note {
+  opacity: 0.75;
+  margin-top: 12px;
+}
+
+body.grover-page iframe {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  border: 0;
+  border-radius: 0.5vw;
+}
+
+.grv-stage {
+  background: #f7f7f7;
+  border-radius: 24px;
+  padding: clamp(24px, 4vw, 56px);
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: #333;
+}
+
+.grv-stage img {
+  border-radius: 0;
+}
+
+.grv-stage figcaption {
+  font-family: "ABC Maxi Round", sans-serif;
+  margin-top: 32px;
+}
+
+/* Category menu, first layer */
+.grv-menu-demo {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 16px 56px;
+  align-items: start;
+  text-align: left;
+}
+
+.grv-pill {
+  grid-column: 1;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  height: 48px;
+  padding: 0 20px;
+  border-radius: 24px;
+  background: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  width: max-content;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.13), 0px 0px 3px rgba(0, 0, 0, 0.05);
+}
+
+.grv-dots {
+  width: 16px;
+  height: 16px;
+  background: radial-gradient(circle, #333 1.6px, transparent 1.8px) 0 0 / 6px 6px;
+}
+
+body.case-study main ul.grv-menu {
+  grid-column: 1;
+  list-style: none;
+  margin: 0;
+  padding: 8px 0;
+  width: 280px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.13), 0px 0px 3px rgba(0, 0, 0, 0.05);
+}
+
+body.case-study main .grv-menu li {
+  margin: 0;
+}
+
+body.grover-page main .grv-menu a {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  height: 48px;
+  padding: 0 16px;
+  border: 0;
+  color: #333;
+  font-weight: 600;
+  font-size: 16px;
+  transition: background-color 0.1s cubic-bezier(0.4, 0, 0.2, 1), color 0.1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body.grover-page main .grv-menu a:hover,
+body.grover-page main .grv-menu a:focus-visible {
+  background: color-mix(in srgb, var(--accent) 15%, transparent);
+  color: var(--accent);
+  outline: none;
+}
+
+.grv-menu img {
+  width: 24px;
+  height: 24px;
+  flex: none;
+}
+
+.grv-swatches {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  justify-content: start;
+  gap: 12px 24px;
+  align-self: center;
+  font-family: ui-monospace, Menlo, monospace;
+  font-size: 13px;
+}
+
+.grv-swatches span {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.grv-swatches i {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  background: var(--accent);
+  flex: none;
+}
+
+/* Icons */
+.grv-icon-sheet {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(56px, 1fr));
+  gap: 16px 8px;
+  justify-items: center;
+}
+
+.grv-icon-sheet img {
+  width: 40px;
+  height: 40px;
+}
+
+.grv-lineage {
+  max-width: 560px;
+  margin: 0 auto;
+  font-family: "ABC Maxi Round", sans-serif;
+}
+
+.grv-lineage > div {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  justify-items: center;
+  padding: 12px 0;
+  border-top: 1px solid #e6e6e6;
+}
+
+.grv-lineage > .grv-lineage-head {
+  border-top: 0;
+  font-size: 14px;
+  opacity: 0.6;
+}
+
+.grv-lineage img {
+  width: 48px;
+  height: 48px;
+}
+
+/* Foundations */
+.grv-foundations {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 24px;
+  text-align: left;
+  font-size: 14px;
+}
+
+.grv-foundations > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 2px;
+  min-height: 130px;
+  padding: 14px;
+  background: #fff;
+  border-radius: 8px;
+}
+
+.grv-swatch {
+  box-shadow: inset 0 0 0 1px #f1f1f1;
+}
+
+.grv-swatch i {
+  display: block;
+  height: 56px;
+  border-radius: 6px;
+  background: var(--c);
+  margin-bottom: auto;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.06);
+}
+
+.grv-radius {
+  border: 2px solid #333;
+}
+
+.grv-foundations code {
+  font-family: ui-monospace, Menlo, monospace;
+  font-size: 12px;
+  opacity: 0.6;
+}
+
+/* Quotes */
+.grv-quote {
+  margin: 48px auto;
+  max-width: 28em;
+  text-align: center;
+}
+
+.grv-quote p {
+  font-size: clamp(24px, 3vw, 36px);
+  line-height: 1.2;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.grv-quote cite {
+  font-style: normal;
+  opacity: 0.6;
+}
+
+@media (max-width: 700px) {
+  .grv-menu-demo {
+    grid-template-columns: 1fr;
+  }
+
+  .grv-swatches {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  body.case-study main ul.grv-menu {
+    width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body.grover-page main .grv-menu a {
+    transition: none;
+  }
+}

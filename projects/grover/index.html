@@ -16,6 +16,8 @@ product’s many facets."
     />
 <link rel="stylesheet" href="/assets/css/reset.css" />
 <link rel="stylesheet" href="/assets/css/site.css" />
+<link rel="stylesheet" href="/assets/css/grover.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap" />
 <link rel="icon" href="/favicon.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,32 +26,113 @@ product’s many facets."
   href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
 />
 <script defer src="/assets/js/image-skeleton.js"></script>
+<script defer src="/assets/js/lightbox.js"></script>
 </head>
-  <body class="grover">
+  <body class="case-study wide-media grover grover-page">
     <header id="site-header"></header>
 
     <main>
-      <section class="project-intro">
-        <h1>Grover</h1>
-        <p>
-          <br />Grover is a service that allows users to rent tech products
-          monthly instead of buying them. I led the design team to redesign the
-          full product’s many facets.
-        </p>
-        <p>
-          Role: <a href="/pages/categories/visual-design">Visual Design</a>, <a href="/pages/categories/design-system">Design System</a>, <a href="/pages/categories/illustration">Illustration</a>, <a href="/pages/categories/icons">Icons</a>, <a href="/pages/categories/code">Code</a></p>
-        <p>
-          View it live:
-          <a href="http://grover.com/de-en" target="_blank">grover.com</a>
-        </p>
-      </section>
+      <h1>Grover</h1>
+
+      <p>
+        Grover rents tech by the month instead of selling it. I joined in
+        2017 as Head of Product Design, built up the design team, and led a
+        redesign of the whole product: a component system, a category
+        system with its own colors and icons, and a new illustration style.
+      </p>
+      <p>
+        Role: Head of Product Design, 2017 to 2020 · <a href="/pages/categories/visual-design">Visual Design</a>, <a href="/pages/categories/design-system">Design System</a>, <a href="/pages/categories/illustration">Illustration</a>, <a href="/pages/categories/icons">Icons</a>, <a href="/pages/categories/code">Code</a><br />Live at <a href="https://www.grover.com/de-en" target="_blank">grover.com</a></p>
 
       <hr />
       <section>
         <figure>
-          <img
-            src="/images/grover/grover-hero-image-00c94e61.jpg" width="2500" height="1119"
-            alt="grover hero image.jpg" loading="lazy" decoding="async" />
+          <img src="/images/grover/grover-hero-image-00c94e61.jpg" width="2500" height="1119"
+            alt="Grover's redesigned product across desktop and mobile." loading="eager" decoding="async" />
+        </figure>
+
+        <p>
+          Grover was a young Berlin startup when I started, renting cameras,
+          phones, laptops and scooters. My job had two halves. One was
+          building a team: hiring designers and researchers, running weekly
+          one-on-ones and critiques, and working closely with product and
+          engineering. The other was giving the product a consistent visual
+          language that the team could build with.
+        </p>
+        <p>
+          I wrote some of what I learned about the first half in
+          <a href="/writing/the-first-year-leading-design-at-a-startup">The first year leading design at a startup</a>,
+          <a href="/writing/how-to-onboard-designers">How to onboard designers</a> and
+          <a href="/writing/on-managing-designers">On managing designers</a>.
+          This page is about the second half.
+        </p>
+
+        <div class="stats">
+          <div><strong>44</strong><span>category icons I drew</span></div>
+          <div><strong>10</strong><span>category colors</span></div>
+          <div><strong>74%</strong><span>of polled users called the redesign a positive change</span></div>
+          <div><strong>33</strong><span>of my icons still on grover.com in 2026</span></div>
+        </div>
+
+        <p class="jump">
+          Jump to:
+          <a href="#categories">Category system</a>,
+          <a href="#icons">Icons</a>,
+          <a href="#foundations">Foundations</a>,
+          <a href="#illustration">Illustration</a>,
+          <a href="#discovery">Product discovery</a>,
+          <a href="#pdp">Product page</a>
+        </p>
+      </section>
+
+      <hr />
+      <section id="categories">
+        <h2>A system for categories</h2>
+        <p>
+          A rental catalog is wide and shallow: thousands of products in a
+          handful of families that people browse by. So categories became the
+          backbone of the visual system. Each of the ten top-level categories
+          got its own color, an icon for itself and one for each subcategory,
+          and those followed the category everywhere: the menu, the category
+          page title, the filter controls, the product tiles.
+        </p>
+        <p>
+          The menu was where it came together. It's a two-layer dropdown where
+          each row lights up in its category's color. In the implementation we
+          also drew an invisible triangle from the cursor to the subcategory
+          list, so you can move diagonally to the second layer without
+          accidentally switching categories on the way. Nobody notices it,
+          which is the point.
+        </p>
+
+        <figure class="grv-stage">
+          <div class="grv-menu-demo">
+            <div class="grv-pill" aria-hidden="true"><span class="grv-dots"></span>Categories</div>
+            <ul class="grv-menu" aria-label="Grover categories, 2019">
+              <li style="--accent: #F35757"><a href="#categories"><img src="/images/grover-system/2019/computers.svg" alt="" width="24" height="24" data-no-skeleton />Computers</a></li>
+              <li style="--accent: #F8881F"><a href="#categories"><img src="/images/grover-system/2019/phones-and-tablets.svg" alt="" width="24" height="24" data-no-skeleton />Phones &amp; Tablets</a></li>
+              <li style="--accent: #EAAB4D"><a href="#categories"><img src="/images/grover-system/2019/wearables.svg" alt="" width="24" height="24" data-no-skeleton />Wearables</a></li>
+              <li style="--accent: #ECC600"><a href="#categories"><img src="/images/grover-system/2019/cameras.svg" alt="" width="24" height="24" data-no-skeleton />Cameras</a></li>
+              <li style="--accent: #A8BC30"><a href="#categories"><img src="/images/grover-system/2019/gaming-and-vr.svg" alt="" width="24" height="24" data-no-skeleton />Gaming &amp; VR</a></li>
+              <li style="--accent: #5AC627"><a href="#categories"><img src="/images/grover-system/2019/home-entertainment.svg" alt="" width="24" height="24" data-no-skeleton />Home Entertainment</a></li>
+              <li style="--accent: #2FD4C0"><a href="#categories"><img src="/images/grover-system/2019/audio-and-music.svg" alt="" width="24" height="24" data-no-skeleton />Audio &amp; Music</a></li>
+              <li style="--accent: #2882EB"><a href="#categories"><img src="/images/grover-system/2019/drones.svg" alt="" width="24" height="24" data-no-skeleton />Drones</a></li>
+              <li style="--accent: #5336C3"><a href="#categories"><img src="/images/grover-system/2019/e-mobility.svg" alt="" width="24" height="24" data-no-skeleton />E-Mobility</a></li>
+              <li style="--accent: #B819BB"><a href="#categories"><img src="/images/grover-system/2019/smart-home.svg" alt="" width="24" height="24" data-no-skeleton />Smart Home</a></li>
+            </ul>
+            <div class="grv-swatches" aria-label="Category colors">
+              <span style="--accent: #F35757"><i></i>#F35757</span>
+              <span style="--accent: #F8881F"><i></i>#F8881F</span>
+              <span style="--accent: #EAAB4D"><i></i>#EAAB4D</span>
+              <span style="--accent: #ECC600"><i></i>#ECC600</span>
+              <span style="--accent: #A8BC30"><i></i>#A8BC30</span>
+              <span style="--accent: #5AC627"><i></i>#5AC627</span>
+              <span style="--accent: #2FD4C0"><i></i>#2FD4C0</span>
+              <span style="--accent: #2882EB"><i></i>#2882EB</span>
+              <span style="--accent: #5336C3"><i></i>#5336C3</span>
+              <span style="--accent: #B819BB"><i></i>#B819BB</span>
+            </div>
+          </div>
+          <figcaption>The first layer of the category menu, rebuilt from grover.com's archived stylesheet (November 2019) with the original icons and category colors. Hover a row.</figcaption>
         </figure>
 
         <iframe
@@ -57,414 +140,105 @@ product’s many facets."
           frameborder="0"
           allow="autoplay; fullscreen"
           allowfullscreen
+          title="The two-layer category menu in use."
         ></iframe>
         <script src="https://player.vimeo.com/api/player.js"></script>
+        <p class="grv-note">The full two-layer menu in use.</p>
 
-        <h2>Category navigation</h2>
         <p>
-          <br />Categories are often a mess of dropdowns and complex site
-          structures. With the rainbow-themed, two-layer category dropdown I
-          made that experience a bit more delightful.
+          The rainbow went live with the redesigned header in August 2019.
+          By December the menu had moved to a single brand purple, and the
+          icons were re-exported in blue to match, but the category structure
+          and the icons stayed.
         </p>
+      </section>
+
+      <hr />
+      <section id="icons">
+        <h2>Icons</h2>
         <p>
-          In the implementation, we built a hidden usability-enhancing front-end
-          trick: by drawing an invisible triangle from the user’s cursor to the
-          list of subcategories on the right, the user can move from left to
-          right within that triangle without accidentally selecting other
-          categories along the way. The best thing about this feature is that
-          users probably don’t even notice it.
+          I drew 44 icons, one for every category and subcategory, on a 24px
+          grid with a heavy, rounded line, used in the menu, on category pages
+          and across the product. Each top-level family carried its category
+          color.
         </p>
+
+        <figure class="grv-stage">
+          <div class="grv-icon-sheet">
+            <img src="/images/grover-system/2019/computers.svg" alt="Computers" data-no-skeleton /><img src="/images/grover-system/2019/computers__2-in-1-laptops.svg" alt="2-in-1 laptops" data-no-skeleton /><img src="/images/grover-system/2019/computers__desktop-computers.svg" alt="Desktop computers" data-no-skeleton /><img src="/images/grover-system/2019/computers__gaming-computers.svg" alt="Gaming computers" data-no-skeleton /><img src="/images/grover-system/2019/computers__monitors.svg" alt="Monitors" data-no-skeleton /><img src="/images/grover-system/2019/computers__computer-accessories.svg" alt="Computer accessories" data-no-skeleton />
+            <img src="/images/grover-system/2019/phones-and-tablets.svg" alt="Phones and tablets" data-no-skeleton /><img src="/images/grover-system/2019/phones-and-tablets__tablets.svg" alt="Tablets" data-no-skeleton /><img src="/images/grover-system/2019/phones-and-tablets__e-readers.svg" alt="E-readers" data-no-skeleton /><img src="/images/grover-system/2019/phones-and-tablets__phone-accessories.svg" alt="Phone accessories" data-no-skeleton />
+            <img src="/images/grover-system/2019/wearables__apple-watches.svg" alt="Apple watches" data-no-skeleton /><img src="/images/grover-system/2019/wearables__activity-trackers.svg" alt="Activity trackers" data-no-skeleton /><img src="/images/grover-system/2019/wearables__sport-and-gps-trackers.svg" alt="Sport and GPS watches" data-no-skeleton />
+            <img src="/images/grover-system/2019/cameras__digital-cameras.svg" alt="Digital cameras" data-no-skeleton /><img src="/images/grover-system/2019/cameras__action-cameras.svg" alt="Action cameras" data-no-skeleton /><img src="/images/grover-system/2019/cameras__instant-cameras.svg" alt="Instant cameras" data-no-skeleton /><img src="/images/grover-system/2019/cameras__point-and-shoot.svg" alt="Point and shoot cameras" data-no-skeleton /><img src="/images/grover-system/2019/cameras__lenses.svg" alt="Lenses" data-no-skeleton /><img src="/images/grover-system/2019/cameras__camcorder.svg" alt="Camcorders" data-no-skeleton /><img src="/images/grover-system/2019/cameras__camera-accessories.svg" alt="Camera accessories" data-no-skeleton />
+            <img src="/images/grover-system/2019/gaming-and-vr.svg" alt="Gaming and VR" data-no-skeleton /><img src="/images/grover-system/2019/gaming-and-vr__virtual-reality.svg" alt="Virtual reality" data-no-skeleton /><img src="/images/grover-system/2019/gaming-and-vr__retrogaming.svg" alt="Retro gaming" data-no-skeleton /><img src="/images/grover-system/2019/gaming-and-vr__gaming-accessories.svg" alt="Gaming accessories" data-no-skeleton /><img src="/images/grover-system/2019/gaming-and-vr__other-games.svg" alt="Other games" data-no-skeleton />
+            <img src="/images/grover-system/2019/home-entertainment__tv.svg" alt="TV" data-no-skeleton /><img src="/images/grover-system/2019/home-entertainment__home-cinema.svg" alt="Home cinema" data-no-skeleton /><img src="/images/grover-system/2019/home-entertainment__projectors.svg" alt="Projectors" data-no-skeleton />
+            <img src="/images/grover-system/2019/audio-and-music__headphones.svg" alt="Headphones" data-no-skeleton /><img src="/images/grover-system/2019/audio-and-music__bluetooth-speakers.svg" alt="Bluetooth speakers" data-no-skeleton /><img src="/images/grover-system/2019/audio-and-music__hi-fi-audio.svg" alt="Hi-fi audio" data-no-skeleton /><img src="/images/grover-system/2019/audio-and-music__dj-equipment.svg" alt="DJ equipment" data-no-skeleton /><img src="/images/grover-system/2019/audio-and-music__musical-instruments.svg" alt="Musical instruments" data-no-skeleton />
+            <img src="/images/grover-system/2019/drones.svg" alt="Drones" data-no-skeleton />
+            <img src="/images/grover-system/2019/e-mobility__hoverboards.svg" alt="Hoverboards" data-no-skeleton /><img src="/images/grover-system/2019/e-mobility__scooters.svg" alt="Scooters" data-no-skeleton /><img src="/images/grover-system/2019/e-mobility__gps-and-car-accessories.svg" alt="GPS and car accessories" data-no-skeleton />
+            <img src="/images/grover-system/2019/smart-home.svg" alt="Smart home" data-no-skeleton /><img src="/images/grover-system/2019/smart-home__smart-appliances.svg" alt="Smart appliances" data-no-skeleton /><img src="/images/grover-system/2019/smart-home__robot-cleaners.svg" alt="Robot cleaners" data-no-skeleton /><img src="/images/grover-system/2019/smart-home__intelligent-security.svg" alt="Intelligent security" data-no-skeleton /><img src="/images/grover-system/2019/smart-home__coffee-machine.svg" alt="Coffee machines" data-no-skeleton />
+          </div>
+          <figcaption>The category icons as they were served on grover.com in 2019, colored by category.</figcaption>
+        </figure>
+
+        <p>
+          They've outlasted almost everything else from that era. Grover
+          has redesigned its site since, the rainbow is gone, and the icons
+          are a single dark gray now, but most of the category icons on
+          grover.com today are the same drawings. You can check: the live path
+          data is my 24px geometry scaled up to a 1000px grid and rounded.
+          About 33 of the 42 category icons on the site today are mine; the
+          rest belong to categories that came later or were redrawn.
+        </p>
+
+        <figure class="grv-stage">
+          <div class="grv-lineage">
+            <div class="grv-lineage-head"><span>2019</span><span>Late 2019</span><span>2026</span></div>
+            <div><img src="/images/grover-system/2019/audio-and-music__headphones.svg" alt="Headphones, 2019" data-no-skeleton /><img src="/images/grover-system/2020/audio-and-music__headphones.svg" alt="Headphones, late 2019" data-no-skeleton /><img src="/images/grover-system/live/audio-and-music__headphones.svg" alt="Headphones, 2026" data-no-skeleton /></div>
+            <div><img src="/images/grover-system/2019/computers__monitors.svg" alt="Monitors, 2019" data-no-skeleton /><img src="/images/grover-system/2020/computers__monitors.svg" alt="Monitors, late 2019" data-no-skeleton /><img src="/images/grover-system/live/computers__monitors.svg" alt="Monitors, 2026" data-no-skeleton /></div>
+            <div><img src="/images/grover-system/2019/cameras__digital-cameras.svg" alt="Digital cameras, 2019" data-no-skeleton /><img src="/images/grover-system/2020/cameras__digital-cameras.svg" alt="Digital cameras, late 2019" data-no-skeleton /><img src="/images/grover-system/live/cameras__digital-cameras.svg" alt="Digital cameras, 2026" data-no-skeleton /></div>
+            <div><img src="/images/grover-system/2019/gaming-and-vr__virtual-reality.svg" alt="Virtual reality, 2019" data-no-skeleton /><img src="/images/grover-system/2020/gaming-and-vr__virtual-reality.svg" alt="Virtual reality, late 2019" data-no-skeleton /><img src="/images/grover-system/live/gaming-and-vr__virtual-reality.svg" alt="Virtual reality, 2026" data-no-skeleton /></div>
+            <div><img src="/images/grover-system/2019/wearables__apple-watches.svg" alt="Apple watches, 2019" data-no-skeleton /><img src="/images/grover-system/2020/wearables__apple-watches.svg" alt="Apple watches, late 2019" data-no-skeleton /><img src="/images/grover-system/live/wearables__apple-watches.svg" alt="Apple watches, 2026" data-no-skeleton /></div>
+            <div><img src="/images/grover-system/2019/phones-and-tablets__phone-accessories.svg" alt="Phone accessories, 2019" data-no-skeleton /><img src="/images/grover-system/2020/phones-and-tablets__phone-accessories.svg" alt="Phone accessories, late 2019" data-no-skeleton /><img src="/images/grover-system/live/phones-and-tablets__phone-accessories.svg" alt="Phone accessories, 2026" data-no-skeleton /></div>
+            <div><img src="/images/grover-system/2019/audio-and-music__musical-instruments.svg" alt="Musical instruments, 2019" data-no-skeleton /><img src="/images/grover-system/2020/audio-and-music__musical-instruments.svg" alt="Musical instruments, late 2019" data-no-skeleton /><img src="/images/grover-system/live/audio-and-music__musical-instruments.svg" alt="Musical instruments, 2026" data-no-skeleton /></div>
+            <div><img src="/images/grover-system/2019/smart-home__robot-cleaners.svg" alt="Robot cleaners, 2019" data-no-skeleton /><img src="/images/grover-system/2020/smart-home__robot-cleaners.svg" alt="Robot cleaners, late 2019" data-no-skeleton /><img src="/images/grover-system/live/smart-home__robot-cleaners.svg" alt="Robot cleaners, 2026" data-no-skeleton /></div>
+          </div>
+          <figcaption>The same drawings across three versions of the site: the original colored icons, the blue re-export, and the icons on grover.com today. All three are the files the site served.</figcaption>
+        </figure>
+      </section>
+
+      <hr />
+      <section id="foundations">
+        <h2>Foundations that stayed</h2>
+        <p>
+          Underneath the category system sat a small set of foundations:
+          Grover's pink, a near-black text color instead of pure black, a
+          single hairline color for borders, two shadows and a short list of
+          corner radii. Compare grover.com's stylesheet from late 2019 with
+          Grover's design system package today and these values haven't
+          changed by a single digit.
+        </p>
+
+        <figure class="grv-stage">
+          <div class="grv-foundations">
+            <div class="grv-swatch" style="--c: #FE1251"><i></i><span>Pink</span><code>#FE1251</code></div>
+            <div class="grv-swatch" style="--c: #333333"><i></i><span>Text</span><code>#333333</code></div>
+            <div class="grv-swatch" style="--c: #F1F1F1"><i></i><span>Hairline</span><code>#F1F1F1</code></div>
+            <div class="grv-shadow" style="box-shadow: 0px 4px 10px rgba(0,0,0,0.13), 0px 0px 3px rgba(0,0,0,0.05)"><span>Shadow, normal</span><code>0 4px 10px · 0 0 3px</code></div>
+            <div class="grv-shadow" style="box-shadow: 0px 7px 15px rgba(0,0,0,0.13), 0px 0px 3px rgba(0,0,0,0.05)"><span>Shadow, strong</span><code>0 7px 15px · 0 0 3px</code></div>
+            <div class="grv-radius" style="border-radius: 8px"><span>Radius</span><code>8px</code></div>
+            <div class="grv-radius" style="border-radius: 24px"><span>Radius</span><code>24px</code></div>
+          </div>
+          <figcaption>Values that appear in grover.com's CSS in late 2019 and, unchanged, in Grover's design system today.</figcaption>
+        </figure>
       </section>
       <hr />
       <section>
-        <p>
-          To go along with this rainbow-colored category experience, I drew 44
-          icons representing each product category.
-        </p>
-
-        <a role="presentation">
-          <noscript
-            ><img
-              src="/images/grover/Computers---2-in-1-Laptops-a36bc18c.png" width="240" height="240"
-              alt="Computers - 2-in-1 Laptops.png" loading="lazy" decoding="async" /></noscript
-          ><img src="" alt="Computers - 2-in-1 Laptops.png" />
-        </a>
-
-        <a role="presentation">
-          <noscript
-            ><img
-              src="/images/grover/Computers---Accessories-ddd25971.png" width="240" height="240"
-              alt="Computers - Accessories.png" loading="lazy" decoding="async" /></noscript
-          ><img src="" alt="Computers - Accessories.png" />
-        </a>
-
-        <a role="presentation">
-          <noscript
-            ><img
-              src="/images/grover/Computers---Desktop-Computers-3529441e.png" width="240" height="240"
-              alt="Computers - Desktop Computers.png" loading="lazy" decoding="async" /></noscript
-          ><img src="" alt="Computers - Desktop Computers.png" />
-        </a>
-
-        <a role="presentation">
-          <noscript
-            ><img
-              src="/images/grover/Computers---Gaming-Computers-7f15498c.png" width="240" height="240"
-              alt="Computers - Gaming Computers.png" loading="lazy" decoding="async" /></noscript
-          ><img src="" alt="Computers - Gaming Computers.png" />
-        </a>
-
-        <a role="presentation">
-          <noscript
-            ><img
-              src="/images/grover/Computers---Monitors-9ae5853a.png" width="240" height="240"
-              alt="Computers - Monitors.png" loading="lazy" decoding="async" /></noscript
-          ><img src="" alt="Computers - Monitors.png" />
-        </a>
-
-        <a role="presentation">
-          <noscript
-            ><img
-              src="/images/grover/Computers-adc14274.png" width="240" height="240"
-              alt="Computers.png" loading="lazy" decoding="async" /></noscript
-          ><img src="" alt="Computers.png" />
-        </a>
-
-        <a role="presentation">
-          <noscript
-            ><img
-              src="/images/grover/Phones-and-Tablets---Accessories-d635150c.png" width="240" height="240"
-              alt="Phones and Tablets - Accessories.png" loading="lazy" decoding="async" /></noscript
-          ><img src="" alt="Phones and Tablets - Accessories.png" />
-        </a>
-
-        <a role="presentation">
-          <noscript
-            ><img
-              src="/images/grover/Phones-and-Tablets---eReaders-ac3df313.png" width="240" height="240"
-              alt="Phones and Tablets - eReaders.png" loading="lazy" decoding="async" /></noscript
-          ><img src="" alt="Phones and Tablets - eReaders.png" />
-        </a>
-
-        <a role="presentation">
-          <noscript
-            ><img
-              src="/images/grover/Phones-and-Tablets---Tablet-c8bb7766.png" width="240" height="240"
-              alt="Phones and Tablets - Tablet.png" loading="lazy" decoding="async" /></noscript
-          ><img src="" alt="Phones and Tablets - Tablet.png" />
-        </a>
-
-        <a role="presentation">
-          <noscript
-            ><img
-              src="/images/grover/Phones-and-Tablets-77315ed1.png" width="240" height="240"
-              alt="Phones and Tablets.png" loading="lazy" decoding="async" /></noscript
-          ><img src="" alt="Phones and Tablets.png" />
-        </a>
-
-        <a role="presentation">
-          <noscript
-            ><img
-              src="/images/grover/Wearables---Activity-Trackers-3ee1843f.png" width="240" height="240"
-              alt="Wearables - Activity Trackers.png" loading="lazy" decoding="async" /></noscript
-          ><img src="" alt="Wearables - Activity Trackers.png" />
-        </a>
-
-        <a role="presentation">
-          <noscript
-            ><img
-              src="/images/grover/Wearables---Apple-Watches-61d39c25.png" width="240" height="240"
-              alt="Wearables - Apple Watches.png" loading="lazy" decoding="async" /></noscript
-          ><img src="" alt="Wearables - Apple Watches.png" />
-        </a>
-
-        <a role="presentation">
-          <noscript
-            ><img
-              src="/images/grover/Wearables---GPS-Sport-Watches-35a4f1ba.png" width="240" height="240"
-              alt="Wearables - GPS &amp; Sport Watches.png" loading="lazy" decoding="async" /></noscript
-          ><img src="" alt="Wearables - GPS &amp; Sport Watches.png" />
-        </a>
-
-        <a role="presentation">
-          <noscript
-            ><img
-              src="/images/grover/Wearables---Smart-Watches-3ded70cc.png" width="240" height="240"
-              alt="Wearables - Smart Watches.png" loading="lazy" decoding="async" /></noscript
-          ><img src="" alt="Wearables - Smart Watches.png" />
-        </a>
-
-        <a role="presentation">
-          <noscript
-            ><img
-              src="/images/grover/Cameras---Accessories-0c5636f4.png" width="240" height="240"
-              alt="Cameras - Accessories.png" loading="lazy" decoding="async" /></noscript
-          ><img src="" alt="Cameras - Accessories.png" />
-        </a>
-
-        <a role="presentation">
-          <noscript
-            ><img
-              src="/images/grover/Cameras---Action-b61d97ea.png" width="240" height="240"
-              alt="Cameras - Action.png" loading="lazy" decoding="async" /></noscript
-          ><img src="" alt="Cameras - Action.png" />
-        </a>
-
-        <a role="presentation">
-          <noscript
-            ><img
-              src="/images/grover/Cameras---Camcorders-4d287bb4.png" width="240" height="240"
-              alt="Cameras - Camcorders.png" loading="lazy" decoding="async" /></noscript
-          ><img src="" alt="Cameras - Camcorders.png" />
-        </a>
-
-        <a role="presentation">
-          <noscript
-            ><img
-              src="/images/grover/Cameras---DSLR-ee78ede2.png" width="240" height="240"
-              alt="Cameras - DSLR.png" loading="lazy" decoding="async" /></noscript
-          ><img src="" alt="Cameras - DSLR.png" />
-        </a>
-
-        <a role="presentation">
-          <noscript
-            ><img
-              src="/images/grover/Cameras---Instant-562715ed.png" width="240" height="240"
-              alt="Cameras - Instant.png" loading="lazy" decoding="async" /></noscript
-          ><img src="" alt="Cameras - Instant.png" />
-        </a>
-
-        <a role="presentation">
-          <noscript
-            ><img
-              src="/images/grover/Cameras---Lenses-4736f0ff.png" width="240" height="240"
-              alt="Cameras - Lenses.png" loading="lazy" decoding="async" /></noscript
-          ><img src="" alt="Cameras - Lenses.png" />
-        </a>
-
-        <a role="presentation">
-          <noscript
-            ><img
-              src="/images/grover/Cameras---Point-Shoot-24ea87b2.png" width="240" height="240"
-              alt="Cameras - Point &amp; Shoot.png" loading="lazy" decoding="async" /></noscript
-          ><img src="" alt="Cameras - Point &amp; Shoot.png" />
-        </a>
-
-        <a role="presentation">
-          <noscript
-            ><img
-              src="/images/grover/Gaming-VR-fb633a32.png" width="240" height="240"
-              alt="Gaming &amp; VR.png" loading="lazy" decoding="async" /></noscript
-          ><img src="" alt="Gaming &amp; VR.png" />
-        </a>
-
-        <a role="presentation">
-          <noscript
-            ><img
-              src="/images/grover/Gaming-VR---VR-29566ece.png" width="240" height="240"
-              alt="Gaming &amp; VR - VR.png" loading="lazy" decoding="async" /></noscript
-          ><img src="" alt="Gaming &amp; VR - VR.png" />
-        </a>
-
-        <a role="presentation">
-          <noscript
-            ><img
-              src="/images/grover/Gaming-VR---Retro-Gaming-710ad8a2.png" width="240" height="240"
-              alt="Gaming &amp; VR - Retro Gaming.png" loading="lazy" decoding="async" /></noscript
-          ><img src="" alt="Gaming &amp; VR - Retro Gaming.png" />
-        </a>
-
-        <a role="presentation">
-          <noscript
-            ><img
-              src="/images/grover/Gaming-VR---Accessories-bac2decc.png" width="240" height="240"
-              alt="Gaming &amp; VR - Accessories.png" loading="lazy" decoding="async" /></noscript
-          ><img src="" alt="Gaming &amp; VR - Accessories.png" />
-        </a>
-
-        <a role="presentation">
-          <noscript
-            ><img
-              src="/images/grover/Gaming-VR---Other-games-56c1638f.png" width="240" height="240"
-              alt="Gaming &amp; VR - Other games.png" loading="lazy" decoding="async" /></noscript
-          ><img src="" alt="Gaming &amp; VR - Other games.png" />
-        </a>
-
-        <a role="presentation">
-          <noscript
-            ><img
-              src="/images/grover/Home-Entertainment---Projectors-0ac6dbbe.png" width="240" height="240"
-              alt="Home Entertainment - Projectors.png" loading="lazy" decoding="async" /></noscript
-          ><img src="" alt="Home Entertainment - Projectors.png" />
-        </a>
-
-        <a role="presentation">
-          <noscript
-            ><img
-              src="/images/grover/Home-Entertainment---Home-Cinema-5e338281.png" width="240" height="240"
-              alt="Home Entertainment - Home Cinema.png" loading="lazy" decoding="async" /></noscript
-          ><img src="" alt="Home Entertainment - Home Cinema.png" />
-        </a>
-
-        <a role="presentation">
-          <noscript
-            ><img
-              src="/images/grover/Home-Entertainment---TV-d2b5755d.png" width="240" height="240"
-              alt="Home Entertainment - TV.png" loading="lazy" decoding="async" /></noscript
-          ><img src="" alt="Home Entertainment - TV.png" />
-        </a>
-
-        <a role="presentation">
-          <noscript
-            ><img
-              src="/images/grover/Audio---Headphones-f7239d59.png" width="240" height="240"
-              alt="Audio - Headphones.png" loading="lazy" decoding="async" /></noscript
-          ><img src="" alt="Audio - Headphones.png" />
-        </a>
-
-        <a role="presentation">
-          <noscript
-            ><img
-              src="/images/grover/Audio---Hifi-Audio-0abfc026.png" width="240" height="240"
-              alt="Audio - Hifi Audio.png" loading="lazy" decoding="async" /></noscript
-          ><img src="" alt="Audio - Hifi Audio.png" />
-        </a>
-
-        <a role="presentation">
-          <noscript
-            ><img
-              src="/images/grover/Audio---Bluetooth-02295dd5.png" width="240" height="240"
-              alt="Audio - Bluetooth.png" loading="lazy" decoding="async" /></noscript
-          ><img src="" alt="Audio - Bluetooth.png" />
-        </a>
-
-        <a role="presentation">
-          <noscript
-            ><img
-              src="/images/grover/Audio---DJ-Equipment-11685e94.png" width="240" height="240"
-              alt="Audio - DJ Equipment.png" loading="lazy" decoding="async" /></noscript
-          ><img src="" alt="Audio - DJ Equipment.png" />
-        </a>
-
-        <a role="presentation">
-          <noscript
-            ><img
-              src="/images/grover/Audio---Musical-Instruments-432a0e10.png" width="240" height="240"
-              alt="Audio - Musical Instruments.png" loading="lazy" decoding="async" /></noscript
-          ><img src="" alt="Audio - Musical Instruments.png" />
-        </a>
-
-        <a role="presentation">
-          <noscript
-            ><img
-              src="/images/grover/Drones-baf64bfc.png" width="240" height="240"
-              alt="Drones.png" loading="lazy" decoding="async" /></noscript
-          ><img src="" alt="Drones.png" />
-        </a>
-
-        <a role="presentation">
-          <noscript
-            ><img
-              src="/images/grover/eMobility---GPS-Car-06016658.png" width="240" height="240"
-              alt="eMobility - GPS &amp; Car.png" loading="lazy" decoding="async" /></noscript
-          ><img src="" alt="eMobility - GPS &amp; Car.png" />
-        </a>
-
-        <a role="presentation">
-          <noscript
-            ><img
-              src="/images/grover/eMobility---Hoverboards-f9cb7a9f.png" width="240" height="240"
-              alt="eMobility - Hoverboards.png" loading="lazy" decoding="async" /></noscript
-          ><img src="" alt="eMobility - Hoverboards.png" />
-        </a>
-
-        <a role="presentation">
-          <noscript
-            ><img
-              src="/images/grover/eMobility---Scooters-f566805d.png" width="240" height="240"
-              alt="eMobility - Scooters.png" loading="lazy" decoding="async" /></noscript
-          ><img src="" alt="eMobility - Scooters.png" />
-        </a>
-
-        <a role="presentation">
-          <noscript
-            ><img
-              src="/images/grover/Smart-Home---Appliances-314e9560.png" width="240" height="240"
-              alt="Smart Home - Appliances.png" loading="lazy" decoding="async" /></noscript
-          ><img src="" alt="Smart Home - Appliances.png" />
-        </a>
-
-        <a role="presentation">
-          <noscript
-            ><img
-              src="/images/grover/Smart-Home---Coffee-Machines-5a0cccf0.png" width="240" height="240"
-              alt="Smart Home - Coffee Machines.png" loading="lazy" decoding="async" /></noscript
-          ><img src="" alt="Smart Home - Coffee Machines.png" />
-        </a>
-
-        <a role="presentation">
-          <noscript
-            ><img
-              src="/images/grover/Smart-Home---Robot-Vacuums-9346a8a9.png" width="240" height="240"
-              alt="Smart Home - Robot Vacuums.png" loading="lazy" decoding="async" /></noscript
-          ><img src="" alt="Smart Home - Robot Vacuums.png" />
-        </a>
-
-        <a role="presentation">
-          <noscript
-            ><img
-              src="/images/grover/Smart-Home---Security-c292467e.png" width="240" height="240"
-              alt="Smart Home - Security.png" loading="lazy" decoding="async" /></noscript
-          ><img src="" alt="Smart Home - Security.png" />
-        </a>
-
-        <a role="presentation">
-          <noscript
-            ><img
-              src="/images/grover/Smart-Home-e375c013.png" width="240" height="240"
-              alt="Smart Home.png" loading="lazy" decoding="async" /></noscript
-          ><img src="" alt="Smart Home.png" />
-        </a>
-
-        <style type="text/css" id="design-grid-css">
-          #block-yui_3_17_2_1_1559113393260_15942
-            .sqs-gallery-block-grid
-            .sqs-gallery-design-grid {
-            margin-right: -50px;
-          }
-          #block-yui_3_17_2_1_1559113393260_15942
-            .sqs-gallery-block-grid
-            .sqs-gallery-design-grid-slide
-            .margin-wrapper {
-            margin-right: 50px;
-            margin-bottom: 50px;
-          }
-        </style>
-
-        <p>
-          These category icons and colors bring life and color to other parts of
-          the product, where products are themed by the category color.
-        </p>
-
-        <div class="grover-signup-grid">
-          <figure>
-            <img
-              src="/images/grover/category-browsing-b00142bb.jpg" width="2217" height="1233"
-              alt="category browsing.jpg" loading="lazy" decoding="async" />
-          </figure>
-        </div>
+        <blockquote class="grv-quote"><p>“The catalogue is much more visible. It looks tidy and modern.”</p><cite>From a Grover customer survey sent out after the launch.</cite></blockquote>
       </section>
       <hr />
-      <section>
-        <h1>“The catalogue is much more visible. It looks tidy and modern.”</h1>
-        <p></p>
-        <p>From a Grover customer survey sent out after the launch.</p>
-      </section>
-      <hr />
-      <section>
+      <section id="illustration">
         <h2>Illustration</h2>
         <p>
-          <br />I worked with
+          I worked with
           <a href="http://penny.io" target="_blank">Penny</a> to define a fun,
           friendly new illustration style. We wanted to do something that made
           the service feel easy to use and lighthearted.
@@ -611,16 +385,13 @@ product’s many facets."
       </section>
       <hr />
       <section>
-        <h1>
-          In a poll of our users, 74% responded that the new design was a
-          positive change.
-        </h1>
+        <blockquote class="grv-quote"><p>In a poll of our users, 74% said the new design was a positive change.</p></blockquote>
       </section>
       <hr />
-      <section>
-        <h2>Product Discovery</h2>
+      <section id="discovery">
+        <h2>Product discovery</h2>
         <p>
-          <br />To give users a new way to discover products and keep the
+          To give users a new way to discover products and keep the
           experience fresh and automatically updated, we built a product feed
           that shows something new each time the page is visited. Rules like
           “Show the top product from the top 4 categories in the first row”
@@ -638,10 +409,10 @@ product’s many facets."
         </figure>
       </section>
       <hr />
-      <section>
-        <h2>Product Details Page</h2>
+      <section id="pdp">
+        <h2>Product page</h2>
         <p>
-          <br />A lot of ad traffic is sent directly to the product detail
+          A lot of ad traffic is sent directly to the product detail
           pages, so on these pages we had the unique challenge of showing all
           the product details in addition to explaining how Grover works. The
           result is a long page with tons of information on it, structured in a
@@ -656,22 +427,18 @@ product’s many facets."
       </section>
       <hr />
       <section>
-        <h1>
-          “The design is more modern. You know directly that it’s the market
-          leader.”
-        </h1>
-        <p>From a Grover customer survey sent out after the launch.</p>
+        <blockquote class="grv-quote"><p>“The design is more modern. You know directly that it’s the market leader.”</p><cite>From a Grover customer survey sent out after the launch.</cite></blockquote>
       </section>
       <hr />
       <section>
         <div class="project-nav">
           <div class="project-nav-item">
             <p>Previous project</p>
-            <h2><a href="/projects/8-bit-products">8-bit Products</a></h2>
+            <h2><a href="/projects/drips">Drips</a></h2>
           </div>
           <div class="project-nav-item">
             <p>Next project</p>
-            <h2><a href="/projects/icons">Icons</a></h2>
+            <h2><a href="/projects/migaku">Migaku</a></h2>
           </div>
         </div>
       </section>
