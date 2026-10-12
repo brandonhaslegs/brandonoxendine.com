@@ -9,9 +9,9 @@
       rel="canonical"
       href="https://www.brandonoxendine.com/projects/migaku"
     />
-<link rel="stylesheet" href="/assets/css/reset.css?v=20261012d" />
-<link rel="stylesheet" href="/assets/css/site.css?v=20261012d" />
-<link rel="stylesheet" href="/assets/css/migaku.css?v=20261012d" />
+<link rel="stylesheet" href="/assets/css/reset.css?v=20261012e" />
+<link rel="stylesheet" href="/assets/css/site.css?v=20261012e" />
+<link rel="stylesheet" href="/assets/css/migaku.css?v=20261012e" />
 <link rel="icon" href="/favicon.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,10 +19,10 @@
   rel="stylesheet"
   href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
 />
-<script defer src="/assets/js/image-skeleton.js?v=20261012d"></script>
-<script defer src="/assets/js/compare.js?v=20261012d"></script>
-<script defer src="/assets/js/lightbox.js?v=20261012d"></script>
-<script defer src="/assets/js/migaku.js?v=20261012d"></script>
+<script defer src="/assets/js/image-skeleton.js?v=20261012e"></script>
+<script defer src="/assets/js/compare.js?v=20261012e"></script>
+<script defer src="/assets/js/lightbox.js?v=20261012e"></script>
+<script defer src="/assets/js/migaku.js?v=20261012e"></script>
 </head>
   <body class="case-study wide-media light-page migaku-page">
     <header id="site-header"></header>
@@ -117,7 +117,7 @@
           black.
         </p>
 
-        <figure class="mgk-stage mgk-wordmark">
+        <figure class="mgk-wordmark">
           <img src="/images/migaku-system/migaku-logo-ace4e3d1.svg" width="153" height="30" alt="The Migaku wordmark." class="no-outline" />
           <figcaption>The wordmark.</figcaption>
         </figure>
@@ -213,13 +213,17 @@
           lighter and the shadows go neutral.
         </p>
 
-        <figure class="mgk-stage mgk-elevation">
+        <figure class="mgk-stage mgk-elevation" data-theme="light">
+          <div class="mgk-theme-toggle compare-toggle" role="group" aria-label="Theme">
+            <button type="button" data-theme="light" aria-pressed="true">Light</button>
+            <button type="button" data-theme="dark" aria-pressed="false">Dark</button>
+          </div>
           <div class="mgk-elevation-grid">
             <div class="e1"><span>elevation-1</span><small>callouts, settings cards</small></div>
             <div class="e2"><span>elevation-2</span><small>toolbar, toasts, focused inputs</small></div>
             <div class="e3"><span>elevation-3</span><small>app window, popup dictionary</small></div>
           </div>
-          <figcaption>Three shadow levels, each five or six layers deep, tinted with the ink.</figcaption>
+          <figcaption>Three shadow levels, each five or six layers deep, in both themes.</figcaption>
         </figure>
       </section>
 
@@ -227,12 +231,10 @@
       <section id="type">
         <h2>Type</h2>
         <p>
-          Two families. GT Maru Black does all the shouting: headings, buttons,
-          the little uppercase labels. Inter at a slightly heavy 500 does
-          everything you actually read. There are ten named styles, each with a
-          mobile and a desktop size, and that’s the whole
-          scale. The heading with the gradient fill is a modifier, not a
-          separate style.
+          Two families. GT Maru does all the shouting: headings, buttons, the
+          little uppercase labels. Inter does everything you actually read.
+          There are ten named styles, each with a mobile and a desktop size,
+          and that’s the whole scale.
         </p>
         <figure>
           <img style="max-width: 1200px" src="/images/migaku-system/type-light-1fb70718.webp" width="2400" height="2382"
@@ -254,18 +256,18 @@
           motion.
         </p>
 
-        <figure class="compare mgk-sheet" style="--w: 746px" data-show="before">
+        <figure class="compare mgk-sheet" style="--w: 745px" data-show="before">
           <div class="compare-toggle" role="group" aria-label="Theme">
             <button type="button" data-version="before" aria-pressed="true">Light</button>
             <button type="button" data-version="after" aria-pressed="false">Dark</button>
           </div>
           <div class="compare-stage">
             <div class="compare-layer" data-version="before">
-              <img src="/images/migaku-system/buttons-light-644c8bbd.webp" width="1492" height="1272"
+              <img src="/images/migaku-system/buttons-light-5cf8b7d6.webp" width="1490" height="1272"
                 alt="Light theme: every button variant at default and small size, with an icon, and icon-only." loading="lazy" decoding="async" />
             </div>
             <div class="compare-layer" data-version="after">
-              <img src="/images/migaku-system/buttons-dark-ad875e4a.webp" width="1492" height="1272"
+              <img src="/images/migaku-system/buttons-dark-a1a4d09e.webp" width="1490" height="1272"
                 alt="Dark theme: every button variant at default and small size, with an icon, and icon-only." loading="lazy" decoding="async" />
             </div>
           </div>
@@ -312,18 +314,18 @@
           <figcaption>The squiggle progress bar.</figcaption>
         </figure>
 
-        <figure class="compare mgk-sheet" style="--w: 905px" data-show="before">
+        <figure class="compare mgk-sheet" style="--w: 904px" data-show="before">
           <div class="compare-toggle" role="group" aria-label="Theme">
             <button type="button" data-version="before" aria-pressed="true">Light</button>
             <button type="button" data-version="after" aria-pressed="false">Dark</button>
           </div>
           <div class="compare-stage">
             <div class="compare-layer" data-version="before">
-              <img src="/images/migaku-system/feedback-light-d54c3205.webp" width="1810" height="904"
+              <img src="/images/migaku-system/feedback-light-0e99e1c9.webp" width="1808" height="904"
                 alt="Light theme: status labels, known-words counters, progress bar, callouts and toasts." loading="lazy" decoding="async" />
             </div>
             <div class="compare-layer" data-version="after">
-              <img src="/images/migaku-system/feedback-dark-12ed6c5a.webp" width="1810" height="904"
+              <img src="/images/migaku-system/feedback-dark-a38836d2.webp" width="1808" height="904"
                 alt="Dark theme: status labels, known-words counters, progress bar, callouts and toasts." loading="lazy" decoding="async" />
             </div>
           </div>
@@ -531,6 +533,6 @@
       </section>
       <hr />
     </main>
-    <script src="/assets/js/include-header.js?v=20261012d"></script>
+    <script src="/assets/js/include-header.js?v=20261012e"></script>
   </body>
 </html>

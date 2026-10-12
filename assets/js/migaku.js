@@ -53,8 +53,8 @@
     }
   });
 
-  // Light / dark switch for the accent table.
-  document.querySelectorAll('.mgk-accents').forEach((stage) => {
+  // Light / dark switch for the accent table and elevation.
+  document.querySelectorAll('.mgk-stage[data-theme]').forEach((stage) => {
     const buttons = stage.querySelectorAll('.mgk-theme-toggle button');
     buttons.forEach((button) => {
       button.addEventListener('click', () => {

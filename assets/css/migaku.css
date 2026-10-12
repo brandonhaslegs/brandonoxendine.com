@@ -52,6 +52,10 @@ body.migaku-page .columns > img {
   font-size: 12px;
 }
 
+.mgk-wordmark figcaption {
+  margin-top: 32px;
+}
+
 .mgk-wordmark img {
   display: block;
   width: min(560px, 80%);
@@ -130,29 +134,30 @@ body.migaku-page .columns > img {
   color: var(--mgk-ink);
 }
 
-.mgk-accents {
+/* Light / dark stages: the accent table and elevation */
+.mgk-stage[data-theme] {
   transition: background-color 250ms ease, color 250ms ease;
 }
 
-.mgk-accents[data-theme="dark"] {
+.mgk-stage[data-theme="dark"] {
   background: #161633;
   color: #fff;
 }
 
-.mgk-accents .mgk-theme-toggle {
+.mgk-stage[data-theme] .mgk-theme-toggle {
   border-color: rgba(0 0 90 / 15%);
 }
 
-.mgk-accents[data-theme="dark"] .mgk-theme-toggle {
+.mgk-stage[data-theme="dark"] .mgk-theme-toggle {
   border-color: rgba(255 255 255 / 25%);
 }
 
-.mgk-accents .mgk-theme-toggle button[aria-pressed="true"] {
+.mgk-stage[data-theme] .mgk-theme-toggle button[aria-pressed="true"] {
   background: var(--mgk-ink);
   color: #fff;
 }
 
-.mgk-accents[data-theme="dark"] .mgk-theme-toggle button[aria-pressed="true"] {
+.mgk-stage[data-theme="dark"] .mgk-theme-toggle button[aria-pressed="true"] {
   background: #fff;
   color: #161633;
 }
@@ -226,6 +231,25 @@ body.migaku-page .columns > img {
 .mgk-elevation-grid .e1 { box-shadow: var(--mgk-shadow-1); }
 .mgk-elevation-grid .e2 { box-shadow: var(--mgk-shadow-2); }
 .mgk-elevation-grid .e3 { box-shadow: var(--mgk-shadow-3); }
+
+/* Dark theme: tinted background #0a002a, neutral black shadows, and
+   surfaces that step lighter per level. Production defines only
+   elevation-1 and -2 (#202047, #2b2b60); elevation-3 continues the step. */
+.mgk-elevation[data-theme="dark"] {
+  background: #0a002a;
+}
+
+.mgk-elevation-grid div {
+  transition: background-color 250ms ease, box-shadow 250ms ease;
+}
+
+.mgk-elevation[data-theme="dark"] .e1 { background: #202047; }
+.mgk-elevation[data-theme="dark"] .e2 { background: #2b2b60; }
+.mgk-elevation[data-theme="dark"] .e3 { background: #363679; }
+
+.mgk-elevation[data-theme="dark"] .e1 { box-shadow: 0 4px 5px rgb(0 0 0 / 10%), 0 -0.5px 2px rgb(0 0 0 / 6%), 0 1.3402px 1.5635px rgb(0 0 0 / 3.6%), 0 0.7513px 0.8765px rgb(0 0 0 / 1.8%), 0 0.399px 0.4655px rgb(0 0 0 / 0.6%); }
+.mgk-elevation[data-theme="dark"] .e2 { box-shadow: 0 9px 20px rgb(0 0 0 / 18%), 0 3.76px 8.3556px rgb(0 0 0 / 14.4%), 0 2.0103px 4.4673px rgb(0 0 0 / 8.11%), 0 1.127px 2.5043px rgb(0 0 0 / 3.63%), 0 0.5985px 1.33px rgb(0 0 0 / 2.8%); }
+.mgk-elevation[data-theme="dark"] .e3 { box-shadow: 0 50px 65px rgb(0 0 0 / 17%), 0 15px 27.1554px rgb(0 0 0 / 10%), 0 8px 14.5186px rgb(0 0 0 / 8.5%), 0 3px 8.139px rgb(0 0 0 / 7.3%), 0 0.3819px 4.3225px rgb(0 0 0 / 4%), 0 -0.4313px 1.7987px rgb(0 0 0 / 1.3%); }
 
 /* Squiggle */
 .mgk-squiggle {
@@ -378,7 +402,8 @@ body.case-study main .mgk-legend li {
 
 @media (prefers-reduced-motion: reduce) {
   .mgk-squiggle-fill,
-  .mgk-accents,
+  .mgk-stage[data-theme],
+  .mgk-elevation-grid div,
   .mgk-accent-row i {
     transition: none;
   }
