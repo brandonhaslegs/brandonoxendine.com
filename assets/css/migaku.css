@@ -11,12 +11,6 @@ body.migaku-page {
   color: var(--mgk-ink);
 }
 
-@media (max-width: 900px) {
-  body.migaku-page header {
-    background: #f7f3ff;
-  }
-}
-
 body.migaku-page main h2 {
   font-size: 32px;
   margin: 24px 0 16px;
