@@ -357,9 +357,6 @@ body.case-study main .mgk-legend li {
   width: min(100%, 1008px);
 }
 
-.mgk-specimens {
-  align-items: start;
-}
 
 @media (max-width: 700px) {
   .mgk-cast-grid {
