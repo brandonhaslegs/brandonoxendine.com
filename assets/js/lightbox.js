@@ -76,7 +76,9 @@
     }
   });
 
+  // Anything inside [data-no-zoom] (icon sheets, live demos) stays put.
   document.querySelectorAll('main img').forEach((img) => {
+    if (img.closest('[data-no-zoom]')) return;
     img.classList.add('zoomable');
     img.tabIndex = 0;
     img.setAttribute('role', 'button');
