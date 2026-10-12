@@ -75,14 +75,22 @@ body.migaku-page .columns > img {
 .mgk-cast-grid {
   display: grid;
   grid-template-columns: repeat(6, minmax(0, 1fr));
-  gap: clamp(16px, 3vw, 48px);
-  align-items: end;
+  gap: clamp(8px, 2vw, 32px);
+}
+
+/* Each character sits in the same square and is scaled by eye, so round
+   faces and sparse drawings carry the same visual weight. */
+.mgk-cast-grid .image-frame,
+.mgk-cast-grid > img {
+  aspect-ratio: 1;
+  display: grid;
+  place-items: center;
+  background: transparent;
 }
 
 .mgk-cast-grid img {
-  width: 100%;
-  height: auto;
-  max-height: 180px;
+  width: var(--s, 80%);
+  height: var(--s, 80%);
   object-fit: contain;
 }
 
