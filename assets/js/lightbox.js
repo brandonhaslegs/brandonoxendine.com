@@ -79,10 +79,17 @@
   // Anything inside [data-no-zoom] (icon sheets, live demos) stays put.
   document.querySelectorAll('main img').forEach((img) => {
     if (img.closest('[data-no-zoom]')) return;
+    // Images that link somewhere else keep their link; ones that only link to
+    // their own file zoom instead of navigating away.
+    const link = img.closest('a[href]');
+    if (link && !/\.(png|jpe?g|gif|webp|svg)(\?|#|$)/i.test(link.getAttribute('href'))) return;
     img.classList.add('zoomable');
     img.tabIndex = 0;
     img.setAttribute('role', 'button');
-    img.addEventListener('click', () => open(img));
+    img.addEventListener('click', (event) => {
+      event.preventDefault();
+      open(img);
+    });
     img.addEventListener('keydown', (event) => {
       if (event.key === 'Enter' || event.key === ' ') {
         event.preventDefault();
