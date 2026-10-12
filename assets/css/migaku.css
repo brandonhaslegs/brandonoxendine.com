@@ -16,16 +16,8 @@ body.migaku-page main h2 {
   margin: 24px 0 16px;
 }
 
-body.migaku-page .jump,
-body.migaku-page .provenance-note {
+body.migaku-page .jump {
   text-align: center;
-}
-
-body.migaku-page .provenance-note {
-  font-size: 15px;
-  opacity: 0.7;
-  max-width: 36em;
-  margin: 32px auto 0;
 }
 
 body.migaku-page .stats strong {
