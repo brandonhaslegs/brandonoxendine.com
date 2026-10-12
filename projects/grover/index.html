@@ -14,9 +14,9 @@ product’s many facets."
       rel="canonical"
       href="https://www.brandonoxendine.com/projects/grover"
     />
-<link rel="stylesheet" href="/assets/css/reset.css?v=20261012b" />
-<link rel="stylesheet" href="/assets/css/site.css?v=20261012b" />
-<link rel="stylesheet" href="/assets/css/grover.css?v=20261012b" />
+<link rel="stylesheet" href="/assets/css/reset.css?v=20261012c" />
+<link rel="stylesheet" href="/assets/css/site.css?v=20261012c" />
+<link rel="stylesheet" href="/assets/css/grover.css?v=20261012c" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap" />
 <link rel="icon" href="/favicon.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -25,8 +25,9 @@ product’s many facets."
   rel="stylesheet"
   href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
 />
-<script defer src="/assets/js/image-skeleton.js?v=20261012b"></script>
-<script defer src="/assets/js/lightbox.js?v=20261012b"></script>
+<script defer src="/assets/js/image-skeleton.js?v=20261012c"></script>
+<script defer src="/assets/js/lightbox.js?v=20261012c"></script>
+<script defer src="/assets/js/grover.js?v=20261012c"></script>
 </head>
   <body class="case-study wide-media grover grover-page">
     <header id="site-header"></header>
@@ -67,10 +68,10 @@ product’s many facets."
         </p>
 
         <div class="stats">
-          <div><strong>44</strong><span>category icons I drew</span></div>
-          <div><strong>10</strong><span>category colors</span></div>
-          <div><strong>74%</strong><span>of polled users called the redesign a positive change</span></div>
-          <div><strong>33</strong><span>of my icons still on grover.com in 2026</span></div>
+          <div><strong>44</strong><span>category icons</span></div>
+          <div><strong>10</strong><span>colors</span></div>
+          <div><strong>74%</strong><span>liked it</span></div>
+          <div><strong>3</strong><span>years leading design</span></div>
         </div>
 
         <p class="jump">
@@ -107,18 +108,95 @@ product’s many facets."
         <figure class="grv-stage">
           <div class="grv-menu-demo">
             <div class="grv-pill" aria-hidden="true"><span class="grv-dots"></span>Categories</div>
-            <ul class="grv-menu" aria-label="Grover categories, 2019">
-              <li style="--accent: #F35757"><a href="#categories"><img src="/images/grover-system/2019/computers.svg" alt="" width="24" height="24" data-no-skeleton />Computers</a></li>
-              <li style="--accent: #F8881F"><a href="#categories"><img src="/images/grover-system/2019/phones-and-tablets.svg" alt="" width="24" height="24" data-no-skeleton />Phones &amp; Tablets</a></li>
-              <li style="--accent: #EAAB4D"><a href="#categories"><img src="/images/grover-system/2019/wearables.svg" alt="" width="24" height="24" data-no-skeleton />Wearables</a></li>
-              <li style="--accent: #ECC600"><a href="#categories"><img src="/images/grover-system/2019/cameras.svg" alt="" width="24" height="24" data-no-skeleton />Cameras</a></li>
-              <li style="--accent: #A8BC30"><a href="#categories"><img src="/images/grover-system/2019/gaming-and-vr.svg" alt="" width="24" height="24" data-no-skeleton />Gaming &amp; VR</a></li>
-              <li style="--accent: #5AC627"><a href="#categories"><img src="/images/grover-system/2019/home-entertainment.svg" alt="" width="24" height="24" data-no-skeleton />Home Entertainment</a></li>
-              <li style="--accent: #2FD4C0"><a href="#categories"><img src="/images/grover-system/2019/audio-and-music.svg" alt="" width="24" height="24" data-no-skeleton />Audio &amp; Music</a></li>
-              <li style="--accent: #2882EB"><a href="#categories"><img src="/images/grover-system/2019/drones.svg" alt="" width="24" height="24" data-no-skeleton />Drones</a></li>
-              <li style="--accent: #5336C3"><a href="#categories"><img src="/images/grover-system/2019/e-mobility.svg" alt="" width="24" height="24" data-no-skeleton />E-Mobility</a></li>
-              <li style="--accent: #B819BB"><a href="#categories"><img src="/images/grover-system/2019/smart-home.svg" alt="" width="24" height="24" data-no-skeleton />Smart Home</a></li>
-            </ul>
+            <div class="grv-menu">
+              <ul class="grv-menu-main" aria-label="Grover categories, 2019">
+                <li style="--accent: #F35757"><a href="#categories" data-cat="computers" aria-current="true"><img src="/images/grover-system/2019/computers.svg" alt="" width="24" height="24" data-no-skeleton />Computers</a></li>
+                <li style="--accent: #F8881F"><a href="#categories" data-cat="phones-and-tablets"><img src="/images/grover-system/2019/phones-and-tablets.svg" alt="" width="24" height="24" data-no-skeleton />Phones &amp; Tablets</a></li>
+                <li style="--accent: #EAAB4D"><a href="#categories" data-cat="wearables"><img src="/images/grover-system/2019/wearables.svg" alt="" width="24" height="24" data-no-skeleton />Wearables</a></li>
+                <li style="--accent: #ECC600"><a href="#categories" data-cat="cameras"><img src="/images/grover-system/2019/cameras.svg" alt="" width="24" height="24" data-no-skeleton />Cameras</a></li>
+                <li style="--accent: #A8BC30"><a href="#categories" data-cat="gaming-and-vr"><img src="/images/grover-system/2019/gaming-and-vr.svg" alt="" width="24" height="24" data-no-skeleton />Gaming &amp; VR</a></li>
+                <li style="--accent: #5AC627"><a href="#categories" data-cat="home-entertainment"><img src="/images/grover-system/2019/home-entertainment.svg" alt="" width="24" height="24" data-no-skeleton />Home Entertainment</a></li>
+                <li style="--accent: #2FD4C0"><a href="#categories" data-cat="audio-and-music"><img src="/images/grover-system/2019/audio-and-music.svg" alt="" width="24" height="24" data-no-skeleton />Audio &amp; Music</a></li>
+                <li style="--accent: #2882EB"><a href="#categories" data-cat="drones"><img src="/images/grover-system/2019/drones.svg" alt="" width="24" height="24" data-no-skeleton />Drones</a></li>
+                <li style="--accent: #5336C3"><a href="#categories" data-cat="e-mobility"><img src="/images/grover-system/2019/e-mobility.svg" alt="" width="24" height="24" data-no-skeleton />E-Mobility</a></li>
+                <li style="--accent: #B819BB"><a href="#categories" data-cat="smart-home"><img src="/images/grover-system/2019/smart-home.svg" alt="" width="24" height="24" data-no-skeleton />Smart Home</a></li>
+              </ul>
+              <div class="grv-sub-panel">
+              <ul class="grv-sub" data-cat="computers" style="--accent: #F35757" aria-label="Computers">
+                  <li><a href="#categories"><img src="/images/grover-system/2019/computers__gaming-computers.svg" alt="" width="24" height="24" data-no-skeleton />PC Gaming</a></li>
+                  <li><a href="#categories"><img src="/images/grover-system/2019/computers__2-in-1-laptops.svg" alt="" width="24" height="24" data-no-skeleton />Convertibles</a></li>
+                  <li><a href="#categories"><img src="/images/grover-system/2019/computers__laptops.svg" alt="" width="24" height="24" data-no-skeleton />Laptops</a></li>
+                  <li><a href="#categories"><img src="/images/grover-system/2019/computers__desktop-computers.svg" alt="" width="24" height="24" data-no-skeleton />Desktops &amp; All-in-Ones</a></li>
+                  <li><a href="#categories"><img src="/images/grover-system/2019/computers__monitors.svg" alt="" width="24" height="24" data-no-skeleton />Monitors</a></li>
+                  <li><a href="#categories"><img src="/images/grover-system/2019/computers__computer-accessories.svg" alt="" width="24" height="24" data-no-skeleton />Computer Accessories</a></li>
+                  <li class="grv-view-all"><a href="#categories">View all</a></li>
+              </ul>
+              <ul class="grv-sub" data-cat="phones-and-tablets" style="--accent: #F8881F" aria-label="Phones &amp; Tablets" hidden>
+                  <li><a href="#categories"><img src="/images/grover-system/2019/phones-and-tablets__smartphones.svg" alt="" width="24" height="24" data-no-skeleton />Smartphones</a></li>
+                  <li><a href="#categories"><img src="/images/grover-system/2019/phones-and-tablets__tablets.svg" alt="" width="24" height="24" data-no-skeleton />Tablets</a></li>
+                  <li><a href="#categories"><img src="/images/grover-system/2019/phones-and-tablets__e-readers.svg" alt="" width="24" height="24" data-no-skeleton />E-Readers</a></li>
+                  <li><a href="#categories"><img src="/images/grover-system/2019/phones-and-tablets__phone-accessories.svg" alt="" width="24" height="24" data-no-skeleton />Phone Accessories</a></li>
+                  <li class="grv-view-all"><a href="#categories">View all</a></li>
+              </ul>
+              <ul class="grv-sub" data-cat="wearables" style="--accent: #EAAB4D" aria-label="Wearables" hidden>
+                  <li><a href="#categories"><img src="/images/grover-system/2019/wearables__apple-watches.svg" alt="" width="24" height="24" data-no-skeleton />Apple Watches</a></li>
+                  <li><a href="#categories"><img src="/images/grover-system/2019/wearables__smartwatches.svg" alt="" width="24" height="24" data-no-skeleton />Smartwatches</a></li>
+                  <li><a href="#categories"><img src="/images/grover-system/2019/wearables__activity-trackers.svg" alt="" width="24" height="24" data-no-skeleton />Activity Trackers</a></li>
+                  <li><a href="#categories"><img src="/images/grover-system/2019/wearables__sport-and-gps-trackers.svg" alt="" width="24" height="24" data-no-skeleton />Sport &amp; GPS Watches</a></li>
+                  <li class="grv-view-all"><a href="#categories">View all</a></li>
+              </ul>
+              <ul class="grv-sub" data-cat="cameras" style="--accent: #ECC600" aria-label="Cameras" hidden>
+                  <li><a href="#categories"><img src="/images/grover-system/2019/cameras__digital-cameras.svg" alt="" width="24" height="24" data-no-skeleton />Digital Cameras</a></li>
+                  <li><a href="#categories"><img src="/images/grover-system/2019/cameras__action-cameras.svg" alt="" width="24" height="24" data-no-skeleton />Action Cameras</a></li>
+                  <li><a href="#categories"><img src="/images/grover-system/2019/cameras__instant-cameras.svg" alt="" width="24" height="24" data-no-skeleton />Instant Cameras</a></li>
+                  <li><a href="#categories"><img src="/images/grover-system/2019/cameras__point-and-shoot.svg" alt="" width="24" height="24" data-no-skeleton />Point-and-shoot</a></li>
+                  <li><a href="#categories"><img src="/images/grover-system/2019/cameras__lenses.svg" alt="" width="24" height="24" data-no-skeleton />Lenses</a></li>
+                  <li><a href="#categories"><img src="/images/grover-system/2019/cameras__camcorder.svg" alt="" width="24" height="24" data-no-skeleton />Camcorders</a></li>
+                  <li><a href="#categories"><img src="/images/grover-system/2019/cameras__camera-accessories.svg" alt="" width="24" height="24" data-no-skeleton />Camera Accessories</a></li>
+                  <li class="grv-view-all"><a href="#categories">View all</a></li>
+              </ul>
+              <ul class="grv-sub" data-cat="gaming-and-vr" style="--accent: #A8BC30" aria-label="Gaming &amp; VR" hidden>
+                  <li><a href="#categories"><img src="/images/grover-system/2019/gaming-and-vr__gaming-consoles.svg" alt="" width="24" height="24" data-no-skeleton />Gaming Consoles</a></li>
+                  <li><a href="#categories"><img src="/images/grover-system/2019/gaming-and-vr__virtual-reality.svg" alt="" width="24" height="24" data-no-skeleton />Virtual Reality</a></li>
+                  <li><a href="#categories"><img src="/images/grover-system/2019/gaming-and-vr__retrogaming.svg" alt="" width="24" height="24" data-no-skeleton />Retro Gaming</a></li>
+                  <li><a href="#categories"><img src="/images/grover-system/2019/gaming-and-vr__gaming-accessories.svg" alt="" width="24" height="24" data-no-skeleton />Gaming Accessories</a></li>
+                  <li><a href="#categories"><img src="/images/grover-system/2019/gaming-and-vr__other-games.svg" alt="" width="24" height="24" data-no-skeleton />Other Games</a></li>
+                  <li class="grv-view-all"><a href="#categories">View all</a></li>
+              </ul>
+              <ul class="grv-sub" data-cat="home-entertainment" style="--accent: #5AC627" aria-label="Home Entertainment" hidden>
+                  <li><a href="#categories"><img src="/images/grover-system/2019/home-entertainment__tv.svg" alt="" width="24" height="24" data-no-skeleton />TV</a></li>
+                  <li><a href="#categories"><img src="/images/grover-system/2019/home-entertainment__home-cinema.svg" alt="" width="24" height="24" data-no-skeleton />Home Cinema</a></li>
+                  <li><a href="#categories"><img src="/images/grover-system/2019/home-entertainment__projectors.svg" alt="" width="24" height="24" data-no-skeleton />Projectors</a></li>
+                  <li class="grv-view-all"><a href="#categories">View all</a></li>
+              </ul>
+              <ul class="grv-sub" data-cat="audio-and-music" style="--accent: #2FD4C0" aria-label="Audio &amp; Music" hidden>
+                  <li><a href="#categories"><img src="/images/grover-system/2019/audio-and-music__headphones.svg" alt="" width="24" height="24" data-no-skeleton />Headphones</a></li>
+                  <li><a href="#categories"><img src="/images/grover-system/2019/audio-and-music__bluetooth-speakers.svg" alt="" width="24" height="24" data-no-skeleton />Bluetooth Speakers</a></li>
+                  <li><a href="#categories"><img src="/images/grover-system/2019/audio-and-music__hi-fi-audio.svg" alt="" width="24" height="24" data-no-skeleton />Hi-fi Audio</a></li>
+                  <li><a href="#categories"><img src="/images/grover-system/2019/audio-and-music__dj-equipment.svg" alt="" width="24" height="24" data-no-skeleton />DJ Equipment</a></li>
+                  <li><a href="#categories"><img src="/images/grover-system/2019/audio-and-music__musical-instruments.svg" alt="" width="24" height="24" data-no-skeleton />Musical Instruments</a></li>
+                  <li class="grv-view-all"><a href="#categories">View all</a></li>
+              </ul>
+              <ul class="grv-sub" data-cat="drones" style="--accent: #2882EB" aria-label="Drones" hidden>
+                  <li><a href="#categories"><img src="/images/grover-system/2019/drones__drones-for-pros.svg" alt="" width="24" height="24" data-no-skeleton />Drones for pros</a></li>
+                  <li class="grv-view-all"><a href="#categories">View all</a></li>
+              </ul>
+              <ul class="grv-sub" data-cat="e-mobility" style="--accent: #5336C3" aria-label="E-Mobility" hidden>
+                  <li><a href="#categories"><img src="/images/grover-system/2019/e-mobility__hoverboards.svg" alt="" width="24" height="24" data-no-skeleton />Hoverboards</a></li>
+                  <li><a href="#categories"><img src="/images/grover-system/2019/e-mobility__scooters.svg" alt="" width="24" height="24" data-no-skeleton />Scooters</a></li>
+                  <li><a href="#categories"><img src="/images/grover-system/2019/e-mobility__gps-and-car-accessories.svg" alt="" width="24" height="24" data-no-skeleton />E-Mobility Accessories</a></li>
+                  <li class="grv-view-all"><a href="#categories">View all</a></li>
+              </ul>
+              <ul class="grv-sub" data-cat="smart-home" style="--accent: #B819BB" aria-label="Smart Home" hidden>
+                  <li><a href="#categories"><img src="/images/grover-system/2019/smart-home__smart-appliances.svg" alt="" width="24" height="24" data-no-skeleton />Smart Appliances</a></li>
+                  <li><a href="#categories"><img src="/images/grover-system/2019/smart-home__smart-speakers.svg" alt="" width="24" height="24" data-no-skeleton />Smart Speakers</a></li>
+                  <li><a href="#categories"><img src="/images/grover-system/2019/smart-home__robot-cleaners.svg" alt="" width="24" height="24" data-no-skeleton />Robot Vacuum Cleaners</a></li>
+                  <li><a href="#categories"><img src="/images/grover-system/2019/smart-home__intelligent-security.svg" alt="" width="24" height="24" data-no-skeleton />Intelligent security</a></li>
+                  <li><a href="#categories"><img src="/images/grover-system/2019/smart-home__coffee-machine.svg" alt="" width="24" height="24" data-no-skeleton />Coffee Machines</a></li>
+                  <li class="grv-view-all"><a href="#categories">View all</a></li>
+              </ul>
+              </div>
+            </div>
             <div class="grv-swatches" aria-label="Category colors">
               <span style="--accent: #F35757"><i></i>#F35757</span>
               <span style="--accent: #F8881F"><i></i>#F8881F</span>
@@ -132,18 +210,9 @@ product’s many facets."
               <span style="--accent: #B819BB"><i></i>#B819BB</span>
             </div>
           </div>
-          <figcaption>The first layer of the category menu, with the original icons and category colors. Hover a row.</figcaption>
+          <figcaption>The category menu with its original icons, colors and subcategories, as they were on grover.com in November 2019. Hover a category.</figcaption>
         </figure>
 
-        <iframe
-          src="https://player.vimeo.com/video/339939882?autoplay=1&amp;loop=1&amp;color=000000&amp;title=0&amp;byline=0&amp;portrait=0"
-          frameborder="0"
-          allow="autoplay; fullscreen"
-          allowfullscreen
-          title="The two-layer category menu in use."
-        ></iframe>
-        <script src="https://player.vimeo.com/api/player.js"></script>
-        <p class="grv-note">The full two-layer menu in use.</p>
 
       </section>
 
@@ -176,7 +245,7 @@ product’s many facets."
 
       <hr />
       <section id="foundations">
-        <h2>Foundations that stayed</h2>
+        <h2>Foundations</h2>
         <p>
           Underneath the category system sat a small set of foundations:
           Grover’s pink, a near-black text color, a
@@ -345,6 +414,6 @@ product’s many facets."
       </section>
       <hr />
     </main>
-    <script src="/assets/js/include-header.js?v=20261012b"></script>
+    <script src="/assets/js/include-header.js?v=20261012c"></script>
   </body>
 </html>
