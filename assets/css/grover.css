@@ -236,3 +236,9 @@ body.grover-page main .grv-menu a:focus-visible {
     transition: none;
   }
 }
+
+@media (max-width: 900px) {
+  body.grover-page header {
+    background: #fff;
+  }
+}

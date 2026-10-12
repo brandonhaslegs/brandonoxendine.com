@@ -9,8 +9,8 @@
       rel="canonical"
       href="https://www.brandonoxendine.com/projects/radicle-desktop"
     />
-<link rel="stylesheet" href="/assets/css/reset.css" />
-<link rel="stylesheet" href="/assets/css/site.css" />
+<link rel="stylesheet" href="/assets/css/reset.css?v=20261012" />
+<link rel="stylesheet" href="/assets/css/site.css?v=20261012" />
 <link rel="icon" href="/favicon.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,10 +18,10 @@
   rel="stylesheet"
   href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
 />
-<script defer src="/assets/js/image-skeleton.js"></script>
-<script defer src="/assets/js/compare.js"></script>
-<script defer src="/assets/js/lightbox.js"></script>
-<script defer src="/assets/js/video.js"></script>
+<script defer src="/assets/js/image-skeleton.js?v=20261012"></script>
+<script defer src="/assets/js/compare.js?v=20261012"></script>
+<script defer src="/assets/js/lightbox.js?v=20261012"></script>
+<script defer src="/assets/js/video.js?v=20261012"></script>
 </head>
   <body class="case-study wide-media light-page">
     <header id="site-header"></header>
@@ -47,9 +47,9 @@
       <hr />
       <section>
         <p>
-          Back in 2021 I designed <a href="/projects/radicle">Radicle's brand,
-          website and first app</a>. In 2026 I came back to work on the
-          product again. Radicle is a way to collaborate on code without a
+          I've worked at Radicle since 2020. Early on I designed
+          <a href="/projects/radicle">Radicle's brand, website and first
+          app</a>, and in 2026 I turned to the desktop app. Radicle is a way to collaborate on code without a
           central server: your repositories, issues and patches live on your
           own machine and replicate peer to peer. <strong>Radicle Desktop</strong> is the
           native app for all of that: browsing repos, filing issues, and
@@ -589,13 +589,6 @@
           every row, label and button into its counterpart, which looked
           busy and felt slow.
         </p>
-        <p>
-          Then the unglamorous part. The spacing had drifted into gaps of 16,
-          24, 32, 28 and 36 pixels that nobody had chosen on purpose. Now
-          it's two values: 16 between rows and 32 between sections. And the
-          icon buttons, which came in four different sizes, are all the same
-          size now.
-        </p>
         <figure class="video">
           <video src="/images/radicle-desktop/sidebar-repo-nav-d00383f6.mp4" style="max-width: min(100%, 1440px)" data-autoplay muted loop playsinline preload="none"
             aria-label="Opening repos, and the repo list rolling open."></video>
@@ -662,8 +655,8 @@
           editor. Cmd+B, Cmd+I, Cmd+E and Cmd+K format your selection.
           Pasting a URL over selected text makes a link. Task list
           checkboxes are clickable now instead of making you edit
-          <code>- [ ]</code> by hand. Mermaid diagrams render, GitHub style
-          alerts render, and images in READMEs finally show up.
+          <code>- [ ]</code> by hand. Mermaid diagrams, GitHub style alerts
+          and images in READMEs all render.
         </p>
         <figure class="vignette">
           <div class="vignette-panel">
@@ -711,10 +704,7 @@
         <p>
           So references are stored as <code>rad:</code> URIs (and
           <code>did:key:</code> for people), following Radicle's own spec for
-          them, and the app works out where to show them. I wrote up the
-          decision as an architecture record so the web explorer could adopt
-          the same approach, and built the parsing as a small standalone
-          library it can reuse.
+          them, and the app works out where to show them.
         </p>
         <figure class="video">
           <video src="/images/radicle-desktop/smart-links-784699e9.mp4" style="max-width: min(100%, 1550px)" data-autoplay muted loop playsinline preload="none"
@@ -1294,6 +1284,6 @@
       </section>
       <hr />
     </main>
-    <script src="/assets/js/include-header.js"></script>
+    <script src="/assets/js/include-header.js?v=20261012"></script>
   </body>
 </html>
