@@ -64,7 +64,7 @@
   top: var(--y);
   font-size: inherit;
   line-height: 1;
-  transform: translate(-50%, -50%) rotate(var(--r)) scale(0.44);
+  transform: translate(-50%, -50%) rotate(var(--r)) scale(0.56);
   pointer-events: none;
   user-select: none;
 }
