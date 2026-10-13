@@ -2,6 +2,9 @@
 .home-main {
   max-width: 1360px;
   margin: 0 auto;
+  /* Where the second column of the 1fr / 2fr section grid starts, for
+     blocks that sit outside the grid but line up with it. */
+  --col-2: calc((100% - 24px) / 3 + 24px);
 }
 
 .home-main a {
@@ -73,7 +76,7 @@
 
 .home-hero-meta {
   max-width: 34em;
-  margin-left: calc(100% / 3);
+  margin-left: var(--col-2);
   opacity: 0.75;
 }
 
@@ -211,7 +214,7 @@
 }
 
 .experience-list {
-  margin: 0 0 40px calc(100% / 3 + 8px);
+  margin: 0 0 40px var(--col-2);
 }
 
 .experience-list div {
@@ -237,7 +240,7 @@
 }
 
 .home-links {
-  margin-left: calc(100% / 3 + 8px);
+  margin-left: var(--col-2);
   display: flex;
   flex-wrap: wrap;
   gap: 8px 24px;
