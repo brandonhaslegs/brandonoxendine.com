@@ -9,11 +9,24 @@
       return;
     }
     video.dataset.started = 'true';
+    // Pick the source here rather than trusting <source media>, which not
+    // every browser honors, so phones get the smaller file.
+    const sources = [...video.querySelectorAll('source')];
+    if (sources.some((source) => source.media)) {
+      const pick = sources.find(
+        (source) => !source.media || window.matchMedia(source.media).matches
+      );
+      for (const source of sources) if (source !== pick) source.remove();
+      video.load();
+    }
     video.preload = 'auto';
-    const play = () => video.play().catch(() => {});
-    if (video.readyState >= 4) play();
-    else video.addEventListener('canplaythrough', play, { once: true });
-    video.load();
+    // Ask to play right away: phones often never fire canplaythrough, and
+    // the browser starts playback on its own once enough has buffered. If
+    // autoplay is blocked (Low Power Mode, data saver), show controls so a
+    // tap can start it.
+    video.play().catch((error) => {
+      if (error.name === 'NotAllowedError') video.controls = true;
+    });
   };
 
   const observer = new IntersectionObserver((entries) => {
