@@ -52,9 +52,12 @@ body.grover-page .jump {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.13), 0px 0px 3px rgba(0, 0, 0, 0.05);
 }
 
+/* Three 6px tiles each way, so the last row and column of dots aren't
+   clipped. */
 .grv-dots {
-  width: 16px;
-  height: 16px;
+  flex: none;
+  width: 18px;
+  height: 18px;
   background: radial-gradient(circle, #333 1.6px, transparent 1.8px) 0 0 / 6px 6px;
 }
 

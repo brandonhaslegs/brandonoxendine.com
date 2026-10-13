@@ -77,24 +77,60 @@
   });
 
   // Anything inside [data-no-zoom] (icon sheets, live demos) stays put.
-  document.querySelectorAll('main img').forEach((img) => {
-    if (img.closest('[data-no-zoom]')) return;
+  const candidates = [...document.querySelectorAll('main img')].filter((img) => {
+    if (img.closest('[data-no-zoom]')) return false;
     // Images that link somewhere else keep their link; ones that only link to
     // their own file zoom instead of navigating away.
     const link = img.closest('a[href]');
-    if (link && !/\.(png|jpe?g|gif|webp|svg)(\?|#|$)/i.test(link.getAttribute('href'))) return;
-    img.classList.add('zoomable');
-    img.tabIndex = 0;
-    img.setAttribute('role', 'button');
+    return !link || /\.(png|jpe?g|gif|webp|svg)(\?|#|$)/i.test(link.getAttribute('href'));
+  });
+
+  // Only images the lightbox would show at least 20% bigger get it. It
+  // fits an image to the window (less its padding) without going past the
+  // image's own pixels, so anything already shown wide or at full
+  // resolution stays put. Rechecked on resize, since the answer changes
+  // with the window.
+  const refresh = () => {
+    const roomWidth = window.innerWidth - 48;
+    const roomHeight = window.innerHeight - 120;
+    candidates.forEach((img) => {
+      const naturalWidth = img.naturalWidth || Number(img.getAttribute('width')) || 0;
+      const naturalHeight = img.naturalHeight || Number(img.getAttribute('height')) || 0;
+      const shown = img.getBoundingClientRect().width;
+      const zoomed = naturalHeight
+        ? Math.min(naturalWidth, roomWidth, (roomHeight * naturalWidth) / naturalHeight)
+        : 0;
+      const zoom = shown > 0 && zoomed >= shown * 1.2;
+      img.classList.toggle('zoomable', zoom);
+      if (zoom) {
+        img.tabIndex = 0;
+        img.setAttribute('role', 'button');
+      } else {
+        img.removeAttribute('tabindex');
+        img.removeAttribute('role');
+      }
+    });
+  };
+
+  candidates.forEach((img) => {
     img.addEventListener('click', (event) => {
+      // A link to the image's own file never navigates, zoom or not.
       event.preventDefault();
-      open(img);
+      if (img.classList.contains('zoomable')) open(img);
     });
     img.addEventListener('keydown', (event) => {
+      if (!img.classList.contains('zoomable')) return;
       if (event.key === 'Enter' || event.key === ' ') {
         event.preventDefault();
         open(img);
       }
     });
+  });
+
+  refresh();
+  let frame = 0;
+  window.addEventListener('resize', () => {
+    cancelAnimationFrame(frame);
+    frame = requestAnimationFrame(refresh);
   });
 })();
