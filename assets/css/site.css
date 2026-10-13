@@ -24,6 +24,17 @@ html {
   scrollbar-gutter: stable;
 }
 
+/* Headings and captions balance their lines; running text gets the gentler
+   "pretty" wrap, which avoids one-word last lines without shortening the
+   measure (balance only applies to short blocks anyway). */
+h1, h2, h3, h4, h5, h6, figcaption, blockquote {
+  text-wrap: balance;
+}
+
+p, li, dd {
+  text-wrap: pretty;
+}
+
 body.collection-page {
   width: inherit;
   max-width: 100%;
@@ -501,8 +512,29 @@ body.categories figcaption p + p {
   margin: 0;
 }
 
+/* Out at full width, posters run four across, then three, then two. */
+body.wide-media .poster-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+@media (max-width: 1100px) {
+  body.wide-media .poster-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+/* Grids of six or nine posters sit in even rows of three. */
+body.wide-media .poster-grid-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+body.wide-media .poster-grid-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 @media (max-width: 768px) {
-  .poster-grid {
+  .poster-grid,
+  body.wide-media .poster-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
@@ -752,6 +784,23 @@ body.categories figcaption p + p {
 
 .icon-grid img {
   width: 100%;
+}
+
+/* On desktop the grid breaks out of the text column like wide media, with
+   more columns so each icon still gets a bigger cell than before. */
+@media (min-width: 769px) {
+  .icon-grid {
+    width: min(calc(100vw - 80px), 1600px);
+    margin-left: 50%;
+    transform: translateX(-50%);
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1100px) {
+  .icon-grid {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
 }
 
 /* Grover's category icons fill most of their canvas; the rest of the set
@@ -1197,6 +1246,7 @@ body.wide-media {
 
 body.wide-media main > section > figure,
 body.wide-media main > section > .columns,
+body.wide-media main > section > .poster-grid,
 body.natural-media main > section > :is(.image-frame, a:has(img), div:has(img)) {
   width: min(calc(100vw - 80px), 1600px);
   max-width: none;
@@ -1211,6 +1261,7 @@ body.natural-media main > section > a:has(img) {
 /* Wide media gets room to breathe above and below. */
 body.wide-media main > section > figure,
 body.wide-media main > section > .columns,
+body.wide-media main > section > .poster-grid,
 body.natural-media main > section > :is(.image-frame, a:has(img), div:has(img)) {
   margin-top: 64px;
   margin-bottom: 64px;
@@ -1225,6 +1276,7 @@ body.wide-media main > section > figure figcaption {
 @media (max-width: 768px) {
   body.wide-media main > section > figure,
   body.wide-media main > section > .columns,
+  body.wide-media main > section > .poster-grid,
   body.natural-media main > section > :is(.image-frame, a:has(img), div:has(img)) {
     width: calc(100vw - 40px);
     margin-top: 40px;

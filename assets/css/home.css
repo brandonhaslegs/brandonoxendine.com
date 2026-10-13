@@ -34,54 +34,353 @@
 }
 
 /* Hero */
+/* The black space below the hero matches the space above it: the header's
+   20px margin plus the same 4vh. */
 .home-hero {
-  padding: 12vh 0 18vh;
+  padding: 4vh 0 calc(4vh + 20px);
   margin: 0;
 }
 
-.home-hero h1 {
-  font-size: clamp(40px, 6.2vw, 96px);
-  line-height: 1;
-  letter-spacing: -0.02em;
-  font-weight: 400;
+@font-face { font-family: "Drips Inter"; font-weight: 400; font-display: swap; src: url("/fonts/drips/Inter-Regular.woff2") format("woff2"); }
+@font-face { font-family: "GT Haptik"; font-weight: 400; font-display: swap; src: url("/fonts/fuzzco/GTHaptik-Regular.woff2") format("woff2"); }
+@font-face { font-family: "Redaction 50"; font-style: normal; font-display: swap; src: url("/fonts/drips/Redaction_35-Italic.woff2") format("woff2"); }
+
+/* The panel holds five slides, one per visual language, stacked in a
+   single grid cell so it always takes the tallest one's height. A 25s
+   loop gives each slide 5s. Nothing fades: in the last 0.3s of a slide its
+   icons shrink away while the panel shifts to the next project's color and
+   corners, then the next slide's text and pill swap in and its icons pop
+   up. */
+.hero-panel {
+  display: grid;
+  box-sizing: border-box;
+  padding: clamp(56px, 7vw, 104px) clamp(24px, 6vw, 96px) clamp(40px, 5vw, 72px);
+  margin-bottom: 40px;
+  background: hotpink;
+  border-radius: clamp(40px, 7vw, 120px);
+  animation: hero-panel 25s infinite;
+}
+
+@keyframes hero-panel {
+  0%, 18.8% { background: hotpink; border-radius: clamp(40px, 7vw, 120px); }
+  20%, 38.8% { background: #1c77ff; border-radius: 12px; }
+  /* Drips' signature: every corner round but the top right. */
+  40%, 58.8% { background: #5555ff; border-radius: 32px 0 32px 32px; }
+  60%, 78.8% { background: #ececec; border-radius: 32px; }
+  80%, 98.8% { background: #f72e2a; border-radius: 0; }
+}
+
+.hero-slide {
+  --hero-pitch: clamp(40px, 6.2vw, 96px);
+  --hero-bg: hotpink;
+  --hero-fg: #000;
+  --hero-accent: #fff;
+  --hero-font: "ABC Maxi Round", sans-serif;
+  --hero-accent-font: var(--hero-font);
+  --hero-weight: 400;
+  --hero-size: clamp(40px, 6.2vw, 96px);
+  --hero-tracking: -0.02em;
+  --hero-shift: 0;
+  --delay: 0s;
+  grid-area: 1 / 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: var(--hero-fg);
+  visibility: hidden;
+  animation: hero-slide 25s var(--delay) infinite;
+}
+
+/* Negative delays start every slide mid-loop, so each is already in step on
+   load and only shows during its own 5s. */
+.hero-slide:nth-child(1) { visibility: visible; }
+.hero-slide:nth-child(2) { --delay: -20s; }
+.hero-slide:nth-child(3) { --delay: -15s; }
+.hero-slide:nth-child(4) { --delay: -10s; }
+.hero-slide:nth-child(5) { --delay: -5s; }
+
+@keyframes hero-slide {
+  0% { visibility: visible; }
+  20%, 100% { visibility: hidden; }
+}
+
+/* Each slide's icons pop in with an overshoot when it appears, and swell
+   then shrink away near its end. --o staggers them left to right by where
+   they sit, 60ms apart, so the swap sweeps across the headline. The shrink
+   ends 0.3s before the slide does, so even the last icon is gone in time. */
+.hero-slide .hero-sticker {
+  --o: 0ms;
+  animation: hero-pop 25s calc(var(--delay) + var(--o)) infinite;
+}
+
+.hero-headline em:nth-of-type(2) .hero-sticker:nth-of-type(1) { --o: 0ms; }
+.hero-headline em:nth-of-type(1) .hero-sticker:nth-of-type(1) { --o: 60ms; }
+.hero-headline em:nth-of-type(2) .hero-sticker:nth-of-type(3) { --o: 120ms; }
+.hero-headline em:nth-of-type(1) .hero-sticker:nth-of-type(3) { --o: 180ms; }
+.hero-headline em:nth-of-type(1) .hero-sticker:nth-of-type(2) { --o: 240ms; }
+.hero-headline em:nth-of-type(2) .hero-sticker:nth-of-type(2) { --o: 300ms; }
+
+@keyframes hero-pop {
+  0% { scale: 0; animation-timing-function: cubic-bezier(0.3, 0, 0.4, 1); }
+  1.2% { scale: 1.2; animation-timing-function: ease-in-out; }
+  2% { scale: 0.94; animation-timing-function: ease-in-out; }
+  2.6%, 17.6% { scale: 1; animation-timing-function: ease-out; }
+  18.2% { scale: 1.12; animation-timing-function: ease-in; }
+  18.8%, 100% { scale: 0; }
+}
+
+.hero-panel:is(:hover, :focus-within),
+.hero-panel:is(:hover, :focus-within) :is(.hero-slide, .hero-sticker) {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-panel,
+  .hero-slide,
+  .hero-slide .hero-sticker {
+    animation: none;
+  }
+}
+
+/* Sizes, tracking and shifts were measured so every slide breaks into the
+   same four lines at the same width, with the middles of the x-heights
+   lined up across slides. */
+.hero-slide[data-skin="radicle"] {
+  --hero-fg: #fff;
+  --hero-bg: #1c77ff;
+  --hero-accent: #0b0d12;
+  --hero-icon: #fff;
+  --hero-font: "Booton", sans-serif;
+  --hero-weight: 468;
+  --hero-size: clamp(38px, 5.9vw, 90px);
+  --hero-tracking: -0.045em;
+  --hero-shift: 0.004;
+}
+
+.hero-slide[data-skin="drips"] {
+  --hero-fg: #fff;
+  --hero-bg: #5555ff;
+  --hero-accent: #fff;
+  --hero-icon: #28333d;
+  --hero-font: "Drips Inter", Helvetica, sans-serif;
+  --hero-accent-font: "Redaction 50", Times, serif;
+  --hero-size: clamp(38px, 5.9vw, 90px);
+  --hero-shift: 0.0235;
+}
+
+.hero-slide[data-skin="grover"] {
+  --hero-fg: #333;
+  --hero-bg: #ececec;
+  --hero-accent: #fe1251;
+  --hero-font: "Inter", sans-serif;
+  --hero-weight: 700;
+  --hero-size: clamp(36px, 5.6vw, 86px);
+  --hero-tracking: -0.027em;
+  --hero-shift: 0.024;
+}
+
+.hero-slide[data-skin="fuzzco"] {
+  --hero-fg: #fff;
+  --hero-bg: #f72e2a;
+  --hero-accent: #ffff00;
+  --hero-icon: #fff;
+  --hero-font: "GT Haptik", Helvetica, sans-serif;
+  --hero-size: clamp(38px, 5.9vw, 90px);
+  --hero-tracking: -0.046em;
+  --hero-shift: -0.005;
+}
+
+.hero-headline {
+  font-family: var(--hero-font);
+  font-weight: var(--hero-weight);
+  font-size: var(--hero-size);
+  /* One line pitch for every slide, whatever its font size. */
+  line-height: var(--hero-pitch);
+  letter-spacing: var(--hero-tracking);
+  position: relative;
+  top: calc(var(--hero-pitch) * var(--hero-shift));
   max-width: 15em;
-  margin: 0 0 40px;
+  /* Centers the headline in the space above the pill, which stays pinned
+     to the bottom of the panel. */
+  margin: auto 0;
   text-wrap: balance;
 }
 
-.home-hero h1 em {
-  font-style: normal;
-  color: hotpink;
-}
-
-.home-hero h1 em {
+.hero-headline em {
   position: relative;
   white-space: nowrap;
+  font-style: normal;
+  font-family: var(--hero-accent-font);
+  color: var(--hero-accent);
+  /* A taller accent face (Drips' Redaction) would otherwise push its line
+     apart and break the shared pitch. */
+  line-height: 0;
 }
 
-.hero-emoji {
-  /* Positioned by its center, in units of the headline size, then scaled
-     down, so the stickers stay pinned to the words at every breakpoint. */
+/* Fixed at the width of the longest caption: label left, button right. */
+.hero-panel-caption {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  width: 324px;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin: clamp(32px, 4vw, 56px) 0 0;
+  padding: 4px 4px 4px 16px;
+  border-radius: 999px;
+  background: #fff;
+  color: #000;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.hero-panel-caption span {
+  white-space: nowrap;
+  text-align: left;
+}
+
+.hero-panel-caption a,
+.hero-panel-caption a:hover {
+  flex: none;
+  /* The width of "See the project →", so the button never changes size
+     between slides. */
+  box-sizing: border-box;
+  width: 135px;
+  text-align: center;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: #000;
+  color: #fff;
+  transition: background-color 200ms ease;
+}
+
+/* The link's ::after covers the whole pill, so the pill is one big target
+   and hovering anywhere on it lights up the button. */
+.hero-panel-caption {
+  position: relative;
+}
+
+.hero-panel-caption a::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+}
+
+.hero-panel-caption:hover a,
+.hero-panel-caption a:focus-visible {
+  background: var(--hero-bg);
+  color: var(--hero-fg);
+}
+
+/* On phones the button shrinks to a circle with just its arrow; the words
+   stay for screen readers. */
+@media (max-width: 600px) {
+  .hero-panel-caption a,
+  .hero-panel-caption a:hover {
+    width: 33px;
+    height: 33px;
+    padding: 0;
+    display: grid;
+    place-items: center;
+  }
+
+  /* Fits the longest label next to the round button, same on every slide. */
+  .hero-panel-caption {
+    width: 222px;
+  }
+
+  /* The font draws its arrows off-center vertically; these nudges are the
+     measured offsets of each glyph's ink from the button's middle. */
+  .hero-cta-arrow {
+    display: block;
+    translate: 0 0.024em;
+  }
+
+  a[href^="/"] .hero-cta-arrow {
+    translate: 0 -0.092em;
+  }
+
+  .hero-cta-label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+}
+
+/* Grover's panel is near-white, so its button takes the brand pink. */
+.hero-slide[data-skin="grover"] .hero-panel-caption:hover a,
+.hero-slide[data-skin="grover"] .hero-panel-caption a:focus-visible {
+  background: var(--hero-accent);
+  color: #fff;
+}
+
+.hero-sticker {
+  /* A zero-size box sitting exactly on the anchor point, with its content
+     centered on it, so rotation and the pop both happen around the icon's
+     middle. Positioned in units of the headline size, so the stickers stay
+     pinned to the words at every breakpoint. */
   position: absolute;
   left: var(--x);
   top: var(--y);
+  width: 0;
+  height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: inherit;
   line-height: 1;
-  transform: translate(-50%, -50%) rotate(var(--r)) scale(0.56);
+  white-space: nowrap;
+  transform: rotate(var(--r)) scale(var(--s, 0.56));
   pointer-events: none;
   user-select: none;
 }
 
+/* Icon stickers. Single-color sets are masks so they take the slide's icon
+   color; Grover's keep their category colors. Fuzzco's come from sprite
+   sheets, so they set --size and --pos to pick one cell. */
+.hero-icon {
+  display: block;
+  /* Never shrinks inside the zero-size sticker box. */
+  flex: none;
+  width: 1em;
+  height: 1em;
+  background: var(--src) var(--pos, center) / var(--size, contain) no-repeat;
+}
 
+.hero-icon.is-mask {
+  background: var(--hero-icon);
+  -webkit-mask: var(--src) var(--pos, center) / var(--size, contain) no-repeat;
+  mask: var(--src) var(--pos, center) / var(--size, contain) no-repeat;
+}
 
 .home-hero-meta {
   max-width: 34em;
+  margin-bottom: 0;
   margin-left: var(--col-2);
   opacity: 0.75;
+  text-wrap: balance;
 }
 
 /* Systems */
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
 .home-systems {
+  /* Clears the sticky header when "See the work" scrolls here. */
+  scroll-margin-top: 80px;
   margin: 0 0 160px;
 }
 
@@ -283,7 +582,7 @@
   }
 
   .home-hero {
-    padding: 6vh 0 12vh;
+    padding: 0 0 20px;
   }
 
   .home-hero-meta,

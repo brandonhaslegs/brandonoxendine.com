@@ -26,7 +26,7 @@
   };
 
   addLink('stylesheet', '/assets/css/reset.css?v=20261012m');
-  addLink('stylesheet', '/assets/css/site.css?v=20261012m');
+  addLink('stylesheet', '/assets/css/site.css?v=20261013g');
   addLink('icon', '/favicon.png');
   addLink('preconnect', 'https://fonts.googleapis.com');
   addLink('preconnect', 'https://fonts.gstatic.com', { crossorigin: '' });
