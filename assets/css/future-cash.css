@@ -1,0 +1,21 @@
+/* -------- FUTURE CASH CASE STUDY -------- */
+body.future-cash-page .jump {
+  text-align: center;
+}
+
+body.future-cash-page main h2 {
+  font-size: 32px;
+  margin: 24px 0 16px;
+}
+
+body.future-cash-page figure.fc-icon img {
+  width: min(240px, 60%);
+  margin: 0 auto;
+  border-radius: 22.37%;
+}
+
+/* The app cards are captured at phone-card size; keep them there. */
+body.future-cash-page figure.fc-card img {
+  max-width: 560px;
+  margin: 0 auto;
+}
