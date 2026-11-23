@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Radicle Website by Brandon Oxendine</title>
+    <meta name="description" content="Patches to radicle.network, Radicle’s website: a readable How it works page, a Get started page and a copy pass." />
+    <link
+      rel="canonical"
+      href="https://www.brandonoxendine.com/projects/radicle-website"
+    />
+<link rel="stylesheet" href="/assets/css/reset.css?v=20261013b" />
+<link rel="stylesheet" href="/assets/css/site.css?v=20261013g" />
+<link rel="icon" href="/favicon.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+/>
+<script defer src="/assets/js/image-skeleton.js?v=20261013b"></script>
+<script defer src="/assets/js/compare.js?v=20261013b"></script>
+<script defer src="/assets/js/lightbox.js?v=20261013d"></script>
+<script defer src="/assets/js/video.js?v=20261013b"></script>
+    <!-- share -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Brandon Oxendine" />
+    <meta property="og:title" content="Radicle Website by Brandon Oxendine" />
+    <meta property="og:description" content="Patches to radicle.network, Radicle’s website: a readable How it works page, a Get started page and a copy pass." />
+    <meta property="og:url" content="https://www.brandonoxendine.com/projects/radicle-website" />
+    <meta property="og:image" content="https://www.brandonoxendine.com/images/share/projects-radicle-website-7546eef1.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://www.brandonoxendine.com/images/share/projects-radicle-website-7546eef1.jpg" />
+    <!-- /share -->
+</head>
+  <body class="case-study wide-media light-page">
+    <header id="site-header"></header>
+
+    <main>
+      <h1>Radicle Website</h1>
+
+      <p>
+        Patches to <a href="https://radicle.network" target="_blank">radicle.network</a>,
+        Radicle’s website. It lives in the same repo as Radicle’s web
+        explorer, so while I was redesigning
+        <a href="/projects/radicle-desktop">Radicle Desktop</a>, the website
+        got patches too.
+      </p>
+      <p>
+        Role: <a href="/pages/categories/visual-design">Visual Design</a>, <a href="/pages/categories/copywriting">Copywriting</a>, <a href="/pages/categories/website">Website</a>, <a href="/pages/categories/code">Code</a></p>
+
+      <hr />
+      <section>
+        <p>
+          The How
+          it works page was a scrolling slide presentation that was hard to
+          read and harder to link to. I turned it into a normal two column
+          page with an illustration next to each idea.
+        </p>
+        <figure class="compare" data-show="after">
+          <div class="compare-toggle" role="group" aria-label="Show version">
+            <button type="button" data-version="before" aria-pressed="false">Before</button>
+            <button type="button" data-version="after" aria-pressed="true">After</button>
+          </div>
+          <div class="compare-stage">
+            <div class="compare-layer" data-version="before">
+              <img src="/images/radicle-website/principles-before-8511ea9a.webp" width="2400" height="1500"
+                alt="Before: How it works, before and after." loading="lazy" decoding="async" />
+            </div>
+            <div class="compare-layer" data-version="after">
+              <img src="/images/radicle-website/principles-after-d598db8c.webp" width="2400" height="1500"
+                alt="After: How it works, before and after." loading="lazy" decoding="async" />
+            </div>
+          </div>
+          <figcaption>How it works, before and after.</figcaption>
+        </figure>
+        <p>
+          I pulled the illustrations into their own component and gave each a
+          small ambient animation. They
+          switch off if you prefer reduced motion.
+        </p>
+        <figure class="vignette">
+          <div class="vignette-panel">
+            <div class="vignette-item">
+              <img src="/images/radicle-website/principle-vignette-34a75f10.webp" width="1136" height="485"
+                alt="&quot;Everyone runs a node.&quot;" loading="lazy" decoding="async" />
+            </div>
+          </div>
+          <figcaption>“Everyone runs a node.”</figcaption>
+        </figure>
+        <p>
+          I also did a copy pass across the whole site (sentence case,
+          clearer calls to action, and fewer em dashes), added staggered
+          entrances when a page loads, and animated the sidebar sub
+          navigation with CSS view transitions. Then I explored a Get started
+          page, with a call to action in the header pointing to it.
+        </p>
+        <figure class="vignette">
+          <div class="vignette-panel">
+            <div class="vignette-item">
+              <img src="/images/radicle-website/header-before-3b649073.webp" width="1200" height="46"
+                alt="The header, before and after adding &quot;Get started&quot;." loading="lazy" decoding="async" />
+            </div>
+            <div class="vignette-item">
+              <img src="/images/radicle-website/header-after-8e01b819.webp" width="1200" height="46"
+                alt="The header, before and after adding &quot;Get started&quot;." loading="lazy" decoding="async" />
+            </div>
+          </div>
+          <figcaption>The header, before and after adding “Get started”.</figcaption>
+        </figure>
+        <figure>
+          <img src="/images/radicle-website/get-started-d4bc8859.webp" width="2400" height="1500"
+            alt="The Get started page." loading="lazy" decoding="async" />
+          <figcaption>The Get started page.</figcaption>
+        </figure>
+        <p>
+          My favorite exploration was a page about GitHub’s uptime. It charts
+          GitHub’s own status page data since 2022, which adds up to more
+          than 72 days of degraded or unavailable service. Radicle doesn’t
+          have that problem, because there’s no server to go down.
+        </p>
+        <figure class="vignette">
+          <div class="vignette-panel">
+            <div class="vignette-item">
+              <img src="/images/radicle-website/github-chart-a86915f8.webp" width="1136" height="522"
+                alt="&quot;Can&#x27;t go down if there&#x27;s no server.&quot;" loading="lazy" decoding="async" />
+            </div>
+          </div>
+          <figcaption>“Can’t go down if there’s no server.”</figcaption>
+        </figure>
+      </section>
+      </section>
+      <hr />
+    </main>
+    <script src="/assets/js/include-header.js?v=20261013b"></script>
+  </body>
+</html>
