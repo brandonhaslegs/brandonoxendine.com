@@ -16,6 +16,7 @@
     html.is-editing [data-editable]:hover { outline-color: hotpink; }
     html.is-editing [data-editable]:focus { outline: 2px solid hotpink; }
     html.is-editing [data-editable].saving { outline-style: dotted; }
+    html.is-editing a[href] { cursor: text; -webkit-user-drag: none; user-drag: none; }
   `;
   document.head.appendChild(css);
 
@@ -154,10 +155,10 @@
     });
   });
 
-  // While editing, clicking a link inside a block places the cursor instead
-  // of following it.
+  // While editing, no link goes anywhere, so text inside a link (or a block
+  // inside a linked card) can be clicked into and edited.
   document.addEventListener('click', (event) => {
-    if (editing() && event.target.closest('[data-editable] a')) event.preventDefault();
+    if (editing() && event.target.closest('a[href]') && !event.target.closest('.edit-bar')) event.preventDefault();
   }, true);
 
   button.addEventListener('click', () => setEditing(!editing()));
