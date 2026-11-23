@@ -4,5 +4,8 @@
   "type": "module",
   "dependencies": {
     "fit-file-parser": "4.1.0"
+  },
+  "scripts": {
+    "edit": "node tools/edit/server.mjs"
   }
 }
