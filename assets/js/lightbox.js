@@ -18,6 +18,9 @@
   const toggleButtons = toggle.querySelectorAll('button');
   let versions;
   let opener;
+  // Inside a [data-lightbox-gallery] container, the arrow keys step through
+  // every zoomable image in it, in page order.
+  let gallery = [];
 
   const show = (version) => {
     const source = versions[version];
@@ -43,6 +46,8 @@
       toggle.hidden = true;
       show('single');
     }
+    const container = img.closest('[data-lightbox-gallery]');
+    gallery = container ? candidates.filter((c) => container.contains(c)) : [];
     overlay.hidden = false;
     document.documentElement.classList.add('lightbox-open');
     overlay.querySelector('.lightbox-close').focus();
@@ -71,8 +76,16 @@
   document.addEventListener('keydown', (event) => {
     if (overlay.hidden) return;
     if (event.key === 'Escape') close();
-    if (versions.before && (event.key === 'ArrowLeft' || event.key === 'ArrowRight')) {
+    if (event.key !== 'ArrowLeft' && event.key !== 'ArrowRight') return;
+    if (versions.before) {
       show(event.key === 'ArrowLeft' ? 'before' : 'after');
+    } else if (gallery.length > 1) {
+      event.preventDefault();
+      const step = event.key === 'ArrowLeft' ? -1 : 1;
+      const next = gallery[(gallery.indexOf(opener) + step + gallery.length) % gallery.length];
+      opener = next;
+      versions = { single: next };
+      show('single');
     }
   });
 

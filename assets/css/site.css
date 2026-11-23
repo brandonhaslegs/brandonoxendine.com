@@ -532,6 +532,21 @@ body.wide-media .poster-grid-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+/* The posters page has long lineup captions; keep them small. */
+body.posters-page .poster-grid figcaption {
+  font-size: 14px;
+  line-height: 1.4;
+  margin-top: 8px;
+}
+
+body.posters-page .poster-grid figcaption a {
+  border-bottom-color: color-mix(in srgb, currentColor 35%, transparent);
+}
+
+body.posters-page .poster-grid figcaption a:hover {
+  border-bottom-color: hotpink;
+}
+
 @media (max-width: 768px) {
   .poster-grid,
   body.wide-media .poster-grid {
