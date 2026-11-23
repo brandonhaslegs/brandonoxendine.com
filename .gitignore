@@ -1,2 +1,5 @@
 .DS_Store
 research/
+node_modules/.bin/
+node_modules/playwright/
+node_modules/playwright-core/
