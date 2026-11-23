@@ -42,17 +42,113 @@
       <h1>Radicle Website</h1>
 
       <p>
-        Patches to <a href="https://radicle.network" target="_blank">radicle.network</a>,
-        Radicle’s website. It lives in the same repo as Radicle’s web
-        explorer, so while I was redesigning
-        <a href="/projects/radicle-desktop">Radicle Desktop</a>, the website
-        got patches too.
+        Design and front end work on
+        <a href="https://radicle.network" target="_blank">radicle.network</a>,
+        Radicle’s website, shipped as patches from February to May 2026:
+        the Install and Learn pages, a mobile layout, the release and update
+        listings, a How it works page and a home for Radicle CI.
       </p>
       <p>
         Role: <a href="/pages/categories/visual-design">Visual Design</a>, <a href="/pages/categories/copywriting">Copywriting</a>, <a href="/pages/categories/website">Website</a>, <a href="/pages/categories/code">Code</a></p>
 
       <hr />
       <section>
+        <center>
+          Jump to:
+          <a href="#install">Install</a>,
+          <a href="#learn">Learn</a>,
+          <a href="#how-it-works">How it works</a>,
+          <a href="#mobile">Mobile</a>,
+          <a href="#updates">Updates</a>,
+          <a href="#ci">Radicle CI</a>
+        </center>
+      </section>
+      <hr />
+
+      <section>
+        <p>
+          Radicle is a way to collaborate on code without a central server.
+          The website is where most people meet it, so it has to explain a
+          pretty unusual idea quickly and then get out of the way. The old
+          site leaned hard on a retro terminal look. The new one is quieter:
+          a left sidebar, big two tone headlines and dithered images that
+          carry the personality.
+        </p>
+        <figure class="compare" data-show="after">
+          <div class="compare-toggle" role="group" aria-label="Show version">
+            <button type="button" data-version="before" aria-pressed="false">Before</button>
+            <button type="button" data-version="after" aria-pressed="true">After</button>
+          </div>
+          <div class="compare-stage">
+            <div class="compare-layer" data-version="before">
+              <img src="/images/radicle-website/old-home-1fce917c.webp" width="2400" height="1500"
+                alt="Before: The old radicle.dev homepage and radicle.network." loading="lazy" decoding="async" />
+            </div>
+            <div class="compare-layer" data-version="after">
+              <img src="/images/radicle-website/home-d4530f6b.webp" width="2400" height="1500"
+                alt="After: The old radicle.dev homepage and radicle.network." loading="lazy" decoding="async" />
+            </div>
+          </div>
+          <figcaption>The old radicle.dev homepage and radicle.network.</figcaption>
+        </figure>
+      </section>
+      <hr />
+
+      <section>
+        <a id="install"></a>
+        <h1>Install</h1>
+        <p>
+          The Install page puts every way into Radicle side by side: the CLI,
+          the desktop app, an agent for Pi and a skill for Claude Code. Each
+          card gets a real screenshot or a mark, one line on who it’s for and
+          a command you can copy. Copying now shows a checkmark, and every
+          code snippet on the site shares the same style.
+        </p>
+        <figure>
+          <img src="/images/radicle-website/install-c6d93830.webp" width="2400" height="1500" alt="The Install page." loading="lazy" decoding="async" />
+        </figure>
+        <figure>
+          <img src="/images/radicle-website/install-lower-d50c9fd9.webp" width="2400" height="1500" alt="Cards for the Pi agent and the Claude skill." loading="lazy" decoding="async" />
+        </figure>
+        <figure>
+          <div class="columns columns-2">
+            <img src="/images/radicle-website/cli-8b58a47e.webp" width="2400" height="1500" alt="The CLI page." loading="lazy" decoding="async" />
+            <img src="/images/radicle-website/desktop-6b771446.webp" width="2400" height="1500" alt="The Desktop page." loading="lazy" decoding="async" />
+          </div>
+          <figcaption>The CLI and Desktop pages.</figcaption>
+        </figure>
+      </section>
+      <hr />
+
+      <section>
+        <a id="learn"></a>
+        <h1>Learn</h1>
+        <p>
+          Learn collects everything you need to understand Radicle in one
+          place: How it works, the guides and a glossary. I laid it out to
+          share its cards with the Install page, gave the guides portrait
+          images, shortened their descriptions and kept them in columns down
+          to small screens.
+        </p>
+        <figure>
+          <img src="/images/radicle-website/learn-91f3220c.webp" width="2400" height="1500" alt="The Learn page." loading="lazy" decoding="async" />
+        </figure>
+        <figure>
+          <img src="/images/radicle-website/learn-lower-3e31ab8b.webp" width="2400" height="1500" alt="Guides, and a banner for Radicle Garden, the hosted nodes." loading="lazy" decoding="async" />
+        </figure>
+        <figure>
+          <div class="columns columns-2">
+            <img src="/images/radicle-website/guides-ac9bf0c1.webp" width="2400" height="1500" alt="The Guides page." loading="lazy" decoding="async" />
+            <img src="/images/radicle-website/glossary-d9b16042.webp" width="2400" height="1500" alt="The Glossary." loading="lazy" decoding="async" />
+          </div>
+          <figcaption>The Guides page and the Glossary.</figcaption>
+        </figure>
+      </section>
+      <hr />
+
+      <section>
+        <a id="how-it-works"></a>
+        <h1>How it works</h1>
         <p>
           The How
           it works page was a scrolling slide presentation that was hard to
@@ -131,6 +227,62 @@
           <figcaption>“Can’t go down if there’s no server.”</figcaption>
         </figure>
       </section>
+      <hr />
+
+      <section>
+        <a id="mobile"></a>
+        <h1>Mobile</h1>
+        <p>
+          The site didn’t really work on phones. I made the sidebar collapse
+          into a full screen menu with a big colored block for each section,
+          fixed the scroll lock when you resize with the menu open, stacked
+          the footer and tuned the spacing on the homepage, Install and
+          Learn.
+        </p>
+        <figure>
+          <div class="columns columns-4">
+            <img src="/images/radicle-website/mobile-home-118bb2fb.webp" width="800" height="1342" alt="The homepage on a phone." loading="lazy" decoding="async" />
+            <img src="/images/radicle-website/mobile-install-d14040ee.webp" width="800" height="1342" alt="Install on a phone." loading="lazy" decoding="async" />
+            <img src="/images/radicle-website/mobile-learn-a3ae9c9c.webp" width="800" height="1342" alt="Learn on a phone." loading="lazy" decoding="async" />
+            <img src="/images/radicle-website/mobile-nav-a9db1b80.webp" width="800" height="1342" alt="The menu on a phone." loading="lazy" decoding="async" />
+          </div>
+          <figcaption>The homepage, Install, Learn and the menu on a phone.</figcaption>
+        </figure>
+      </section>
+      <hr />
+
+      <section>
+        <a id="updates"></a>
+        <h1>Releases and updates</h1>
+        <p>
+          Releases and blog posts were cards with emoji in the titles. I made
+          them a plain list that shares one set of styles: a version or
+          author line, a title, a date and a one line summary written for
+          each release. Hovering one entry dims the rest.
+        </p>
+        <figure>
+          <div class="columns columns-2">
+            <img src="/images/radicle-website/releases-f56f3a09.webp" width="2400" height="1500" alt="The Releases list." loading="lazy" decoding="async" />
+            <img src="/images/radicle-website/updates-b0f1c9bf.webp" width="2400" height="1500" alt="The Updates list." loading="lazy" decoding="async" />
+          </div>
+          <figcaption>Releases and Updates.</figcaption>
+        </figure>
+      </section>
+      <hr />
+
+      <section>
+        <a id="ci"></a>
+        <h1>Radicle CI</h1>
+        <p>
+          Radicle CI runs continuous integration on top of Radicle, but its
+          docs were scattered. I designed a landing page for it, explaining
+          the broker, adapters and the rad-ci extension, linking the guide
+          and office hours, with the design documents as subpages. The
+          Install page’s CI card points to it.
+        </p>
+        <figure>
+          <img src="/images/radicle-website/ci-35212000.webp" width="2400" height="1500" alt="The Radicle CI page." loading="lazy" decoding="async" />
+        </figure>
       </section>
       <hr />
     </main>
