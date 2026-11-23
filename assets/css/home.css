@@ -46,11 +46,14 @@
 @font-face { font-family: "Redaction 50"; font-style: normal; font-display: swap; src: url("/fonts/drips/Redaction_35-Italic.woff2") format("woff2"); }
 
 /* The panel holds five slides, one per visual language, stacked in a
-   single grid cell so it always takes the tallest one's height. A 25s
-   loop gives each slide 5s. Nothing fades: in the last 0.3s of a slide its
-   icons shrink away while the panel shifts to the next project's color and
-   corners, then the next slide's text and pill swap in and its icons pop
-   up. */
+   single grid cell so it always takes the tallest one's height. home.js
+   steps through them, 5s each, and only ever marks one .is-active, so two
+   slides can't show at once (the first one is active in the HTML, so
+   without the script it simply stays put). It waits until every slide's
+   font and icons have loaded before it starts. Nothing fades: in the last
+   0.6s of a slide its icons shrink away, then the panel shifts to the next
+   project's color and corners, then the next slide's text and pill swap in
+   and its icons pop up. */
 .hero-panel {
   display: grid;
   box-sizing: border-box;
@@ -58,17 +61,14 @@
   margin-bottom: 40px;
   background: hotpink;
   border-radius: clamp(40px, 7vw, 120px);
-  animation: hero-panel 25s infinite;
+  transition: background-color 0.3s, border-radius 0.3s;
 }
 
-@keyframes hero-panel {
-  0%, 18.8% { background: hotpink; border-radius: clamp(40px, 7vw, 120px); }
-  20%, 38.8% { background: #1c77ff; border-radius: 12px; }
-  /* Drips' signature: every corner round but the top right. */
-  40%, 58.8% { background: #5555ff; border-radius: 32px 0 32px 32px; }
-  60%, 78.8% { background: #ececec; border-radius: 32px; }
-  80%, 98.8% { background: #f72e2a; border-radius: 0; }
-}
+.hero-panel[data-skin="radicle"] { background: #1c77ff; border-radius: 12px; }
+/* Drips' signature: every corner round but the top right. */
+.hero-panel[data-skin="drips"] { background: #5555ff; border-radius: 32px 0 32px 32px; }
+.hero-panel[data-skin="grover"] { background: #ececec; border-radius: 32px; }
+.hero-panel[data-skin="fuzzco"] { background: #f72e2a; border-radius: 0; }
 
 .hero-slide {
   --hero-pitch: clamp(40px, 6.2vw, 96px);
@@ -81,7 +81,6 @@
   --hero-size: clamp(40px, 6.2vw, 96px);
   --hero-tracking: -0.02em;
   --hero-shift: 0;
-  --delay: 0s;
   grid-area: 1 / 1;
   display: flex;
   flex-direction: column;
@@ -89,29 +88,25 @@
   text-align: center;
   color: var(--hero-fg);
   visibility: hidden;
-  animation: hero-slide 25s var(--delay) infinite;
 }
 
-/* Negative delays start every slide mid-loop, so each is already in step on
-   load and only shows during its own 5s. */
-.hero-slide:nth-child(1) { visibility: visible; }
-.hero-slide:nth-child(2) { --delay: -20s; }
-.hero-slide:nth-child(3) { --delay: -15s; }
-.hero-slide:nth-child(4) { --delay: -10s; }
-.hero-slide:nth-child(5) { --delay: -5s; }
-
-@keyframes hero-slide {
-  0% { visibility: visible; }
-  20%, 100% { visibility: hidden; }
+.hero-slide.is-active {
+  visibility: visible;
 }
 
-/* Each slide's icons pop in with an overshoot when it appears, and swell
-   then shrink away near its end. --o staggers them left to right by where
-   they sit, 60ms apart, so the swap sweeps across the headline. The shrink
-   ends 0.3s before the slide does, so even the last icon is gone in time. */
-.hero-slide .hero-sticker {
+/* A slide's icons pop in with an overshoot when it appears, and swell then
+   shrink away as it leaves. --o staggers them left to right by where they
+   sit, 60ms apart, so the swap sweeps across the headline. */
+.hero-sticker {
   --o: 0ms;
-  animation: hero-pop 25s calc(var(--delay) + var(--o)) infinite;
+}
+
+.hero-panel.is-cycling .hero-slide.is-active .hero-sticker {
+  animation: hero-pop-in 0.65s var(--o) both;
+}
+
+.hero-panel.is-cycling .hero-slide.is-leaving .hero-sticker {
+  animation: hero-pop-out 0.3s var(--o) both;
 }
 
 .hero-headline em:nth-of-type(2) .hero-sticker:nth-of-type(1) { --o: 0ms; }
@@ -121,26 +116,21 @@
 .hero-headline em:nth-of-type(1) .hero-sticker:nth-of-type(2) { --o: 240ms; }
 .hero-headline em:nth-of-type(2) .hero-sticker:nth-of-type(2) { --o: 300ms; }
 
-@keyframes hero-pop {
+@keyframes hero-pop-in {
   0% { scale: 0; animation-timing-function: cubic-bezier(0.3, 0, 0.4, 1); }
-  1.2% { scale: 1.2; animation-timing-function: ease-in-out; }
-  2% { scale: 0.94; animation-timing-function: ease-in-out; }
-  2.6%, 17.6% { scale: 1; animation-timing-function: ease-out; }
-  18.2% { scale: 1.12; animation-timing-function: ease-in; }
-  18.8%, 100% { scale: 0; }
+  46% { scale: 1.2; animation-timing-function: ease-in-out; }
+  77% { scale: 0.94; animation-timing-function: ease-in-out; }
+  100% { scale: 1; }
 }
 
-.hero-panel:is(:hover, :focus-within),
-.hero-panel:is(:hover, :focus-within) :is(.hero-slide, .hero-sticker) {
+@keyframes hero-pop-out {
+  0% { scale: 1; animation-timing-function: ease-out; }
+  50% { scale: 1.12; animation-timing-function: ease-in; }
+  100% { scale: 0; }
+}
+
+.hero-panel:is(:hover, :focus-within) .hero-sticker {
   animation-play-state: paused;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .hero-panel,
-  .hero-slide,
-  .hero-slide .hero-sticker {
-    animation: none;
-  }
 }
 
 /* Sizes, tracking and shifts were measured so every slide breaks into the

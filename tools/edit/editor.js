@@ -60,7 +60,13 @@
       img.removeAttribute('tabindex');
       img.removeAttribute('role');
     });
-    let html = copy.innerHTML.replace(/<br>/g, '<br />');
+    let html = copy.innerHTML
+      // Chrome sometimes leaves a stray line break at the end of a link (or
+      // other inline element) right before a real one; drop the stray.
+      .replace(/<br>(<\/[a-z]+>)(?=<br>)/g, '$1')
+      .replace(/<br>/g, '<br />');
+    // ...and a placeholder break at the very end of the block.
+    if (!/<br\s*\/?>\s*$/i.test(before)) html = html.replace(/(<br \/>\s*)+$/, '');
     // Browsers type non-breaking spaces at line ends and between double
     // spaces; keep them only if the source already had them.
     if (!before.includes('&nbsp;')) html = html.replace(/&nbsp;/g, ' ');
