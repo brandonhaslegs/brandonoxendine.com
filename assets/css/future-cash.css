@@ -15,3 +15,203 @@ body.future-cash-page figure.fc-card img {
   max-width: 560px;
   margin: 0 auto;
 }
+
+/* -------- THEME: myfuture.cash's night sky --------
+   The same treatment as the app's website: deep indigo fading to black,
+   faint drifting nebulae, a twinkling star field (future-cash.js), mist and
+   dust around the edges, and a little film grain. */
+body.future-cash-page {
+  background: radial-gradient(120% 70% at 50% -10%, #120f3a 0%, #07061a 45%, #000 80%) fixed, #000;
+  --header-pill-bg: #07061a;
+}
+
+body.future-cash-page main {
+  position: relative;
+  z-index: 1;
+}
+
+.fc-sky {
+  position: fixed;
+  inset: -20vh 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+  --mist: #5b4fd6;
+  --mist-2: #9a62d8;
+  --mote: #fff;
+}
+
+.fc-sky .neb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(70px);
+  mix-blend-mode: screen;
+  opacity: var(--o, 0.16);
+  translate: 0 calc(var(--sy, 0) * var(--p, -0.04) * 1px);
+  will-change: transform;
+}
+.fc-sky .n1 { width: 70vw; height: 50vh; left: 8vw; top: 6vh; --o: 0.26; --p: -0.03; background: radial-gradient(closest-side, #4b3fd0, transparent); }
+.fc-sky .n2 { width: 55vw; height: 60vh; right: -6vw; top: 38vh; --o: 0.24; --p: -0.06; background: radial-gradient(closest-side, #a04fc8, transparent); }
+.fc-sky .n3 { width: 60vw; height: 45vh; left: -10vw; top: 70vh; --o: 0.22; --p: -0.05; background: radial-gradient(closest-side, #2f6fd8, transparent); }
+.fc-sky .n4 { width: 40vw; height: 30vh; left: 34vw; top: 92vh; --o: 0.16; --p: -0.08; background: radial-gradient(closest-side, #d0508f, transparent); }
+.fc-sky .n5 { width: 90vw; height: 22vh; left: 5vw; top: 48vh; --o: 0.1; --p: -0.02; rotate: -12deg; background: radial-gradient(closest-side, #8a7dff, transparent); }
+
+.fc-sky .stars {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.fc-sky .cloud { position: absolute; border-radius: 50%; filter: blur(48px); opacity: 0.55; background: radial-gradient(closest-side, var(--mist), transparent); }
+.fc-sky .cloud:nth-child(even) { background: radial-gradient(closest-side, var(--mist-2), transparent); }
+.fc-sky .c1 { width: 46vw; height: 34vh; left: -16vw; top: -10vh; }
+.fc-sky .c2 { width: 30vw; height: 42vh; left: -14vw; top: 34vh; }
+.fc-sky .c3 { width: 44vw; height: 30vh; left: -12vw; bottom: -12vh; }
+.fc-sky .c4 { width: 40vw; height: 32vh; right: -14vw; top: -8vh; }
+.fc-sky .c5 { width: 28vw; height: 44vh; right: -12vw; top: 40vh; }
+.fc-sky .c6 { width: 48vw; height: 30vh; right: -16vw; bottom: -10vh; }
+
+.fc-sky .mote {
+  position: absolute;
+  width: var(--s);
+  height: var(--s);
+  border-radius: 50%;
+  background: var(--mote);
+  box-shadow: 0 0 6px 1px color-mix(in srgb, var(--mote) 70%, transparent);
+  opacity: 0.7;
+}
+
+/* Film grain over everything, for texture. */
+body.future-cash-page::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  opacity: 0.07;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+@media (max-width: 700px) {
+  .fc-sky .cloud { opacity: 0.35; }
+  .fc-sky .neb { filter: blur(50px); }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .fc-sky .cloud { animation: fc-mist 26s ease-in-out infinite alternate; }
+  .fc-sky .neb { animation: fc-drift 70s ease-in-out infinite alternate; }
+  .fc-sky .n2 { animation-duration: 90s; animation-direction: alternate-reverse; }
+  .fc-sky .n3 { animation-duration: 80s; }
+  .fc-sky .n4 { animation-duration: 60s; animation-direction: alternate-reverse; }
+  .fc-sky .n5 { animation-duration: 110s; }
+  .fc-sky .cloud:nth-child(2n) { animation-duration: 34s; animation-direction: alternate-reverse; }
+  .fc-sky .cloud:nth-child(3n) { animation-duration: 41s; }
+  .fc-sky .mote { animation: fc-twinkle var(--d) ease-in-out var(--delay) infinite, fc-float calc(var(--d) * 3) ease-in-out var(--delay) infinite alternate; }
+}
+
+@keyframes fc-mist { from { transform: translate(0, 0) scale(1); } to { transform: translate(3vw, -2vh) scale(1.12); } }
+@keyframes fc-twinkle { 0%, 100% { opacity: 0.15; } 50% { opacity: 0.9; } }
+@keyframes fc-float { to { translate: 0 -14px; } }
+@keyframes fc-drift { from { transform: translate(0, 0) scale(1); } to { transform: translate(4vw, 3vh) scale(1.15); } }
+
+/* -------- DEVICE FRAMES -------- */
+
+/* The iPhone tour, in the same drawn iPhone as on myfuture.cash: a slim
+   black bezel, a thin metallic edge and side buttons. */
+.fc-phone {
+  position: relative;
+  width: min(330px, 100%);
+  margin: 0 auto;
+  padding: 11px;
+  box-sizing: border-box;
+  border-radius: 56px;
+  background: #050505;
+  box-shadow:
+    0 0 0 1.5px #3a3a3f,
+    0 0 0 3px #1b1b1e,
+    inset 0 0 0 1px #2a2a2e,
+    0 30px 80px -20px color-mix(in srgb, #7c80ff 55%, transparent);
+}
+
+.fc-phone::before,
+.fc-phone::after {
+  content: "";
+  position: absolute;
+  width: 3px;
+  border-radius: 2px;
+  background: #2c2c30;
+}
+
+/* Action and volume buttons on the left, the side button on the right. */
+.fc-phone::before { left: -5px; top: 18%; height: 56px; box-shadow: 0 70px 0 #2c2c30, 0 -40px 0 #2c2c30; }
+.fc-phone::after { right: -5px; top: 26%; height: 84px; }
+
+body.future-cash-page .fc-phone video {
+  width: 100%;
+  max-width: none;
+  max-height: none;
+  aspect-ratio: 640 / 1392;
+  border-radius: 46px;
+  background: #000;
+}
+
+/* The website recording, in a browser window. */
+.fc-browser {
+  max-width: 1200px;
+  margin: 0 auto;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #1c1c1e;
+  box-shadow:
+    0 0 0 1px #3a3a3f,
+    0 40px 100px -30px color-mix(in srgb, #7c80ff 50%, transparent);
+}
+
+.fc-browser-bar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 40px;
+  padding: 0 16px;
+  background: #2a2a2e;
+}
+
+.fc-browser-bar i {
+  width: 12px;
+  height: 12px;
+  margin-right: 8px;
+  border-radius: 50%;
+  background: #4a4a50;
+}
+
+.fc-browser-bar span {
+  position: absolute;
+  left: 50%;
+  translate: -50% 0;
+  padding: 4px 48px;
+  border-radius: 6px;
+  background: #1c1c1e;
+  color: #98989d;
+  font: 400 13px/1.2 ui-rounded, "SF Pro Rounded", system-ui, sans-serif;
+}
+
+body.future-cash-page .fc-browser video {
+  width: 100%;
+  max-width: none;
+  max-height: none;
+  border-radius: 0;
+  background: #000;
+}
+
+@media (max-width: 600px) {
+  .fc-browser { border-radius: 8px; }
+  .fc-browser-bar { height: 28px; padding: 0 10px; }
+  .fc-browser-bar i { width: 8px; height: 8px; margin-right: 5px; }
+  .fc-browser-bar span { padding: 2px 24px; font-size: 11px; }
+}
+
+body.future-cash-page figure.fc-card figcaption {
+  margin-top: 16px;
+}

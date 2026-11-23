@@ -11,7 +11,7 @@
     />
 <link rel="stylesheet" href="/assets/css/reset.css?v=20261013b" />
 <link rel="stylesheet" href="/assets/css/site.css?v=20261013g" />
-<link rel="stylesheet" href="/assets/css/future-cash.css?v=20261022a" />
+<link rel="stylesheet" href="/assets/css/future-cash.css?v=20261123a" />
 <link rel="icon" href="/favicon.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,8 +22,15 @@
 <script defer src="/assets/js/image-skeleton.js?v=20261013b"></script>
 <script defer src="/assets/js/lightbox.js?v=20261013d"></script>
 <script defer src="/assets/js/video.js?v=20261013b"></script>
+<script defer src="/assets/js/future-cash.js?v=20261123a"></script>
 </head>
   <body class="case-study wide-media future-cash-page">
+    <div class="fc-sky" aria-hidden="true">
+      <span class="neb n1"></span><span class="neb n2"></span><span class="neb n3"></span><span class="neb n4"></span><span class="neb n5"></span>
+      <canvas class="stars"></canvas>
+      <span class="cloud c1"></span><span class="cloud c2"></span><span class="cloud c3"></span>
+      <span class="cloud c4"></span><span class="cloud c5"></span><span class="cloud c6"></span>
+    </div>
     <header id="site-header"></header>
 
     <main>
@@ -107,7 +114,7 @@
           also ask Siri what’s safe to spend, or tell it your new balance.
         </p>
         <figure class="fc-card">
-          <img src="/images/future-cash/widgets-b5658b50.webp" width="1088" height="556"
+          <img src="/images/future-cash/widgets-14a5d272.webp" width="1020" height="508"
             alt="Two widgets showing €980 safe to spend and a €2,400 balance, one with the month’s balance line, above three things you can ask Siri." loading="lazy" decoding="async" />
           <figcaption>Widgets, and stuff you can ask Siri.</figcaption>
         </figure>
@@ -164,10 +171,12 @@
           and keyboard shortcuts.
         </p>
         <figure class="video">
-          <video poster="/images/future-cash/tour-poster-dd681e17.jpg" width="640" height="1392" style="max-width: min(100%, 360px)" data-autoplay muted loop playsinline preload="none"
+          <div class="fc-phone">
+            <video poster="/images/future-cash/tour-poster-dd681e17.jpg" width="640" height="1392" data-autoplay muted loop playsinline preload="none"
             aria-label="A tour of Future Cash on iPhone: the forecast chart, a purchase moved to the first day it fits, the Can I afford it dial, and trips.">
             <source src="/images/future-cash/tour-2e7ee1e6.mp4" type="video/mp4" />
           </video>
+          </div>
           <figcaption>A quick tour on iPhone.</figcaption>
         </figure>
         <p>
@@ -202,11 +211,14 @@
           it.
         </p>
         <figure class="video">
-          <video poster="/images/future-cash/website-poster-9a3ba0d2.webp" width="1920" height="1200" style="max-width: min(100%, 1440px)" data-autoplay muted loop playsinline preload="none"
+          <div class="fc-browser">
+            <div class="fc-browser-bar" aria-hidden="true"><i></i><i></i><i></i><span>myfuture.cash</span></div>
+            <video poster="/images/future-cash/website-poster-9a3ba0d2.webp" width="1920" height="1200" data-autoplay muted loop playsinline preload="none"
             aria-label="Scrolling through myfuture.cash: the hero, the features animating in, the widgets, the Can I afford it dial being turned, and the questions.">
             <source src="/images/future-cash/website-mobile-01439ef5.mp4" type="video/mp4" media="(max-width: 900px)" />
             <source src="/images/future-cash/website-39a1481b.mp4" type="video/mp4" />
           </video>
+          </div>
           <figcaption>myfuture.cash</figcaption>
         </figure>
       </section>
